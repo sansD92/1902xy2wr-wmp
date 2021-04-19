@@ -6,7 +6,7 @@ class Main extends CI_Controller {
   {
     parent::__construct();
     /* memanggil model untuk ditampilkan pada masing2 modul */
-   
+
 
 
     /* memanggil function dari masing2 model yang akan digunakan */
@@ -15,11 +15,10 @@ class Main extends CI_Controller {
 
   public function index()
 	{
-   
-			$this->load->view('fronts/index');
-	
 
-	
+			$this->load->view('fronts/home/v_home');
+
+
+
 }
 }
-
