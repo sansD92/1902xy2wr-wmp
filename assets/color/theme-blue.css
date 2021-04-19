@@ -1,0 +1,293 @@
+/*!
+Author       : Bestwebcreator.
+Template Name: Anger - Creative Business & Portfolio Multi-purpose HTML5 Template
+Version      : 2.0
+*/
+a:hover,
+.hover_menu_style1 .navbar-expand-lg .navbar-nav > li:hover > a, 
+.hover_menu_style1 .navbar-expand-lg .navbar-nav > li > a.active,
+.hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active, 
+.hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
+.hover_menu_style2 .navbar-expand-lg .navbar-nav.attr-nav li a.active,
+.hover_menu_style2 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
+.hover_menu_style3 .navbar-expand-lg .navbar-nav > li > a.active, 
+.hover_menu_style3 .navbar-expand-lg .navbar-nav > li:hover > a,
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active, 
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
+.top-header.light_skin .list_menu li a:hover,
+.social_white .border_social li a:hover, 
+.social_white.border_social li a:hover,
+.btn-outline-default,
+.link_container a,
+.list_style_1.color_blue li::before, 
+.list_style_2.color_blue li::before, 
+.list_style_4.color_blue li::before,
+.btn-outline-white:hover,
+.contact_info a:hover, 
+.newsletter_form .btn-submit:hover, 
+.newsletter_form .btn-submit:hover span, 
+.post_content h6 a:hover, 
+.footer_link li a:hover,
+.widget_links li a:hover, 
+.widget_links_style1 li a:hover,
+.icon_box_style_3 i,
+.owl-theme .owl-nav [class*="owl-"]:hover,
+.social_icons.hover_style2 li a:hover,
+header.light_skin.nav-fixed .social_icons li a:hover,
+.sub_title,
+.icon_box_style_4 i,
+.slider_tab li.active i, 
+.slider_tab li:hover i,
+.icon_box_style_5 i,
+.overlay_menu .navbar-collapse > .navbar-nav > li > a:hover,
+.tab-style4 .nav-tabs .nav-item a.active,
+.portfolio_filter li a.current,
+.portfolio_filter li a:hover,
+.tweet_feed li::before,
+.tweet_feed a,
+.post_navigation a:hover .nav_meta,
+.pagination .page-item a,
+.pagination_style5 .page-item.active .page-link, 
+.pagination_style5 .page-item .page-link:hover,
+.pagination_style6 .page-item.active .page-link, 
+.pagination_style6 .page-item .page-link:hover,
+.tab-style1 .nav-tabs .nav-item a.active,
+.tab-style2 .nav-tabs .nav-item a.active,
+.tab-style6 .nav-tabs .nav-item a.active,
+.toggle_info a,
+.indicators_style1.carousel-indicators li.active::before,
+.menu_price span,
+.header_info li i,
+.icon_box_style_9 .box_icon i,
+.list_menu li a:hover,
+.widget_links_style2 li a:hover,
+.icon_box_style_11 .box_icon i,
+.icon_box_style_13 .box_icon i,
+.widget_links_style3 li a:hover,
+.postcontent_light .blog_heading a:hover,
+.postcontent_light .blog_author_data a:hover, 
+.postcontent_light .blog_postmeta li a:hover,
+.shorting_icon.active,
+.classes_schedule li i,
+.event_meta li i,
+.single_event_info li i,
+.tab-style2.tab_white .nav-tabs .nav-item a:hover,
+.tab-style2.tab_white .nav-tabs .nav-item a.active,
+.tab-style4.tab_white .nav-tabs li.nav-item a:hover,
+.tab-style4.tab_white .nav-tabs li.nav-item a.active,
+.tab-style5.tab_white .nav-tabs li.nav-item a:hover,
+.tab-style6.tab_white .nav-tabs li.nav-item a:hover,
+.tab-style6.tab_white .nav-tabs li.nav-item a.active,
+.discount_num,
+.footer_dark .tags a:hover,
+.domain_price li span,
+.icon_box_style_16 .box_icon i,
+.widget_links_style4 li a:hover,
+.event_info li i,
+.author_info span {
+	color: #304FFE;
+}
+
+.btn-default.btn-aylen:hover,
+.blog_heading *:hover,
+.blog_postmeta a:hover {
+	color: #304FFE !important;
+}
+
+.btn-default,
+.cart_buttons .view-cart,
+.cart_buttons .checkout,
+.heading_s1::before,
+.btn-outline-default:hover,
+.icon_box_style_1 i,
+.filter_tab1 li a.current,
+.filter_tab1 li a:hover,
+.testimonial_slider[data-center="true"] .owl-item.center .testimonial_box,
+.testimonial_slider[data-center="true"] .owl-item.center .testimonial_box::before,
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span,
+.list_style_3.color_blue li::before,
+.bg_blue,
+.footer_social li a:hover,
+.scrollup:hover,
+.loader_grid .loader_box,
+.icon_box_style_3 i::after, 
+.icon_box_style_4 i::after,
+.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab4 li a.current, .filter_tab4 li a:hover,
+.heading_s2::after,
+.heading_s2::before,
+.skill_content .progress-bar,
+.filter_tab2 li a.current, 
+.filter_tab2 li a:hover,
+.filter_tab5 li a.current, 
+.filter_tab5 li a:hover,
+.icon_box_style_5::before,
+.team_hover_style1:hover .team_title,
+.portfolio_style4 .portfolio_content,
+.icon_box_style_2 i,
+.page-item.active .page-link, 
+.page-item .page-link:hover,
+.custome-radio input[type="radio"] + .form-check-label::after,
+.custome-checkbox input[type="checkbox"]:checked + .form-check-label::before,
+.tab-style3 .nav-tabs .nav-item a.active,
+.tab-style5 .nav-tabs .nav-item a.active,
+.icon_box_style_9:hover,
+.cart_count,
+.accordion_style4.accordion .card-header a,
+.ripple,.ripple::before,.ripple::after,
+.tab-style7 .nav-tabs .nav-item a.active, 
+.tab-style7 .nav-tabs .nav-item a:hover,
+.sliding_tab .tab_bg,
+.tab-style8 .nav-item a.active,
+.list_style_5 li::before,
+.pricing_ribbon,
+.hover_menu_style4 .navbar-expand-lg .navbar-nav > li:hover > a,
+.hover_menu_style4 .navbar-expand-lg .navbar-nav > li > a.active,
+.filter_tab6 li a.current, .filter_tab6 li a:hover,
+.filter_tab li a.active,
+.heading_s5::before, .widget_title3::before,
+.pagination_style7 .page-item.active .page-link,
+.pagination_style7 .page-item .page-link:hover,
+.pr_action_btn li a:not(.btn):hover,
+.filter_price .ui-slider .ui-slider-range,
+.filter_price .ui-slider .ui-slider-handle,
+.event_date,
+.event_date::before,
+.cl_price,
+.accordion_style5.accordion .card-header a[aria-expanded="true"],
+.tab-style9 .nav-item a.active,
+.tab-style9 .nav-item a:hover,
+.progress-bar::before,
+.tk_counter_inner .progress-bar,
+.roadmap_box.rd_complete::after,
+.roadmap_box.rd_complete::before,
+.domain_search .dropdown .ddChild li:hover,
+.icon_box_style_16::before,
+.switch_slide,
+.tab-style10 .nav-tabs .nav-item a.active,
+.circle_list::before,
+.affiliate_table thead tr td.populet_txt,
+.tab-style11 .nav-tabs .nav-item a:hover, 
+.tab-style11 .nav-tabs .nav-item a.active,
+.slide_tab li.active .icon_box,
+.pagination_style8 .page-item.active .page-link, 
+.pagination_style8 .page-item .page-link:hover,
+.room_services i:hover,
+.widget_reservation h5,
+.widget_search_box .btn, .widget_search_box button {
+	background-color: #304FFE;
+}
+
+.btn-default:hover,
+.cart_buttons .view-cart:hover, 
+.cart_buttons .checkout:hover {
+	background-color: #203FEE;
+}
+
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav li a.active, 
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a {
+	background-color: transparent;
+}
+
+.btn-default,
+.btn-outline-default,
+.filter_tab1 li a.current,
+.filter_tab1 li a:hover,
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span,
+.footer_social li a:hover,
+.icon_box_style_3 i,
+.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab4 li a.current, .filter_tab4 li a:hover,
+.icon_box_style_4 i,
+.filter_tab2 li a.current,
+.filter_tab2 li a:hover,
+.tab-style4 .nav-tabs .nav-item a.active,
+.portfolio_filter li a.current,
+.portfolio_filter li a:hover,
+.page-item.active .page-link, 
+.page-item .page-link:hover,
+.blockquote,
+.custome-radio input[type="radio"]:checked + .form-check-label::before,
+.pagination_style5 .page-item.active .page-link, 
+.pagination_style5 .page-item .page-link:hover,
+.pagination_style6 .page-item.active .page-link, 
+.pagination_style6 .page-item .page-link:hover,
+.pricing_box.pricing_style3.highlight_box,
+.tab-style2 .nav-tabs .nav-item a.active,
+.tab-style5 .nav-tabs .nav-item a.active,
+.newsletter-pop-up::before,
+.form_style3 .form-control:focus,
+.filter_tab6 li a.current, .filter_tab6 li a:hover,
+.affiliate_table colgroup:nth-child(3),
+.tab-style11 .nav-tabs .nav-item a:hover, 
+.tab-style11 .nav-tabs .nav-item a.active,
+.dw_event_schedule a:hover,
+.pagination_style8 .page-item.active .page-link, 
+.pagination_style8 .page-item .page-link:hover {
+	border-color: #304FFE;
+}
+
+.btn-default:hover {
+	border-color: #203FEE;
+}
+
+.portfolio_style1 .portfolio_item::before,
+.portfolio_style2 .portfolio_content,
+.portfolio_style3 .portfolio_content,
+.blue_overlay_bg::before,
+.portfolio_style5 .portfolio_content,
+.instafeed li a::before,
+.bg_blue_transparent {
+	background-color: rgba(48,79,254,0.80);
+}
+
+.post_date::before,
+.cl_price::before,
+.event_date:after {
+	border-color: transparent #203FEE transparent transparent;
+}
+.tab-style4 .nav-tabs {
+	border-color: rgba(48,79,254,0.2)
+}
+.text_default {
+	color: #506FFF !important
+}
+.filter_tab1 li a.current, .filter_tab1 li a:hover,
+.filter_tab2 li a.current, .filter_tab2 li a:hover,
+.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab4 li a.current, .filter_tab4 li a:hover,
+.filter_tab5 li a.current, .filter_tab5 li a:hover,
+.filter_tab6 li a.current, .filter_tab6 li a:hover {
+	color: #fff;
+}
+
+.custome_select::before {
+	border-top-color: #304FFE;
+}
+
+.classis_box:hover:before {
+	background: -moz-linear-gradient(90deg, rgba(48,79,254,1) 0%, rgba(255,255,255,0.06) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.06)), color-stop(100%, rgba(48,79,254,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(48,79,254,1) 0%, rgba(255,255,255,0.06) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(48,79,254,1) 0%, rgba(255,255,255,0.06) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(48,79,254,1) 0%, rgba(255,255,255,0.06) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(48,79,254,1) 0%, rgba(255,255,255,0.06) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#304FFE',GradientType=0 ); /* ie6-9 */  
+}
+
+.filter_tab li a.active {
+	box-shadow: 0 0 10px #304FFE;
+}
+
+.btn_box_shadow:hover,
+.btn_box_shadow:focus,
+.btn_box_shadow.active:focus,
+.btn_box_shadow:active:focus {
+	box-shadow: 0 0 15px #304FFE !important;
+}
+
+.tab-style7 li a.active::before {
+	border-color: #304FFE transparent transparent transparent
+}
