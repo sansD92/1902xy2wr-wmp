@@ -3,13 +3,13 @@
     	<div class="row">
         	<div class="col-md-12 text_white text-center">
             	<div class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                    <h2 class="">Get latest news delivered daily!</h2>
-                    <p>We will send you breaking news right to your inbox.</p>
+                    <h2 class="">Dapatkan Berita Terbaru Widodo Makmur Perkasa</h2>
+                    <p>Untuk Anda yang berlangganan, kami kirimkan berita terbaru melalui Email</p>
                     <div class="newsletter_form newslattter_small">
-                        <form> 
-                            <input class="form-control" type="text" required="" placeholder="Enter Email Address">
+                        <form>
+                            <input class="form-control" type="text" required="" placeholder="Alamat Email">
                             <button type="submit" title="Subscribe" class="btn btn-default" name="submit" value="Submit">
-                            	subscribe
+                            	Berlangganan
                             </button>
                         </form>
                     </div>
