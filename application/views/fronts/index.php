@@ -36,7 +36,7 @@
 <!-- END SECTION PORTFOLIO -->
 
 <!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_feature')?>
+<?php $this->load->view('fronts/home/v_counter')?>
 <!-- END SECTION FEATURE -->
 
 <!-- START SECTION COUNTER --> 
