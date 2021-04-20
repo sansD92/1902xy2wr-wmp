@@ -7,7 +7,6 @@
 <body>
 
 <!-- LOADER -->
-<?php $this->load->view('fronts/loader.php')?>
 <!-- END LOADER --> 
 
 <!-- START HEADER -->
