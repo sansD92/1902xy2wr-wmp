@@ -285,7 +285,7 @@ section.small_pb,
 .header_wrap #navbarSupportedContent .navbar-nav {
 	background-color: #343a40;
 	padding: 10px;
-} 
+}
 .header_wrap.transparent-header.light_skin.nav-fixed #navbarSupportedContent .navbar-nav, .header_wrap.light_skin.nav-fixed[class*="overlay_"] #navbarSupportedContent .navbar-nav {
 	background-color: #ffffff;
 }
@@ -352,7 +352,7 @@ header .attr-nav + .social_icons {
 	margin-left: 10px;
 }
 .dark_skin .navbar-nav .dropdown-menu,
-.dd_dark_skin .navbar-nav .dropdown-menu, 
+.dd_dark_skin .navbar-nav .dropdown-menu,
 .dd_dark_skin .navbar-nav .dropdown-menu .mega-menu .dropdown-menu {
 	box-shadow: none;
 	border: 0;
@@ -660,7 +660,7 @@ section.small_pb,
 }
 .work_col4 > li,
 .work_col3 > li,
-.work_col4.portfolio_style3 > li, 
+.work_col4.portfolio_style3 > li,
 .work_col4.portfolio_style5 > li,
 .work_col5 > li {
     width: 50%;
@@ -764,7 +764,7 @@ section.small_pb,
 .map_box, .map_box iframe {
 	height: 300px;
 }
-.sm-height-300 { 
+.sm-height-300 {
 	height: 300px !important;
 }
 .header_wrap.fixed-top + .breadcrumb_section {
@@ -875,7 +875,7 @@ section.small_pb,
 	width: 50%;
     padding: 10px;
 }
-.work_col4.portfolio_style3 > li, 
+.work_col4.portfolio_style3 > li,
 .work_col4.portfolio_style5 > li,
 .work_col5 > li {
 	width: 100%;

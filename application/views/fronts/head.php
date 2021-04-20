@@ -2,7 +2,7 @@
 <!-- Meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Anil z" name="author">
+<meta content="IT Dev & Arkansys" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
 <meta name="keywords" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
@@ -12,7 +12,7 @@
 <!-- Favicon Icon -->
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/frontend/wmp_favicon_big.png">
 <!-- Animation CSS -->
-<link rel="stylesheet" href="<?php echo base_url()?>assets/css/animate.css">	
+<link rel="stylesheet" href="<?php echo base_url()?>assets/css/animate.css">
 <!-- Latest Bootstrap min CSS -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css">
 <!-- Google Font -->

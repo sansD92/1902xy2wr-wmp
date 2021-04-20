@@ -4057,7 +4057,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
     background-color: #fff;
 }
 .testimonial_style3 .testimonial_img img {
-	max-width: 50px;
+	max-width: 150px;
 }
 .testimonial_slider[data-center="true"].testimonial_style3 .owl-item {
 	opacity: 1;
