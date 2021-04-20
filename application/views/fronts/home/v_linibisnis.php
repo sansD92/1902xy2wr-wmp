@@ -4,7 +4,7 @@
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
                 	<span class="sub_title">LINI BISNIS</span>
-                    <h2>Why Choose us?</h2>
+                    <h2>Lini Bisnis</h2>
             	</div>
             </div>
         </div>

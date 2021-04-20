@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
                 <div class="heading_s1"> 
-                  <h2>About The Anger</h2>
+                  <h2>Tentang Widodo Makmur</h2>
                 </div>
                 <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
