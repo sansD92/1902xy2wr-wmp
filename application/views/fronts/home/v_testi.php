@@ -13,8 +13,8 @@
             	<div class="testimonial_slider testimonial_style3 carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-loop="true" data-autoplay="true">
                 	<div class="item">
                     	<div class="testimonial_box">
-                        	<div class="testimonial_img">
-                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/frontend/qoutes/1.jpg" alt="user"/>
+                        		<div class="testimonial_img">
+                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/frontend/qoutes/1.jpg"/>
                             </div>
                             <div class="testi_meta">
                                 <h6>TUMIYANA</h6>

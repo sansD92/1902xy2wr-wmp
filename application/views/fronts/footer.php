@@ -87,7 +87,7 @@ Indonesia
                             <div class="form-group col-md-12">
                                 <input type="email" required="required" placeholder="Enter Email *" id="email" class="form-control" name="email">
                             </div>
-                            
+
                             <div class="form-group col-md-12">
                                 <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="3"></textarea>
                             </div>
@@ -98,7 +98,7 @@ Indonesia
                                 <div id="alert-msg" class="alert-msg text-center"></div>
                             </div>
                         </div>
-                    </form>     
+                    </form>
                     </div>
                 </div>
             </div>
@@ -112,10 +112,8 @@ Indonesia
                 </div>
                 <div class="col-md-6">
                     <ul class="list_none footer_social text-center text-md-right">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
                         <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>                        
                         <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                     </ul>
                 </div>
