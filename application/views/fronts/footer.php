@@ -4,21 +4,26 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                     <div class="footer_logo">
-                        <a href="index-4.html"><img alt="logo" src="<?php echo base_url()?>assets/images/logo_footer.png"></a>
+                       <center> <a href="index-4.html"><img alt="logo" src="<?php echo base_url()?>assets/frontend/wmp_p.png"></a></center>
                     </div>
-                    <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur industry.</p>
+                    <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="contact_info contact_info_light list_none">
                         <li>
                             <span class="ti-location-pin"></span>
-                            <address>123 Street, Old Trafford, New South London , UK</address>
+                            <address>Jl. Raya Cilangkap No. 58
+Cilangkap, Cipayung
+Jakarta Timur 13870
+Indonesia
+</address>
                         </li>
                         <li>
                             <span class="ti-email"></span>
-                            <a href="mailto:info@sitename.com">info@sitename.com</a>
+                            <a href="mailto:info@sitename.com">widodomakmurperkasa@wmp-group.co.id
+</a>
                         </li>
                         <li>
                             <span class="ti-mobile"></span>
-                            <p>+ 457 789 789 65</p>
+                            <p>(+62  21) 8430 6787 / 88</p>
                         </li>
                     </ul>
                 </div>
