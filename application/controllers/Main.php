@@ -16,7 +16,7 @@ class Main extends CI_Controller {
   public function index()
 	{
 
-			$this->load->view('fronts/home/v_home');
+			$this->load->view('fronts/index');
 
 
 

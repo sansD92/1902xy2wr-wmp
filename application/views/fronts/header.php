@@ -21,7 +21,7 @@
         </div>
     </div>
   <div class="container">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg"> 
     	<a class="navbar-brand" href="index-4.html">
 			<img class="logo_light" src="<?php echo base_url()?>assets/images/logo_white.png" alt="logo" />
             <img class="logo_dark" src="<?php echo base_url()?>assets/images/logo_dark.png" alt="logo" />
@@ -35,12 +35,12 @@
                         <div class="dropdown-menu">
                         	<ul class="mega-menu d-lg-flex">
                           	   <li class="mega-menu-col col-lg-3">
-                                    <ul>
+                                    <ul> 
                                         <li>
                                             <a class="dropdown-item menu-link dropdown-toggler" href="#">Home - Creative</a>
                                             <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Creative Layout 1</a></li>
+                                                <ul> 
+                                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Creative Layout 1</a></li> 
                                                     <li><a class="dropdown-item nav-link nav_item" href="index-2.html">Creative Layout 2</a></li>
                                                     <li><a class="dropdown-item nav-link nav_item" href="index-3.html">Creative Layout 3</a></li>
                                                 </ul>
@@ -49,8 +49,8 @@
                                         <li>
                                             <a class="dropdown-item menu-link dropdown-toggler" href="#">Home - Landing page</a>
                                             <div class="dropdown-menu">
-                                                <ul>
-                                                    <li><a class="dropdown-item nav-link nav_item" href="index-14.html">Software Landing page</a></li>
+                                                <ul> 
+                                                    <li><a class="dropdown-item nav-link nav_item" href="index-14.html">Software Landing page</a></li> 
                                                     <li><a class="dropdown-item nav-link nav_item" href="index-15.html">App Landing page</a></li>
 													<li><a class="dropdown-item nav-link nav_item" href="index-24.html">ICO Landing page</a></li>
                                                 </ul>
@@ -71,7 +71,7 @@
                                    </ul>
                                </li>
                                <li class="mega-menu-col col-lg-3">
-                               	   <ul>
+                               	   <ul>                            
                                        <li>
                                             <a class="dropdown-item nav-link nav_item" href="index-8.html">Home - Construction</a>
                                        </li>
@@ -137,7 +137,7 @@
                                    </ul>
                                </li>
                             </ul>
-                        </div>
+                        </div>   
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Features</a>
@@ -146,14 +146,14 @@
                             	<li>
                                 	<a class="dropdown-item menu-link dropdown-toggler" href="#">Header Styles</a>
                                     <div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="transparent-header.html">Transparent </a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="light-header.html">Light Header</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="dark-header.html">Dark Header</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="header-with-topbar.html">Header with Top Bar</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="overlay-full-screen.html">Overlay Full Screen</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="onepage-navigation.html">one page navigation</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="header-semi-transparent-dark.html">Semi Transparent Dark</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="dark-header.html">Dark Header</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="header-with-topbar.html">Header with Top Bar</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="overlay-full-screen.html">Overlay Full Screen</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="onepage-navigation.html">one page navigation</a></li> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="header-semi-transparent-dark.html">Semi Transparent Dark</a></li> 
                                             <li><a class="dropdown-item nav-link nav_item" href="header-semi-transparent-light.html">Semi Transparent Light</a></li>
                                         </ul>
                                     </div>
@@ -161,7 +161,7 @@
                                 <li>
                                 	<a class="dropdown-item menu-link dropdown-toggler" href="#">Footers</a>
                                     <div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="footer-style1.html">Footer Style 1 </a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="footer-style2.html">Footer Style 2 </a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="footer-style3.html">Footer Style 3 </a></li>
@@ -175,7 +175,7 @@
                                 <li>
                                 	<a class="dropdown-item menu-link dropdown-toggler" href="#">Menu Styles</a>
                                     <div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="menu-style1.html">Menu Styles 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="menu-style2.html">Menu Styles 2</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="menu-style3.html">Menu Styles 3</a></li>
@@ -187,7 +187,7 @@
                                 <li>
                                 	<a class="dropdown-item menu-link dropdown-toggler" href="#">Page Title</a>
                                     <div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="page-title-left.html">Left Align</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="page-title-right.html">Right Align</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="page-title-center.html">Center Align</a></li>
@@ -202,7 +202,7 @@
                                 <li>
                                 	<a class="dropdown-item menu-link dropdown-toggler" href="#">Comming Soon</a>
                                     <div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="comming-soon.html">Comming Soon 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="comming-soon-2.html">Comming Soon 2</a></li>
                                         </ul>
@@ -214,19 +214,19 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu">
-                            <ul>
+                            <ul> 
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">About Us</a>
                                 	<div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="about.html">About Us 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="about-2.html">About Us 2</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="about-3.html">About Us 3</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> 
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Services</a>
                                 	<div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="services.html">Services 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="services-2.html">Services 2</a></li>
                                         </ul>
@@ -234,7 +234,7 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Contact</a>
                                 	<div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="contact.html">Contact 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="contact-2.html">Contact 2</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="contact-3.html">Contact 3</a></li>
@@ -243,7 +243,7 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Faq</a>
                                 	<div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="faq.html">Faq 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="faq-2.html">Faq 2</a></li>
                                         </ul>
@@ -251,12 +251,12 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">404 Error Page</a>
                                 	<div class="dropdown-menu">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="404.html">404 Error Page 1</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="404-2.html">404 Error Page 2</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> 
                                 <li><a class="dropdown-item nav-link nav_item" href="team.html">Team</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="login.html">Login</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="signup.html">Register</a></li>
@@ -268,36 +268,36 @@
                         <div class="dropdown-menu">
                             <ul class="mega-menu d-lg-flex">
                             	<li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Grids</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Grids</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-two-columns.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-three-columns.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-four-columns.html">4 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-five-columns.html">5 columns</a></li>
-                                        <li class="dropdown-header">Grids Wide Version</li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-four-columns.html">4 columns</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-five-columns.html">5 columns</a></li> 
+                                        <li class="dropdown-header">Grids Wide Version</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-two-columns-wide.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-three-columns-wide.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-four-columns-wide.html">4 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-five-columns-wide.html">5 columns</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-four-columns-wide.html">4 columns</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-five-columns-wide.html">5 columns</a></li> 
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Masonry</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Masonry</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-two-columns.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-three-columns.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-four-columns.html">4 columns</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-four-columns.html">4 columns</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-five-columns.html">5 columns</a></li>
-                                        <li class="dropdown-header">Masonry Wide Version</li>
+                                        <li class="dropdown-header">Masonry Wide Version</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-two-columns-wide.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-three-columns-wide.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-four-columns-wide.html">4 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-five-columns-wide.html">5 columns</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-four-columns-wide.html">4 columns</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-masonry-five-columns-wide.html">5 columns</a></li> 
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Extra</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Extra</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-left-sidebar.html">Left Sidebar</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-right-sidebar.html">right Sidebar</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-both-sidebar.html">Both Sidebar</a></li>
@@ -310,12 +310,12 @@
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Single Project</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Single Project</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-1.html">portfolio single Project 1</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-2.html">portfolio single Project 2</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-3.html">portfolio single Project 3</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-4.html">portfolio single Project 4</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-3.html">portfolio single Project 3</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-4.html">portfolio single Project 4</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-5.html">portfolio single Project 5</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="portfolio-single-page-6.html">portfolio single Project 6</a></li>
                                     </ul>
@@ -328,44 +328,44 @@
                         <div class="dropdown-menu">
                             <ul class="mega-menu d-lg-flex">
                             	<li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Grids</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Grids</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-two-columns.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-three-columns.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-four-columns.html">4 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-one-columns.html">Full width</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-four-columns.html">4 columns</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-one-columns.html">Full width</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-left-sidebar.html">Left Sidebar</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-right-sidebar.html">right Sidebar</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-both-sidebar.html">both Sidebar</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-both-sidebar.html">both Sidebar</a></li> 
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Masonry</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Masonry</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-two-columns.html">2 columns</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-three-columns.html">3 columns</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-four-columns.html">4 columns</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-four-columns.html">4 columns</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-wide.html">wide version</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-left-sidebar.html">Left Sidebar</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-left-sidebar.html">Left Sidebar</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-right-sidebar.html">right Sidebar</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-both-sidebar.html">both Sidebar</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-both-sidebar.html">both Sidebar</a></li>   
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">Single Post</li>
+                                    <ul> 
+                                        <li class="dropdown-header">Single Post</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-single.html">Default</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-single-left-sidebar.html">left sidebar</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-both-sidebar.html">both sidebar</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-slider.html">slider post</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-video.html">video post</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-audio.html">audio post</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-nosidebar.html">No sidebar</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-both-sidebar.html">both sidebar</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-slider.html">slider post</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-video.html">video post</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-audio.html">audio post</a></li> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="blog-single-nosidebar.html">No sidebar</a></li> 
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li class="dropdown-header">list</li>
+                                    <ul> 
+                                        <li class="dropdown-header">list</li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-list-left-sidebar.html">left sidebar</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-list-right-sidebar.html">right sidebar</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blog-list-both-sidebar.html">Both sidebar</a></li>
@@ -380,8 +380,8 @@
                         <div class="dropdown-menu">
                         	<ul class="mega-menu d-lg-flex">
                             	<li class="mega-menu-col col-lg-3">
-                                    <ul>
-                                        <li><a class="dropdown-item nav-link nav_item" href="accordions.html"><i class="ti-layout-accordion-separated"></i> Accordions</a></li>
+                                    <ul> 
+                                        <li><a class="dropdown-item nav-link nav_item" href="accordions.html"><i class="ti-layout-accordion-separated"></i> Accordions</a></li> 
                                         <li><a class="dropdown-item nav-link nav_item" href="alerts.html"><i class="ti-info-alt"></i> Alerts</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="blockquotes.html"><i class="ti-quote-left"></i> Blockquotes</a></li>
                                         <li><a class="dropdown-item nav-link nav_item" href="buttons.html"><i class="ti-mouse"></i> Buttons</a></li>
@@ -393,30 +393,30 @@
                                     <ul>
                                     	<li><a class="dropdown-item nav-link nav_item" href="colors.html"><i class="ti-paint-bucket"></i> Colors</a></li>
                                     	<li><a class="dropdown-item nav-link nav_item" href="columns.html"><i class="ti-layout-column3-alt"></i> Columns</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="countdown.html"><i class="ti-alarm-clock"></i> Countdown</a></li>
+                                    	<li><a class="dropdown-item nav-link nav_item" href="countdown.html"><i class="ti-alarm-clock"></i> Countdown</a></li> 
                                     	<li><a class="dropdown-item nav-link nav_item" href="counter.html"><i class="ti-timer"></i> Counters</a></li>
-                                        <li><a class="dropdown-item nav-link nav_item" href="flip-box.html"><i class="ti-reload"></i> Flip Box</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="flip-box.html"><i class="ti-reload"></i> Flip Box</a></li> 
                                     	<li><a class="dropdown-item nav-link nav_item" href="form-controls.html"><i class="ti-clipboard"></i> Form Controls</a></li>
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
                                     <ul>
                                     	<li><a class="dropdown-item nav-link nav_item" href="heading.html"><i class="ti-text"></i> Heading</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="icon-boxes.html"><i class="ti-widget"></i> Icon Boxes</a></li>
+                                    	<li><a class="dropdown-item nav-link nav_item" href="icon-boxes.html"><i class="ti-widget"></i> Icon Boxes</a></li> 
                                     	<li><a class="dropdown-item nav-link nav_item" href="image-gallery.html"><i class="ti-layout-grid3"></i> Image Gallery</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="list.html"><i class="ti-list"></i> List</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="paginations.html"><i class="ti-more-alt"></i> Pagination</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="pricing.html"><i class="ti-layout-column3"></i> Pricing Table</a></li>
+                                    	<li><a class="dropdown-item nav-link nav_item" href="list.html"><i class="ti-list"></i> List</a></li> 
+                                    	<li><a class="dropdown-item nav-link nav_item" href="paginations.html"><i class="ti-more-alt"></i> Pagination</a></li> 
+                                    	<li><a class="dropdown-item nav-link nav_item" href="pricing.html"><i class="ti-layout-column3"></i> Pricing Table</a></li> 
                                     </ul>
                                 </li>
                                 <li class="mega-menu-col col-lg-3">
                                     <ul>
                                     	<li><a class="dropdown-item nav-link nav_item" href="progress-bars.html"><i class="ti-layout-list-post"></i> Progress Bars</a></li>
                                     	<li><a class="dropdown-item nav-link nav_item" href="social-icons.html"><i class="ti-facebook"></i> Social</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="tab.html"><i class="ti-layout-accordion-separated"></i> Tab</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="table.html"><i class="ti-layout-tab"></i> Table</a></li>
+                                    	<li><a class="dropdown-item nav-link nav_item" href="tab.html"><i class="ti-layout-accordion-separated"></i> Tab</a></li> 
+                                    	<li><a class="dropdown-item nav-link nav_item" href="table.html"><i class="ti-layout-tab"></i> Table</a></li> 
                                     	<li><a class="dropdown-item nav-link nav_item" href="testimonials.html"><i class="ti-layout-slider-alt"></i> Testimonials</a></li>
-                                    	<li><a class="dropdown-item nav-link nav_item" href="tooltips-popovers.html"><i class="ti-comment-alt"></i> Tooltips Popovers</a></li>
+                                    	<li><a class="dropdown-item nav-link nav_item" href="tooltips-popovers.html"><i class="ti-comment-alt"></i> Tooltips Popovers</a></li> 
                                     </ul>
                                 </li>
                             </ul>
@@ -425,10 +425,10 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Shop</a>
                         <div class="dropdown-menu">
-                            <ul>
+                            <ul> 
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Product Detail</a>
                                 	<div class="dropdown-menu dropdown-reverse">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Default</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Left Sidebar</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Right Sidebar</a></li>
@@ -437,7 +437,7 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">4 Columns</a>
                                 	<div class="dropdown-menu dropdown-reverse">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-four-columns.html">Default</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-four-columns-left-sidebar.html">Left Sidebar</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-four-columns-right-sidebar.html">Right Sidebar</a></li>
@@ -446,7 +446,7 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">3 Columns</a>
                                 	<div class="dropdown-menu dropdown-reverse">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-three-columns.html">Default</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-three-columns-left-sidebar.html">Left Sidebar</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-three-columns-right-sidebar.html">Right Sidebar</a></li>
@@ -455,7 +455,7 @@
                                 </li>
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">2 Columns</a>
                                 	<div class="dropdown-menu dropdown-reverse">
-                                        <ul>
+                                        <ul> 
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-two-columns.html">Default</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-two-columns-left-sidebar.html">Left Sidebar</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="shop-two-columns-right-sidebar.html">Right Sidebar</a></li>
