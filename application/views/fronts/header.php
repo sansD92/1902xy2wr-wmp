@@ -4,7 +4,10 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <ul class="contact_detail list_none text-center text-md-left">
-                        <li><i class="ti-location-pin"></i>Graha Widodo Makmur,Cilangkap, Cipayung, Jakarta Timur, Indonesia</li>
+                        <li><i class="ti-location-pin"></i>Jl. Raya Cilangkap No. 58
+Cilangkap, Cipayung
+Jakarta Timur 13870
+Indonesia</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
