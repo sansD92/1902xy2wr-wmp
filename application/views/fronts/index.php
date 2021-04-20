@@ -39,7 +39,6 @@
 <!-- END SECTION FEATURE -->
 
 <!-- START SECTION COUNTER --> 
-<?php $this->load->view('fronts/home/v_feature')?>
 <!-- END SECTION COUNTER -->
 
 <!-- START SECTION SERVICE -->
