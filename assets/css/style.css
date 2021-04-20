@@ -1274,7 +1274,7 @@ select option {
   02. HEADER DESIGN
 *===================================*/
 .navbar-brand img {
-    max-width: 182px;
+    max-height: 100px;
 }
 .logo_light, .logo_dark {
 	display: none;

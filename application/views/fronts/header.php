@@ -4,8 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <ul class="contact_detail list_none text-center text-md-left">
-                        <li><i class="ti-mobile"></i>123-456-7890</li>
-                        <li><i class="ti-location-pin"></i>123 Street, New South London , UK</li>
+                        <li><i class="ti-location-pin"></i>Graha Widodo Makmur,Cilangkap, Cipayung, Jakarta Timur, Indonesia</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -22,10 +21,10 @@
     </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg">
-    	<a class="navbar-brand" href="index-4.html">
-			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/wmp.png" alt="logo" />
-            <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/wmp.png" alt="logo" />
-            <img class="logo_default" src="<?php echo base_url()?>assets/frontend/wmp.png" alt="logo" />
+    	<a class="navbar-brand" href="<?php echo base_url()?>">
+			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
+            <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
+            <img class="logo_default" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
