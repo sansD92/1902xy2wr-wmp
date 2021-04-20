@@ -3,10 +3,10 @@
     	<div class="row">
             <div class="col-sm-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
-                	<span class="sub_title">RECENT PROJECTS</span>
-                    <h2>Our Letest works</h2>
+                	<span class="sub_title">Produk Terbaik</span>
+                    <h2>Produk WMP</h2>
                 </div>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa<br class="d-none d-sm-block">enim. Nullam id varius nunc id varius nunc.</p>
+
             </div>
         </div>
         <div class="row">
@@ -17,11 +17,12 @@
         <div class="row mb-3 mb-sm-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
-                    <li><a href="#" class="current" data-filter="*">all</a></li>
-                    <li><a href="#" data-filter=".brands">Brands</a></li>
-                    <li><a href="#" data-filter=".design">Design</a></li>
-                    <li><a href="#" data-filter=".web">Web</a></li>
-                    <li><a href="#" data-filter=".adv">Advertising</a></li>
+                    <li><a href="#" class="current" data-filter="*">Semua</a></li>
+                    <li><a href="#" data-filter=".brands">Live Stock</a></li>
+                    <li><a href="#" data-filter=".web">Poultry</a></li>
+                    <li><a href="#" data-filter=".design">Daging</a></li>
+                    <li><a href="#" data-filter=".food">Food</a></li>
+                    <li><a href="#" data-filter=".adv">Property</a></li>
                 </ul>
             </div>
         </div>
@@ -133,6 +134,29 @@
                                     </div>
                                     <h5><a href="#">Website Design</a></h5>
                                     <p>which is the same as saying through shrinking from toil and pain.</p>
+                              </div>
+                        </div>
+                    </li>
+                    <!-- END PORTFOLIO ITEM -->
+                    <!-- START PORTFOLIO ITEM -->
+                    <li class="portfolio-item food design">
+                        <div class="portfolio_item">
+                        	<div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true"  data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
+                                <a href="#" class="image_link">
+                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small3_360X240.jpg" alt="image">
+                                </a>
+                                <a href="#" class="image_link">
+                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small23_360X240.jpg" alt="image">
+                                </a>
+                         	</div>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item23.jpg" class="image_popup d-none"></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">Website Design</a></h5>
+                                    <p>making this the first true generator on the Internet. It uses a dictionary</p>
                               </div>
                         </div>
                     </li>
