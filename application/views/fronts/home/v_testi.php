@@ -3,8 +3,8 @@
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s4 text-center">
-                	<span class="sub_title">Target Perusahaan</span>
-                	<h2>Arah Pengembangan WMP</h2>
+                	<span class="sub_title">Sapaan CEO</span>
+                	<h2>Penyemangat</h2>
                 </div>
             </div>
         </div>
@@ -23,30 +23,6 @@
                             </div>
                         </div>
                     </div>
-										<div class="item">
-	                    	<div class="testimonial_box">
-	                        	<div class="testimonial_img">
-	                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/images/user1.jpg" alt="user"/>
-	                            </div>
-	                            <div class="testi_meta">
-	                                <h6>Nama Lengkap</h6>
-	                                <span>Direktur</span>
-	                            	<p>kalimat arahan / quotes</p>
-	                            </div>
-	                        </div>
-	                    </div>
-											<div class="item">
-		                    	<div class="testimonial_box">
-		                        	<div class="testimonial_img">
-		                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/images/user1.jpg" alt="user"/>
-		                            </div>
-		                            <div class="testi_meta">
-		                                <h6>Nama Lengkap</h6>
-		                                <span>Direktur</span>
-		                            	<p>kalimat arahan / quotes</p>
-		                            </div>
-		                        </div>
-		                    </div>
                 </div>
             </div>
         </div>
