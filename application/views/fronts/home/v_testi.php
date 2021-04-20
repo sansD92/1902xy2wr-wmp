@@ -3,8 +3,8 @@
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s4 text-center">
-                	<span class="sub_title">Sapaan CEO</span>
-                	<h2>Penyemangat</h2>
+                	<span class="sub_title">Quotes</span>
+                	<h2>WMP</h2>
                 </div>
             </div>
         </div>
@@ -14,12 +14,13 @@
                 	<div class="item">
                     	<div class="testimonial_box">
                         	<div class="testimonial_img">
-                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/images/user1.jpg" alt="user"/>
+                            	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/frontend/qoutes/1.jpg" alt="user"/>
                             </div>
                             <div class="testi_meta">
-                                <h6>Nama Lengkap</h6>
-                                <span>Owner</span>
-                            	<p>kalimat arahan / quotes</p>
+                                <h6>TUMIYANA</h6>
+                                <span>President Commissioner Widodo Makmur Perkasa</span>
+                            	<p>Indonesia memiliki Matahari bersinar 12 bulan serta Hujan selama 6 sampai 7 bulan, sangat disayangkan jika anugerah itu kita sia-siakan. Sobat Muda Indonesia, ayo kita berorkestrasi untuk Bertani.
+</p>
                             </div>
                         </div>
                     </div>
