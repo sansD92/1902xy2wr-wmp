@@ -18,11 +18,12 @@
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
                     <li><a href="#" class="current" data-filter="*">Semua</a></li>
-                    <li><a href="#" data-filter=".brands">Live Stock</a></li>
-                    <li><a href="#" data-filter=".web">Poultry</a></li>
-                    <li><a href="#" data-filter=".design">Daging</a></li>
-                    <li><a href="#" data-filter=".food">Food</a></li>
-                    <li><a href="#" data-filter=".adv">Property</a></li>
+                    <li><a href="#" data-filter=".livestock">Livestock</a></li>
+                    <li><a href="#" data-filter=".meat">Meat</a></li>
+                    <li><a href="#" data-filter=".meatp">Meat Processing</a></li>
+                    <li><a href="#" data-filter=".leather">Leather</a></li>
+                    <li><a href="#" data-filter=".poultry">Poultry</a></li>
+                    <li><a href="#" data-filter=".comodity">Commodity</a></li>
                 </ul>
             </div>
         </div>
@@ -30,137 +31,523 @@
             <div class="col-md-12">
                 <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style5 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
                 	<li class="grid-sizer"></li>
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item design web">
+
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/images/portfolio_item_small1_360X240.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock1.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
                                         <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>It's a long established fact that a reader will be readable content of a page.</p>
+                                    <h5><a href="#">Livestock1</a></h5>
+                                    <p>Kalimat livestock1</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands web adv">
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/images/portfolio_item_small2_360X240.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock2.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        <a href="http://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup"><i class="ion-ios-play"></i></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>There are many variations of available, but the majority have suffered alteration</p>
+                                    <h5><a href="#">Livestock2</a></h5>
+                                    <p>Kalimat livestock2</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design">
-                        <div class="portfolio_item">
-                        	<div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true"  data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
-                                <a href="#" class="image_link">
-                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small3_360X240.jpg" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small23_360X240.jpg" alt="image">
-                                </a>
-                         	</div>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item23.jpg" class="image_popup d-none"></a>
-                                        <a href="#"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>making this the first true generator on the Internet. It uses a dictionary</p>
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design web adv">
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/images/portfolio_item_small4_360X240.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock3.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item4.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</p>
+                                    <h5><a href="#">Livestock3</a></h5>
+                                    <p>Kalimat livestock3</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands adv">
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/images/portfolio_item_small5_360X240.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock4.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        <a href="https://vimeo.com/7449107" class="video_popup"><i class="ion-ios-play"></i></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>Nam libero tempore cum soluta nobis eligendi optio nihil impedit quo minus</p>
+                                    <h5><a href="#">Livestock4</a></h5>
+                                    <p>Kalimat livestock4</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design web adv">
+
+                    <li class="portfolio-item meat">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/images/portfolio_item_small6_360X240.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat1.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item6.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>which is the same as saying through shrinking from toil and pain.</p>
+                                    <h5><a href="#">meat1</a></h5>
+                                    <p>Kalimat meat1</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item food design">
+                    <li class="portfolio-item meat">
                         <div class="portfolio_item">
-                        	<div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true"  data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
-                                <a href="#" class="image_link">
-                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small3_360X240.jpg" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="<?php echo base_url()?>assets/images/portfolio_item_small23_360X240.jpg" alt="image">
-                                </a>
-                         	</div>
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat2.jpg" alt="image">
+                            </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
-                                        <a href="<?php echo base_url()?>assets/images/portfolio_item23.jpg" class="image_popup d-none"></a>
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
                                         <a href="#"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="#">Website Design</a></h5>
-                                    <p>making this the first true generator on the Internet. It uses a dictionary</p>
+                                    <h5><a href="#">meat2</a></h5>
+                                    <p>Kalimat meat2</p>
                               </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
+                    <li class="portfolio-item meat">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat3.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meat3</a></h5>
+                                    <p>Kalimat meat3</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meat">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat4.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meat4</a></h5>
+                                    <p>Kalimat meat4</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meat">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meat5</a></h5>
+                                    <p>Kalimat meat5</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meat">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meat6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meat6</a></h5>
+                                    <p>Kalimat meat6</p>
+                              </div>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros1.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros1</a></h5>
+                                    <p>Kalimat meatpros1</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros2.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros2</a></h5>
+                                    <p>Kalimat meatpros2</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros3.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros3</a></h5>
+                                    <p>Kalimat meatpros3</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros4.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros4</a></h5>
+                                    <p>Kalimat meatpros4
+                                    </p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros5</a></h5>
+                                    <p>Kalimat meatpros5</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item meatp">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">meatpros6</a></h5>
+                                    <p>Kalimat meatpros6</p>
+                              </div>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather1.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather1</a></h5>
+                                    <p>Kalimat leather1</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather2.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather2</a></h5>
+                                    <p>Kalimat leather2</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather3.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather3</a></h5>
+                                    <p>Kalimat leather3</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather4.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather4</a></h5>
+                                    <p>Kalimat leather4</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather5</a></h5>
+                                    <p>Kalimat leather5</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item leather">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/leather6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">leather6</a></h5>
+                                    <p>Kalimat leather6</p>
+                              </div>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry1.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry1</a></h5>
+                                    <p>Kalimat poultry1</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry2.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry2</a></h5>
+                                    <p>Kalimat poultry2</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry3.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry3</a></h5>
+                                    <p>Kalimat poultry3</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry4.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry4</a></h5>
+                                    <p>Kalimat poultry4</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry5</a></h5>
+                                    <p>Kalimat poultry5</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item poultry">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">poultry6</a></h5>
+                                    <p>Kalimat poultry6</p>
+                              </div>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity1.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity1</a></h5>
+                                    <p>Kalimat comodity1</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity2.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity2</a></h5>
+                                    <p>Kalimat comodity2</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity3.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity3</a></h5>
+                                    <p>Kalimat comodity3</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity4.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity4</a></h5>
+                                    <p>Kalimat comodity4</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity5</a></h5>
+                                    <p>Kalimat comodity5</p>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item comodity">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">comodity6</a></h5>
+                                    <p>Kalimat comodity6</p>
+                              </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
