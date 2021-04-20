@@ -47,7 +47,6 @@
 <!-- END SECTION SERVICE -->
 
 <!-- START SECTION TEAM -->
-<?php $this->load->view('fronts/home/v_team')?>
 <!-- END SECTION TEAM -->
 
 <!-- START SECTION CALL TO ACTION -->
