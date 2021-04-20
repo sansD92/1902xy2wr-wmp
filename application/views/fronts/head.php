@@ -4,13 +4,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="Anil z" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Anger is a creative business, corporate, portfolio and clean HTML template, Based on Bootstrap, Anger is a multipurpose HTML template with unique home page demo">
-<meta name="keywords" content="creative, fullscreen, business, photography, portfolio, one page, bootstrap responsive, start-up, ui/ux, html template, css3, studio, branding, creative design, multipurpose, multi-purpose, parallax, personal, masonry, grid, coming soon, carousel, agency">
+<meta name="description" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
+<meta name="keywords" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
 
 <!-- SITE TITLE -->
-<title>Anger - Creative Business MultiPurpose HTML5 Template</title>
+<title>Widodo Makmur Perkasa (WMP)</title>
 <!-- Favicon Icon -->
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/images/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/frontend/wmp_favicon_big.png">
 <!-- Animation CSS -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/animate.css">	
 <!-- Latest Bootstrap min CSS -->
