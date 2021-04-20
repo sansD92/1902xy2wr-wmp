@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="row">
-        	<div class="col-lg-3 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center animation" data-animation="fadeInUp" data-animation-delay="0.3s">
-            	<div class="team_box team_hover_style1 social_white light_gray_bg">
+	        	<div class="col-lg-3 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+	            	<div class="team_box team_hover_style1 social_white light_gray_bg">
                 	<div class="team_img">
                     	<img src="<?php echo base_url()?>assets/images/team1.jpg" alt="team1"/>
                         <ul class="list_none social_icons border_social">
