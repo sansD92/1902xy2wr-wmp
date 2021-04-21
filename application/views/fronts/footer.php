@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                     <div class="footer_logo">
-                         <a href="index-4.html"><img alt="logo" src="<?php echo base_url()?>assets/frontend/wmp.png"></a></a>
+                         <a href="index-4.html"><img alt="logo" src="<?php echo base_url()?>assets/frontend/wmp_p.png"></a></a>
                     </div>
                     <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="list_none footer_social">
