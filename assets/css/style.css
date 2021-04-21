@@ -174,13 +174,13 @@ button:focus {
 	padding: 10px 30px;
 }
 .btn-default:hover {
-	background-color: #1083c8;
-	border-color: #1083c8;
+	background-color: #E1282F;
+	border-color: #E1282F;
 	color: #fff;
 }
 .btn-black {
-	border: 2px solid #333;
-	background-color: #333;
+	border: 2px solid #E1282F;
+	background-color: #E1282F;
 	color: #ffffff;
 	padding: 10px 30px;
 }
@@ -2406,7 +2406,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	transform: translateY(-50%);
 }
 .carousel-control-next, .carousel-control-prev {
-	background-color: #000000;
+	background-color: #E1282F;
 	font-size: 20px;
 	height: 50px;
 	opacity: 0;
