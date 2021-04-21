@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/blogs">Artikel</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>paneladmin/blogs">Artikel</a></li>
             <li class="breadcrumb-item active">Tambahkan Artikel</li>
           </ol>
         </div>
@@ -36,7 +36,7 @@
 
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('aspanel/blogs_tambahkan',$attributes); ?>
+            echo form_open_multipart('paneladmin/blogs_tambahkan',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
 
@@ -88,7 +88,7 @@
               </div>
               <div class="card-footer">
                 <button type="submit" name ="submit" class="btn btn-success" title="Tambah Blog"><i class="fas fa-file-upload"></i> Tambahkan</button>
-                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/blogs"><i class="fab fa-creative-commons-sa"></i> Batal</a>
+                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>paneladmin/blogs"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
                 <?php echo form_close(); ?>

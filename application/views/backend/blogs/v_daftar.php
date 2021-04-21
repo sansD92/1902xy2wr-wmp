@@ -23,8 +23,8 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/blogs_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/blogs_storage_bin"><i class="fas fa-trash"></i> Sampah</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/blogs_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
+              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/blogs_storage_bin"><i class="fas fa-trash"></i> Sampah</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -47,8 +47,8 @@
                   <td><?=$row['blogs_judul']?> <a class="btn btn-primary btn-sm" title="Lihat" href="<?php echo base_url()?>blogs/<?=$row['blogs_judul_seo']?>" target="_blank"> <i class="fas fa-eye"> <?=$row['blogs_dibaca']?></i></a></td>
                   <td>
                     <?php
-                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/blogs_update/$row[blogs_id]'><i class='fas fa-edit'></i></a>
-                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/blogs_delete_temp/$row[blogs_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
+                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."paneladmin/blogs_update/$row[blogs_id]'><i class='fas fa-edit'></i></a>
+                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."paneladmin/blogs_delete_temp/$row[blogs_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>

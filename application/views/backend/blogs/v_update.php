@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/blogs">Artikel</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>paneladmin/blogs">Artikel</a></li>
             <li class="breadcrumb-item active">Perbarui Artikel</li>
           </ol>
         </div>
@@ -34,8 +34,8 @@
             <!-- /.card-header -->
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('aspanel/blogs_update',$attributes); ?>
-
+            echo form_open_multipart('paneladmin/blogs_update',$attributes); ?>
+    
 
               <div class="card-body">
                 <div class="form-group">
@@ -78,7 +78,7 @@
                     <div class="form-group">
                       <label>Gambar Sebelumnya</label>
                       <div class="row">
-                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/blogs/<?php echo $rows['blogs_gambar'] ?>" alt="Photo">
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_blogs/<?php echo $rows['blogs_gambar'] ?>" alt="Photo">
                       </div>
 
                     </div>
@@ -102,7 +102,7 @@
               </div>
               <div class="card-footer">
                 <button type="submit" name ="submit" class="btn btn-success" title="Update Blog"><i class="fas fa-file-upload"></i> Perbarui</button>
-                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/blogs"><i class="fab fa-creative-commons-sa"></i> Batal</a>
+                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>paneladmin/blogs"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
             <?php echo form_close(); ?>

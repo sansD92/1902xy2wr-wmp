@@ -16,36 +16,82 @@
         <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
         	<div class="col-md-12">
             	<div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
-									<?php  foreach ($posts as $post_new){
-										$isi = character_limiter($post_new->blogs_desk,250);
-										?>
-										<div class="items">
+                		<div class="items">
                         <div class="blog_post blog_style1">
                             <div class="blog_img">
                                 <a href="#">
-																	<?php
-								                             if(empty($post_new->blogs_gambar)) {
-								                               echo "<img src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
-								                             }else {
-								                               echo " <img src='".base_url()."assets/frontend/blogs/".$post_new->blogs_gambar."'> ";}
-								                             ?>
-
+                                    <img src="<?php echo base_url()?>assets/images/blog_small_img1_350X198.jpg" alt="blog_small_img1_350X198">
                                 </a>
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="<?php echo base_url("blogs/$post_new->blogs_judul_seo ") ?>"><?php echo $post_new->blogs_judul?></a></h6>
+                                    <h6 class="blog_title"><a href="#">Judul Artikel</a></h6>
                                     <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i><?php echo tgl_indo($post_new->blogs_post_tanggal)?></a></li>
+                                        <li><a href="#"><i class="ion-calendar"></i>14 April 2022</a></li>
                                     </ul>
-                                    <p><?php echo $isi?></p>
-                                    <a href="<?php echo base_url("blogs/$post_new->blogs_judul_seo ") ?>" class="text-capitalize">Lebih Lengkap</a>
+                                    <p>Kalimat mengenai berkaitan dengan judul artikel</p>
+                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-										<?php } ?>
-
+										<div class="items">
+                        <div class="blog_post blog_style1">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/images/blog_small_img1_350X198.jpg" alt="blog_small_img1_350X198">
+                                </a>
+                            </div>
+                            <div class="blog_content bg-white">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a href="#">Judul Artikel</a></h6>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="#"><i class="ion-calendar"></i>14 April 2022</a></li>
+                                    </ul>
+                                    <p>Kalimat mengenai berkaitan dengan judul artikel</p>
+                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+										<div class="items">
+                        <div class="blog_post blog_style1">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/images/blog_small_img1_350X198.jpg" alt="blog_small_img1_350X198">
+                                </a>
+                            </div>
+                            <div class="blog_content bg-white">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a href="#">Judul Artikel</a></h6>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="#"><i class="ion-calendar"></i>14 April 2022</a></li>
+                                    </ul>
+                                    <p>Kalimat mengenai berkaitan dengan judul artikel</p>
+                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+										<div class="items">
+                        <div class="blog_post blog_style1">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/images/blog_small_img1_350X198.jpg" alt="blog_small_img1_350X198">
+                                </a>
+                            </div>
+                            <div class="blog_content bg-white">
+                                <div class="blog_text">
+                                    <h6 class="blog_title"><a href="#">Judul Artikel</a></h6>
+                                    <ul class="list_none blog_meta">
+                                        <li><a href="#"><i class="ion-calendar"></i>14 April 2022</a></li>
+                                    </ul>
+                                    <p>Kalimat mengenai berkaitan dengan judul artikel</p>
+                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/blogs">Kembai ke Artikel</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/blogs">Kembai ke Artikel</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -47,8 +47,8 @@
                   <td><?=$row['blogs_judul']?></td>
                   <td>
                     <?php
-                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/blogs_restore/$row[blogs_id]'>Restore</a>
-                    <a class='btn btn-danger btn-sm' title='Permanently Delete' href='".base_url()."aspanel/blogs_delete/$row[blogs_id]' onclick=\"return confirm('Are you sure want to permanently delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
+                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."paneladmin/blogs_restore/$row[blogs_id]'>Restore</a>
+                    <a class='btn btn-danger btn-sm' title='Permanently Delete' href='".base_url()."paneladmin/blogs_delete/$row[blogs_id]' onclick=\"return confirm('Are you sure want to permanently delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>

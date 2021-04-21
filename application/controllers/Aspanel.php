@@ -4903,18 +4903,19 @@ class Aspanel extends CI_Controller {
 
 		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'assets/frontend/blogs/';
+					$config['upload_path'] = 'bahan/foto_blogs/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './assets/frontend/blogs/'.$hasil22['file_name'];
+					$config['source_image'] = './bahan/foto_blogs/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['width']= 700;
-					$config['height']= 475;
-					$config['new_image']= './assets/frontend/blogs/'.$hasil22['file_name'];
+					$config['quality']= '50%';
+					$config['width']= 694;
+					$config['height']= 420;
+					$config['new_image']= './bahan/foto_blogs/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -5006,18 +5007,19 @@ class Aspanel extends CI_Controller {
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-			$config['upload_path'] = 'assets/frontend/blogs/';
+			$config['upload_path'] = 'bahan/foto_blogs/';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 			$this->upload->initialize($config);
 			$this->upload->do_upload('gambar');
 			$hasil22=$this->upload->data();
 			$config['image_library']='gd2';
-			$config['source_image'] = './assets/frontend/blogs/'.$hasil22['file_name'];
+			$config['source_image'] = './bahan/foto_blogs/'.$hasil22['file_name'];
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
-			$config['width']= 700;
-			$config['height']= 475;
-			$config['new_image']= './assets/frontend/blogs/'.$hasil22['file_name'];
+			$config['quality']= '50%';
+			$config['width']= 694;
+			$config['height']= 420;
+			$config['new_image']= './bahan/foto_blogs/'.$hasil22['file_name'];
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
@@ -5073,7 +5075,7 @@ class Aspanel extends CI_Controller {
 											$_image = $this->db->get_where('blogs',$where)->row();
 											$query = $this->db->update('blogs',$data,$where);
 											if($query){
-												unlink("assets/frontend/blogs/".$_image->blogs_gambar);
+												unlink("bahan/foto_blogs/".$_image->blogs_gambar);
 											}
 
 						}
@@ -5135,9 +5137,9 @@ class Aspanel extends CI_Controller {
 			$_id = $this->db->get_where('blogs',['blogs_id' => $id])->row();
 			 $query = $this->db->delete('blogs',['blogs_id'=>$id]);
 			if($query){
-							 unlink("./assets/frontend/blogs/".$_id->blogs_gambar);
+							 unlink("./bahan/foto_blogs/".$_id->blogs_gambar);
 		 }
-		redirect('aspanel/blogs_storage_bin');
+		redirect('aspanel/blogs');
 	}
 	/*	Bagian untuk Blogs - Penutup	*/
 
