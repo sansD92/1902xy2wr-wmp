@@ -17,7 +17,6 @@
         <div class="row mb-3 mb-sm-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
-                    <li><a href="#"  data-filter="*">Semua</a></li>
                     <li><a href="#" class="current" data-filter=".livestock">Livestock</a></li>
                     <li><a href="#" data-filter=".meat">Meat</a></li>
                     <li><a href="#" data-filter=".meatp">Meat Processing</a></li>
@@ -93,7 +92,7 @@
                         </div>
                     </li>
 
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat1.jpg" alt="image">
@@ -108,7 +107,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat2.jpg" alt="image">
@@ -123,7 +122,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat3.jpg" alt="image">
@@ -138,7 +137,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat4.jpg" alt="image">
@@ -153,7 +152,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat5.jpg" alt="image">
@@ -168,7 +167,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meat">
+                    <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meat6.jpg" alt="image">
@@ -184,7 +183,7 @@
                         </div>
                     </li>
 
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros1.jpg" alt="image">
@@ -199,7 +198,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros2.jpg" alt="image">
@@ -214,7 +213,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros3.jpg" alt="image">
@@ -229,7 +228,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros4.jpg" alt="image">
@@ -245,7 +244,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros5.jpg" alt="image">
@@ -260,7 +259,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item meatp">
+                    <li class="portfolio-item meatp" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/meatpros6.jpg" alt="image">
@@ -276,7 +275,7 @@
                         </div>
                     </li>
 
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather1.jpg" alt="image">
@@ -291,7 +290,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather2.jpg" alt="image">
@@ -306,7 +305,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather3.jpg" alt="image">
@@ -321,7 +320,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather4.jpg" alt="image">
@@ -336,7 +335,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather5.jpg" alt="image">
@@ -351,7 +350,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item leather">
+                    <li class="portfolio-item leather" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/leather6.jpg" alt="image">
@@ -367,7 +366,7 @@
                         </div>
                     </li>
 
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry1.jpg" alt="image">
@@ -382,7 +381,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry2.jpg" alt="image">
@@ -397,7 +396,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry3.jpg" alt="image">
@@ -412,7 +411,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry4.jpg" alt="image">
@@ -427,7 +426,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry5.jpg" alt="image">
@@ -442,7 +441,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item poultry">
+                    <li class="portfolio-item poultry" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/poultry6.jpg" alt="image">
@@ -458,7 +457,7 @@
                         </div>
                     </li>
 
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity1.jpg" alt="image">
@@ -473,7 +472,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity2.jpg" alt="image">
@@ -488,7 +487,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity3.jpg" alt="image">
@@ -503,7 +502,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity4.jpg" alt="image">
@@ -518,7 +517,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity5.jpg" alt="image">
@@ -533,7 +532,7 @@
                               </div>
                         </div>
                     </li>
-                    <li class="portfolio-item comodity">
+                    <li class="portfolio-item comodity" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/comodity6.jpg" alt="image">
