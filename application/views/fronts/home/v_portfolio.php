@@ -17,11 +17,11 @@
         <div class="row mb-3 mb-sm-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
-                    <li><a href="#" class="current" data-filter=".livestock">Livestock</a></li>
-                    <li><a href="#" data-filter=".meat">Meat</a></li>
-                    <li><a href="#" data-filter=".meatp">Meat Processing</a></li>
+                    <li><a href="#" class="current" data-filter=".livestock">Integrated Livestock</a></li>
+                    <li><a href="#" data-filter=".meat">Meat Processing</a></li>
+                    <li><a href="#" data-filter=".meatp">Processing</a></li>
                     <li><a href="#" data-filter=".leather">Leather</a></li>
-                    <li><a href="#" data-filter=".poultry">Poultry</a></li>
+                    <li><a href="#" data-filter=".poultry">Integrated Poultry</a></li>
                     <li><a href="#" data-filter=".comodity">Commodity</a></li>
                 </ul>
             </div>

@@ -1,10 +1,10 @@
-<section class="gray_bg background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/backgroundblog.jpg">
+<section class="gray_bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s4 text-center">
-                	<span style="color: #fff" class="sub_title">Berita Terbaru</span>
-                	<h2 style="color: #fff">Berita WMP</h2>
+                	<span class="sub_title">Berita Terbaru</span>
+                	<h2>Berita WMP</h2>
                 </div>
             </div>
         </div>

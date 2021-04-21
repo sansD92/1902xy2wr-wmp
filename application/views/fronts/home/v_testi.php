@@ -1,10 +1,10 @@
-<section>
+<section class="counter_wrap background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/sawah.jpeg">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s4 text-center">
-                	<span class="sub_title">Quotes</span>
-                	<h2>WMP</h2>
+                	<span style="color: #fff"class="sub_title">Quotes</span>
+                	<h2 style="color: #fff">WMP</h2>
                 </div>
             </div>
         </div>
@@ -17,9 +17,9 @@
                             	<img class="rounded-circle m-auto" src="<?php echo base_url()?>assets/frontend/qoutes/1.jpg"/>
                             </div>
                             <div class="testi_meta">
-                                <h6>TUMIYANA</h6>
-                                <span>President Commissioner Widodo Makmur Perkasa</span>
-                            	<p>Indonesia memiliki Matahari bersinar 12 bulan serta Hujan selama 6 sampai 7 bulan, sangat disayangkan jika anugerah itu kita sia-siakan. Sobat Muda Indonesia, ayo kita berorkestrasi untuk Bertani.
+                                <h6 style="color: #fff">TUMIYANA</h6>
+                                <span style="color: #fff">President Commissioner Widodo Makmur Perkasa</span>
+                            	<p style="color: #fff">Indonesia memiliki Matahari bersinar 12 bulan serta Hujan selama 6 sampai 7 bulan, sangat disayangkan jika anugerah itu kita sia-siakan. Sobat Muda Indonesia, ayo kita berorkestrasi untuk Bertani.
 </p>
                             </div>
                         </div>

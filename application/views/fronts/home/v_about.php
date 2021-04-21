@@ -11,8 +11,8 @@
                 <div class="heading_s1">
                   <h2>Tentang Widodo Makmur</h2>
                 </div>
-                <p style="text-align:justify;" >PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan. Merintis usaha feedlot sejak tahun 1995 dan dikembangkan secara profesional pada tahun 1999. WMP memulai core bussines dari usaha penggemukan sapi. Usaha ini berkembang pesat dan menempatkan WMP sebagai salah satu perusahaan penyuplai sapi bakalan terbesar di Indonesia.</p>
-                <p style="text-align:justify;">Kami mengembangkan bisnis makanan olahan dari bahan daging sapi dan daging ayam sebagai produk unggulan. Juga memproduksi beras kemasan selama lebih dari dua puluh tahun, kami telah tumbuh dalam skala besar untuk melayani kebutuhan industri pangan. Kami menciptakan operasi terstandarisasi berdasarkan kekuatan riset dalam menentukan genetika ternak terbaik, teknologi pakan dan pertanian, menerapkan bio-security dengan ketat dan memperhatikan kesejahteraan hewan (animal’s welfare) di peternakan kami. </p>
+                <p style="text-align:justify;" >PT Widodo makmur Perkasa adalah perusahaan Holding yang membawahi lima lini bisnis yaitu Integrated Livestock, Meat Processing, Integrated Poultry, Food & Commodity dan Construction & Energy. Dimulai dengan usaha feedlot sejak tahun 1995 dan dikembangkan secara profesional pada tahun 1999.Usaha ini berkembang pesat dan menempatkan WMP sebagai salah satu perusahaan penyuplai sapi terbesar di Indonesia. Dengan aset total saat ini mencapai 2,5T dan akan terus berkembang dengan langkah pengembangan progresif kami.</p>
+               
 
                 <a href="#" class="btn btn-black">Selengkapnya</a>
             </div>
