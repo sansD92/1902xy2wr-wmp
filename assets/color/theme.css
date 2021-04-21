@@ -4,31 +4,31 @@ Template Name: Anger - Creative Business & Portfolio Multi-purpose HTML5 Templat
 Version      : 2.1
 */
 a:hover,
-.hover_menu_style1 .navbar-expand-lg .navbar-nav > li:hover > a, 
+.hover_menu_style1 .navbar-expand-lg .navbar-nav > li:hover > a,
 .hover_menu_style1 .navbar-expand-lg .navbar-nav > li > a.active,
-.hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active, 
+.hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active,
 .hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
 .hover_menu_style2 .navbar-expand-lg .navbar-nav.attr-nav li a.active,
 .hover_menu_style2 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
-.hover_menu_style3 .navbar-expand-lg .navbar-nav > li > a.active, 
+.hover_menu_style3 .navbar-expand-lg .navbar-nav > li > a.active,
 .hover_menu_style3 .navbar-expand-lg .navbar-nav > li:hover > a,
-.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active, 
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li > a.active,
 .hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a,
 .top-header.light_skin .list_menu li a:hover,
-.social_white .border_social li a:hover, 
+.social_white .border_social li a:hover,
 .social_white.border_social li a:hover,
 .btn-outline-default,
 .link_container a,
-.list_style_1.color_blue li::before, 
-.list_style_2.color_blue li::before, 
+.list_style_1.color_blue li::before,
+.list_style_2.color_blue li::before,
 .list_style_4.color_blue li::before,
 .btn-outline-white:hover,
-.contact_info a:hover, 
-.newsletter_form .btn-submit:hover, 
-.newsletter_form .btn-submit:hover span, 
-.post_content h6 a:hover, 
+.contact_info a:hover,
+.newsletter_form .btn-submit:hover,
+.newsletter_form .btn-submit:hover span,
+.post_content h6 a:hover,
 .footer_link li a:hover,
-.widget_links li a:hover, 
+.widget_links li a:hover,
 .widget_links_style1 li a:hover,
 .icon_box_style_3 i,
 .owl-theme .owl-nav [class*="owl-"]:hover,
@@ -36,7 +36,7 @@ a:hover,
 header.light_skin.nav-fixed .social_icons li a:hover,
 .sub_title,
 .icon_box_style_4 i,
-.slider_tab li.active i, 
+.slider_tab li.active i,
 .slider_tab li:hover i,
 .icon_box_style_5 i,
 .overlay_menu .navbar-collapse > .navbar-nav > li > a:hover,
@@ -47,9 +47,9 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .tweet_feed a,
 .post_navigation a:hover .nav_meta,
 .pagination .page-item a,
-.pagination_style5 .page-item.active .page-link, 
+.pagination_style5 .page-item.active .page-link,
 .pagination_style5 .page-item .page-link:hover,
-.pagination_style6 .page-item.active .page-link, 
+.pagination_style6 .page-item.active .page-link,
 .pagination_style6 .page-item .page-link:hover,
 .tab-style1 .nav-tabs .nav-item a.active,
 .tab-style2 .nav-tabs .nav-item a.active,
@@ -65,7 +65,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .icon_box_style_13 .box_icon i,
 .widget_links_style3 li a:hover,
 .postcontent_light .blog_heading a:hover,
-.postcontent_light .blog_author_data a:hover, 
+.postcontent_light .blog_author_data a:hover,
 .postcontent_light .blog_postmeta li a:hover,
 .shorting_icon.active,
 .classes_schedule li i,
@@ -85,13 +85,13 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .widget_links_style4 li a:hover,
 .event_info li i,
 .author_info span {
-	color: #0e93d8;
+	color: #E1282F;
 }
 
 .btn-default.btn-aylen:hover,
 .blog_heading *:hover,
 .blog_postmeta a:hover {
-	color: #0e93d8 !important;
+	color: #E1282F !important;
 }
 
 .btn-default,
@@ -104,29 +104,29 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .filter_tab1 li a:hover,
 .testimonial_slider[data-center="true"] .owl-item.center .testimonial_box,
 .testimonial_slider[data-center="true"] .owl-item.center .testimonial_box::before,
-.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span,
 .list_style_3.color_blue li::before,
 .bg_blue,
 .footer_social li a:hover,
 .scrollup:hover,
 .loader_grid .loader_box,
-.icon_box_style_3 i::after, 
+.icon_box_style_3 i::after,
 .icon_box_style_4 i::after,
-.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab3 li a.current, .filter_tab3 li a:hover,
 .filter_tab4 li a.current, .filter_tab4 li a:hover,
 .heading_s2::after,
 .heading_s2::before,
 .skill_content .progress-bar,
-.filter_tab2 li a.current, 
+.filter_tab2 li a.current,
 .filter_tab2 li a:hover,
-.filter_tab5 li a.current, 
+.filter_tab5 li a.current,
 .filter_tab5 li a:hover,
 .icon_box_style_5::before,
 .team_hover_style1:hover .team_title,
 .portfolio_style4 .portfolio_content,
 .icon_box_style_2 i,
-.page-item.active .page-link, 
+.page-item.active .page-link,
 .page-item .page-link:hover,
 .custome-radio input[type="radio"] + .form-check-label::after,
 .custome-checkbox input[type="checkbox"]:checked + .form-check-label::before,
@@ -136,7 +136,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .cart_count,
 .accordion_style4.accordion .card-header a,
 .ripple,.ripple::before,.ripple::after,
-.tab-style7 .nav-tabs .nav-item a.active, 
+.tab-style7 .nav-tabs .nav-item a.active,
 .tab-style7 .nav-tabs .nav-item a:hover,
 .sliding_tab .tab_bg,
 .tab-style8 .nav-item a.active,
@@ -168,24 +168,24 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .tab-style10 .nav-tabs .nav-item a.active,
 .circle_list::before,
 .affiliate_table thead tr td.populet_txt,
-.tab-style11 .nav-tabs .nav-item a:hover, 
+.tab-style11 .nav-tabs .nav-item a:hover,
 .tab-style11 .nav-tabs .nav-item a.active,
 .slide_tab li.active .icon_box,
-.pagination_style8 .page-item.active .page-link, 
+.pagination_style8 .page-item.active .page-link,
 .pagination_style8 .page-item .page-link:hover,
 .room_services i:hover,
 .widget_reservation h5,
  .widget_search_box .btn, .widget_search_box button{
-	background-color: #0e93d8;
+	background-color: #E1282F;
 }
 
 .btn-default:hover,
-.cart_buttons .view-cart:hover, 
+.cart_buttons .view-cart:hover,
 .cart_buttons .checkout:hover {
 	background-color: #1083c8;
 }
 
-.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav li a.active, 
+.hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav li a.active,
 .hover_menu_style4 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a {
 	background-color: transparent;
 }
@@ -194,11 +194,11 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .btn-outline-default,
 .filter_tab1 li a.current,
 .filter_tab1 li a:hover,
-.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span,
 .footer_social li a:hover,
 .icon_box_style_3 i,
-.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab3 li a.current, .filter_tab3 li a:hover,
 .filter_tab4 li a.current, .filter_tab4 li a:hover,
 .icon_box_style_4 i,
 .filter_tab2 li a.current,
@@ -206,13 +206,13 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .tab-style4 .nav-tabs .nav-item a.active,
 .portfolio_filter li a.current,
 .portfolio_filter li a:hover,
-.page-item.active .page-link, 
+.page-item.active .page-link,
 .page-item .page-link:hover,
 .blockquote,
 .custome-radio input[type="radio"]:checked + .form-check-label::before,
-.pagination_style5 .page-item.active .page-link, 
+.pagination_style5 .page-item.active .page-link,
 .pagination_style5 .page-item .page-link:hover,
-.pagination_style6 .page-item.active .page-link, 
+.pagination_style6 .page-item.active .page-link,
 .pagination_style6 .page-item .page-link:hover,
 .pricing_box.pricing_style3.highlight_box,
 .tab-style2 .nav-tabs .nav-item a.active,
@@ -221,12 +221,12 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .form_style3 .form-control:focus,
 .filter_tab6 li a.current, .filter_tab6 li a:hover,
 .affiliate_table colgroup:nth-child(3),
-.tab-style11 .nav-tabs .nav-item a:hover, 
+.tab-style11 .nav-tabs .nav-item a:hover,
 .tab-style11 .nav-tabs .nav-item a.active,
 .dw_event_schedule a:hover,
-.pagination_style8 .page-item.active .page-link, 
+.pagination_style8 .page-item.active .page-link,
 .pagination_style8 .page-item .page-link:hover {
-	border-color: #0e93d8;
+	border-color: #E1282F;
 }
 
 .btn-default:hover {
@@ -256,7 +256,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 }
 .filter_tab1 li a.current, .filter_tab1 li a:hover,
 .filter_tab2 li a.current, .filter_tab2 li a:hover,
-.filter_tab3 li a.current, .filter_tab3 li a:hover, 
+.filter_tab3 li a.current, .filter_tab3 li a:hover,
 .filter_tab4 li a.current, .filter_tab4 li a:hover,
 .filter_tab5 li a.current, .filter_tab5 li a:hover,
 .filter_tab6 li a.current, .filter_tab6 li a:hover {
@@ -264,7 +264,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 }
 
 .custome_select::before {
-	border-top-color: #0e93d8;
+	border-top-color: #E1282F;
 }
 
 .classis_box:hover:before {
@@ -274,20 +274,20 @@ header.light_skin.nav-fixed .social_icons li a:hover,
     background: -o-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#0e93d8',GradientType=0 ); /* ie6-9 */  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E1282F',GradientType=0 ); /* ie6-9 */
 }
 
 .filter_tab li a.active {
-	box-shadow: 0 0 10px #0e93d8;
+	box-shadow: 0 0 10px #E1282F;
 }
 
 .btn_box_shadow:hover,
 .btn_box_shadow:focus,
 .btn_box_shadow.active:focus,
 .btn_box_shadow:active:focus {
-	box-shadow: 0 0 15px #0e93d8 !important;
+	box-shadow: 0 0 15px #E1282F !important;
 }
 
 .tab-style7 li a.active::before {
-	border-color: #0E93D8 transparent transparent transparent
+	border-color: #E1282F transparent transparent transparent
 }
