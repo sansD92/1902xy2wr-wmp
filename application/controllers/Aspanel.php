@@ -245,7 +245,7 @@ class Aspanel extends CI_Controller {
 																	unlink("bahan/foto_profil/".$_image->user_gambar);
 																}
 															}
-			redirect('paneladmin/profil');
+			redirect('aspanel/profil');
 		}else{
 		$proses = $this->As_m->edit('user', array('username' => $this->session->username))->row_array();
 		$data = array('record' => $proses);
@@ -360,7 +360,7 @@ class Aspanel extends CI_Controller {
 																	}
 																}
 
-					redirect('paneladmin/profil');
+					redirect('aspanel/profil');
 				}else{
 				if ($this->session->level=='1'){
 							 $proses = $this->As_m->edit('user', array('id_session' => $id))->row_array();
@@ -420,25 +420,25 @@ class Aspanel extends CI_Controller {
 				 	if($query){
 									 unlink("./bahan/foto_profil/".$_id->user_gambar);
 				 }
-				redirect('paneladmin/user_storage_bin');
+				redirect('aspanel/user_storage_bin');
 			}
 
 	function identitaswebsite()
 	{
 		cek_session_akses($this->session->id_session);
 		if (isset($_POST['submit'])){
-					$config['upload_path'] = 'bahan/backend/foto/';
+					$config['upload_path'] = 'assets/frontend/campur/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('logo');
 					$hasillogo=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/backend/foto/'.$hasillogo['file_name'];
+					$config['source_image'] = './assets/frontend/campur/'.$hasillogo['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
 					$config['quality']= '100%';
 					$config['height']= 48;
-					$config['new_image']= './bahan/backend/foto/'.$hasillogo['file_name'];
+					$config['new_image']= './assets/frontend/campur/'.$hasillogo['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -446,13 +446,13 @@ class Aspanel extends CI_Controller {
 					$this->upload->do_upload('favicon');
 					$hasilfav=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/backend/foto/'.$hasilfav['file_name'];
+					$config['source_image'] = './assets/frontend/campur/'.$hasilfav['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
 					$config['quality']= '50%';
 					$config['width']= 30;
 					$config['height']= 30;
-					$config['new_image']= './bahan/backend/foto/'.$hasilfav['file_name'];
+					$config['new_image']= './assets/frontend/campur/'.$hasilfav['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -523,7 +523,7 @@ class Aspanel extends CI_Controller {
 						    								$_image = $this->db->get_where('identitas',$where)->row();
 						    								$query = $this->db->update('identitas',$data,$where);
 						    								if($query){
-						    					                unlink("bahan/backend/foto/".$_image->favicon);
+						    					                unlink("assets/frontend/campur/".$_image->favicon);
 						    					                }
             }else if ($hasilfav['file_name']==''){
             	$data = array(
@@ -548,7 +548,7 @@ class Aspanel extends CI_Controller {
 						    								$_image = $this->db->get_where('identitas',$where)->row();
 						    								$query = $this->db->update('identitas',$data,$where);
 						    								if($query){
-						    					                unlink("bahan/backend/foto/".$_image->logo);
+						    					                unlink("assets/frontend/campur/".$_image->logo);
 						    					                }
             }else{
             	$data = array(
@@ -574,11 +574,11 @@ class Aspanel extends CI_Controller {
 						    								$_image = $this->db->get_where('identitas',$where)->row();
 						    								$query = $this->db->update('identitas',$data,$where);
 						    								if($query){
-						    					                unlink("bahan/backend/foto/".$_image->favicon);
-																					unlink("bahan/backend/foto/".$_image->logo);
+						    					                unlink("assets/frontend/campur/".$_image->favicon);
+																					unlink("assets/frontend/campur/".$_image->logo);
 						    					                }
             }
-			redirect('paneladmin/identitaswebsite');
+			redirect('aspanel/identitaswebsite');
 		}else{
 
 			$proses = $this->As_m->edit('identitas', array('id_identitas' => 1))->row_array();
@@ -722,7 +722,7 @@ class Aspanel extends CI_Controller {
 											'konsumen_status'=>'publish');
 
 								$this->As_m->insert('konsumen',$data);
-								redirect('paneladmin/konsumen');
+								redirect('aspanel/konsumen');
 				}else{
 
 		            $data['record_cs'] = $this->Crud_m->view_ordering('user','id_user','DESC');
@@ -769,7 +769,7 @@ class Aspanel extends CI_Controller {
 											$where = array('konsumen_id' => $this->input->post('konsumen_id'));
 											$this->db->update('konsumen', $data, $where);
 
-						redirect('paneladmin/konsumen');
+						redirect('aspanel/konsumen');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('konsumen', array('konsumen_id' => $id))->row_array();
@@ -812,7 +812,7 @@ class Aspanel extends CI_Controller {
 			$data = array('konsumen_status'=>'delete');
 			$where = array('konsumen_id' => $this->uri->segment(3));
 			$this->db->update('konsumen', $data, $where);
-			redirect('paneladmin/konsumen');
+			redirect('aspanel/konsumen');
 	}
 	function konsumen_restore()
 	{
@@ -820,7 +820,7 @@ class Aspanel extends CI_Controller {
 			$data = array('konsumen_status'=>'Publish');
 			$where = array('konsumen_id' => $this->uri->segment(3));
 			$this->db->update('konsumen', $data, $where);
-			redirect('paneladmin/konsumen');
+			redirect('aspanel/konsumen');
 	}
 	public function konsumen_delete()
 	{
@@ -829,7 +829,7 @@ class Aspanel extends CI_Controller {
 
 			 $query = $this->db->delete('konsumen',['konsumen_id'=>$id]);
 
-		redirect('paneladmin/konsumen_storage_bin');
+		redirect('aspanel/konsumen_storage_bin');
 	}
 	/* konsumen - tutup */
 
@@ -973,7 +973,7 @@ class Aspanel extends CI_Controller {
 													'testimonial_keyword'=>$tag);
 												}
 								$this->As_m->insert('testimonial',$data);
-								redirect('paneladmin/testimonial');
+								redirect('aspanel/testimonial');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -1082,7 +1082,7 @@ class Aspanel extends CI_Controller {
 											}
 
 						}
-						redirect('paneladmin/testimonial');
+						redirect('aspanel/testimonial');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('testimonial', array('testimonial_id' => $id))->row_array();
@@ -1126,7 +1126,7 @@ class Aspanel extends CI_Controller {
 			$data = array('testimonial_status'=>'delete');
 			$where = array('testimonial_id' => $this->uri->segment(3));
 			$this->db->update('testimonial', $data, $where);
-			redirect('paneladmin/testimonial');
+			redirect('aspanel/testimonial');
 	}
 	function testimonial_restore()
 	{
@@ -1135,7 +1135,7 @@ class Aspanel extends CI_Controller {
 			$data = array('testimonial_status'=>'Publish');
 			$where = array('testimonial_id' => $this->uri->segment(3));
 			$this->db->update('testimonial', $data, $where);
-			redirect('paneladmin/testimonial_storage_bin');
+			redirect('aspanel/testimonial_storage_bin');
 	}
 	public function testimonial_delete()
 	{
@@ -1146,7 +1146,7 @@ class Aspanel extends CI_Controller {
 			if($query){
 							 unlink("./bahan/foto_testimonial/".$_id->testimonials_gambar);
 		 }
-		redirect('paneladmin/testimonial_storage_bin');
+		redirect('aspanel/testimonial_storage_bin');
 	}
 	/*	Bagian untuk Testimonial - Penutup	*/
 
@@ -1371,7 +1371,7 @@ class Aspanel extends CI_Controller {
 													'products_keyword'=>$tag);
 												}
 								$this->As_m->insert('products',$data);
-								redirect('paneladmin/products');
+								redirect('aspanel/products');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -1565,7 +1565,7 @@ class Aspanel extends CI_Controller {
 												unlink("bahan/foto_products/".$_image->products_gambar6);
 											}
 						}
-						redirect('paneladmin/products');
+						redirect('aspanel/products');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('products', array('products_judul_seo' => $id))->row_array();
@@ -1599,14 +1599,14 @@ class Aspanel extends CI_Controller {
 			$data = array('products_status'=>'delete');
       $where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('products', $data, $where);
-			redirect('paneladmin/products');
+			redirect('aspanel/products');
 	}
 	function products_restore()
 	{
 			$data = array('products_status'=>'Publish');
       $where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('products', $data, $where);
-			redirect('paneladmin/products_storage_bin');
+			redirect('aspanel/products_storage_bin');
 	}
 	public function products_delete()
 	{
@@ -1622,7 +1622,7 @@ class Aspanel extends CI_Controller {
 							 unlink("./bahan/foto_products/".$_id->products_gambar5);
 							 unlink("./bahan/foto_products/".$_id->products_gambar6);
 		 }
-		redirect('paneladmin/products_storage_bin');
+		redirect('aspanel/products_storage_bin');
 	}
 
 	/*	Bagian untuk Product - Penutup	*/
@@ -1653,7 +1653,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish'),'id_user','DESC');
 				}else{
-					redirect('paneladmin/home');
+					redirect('aspanel/home');
 				}
 				$this->load->view('backend/data_karyawan/v_daftar', $data);
 	}
@@ -1681,7 +1681,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
 				}else{
-					redirect('paneladmin/home');
+					redirect('aspanel/home');
 				}
 			$this->load->view('backend/data_karyawan/v_daftar_hapus', $data);
 	}
@@ -1751,7 +1751,7 @@ class Aspanel extends CI_Controller {
 													'user_detail_divisi' => $this->input->post('user_detail_divisi'),
 													'user_detail_ktp' => $this->input->post('user_detail_ktp'));
 											$this->Crud_m->tambah_user_detail($data_user_detail);
-											redirect('paneladmin/data_karyawan');
+											redirect('aspanel/data_karyawan');
 				}else{
 					$data['karyawan_menu_open']   = 'menu-open';
 					$data['home_stat']   = '';
@@ -1932,7 +1932,7 @@ class Aspanel extends CI_Controller {
 									unlink("bahan/foto_karyawan/".$_image->user_gambar);
 								}
 							}
-						redirect('paneladmin/data_karyawan');
+						redirect('aspanel/data_karyawan');
 		}else{
 			if ($this->session->level=='1'){
 						 $proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
@@ -1971,7 +1971,7 @@ class Aspanel extends CI_Controller {
 			$data = array('user_stat'=>'delete');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
-			redirect('paneladmin/data_karyawan');
+			redirect('aspanel/data_karyawan');
 	}
 	function data_karyawan_restore()
 	{
@@ -1979,7 +1979,7 @@ class Aspanel extends CI_Controller {
 			$data = array('user_stat'=>'Publish');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
-			redirect('paneladmin/data_karyawan_storage_bin');
+			redirect('aspanel/data_karyawan_storage_bin');
 	}
 	public function data_karyawan_delete()
 	{
@@ -1992,7 +1992,7 @@ class Aspanel extends CI_Controller {
 			if($query){
 							 unlink("./bahan/foto_karyawan/".$_id->user_gambar);
 		 }
-		redirect('paneladmin/data_karyawan_storage_bin');
+		redirect('aspanel/data_karyawan_storage_bin');
 	}
 	/*	Bagian untuk Data Karyawan - Penutup	*/
 
@@ -2029,7 +2029,7 @@ class Aspanel extends CI_Controller {
 					$now = date('H:i:s');
 					$data['absen'] = $this->As_m->absen_harian_user($this->session->id_user)->num_rows();
 				}else{
-						redirect('paneladmin/absen');
+						redirect('aspanel/absen');
 				}
 				$this->load->view('backend/data_absen/v_daftar', $data);
 	}
@@ -2120,7 +2120,7 @@ class Aspanel extends CI_Controller {
 													'user_detail_divisi' => $this->input->post('user_detail_divisi'),
 													'user_detail_ktp' => $this->input->post('user_detail_ktp'));
 											$this->Crud_m->tambah_user_detail($data_user_detail);
-											redirect('paneladmin/data_karyawan');
+											redirect('aspanel/data_karyawan');
 				}else{
 					$data['karyawan_menu_open']   = 'menu-open';
 					$data['home_stat']   = '';
@@ -2296,7 +2296,7 @@ class Aspanel extends CI_Controller {
 									unlink("bahan/foto_karyawan/".$_image->user_gambar);
 								}
 							}
-						redirect('paneladmin/absen');
+						redirect('aspanel/absen');
 		}else{
 			if ($this->session->level=='1'){
 						 $proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
@@ -2357,7 +2357,7 @@ class Aspanel extends CI_Controller {
 				}elseif ($this->session->level=='3'){
 					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('username'=>$this->session->username,'user_stat'=>'publish'),'id_user','DESC');
 				}else{
-					redirect('paneladmin/data_karyawan');
+					redirect('aspanel/data_karyawan');
 				}
 				$this->load->view('backend/data_absensi/v_daftar', $data);
 	}
@@ -2456,7 +2456,7 @@ class Aspanel extends CI_Controller {
 													'user_detail_divisi' => $this->input->post('user_detail_divisi'),
 													'user_detail_ktp' => $this->input->post('user_detail_ktp'));
 											$this->Crud_m->tambah_user_detail($data_user_detail);
-											redirect('paneladmin/data_karyawan');
+											redirect('aspanel/data_karyawan');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -2640,7 +2640,7 @@ class Aspanel extends CI_Controller {
 									unlink("bahan/foto_karyawan/".$_image->user_gambar);
 								}
 							}
-						redirect('paneladmin/data_karyawan');
+						redirect('aspanel/data_karyawan');
 		}else{
 			if ($this->session->level=='1'){
 						 $proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
@@ -2682,7 +2682,7 @@ class Aspanel extends CI_Controller {
 			$data = array('user_stat'=>'delete');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
-			redirect('paneladmin/data_karyawan');
+			redirect('aspanel/data_karyawan');
 	}
 	function data_absensi_restore()
 	{
@@ -2690,7 +2690,7 @@ class Aspanel extends CI_Controller {
 			$data = array('user_stat'=>'Publish');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
-			redirect('paneladmin/data_karyawan_storage_bin');
+			redirect('aspanel/data_karyawan_storage_bin');
 	}
 	public function data_absensi_delete()
 	{
@@ -2703,7 +2703,7 @@ class Aspanel extends CI_Controller {
 			if($query){
 							 unlink("./bahan/foto_karyawan/".$_id->user_gambar);
 		 }
-		redirect('paneladmin/data_karyawan_storage_bin');
+		redirect('aspanel/data_karyawan_storage_bin');
 	}
 	/*	Bagian untuk Data Absensi - Penutup	*/
 
@@ -2847,7 +2847,7 @@ class Aspanel extends CI_Controller {
 													'products_cat_keyword'=>$tag);
 												}
 								$this->As_m->insert('products_category',$data);
-								redirect('paneladmin/products_cat');
+								redirect('aspanel/products_cat');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -2955,7 +2955,7 @@ class Aspanel extends CI_Controller {
 											}
 
 						}
-						redirect('paneladmin/products_cat');
+						redirect('aspanel/products_cat');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('products_category', array('products_cat_id' => $id))->row_array();
@@ -2997,7 +2997,7 @@ class Aspanel extends CI_Controller {
 			$data = array('products_cat_status'=>'delete');
       $where = array('products_cat_id' => $this->uri->segment(3));
 			$this->db->update('products_category', $data, $where);
-			redirect('paneladmin/products_cat');
+			redirect('aspanel/products_cat');
 	}
 	function products_cat_restore()
 	{
@@ -3005,7 +3005,7 @@ class Aspanel extends CI_Controller {
 			$data = array('products_cat_status'=>'Publish');
       $where = array('products_cat_id' => $this->uri->segment(3));
 			$this->db->update('products_category', $data, $where);
-			redirect('paneladmin/products_cat_storage_bin');
+			redirect('aspanel/products_cat_storage_bin');
 	}
 	public function products_cat_delete()
 	{
@@ -3016,7 +3016,7 @@ class Aspanel extends CI_Controller {
 		 	if($query){
 							 unlink("./bahan/foto_products/".$_id->products_cat_gambar);
 		 }
-		redirect('paneladmin/products_cat_storage_bin');
+		redirect('aspanel/products_cat_storage_bin');
 	}
 	/*	Bagian untuk Product Category - Penutup	*/
 
@@ -3160,7 +3160,7 @@ class Aspanel extends CI_Controller {
 													'services_keyword'=>$tag);
 												}
 								$this->As_m->insert('services',$data);
-								redirect('paneladmin/services');
+								redirect('aspanel/services');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -3269,7 +3269,7 @@ class Aspanel extends CI_Controller {
 											}
 
 						}
-						redirect('paneladmin/services');
+						redirect('aspanel/services');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('services', array('services_id' => $id))->row_array();
@@ -3310,14 +3310,14 @@ class Aspanel extends CI_Controller {
 			$data = array('services_status'=>'delete');
 			$where = array('services_id' => $this->uri->segment(3));
 			$this->db->update('services', $data, $where);
-			redirect('paneladmin/services');
+			redirect('aspanel/services');
 	}
 	function services_restore()
 	{
 			$data = array('services_status'=>'Publish');
 			$where = array('services_id' => $this->uri->segment(3));
 			$this->db->update('services', $data, $where);
-			redirect('paneladmin/services_storage_bin');
+			redirect('aspanel/services_storage_bin');
 	}
 	public function services_delete()
 	{
@@ -3328,7 +3328,7 @@ class Aspanel extends CI_Controller {
 			if($query){
 							 unlink("./bahan/foto_products/".$_id->products_cat_gambar);
 		 }
-		redirect('paneladmin/services_storage_bin');
+		redirect('aspanel/services_storage_bin');
 	}
 	/*	Bagian untuk Product Category - Penutup	*/
 
@@ -3362,7 +3362,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_ordering('user_jam','user_jam_id','DESC');
 				}else{
-						redirect('paneladmin/jam_kerja');
+						redirect('aspanel/jam_kerja');
 				}
 
 				$this->load->view('backend/jamkerja/v_daftar', $data);
@@ -3386,7 +3386,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'delete'),'divisi_id','DESC');
 				}else{
-						redirect('paneladmin/jam_kerja');
+						redirect('aspanel/jam_kerja');
 				}
 				$this->load->view('backend/divisi/v_daftar_hapus', $data);
 	}
@@ -3401,7 +3401,7 @@ class Aspanel extends CI_Controller {
 											$where = array('user_jam_judul_seo' => $this->input->post('user_jam_judul_seo'));
 											$this->db->update('user_jam', $data, $where);
 
-						redirect('paneladmin/jam_kerja');
+						redirect('aspanel/jam_kerja');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('user_jam', array('user_jam_judul_seo' => $id))->row_array();
@@ -3495,7 +3495,7 @@ class Aspanel extends CI_Controller {
 													'divisi_meta_desk'=>$this->input->post('divisi_meta_desk'));
 
 								$this->As_m->insert('divisi',$data);
-								redirect('paneladmin/divisi');
+								redirect('aspanel/divisi');
 				}else{
 					$data['karyawan_menu_open']   = 'menu-open';
 					$data['home_stat']   = '';
@@ -3534,7 +3534,7 @@ class Aspanel extends CI_Controller {
 											$where = array('divisi_id' => $this->input->post('divisi_id'));
 							 				$this->db->update('divisi', $data, $where);
 
-						redirect('paneladmin/divisi');
+						redirect('aspanel/divisi');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('divisi', array('divisi_id' => $id))->row_array();
@@ -3568,7 +3568,7 @@ class Aspanel extends CI_Controller {
 			$data = array('divisi_status'=>'delete');
       $where = array('divisi_id' => $this->uri->segment(3));
 			$this->db->update('divisi', $data, $where);
-			redirect('paneladmin/divisi');
+			redirect('aspanel/divisi');
 	}
 	function divisi_restore()
 	{
@@ -3576,7 +3576,7 @@ class Aspanel extends CI_Controller {
 			$data = array('divisi_status'=>'Publish');
       $where = array('divisi_id' => $this->uri->segment(3));
 			$this->db->update('divisi', $data, $where);
-			redirect('paneladmin/divisi_storage_bin');
+			redirect('aspanel/divisi_storage_bin');
 	}
 	public function divisi_delete()
 	{
@@ -3587,7 +3587,7 @@ class Aspanel extends CI_Controller {
 		 	if($query){
 							 unlink("./bahan/foto_products/".$_id->divisi_gambar);
 		 }
-		redirect('paneladmin/divisi_storage_bin');
+		redirect('aspanel/divisi_storage_bin');
 	}
 	/*	Bagian untuk Divisi - Penutup	*/
 
@@ -3615,7 +3615,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_join_where_ordering('lowongan','divisi','divisi_id',array('products_post_oleh'=>$this->session->username,'products_status'=>'publish'),'products_id','DESC');
 				}else{
-					redirect('paneladmin/home');
+					redirect('aspanel/home');
 				}
 				$this->load->view('backend/lowongan/v_daftar', $data);
 	}
@@ -3643,7 +3643,7 @@ class Aspanel extends CI_Controller {
 				}elseif($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_join_where_ordering('lowongan','divisi','divisi_id',array('products_post_oleh'=>$this->session->username,'products_status'=>'delete'),'products_id','DESC');
 				}else{
-					redirect('paneladmin/home');
+					redirect('aspanel/home');
 				}
 				$this->load->view('backend/lowongan/v_daftar_hapus', $data);
 	}
@@ -3665,7 +3665,7 @@ class Aspanel extends CI_Controller {
 
 
 								$this->As_m->insert('lowongan',$data);
-								redirect('paneladmin/lowongan');
+								redirect('aspanel/lowongan');
 				}else{
 					$data['karyawan_menu_open']   = 'menu-open';
 					$data['home_stat']   = '';
@@ -3708,7 +3708,7 @@ class Aspanel extends CI_Controller {
 											$where = array('products_id' => $this->input->post('products_id'));
 											$this->db->update('lowongan', $data, $where);
 
-						redirect('paneladmin/lowongan');
+						redirect('aspanel/lowongan');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('lowongan', array('products_id' => $id))->row_array();
@@ -3741,14 +3741,14 @@ class Aspanel extends CI_Controller {
 			$data = array('products_status'=>'delete');
 			$where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('lowongan', $data, $where);
-			redirect('paneladmin/lowongan');
+			redirect('aspanel/lowongan');
 	}
 	function lowongan_restore()
 	{
 			$data = array('products_status'=>'Publish');
 			$where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('lowongan', $data, $where);
-			redirect('paneladmin/lowongan_storage_bin');
+			redirect('aspanel/lowongan_storage_bin');
 	}
 	public function lowongan_delete()
 	{
@@ -3763,7 +3763,7 @@ class Aspanel extends CI_Controller {
 							 unlink("./bahan/foto_products/".$_id->products_gambar5);
 							 unlink("./bahan/foto_products/".$_id->products_gambar6);
 		 }
-		redirect('paneladmin/lowongan_storage_bin');
+		redirect('aspanel/lowongan_storage_bin');
 	}
 	/*	Bagian untuk lowongan - Penutup	*/
 
@@ -3803,7 +3803,7 @@ class Aspanel extends CI_Controller {
 				}elseif ($this->session->level=='3'){
 						$data['record'] = $this->Crud_m->view_join_where2_ordering('gaji','user','gaji_id_user','id_user',array('username'=>$this->session->username,'gaji_stat'=>'publish'),'gaji_id','DESC');
 				}else{
-						redirect('paneladmin/gaji');
+						redirect('aspanel/gaji');
 				}
 				$this->load->view('backend/gaji/v_daftar', $data);
 	}
@@ -3863,7 +3863,7 @@ class Aspanel extends CI_Controller {
 
 
 								$this->As_m->insert('gaji',$data);
-								redirect('paneladmin/gaji');
+								redirect('aspanel/gaji');
 				}else{
 						$data['karyawan_menu_open']   = '';
                 		$data['home_stat']   = '';
@@ -3956,7 +3956,7 @@ class Aspanel extends CI_Controller {
 											}
 
 						}
-						redirect('paneladmin/gaji');
+						redirect('aspanel/gaji');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('gaji', array('gaji_id' => $id))->row_array();
@@ -4038,7 +4038,7 @@ class Aspanel extends CI_Controller {
 			$data = array('gaji_stat'=>'delete');
 			$where = array('gaji_id' => $this->uri->segment(3));
 			$this->db->update('gaji', $data, $where);
-			redirect('paneladmin/gaji');
+			redirect('aspanel/gaji');
 	}
 	function gaji_restore()
 	{
@@ -4046,7 +4046,7 @@ class Aspanel extends CI_Controller {
 			$data = array('gaji_stat'=>'Publish');
 			$where = array('gaji_id' => $this->uri->segment(3));
 			$this->db->update('gaji', $data, $where);
-			redirect('paneladmin/gaji');
+			redirect('aspanel/gaji');
 	}
 	public function gaji_delete()
 	{
@@ -4055,7 +4055,7 @@ class Aspanel extends CI_Controller {
 
 			 $query = $this->db->delete('gaji',['gaji_id'=>$id]);
 
-		redirect('paneladmin/gaji_storage_bin');
+		redirect('aspanel/gaji_storage_bin');
 	}
 	/*	Bagian untuk Gaji - Penutup	*/
 
@@ -4095,7 +4095,7 @@ class Aspanel extends CI_Controller {
 				}elseif ($this->session->level=='3'){
 						$data['record'] = $this->Crud_m->view_where_ordering('pengumuman',array('pengumuman_stat'=>'publish'),'pengumuman_id','DESC');
 				}else{
-						edirect('paneladmin/pengumuman');
+						edirect('aspanel/pengumuman');
 				}
 				$this->load->view('backend/pengumuman/v_daftar', $data);
 	}
@@ -4152,7 +4152,7 @@ class Aspanel extends CI_Controller {
 
 
 								$this->As_m->insert('pengumuman',$data);
-								redirect('paneladmin/pengumuman');
+								redirect('aspanel/pengumuman');
 				}else{
 
 						$data['karyawan_menu_open']   = '';
@@ -4201,7 +4201,7 @@ class Aspanel extends CI_Controller {
 											$where = array('pengumuman_id' => $this->input->post('pengumuman_id'));
 											$this->db->update('pengumuman', $data, $where);
 
-						redirect('paneladmin/pengumuman');
+						redirect('aspanel/pengumuman');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('pengumuman', array('pengumuman_id' => $id))->row_array();
@@ -4282,7 +4282,7 @@ class Aspanel extends CI_Controller {
 			$data = array('pengumuman_stat'=>'delete');
 			$where = array('pengumuman_id' => $this->uri->segment(3));
 			$this->db->update('pengumuman', $data, $where);
-			redirect('paneladmin/pengumuman');
+			redirect('aspanel/pengumuman');
 	}
 	function pengumuman_restore()
 	{
@@ -4290,7 +4290,7 @@ class Aspanel extends CI_Controller {
 			$data = array('pengumuman_stat'=>'Publish');
 			$where = array('pengumuman_id' => $this->uri->segment(3));
 			$this->db->update('pengumuman', $data, $where);
-			redirect('paneladmin/pengumuman');
+			redirect('aspanel/pengumuman');
 	}
 	public function pengumuman_delete()
 	{
@@ -4299,7 +4299,7 @@ class Aspanel extends CI_Controller {
 
 			 $query = $this->db->delete('pengumuman',['pengumuman_id'=>$id]);
 
-		redirect('paneladmin/pengumuman_storage_bin');
+		redirect('aspanel/pengumuman_storage_bin');
 	}
 	/*	Bagian untuk Pengumuman - Penutup	*/
 
@@ -4338,7 +4338,7 @@ class Aspanel extends CI_Controller {
 				}elseif ($this->session->level=='3'){
 						$data['record'] = $this->Crud_m->view_join_where_ordering('cuti','user','username',array('cuti_post_oleh'=>$this->session->username,'cuti_stat'=>'publish'),'cuti_id','DESC');
 				}else{
-						redirect('paneladmin/cuti');
+						redirect('aspanel/cuti');
 				}
 				$this->load->view('backend/cuti/v_daftar', $data);
 	}
@@ -4392,7 +4392,7 @@ class Aspanel extends CI_Controller {
 
 
 								$this->As_m->insert('cuti',$data);
-								redirect('paneladmin/cuti');
+								redirect('aspanel/cuti');
 				}else{
 					$data['karyawan_menu_open']   = '';
             		$data['home_stat']   = '';
@@ -4437,7 +4437,7 @@ class Aspanel extends CI_Controller {
 											$where = array('cuti_id' => $this->input->post('cuti_id'));
 											$this->db->update('cuti', $data, $where);
 
-						redirect('paneladmin/cuti');
+						redirect('aspanel/cuti');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('cuti', array('cuti_id' => $id))->row_array();
@@ -4519,7 +4519,7 @@ class Aspanel extends CI_Controller {
 			$data = array('cuti_stat'=>'delete');
 			$where = array('cuti_id' => $this->uri->segment(3));
 			$this->db->update('cuti', $data, $where);
-			redirect('paneladmin/cuti');
+			redirect('aspanel/cuti');
 	}
 	function cuti_restore()
 	{
@@ -4527,7 +4527,7 @@ class Aspanel extends CI_Controller {
 			$data = array('cuti_stat'=>'Publish');
 			$where = array('cuti_id' => $this->uri->segment(3));
 			$this->db->update('cuti', $data, $where);
-			redirect('paneladmin/cuti');
+			redirect('aspanel/cuti');
 	}
 	public function cuti_delete()
 	{
@@ -4535,7 +4535,7 @@ class Aspanel extends CI_Controller {
 
 			 $query = $this->db->delete('cuti',['cuti_id'=>$id]);
 
-		redirect('paneladmin/cuti');
+		redirect('aspanel/cuti');
 	}
 	/*	Bagian untuk Cuti - Penutup	*/
 
@@ -4574,7 +4574,7 @@ class Aspanel extends CI_Controller {
 				    $data['status_1'] = $this->Crud_m->view_ordering('permohonan_status','permohonan_status_id','ASC');
 						$data['record'] = $this->Crud_m->view_join_where2_ordering('permohonan','permohonan_status','permohonan_stat_id','permohonan_status_id',array('products_post_oleh'=>$this->session->username,'permohonan_stat'=>'publish','permohonan_stat_id'=>'1'),'products_id','DESC');
 				}else{
-				redirect('paneladmin/permohonan');
+				redirect('aspanel/permohonan');
 				}
 				$this->load->view('backend/permohonan/v_daftar', $data);
 	}
@@ -4613,7 +4613,7 @@ class Aspanel extends CI_Controller {
 				    $data['status_1'] = $this->Crud_m->view_ordering('permohonan_status','permohonan_status_id','ASC');
 						$data['record'] = $this->Crud_m->view_join_where2_ordering('permohonan','permohonan_status','permohonan_stat_id','permohonan_status_id',array('permohonan_stat'=>'publish','permohonan_stat_id'=>$id),'products_id','DESC');
 				}else{
-						redirect('paneladmin/permohonan');
+						redirect('aspanel/permohonan');
 				}
 				$this->load->view('backend/permohonan/v_daftar_status', $data);
 	}
@@ -4650,7 +4650,7 @@ class Aspanel extends CI_Controller {
 				    $data['status_1'] = $this->Crud_m->view_ordering('permohonan_status','permohonan_status_id','ASC');
 						$data['record'] = $this->Crud_m->view_join_where2_ordering('permohonan','permohonan_status','permohonan_stat_id','permohonan_status_id',array('permohonan_stat'=>'delete'),'products_id','DESC');
 				}else{
-				redirect('paneladmin/permohonan');
+				redirect('aspanel/permohonan');
 
 				}
 				$this->load->view('backend/permohonan/v_daftar_hapus', $data);
@@ -4675,7 +4675,7 @@ class Aspanel extends CI_Controller {
 
 
 								$this->As_m->insert('permohonan',$data);
-								redirect('paneladmin/permohonan');
+								redirect('aspanel/permohonan');
 				}else{
 					$data['karyawan_menu_open']   = 'menu-open';
 		$data['home_stat']   = '';
@@ -4724,7 +4724,7 @@ class Aspanel extends CI_Controller {
 											$where = array('products_id' => $this->input->post('products_id'));
 											$this->db->update('permohonan', $data, $where);
 
-						redirect('paneladmin/permohonan');
+						redirect('aspanel/permohonan');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('permohonan', array('products_id' => $id))->row_array();
@@ -4767,7 +4767,7 @@ class Aspanel extends CI_Controller {
 			$data = array('permohonan_stat'=>'delete');
 			$where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('permohonan', $data, $where);
-			redirect('paneladmin/permohonan');
+			redirect('aspanel/permohonan');
 	}
 	function permohonan_restore()
 	{
@@ -4775,7 +4775,7 @@ class Aspanel extends CI_Controller {
 			$data = array('permohonan_stat'=>'Publish');
 			$where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('permohonan', $data, $where);
-			redirect('paneladmin/permohonan_storage_bin');
+			redirect('aspanel/permohonan_storage_bin');
 	}
 	public function permohonan_delete()
 	{
@@ -4791,7 +4791,7 @@ class Aspanel extends CI_Controller {
 							 unlink("./bahan/foto_products/".$_id->products_gambar5);
 							 unlink("./bahan/foto_products/".$_id->products_gambar6);
 		 }
-		redirect('paneladmin/permohonan_storage_bin');
+		redirect('aspanel/permohonan_storage_bin');
 	}
 	public function permohonan_disc()
 	{
@@ -4806,7 +4806,7 @@ class Aspanel extends CI_Controller {
 											'products_harga_disc'=>$this->input->post('products_harga_disc'));
 											$where = array('products_id' => $this->input->post('products_id'));
 											$this->db->update('products', $data, $where);
-											redirect('paneladmin/products');
+											redirect('aspanel/products');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('lowongan', array('products_id' => $id))->row_array();
@@ -4971,7 +4971,7 @@ class Aspanel extends CI_Controller {
 													'blogs_keyword'=>$tag);
 												}
 								$this->As_m->insert('blogs',$data);
-								redirect('paneladmin/blogs');
+								redirect('aspanel/blogs');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -5079,7 +5079,7 @@ class Aspanel extends CI_Controller {
 											}
 
 						}
-						redirect('paneladmin/blogs');
+						redirect('aspanel/blogs');
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('blogs', array('blogs_id' => $id))->row_array();
@@ -5121,14 +5121,14 @@ class Aspanel extends CI_Controller {
 			$data = array('blogs_status'=>'delete');
 			$where = array('blogs_id' => $this->uri->segment(3));
 			$this->db->update('blogs', $data, $where);
-			redirect('paneladmin/blogs');
+			redirect('aspanel/blogs');
 	}
 	function blogs_restore()
 	{
 			$data = array('blogs_status'=>'Publish');
 			$where = array('blogs_id' => $this->uri->segment(3));
 			$this->db->update('blogs', $data, $where);
-			redirect('paneladmin/blogs_storage_bin');
+			redirect('aspanel/blogs_storage_bin');
 	}
 	public function blogs_delete()
 	{
@@ -5139,7 +5139,7 @@ class Aspanel extends CI_Controller {
 			if($query){
 							 unlink("./bahan/foto_blogs/".$_id->blogs_gambar);
 		 }
-		redirect('paneladmin/blogs');
+		redirect('aspanel/blogs');
 	}
 	/*	Bagian untuk Blogs - Penutup	*/
 

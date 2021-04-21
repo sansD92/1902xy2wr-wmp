@@ -8,7 +8,7 @@
                     </div>
                     <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="list_none footer_social">
-                        
+
                         <li><a href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg"><i class="ion-social-youtube-outline"></i></a></li>
                         <li><a href="https://www.instagram.com/widodomakmurperkasa/"><i class="ion-social-instagram-outline"></i></a></li>
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -36,7 +36,7 @@ Indonesia
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ Indonesia
                     <p class="copyright m-md-0 text-center text-md-left">&copy; WMP 2021</p>
                 </div>
                 <div class="col-md-6">
-                 
+
                 </div>
                 <div class="col-md-3 ">
                     <br>
@@ -58,7 +58,7 @@ Indonesia
                         <li><a href="#">Catatan Legal</a></li>
                          <li><a href="#">Sitemap</a></li>
                         <li><a href="#">Akses</a></li>
-                        
+
                     </ul>
                 </div>
                   <div class="col-md-3 ">
@@ -69,7 +69,7 @@ Indonesia
                         <li><a href="#">Catatan Legal</a></li>
                          <li><a href="#">Kontak Kami</a></li>
                         <li><a href="#">Catatan Legal</a></li>
-                        
+
                     </ul>
                 </div>
 

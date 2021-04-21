@@ -34,7 +34,7 @@
             <!-- /.card-header -->
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('paneladmin/identitaswebsite',$attributes); ?>
+            echo form_open_multipart('aspanel/identitaswebsite',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
                   <input type="hidden" name="id_identitas" value="<?php echo $record['id_identitas']?>">
