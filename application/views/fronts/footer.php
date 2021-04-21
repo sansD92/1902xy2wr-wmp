@@ -9,7 +9,7 @@
                     <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="list_none footer_social">
 
-                        <li><a href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg"><i class="ion-social-youtube-outline"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg"><i class="ion-social-youtube-outline" ></i></a></li>
                         <li><a href="https://www.instagram.com/widodomakmurperkasa/"><i class="ion-social-instagram-outline"></i></a></li>
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                     </ul>
