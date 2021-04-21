@@ -36,7 +36,7 @@
 												<div class="bisnis_post bisnis_style1">
 														<div class="blog_img">
 																<a href="#">
-																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/cam.jpg">
+																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/camnew.jpg">
 																</a>
 														</div>
 														<div class="blog_content bg-white">
@@ -50,7 +50,7 @@
 												<div class="bisnis_post bisnis_style1">
 														<div class="blog_img">
 																<a href="#">
-																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/wmu.jpg">
+																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/wmunew.jpg">
 																</a>
 														</div>
 														<div class="blog_content bg-white">

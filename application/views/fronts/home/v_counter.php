@@ -1,9 +1,9 @@
-<section class="counter_wrap background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/images/counter_bg2.jpg">
+<section class="counter_wrap background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/wayang.jpg">
     <div class="container">
         <div class="row align-items-center justify-content-center">
         	<div class="col-md-5 text_white text-center text-md-left mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s1 heading_light text-center text-md-left">
-                	<h2>Get to know us!</h2>
+                	<h2>Highlight Widodo Makmur!</h2>
                 </div>
                 <p>Bergabunglah Bersama Widodo Makmur Perkasa</p>
                 <a href="#" class="btn btn-outline-white">Gabung</a>

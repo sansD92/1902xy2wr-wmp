@@ -92,6 +92,38 @@
                         </div>
                     </li>
 
+                     <li class="portfolio-item livestock">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/live5.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">Livestock5</a></h5>
+                                    <p>Kalimat livestock5</p>
+                              </div>
+                        </div>
+                    </li>
+
+                     <li class="portfolio-item livestock">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/live6.jpg" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="#"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">Livestock6</a></h5>
+                                    <p>Kalimat livestock6</p>
+                              </div>
+                        </div>
+                    </li>
+
                     <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
@@ -107,6 +139,7 @@
                               </div>
                         </div>
                     </li>
+
                     <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">

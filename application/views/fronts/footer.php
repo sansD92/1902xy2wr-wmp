@@ -50,25 +50,24 @@ Indonesia
                 <div class="col-md-6">
 
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-4 ">
                     <br>
                     <br>
                      <ul class="list_none widget_links_style1">
                         <li><a href="#">Kontak Kami</a></li>
                         <li><a href="#">Catatan Legal</a></li>
                          <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Akses</a></li>
+                        <li><a href="#">Pemberitahuan Cookie</a></li>
 
                     </ul>
                 </div>
-                  <div class="col-md-3 ">
+                  <div class="col-md-4 ">
                     <br>
                     <br>
                      <ul class="list_none widget_links_style1">
-                        <li><a href="#">Kontak Kami</a></li>
-                        <li><a href="#">Catatan Legal</a></li>
-                         <li><a href="#">Kontak Kami</a></li>
-                        <li><a href="#">Catatan Legal</a></li>
+                        <li><a href="#">Akses</a></li>
+                        <li><a href="#">Pemberitahuan Privasi</a></li>
+                         <li><a href="#">Indonesia</a></li>
 
                     </ul>
                 </div>

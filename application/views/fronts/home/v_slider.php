@@ -17,7 +17,7 @@
             </div><!-- END CONTAINER-->
             </div>
         </div>
-        <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/slider2.jpg">
+        <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/joglo.jpg">
         	<div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">

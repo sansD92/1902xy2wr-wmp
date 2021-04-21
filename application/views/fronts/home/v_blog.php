@@ -1,10 +1,10 @@
-<section class="gray_bg">
+<section class="gray_bg background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/backgroundblog.jpg">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s4 text-center">
-                	<span class="sub_title">Berita Terbaru</span>
-                	<h2>Berita WMP</h2>
+                	<span style="color: #fff" class="sub_title">Berita Terbaru</span>
+                	<h2 style="color: #fff">Berita WMP</h2>
                 </div>
             </div>
         </div>
@@ -34,12 +34,12 @@
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="<?php echo base_url("blogs/$post_new->blogs_judul_seo ") ?>"><?php echo $post_new->blogs_judul?></a></h6>
+                                    <h6 class="blog_title"><a href="#"><?php echo $post_new->blogs_judul?></a></h6>
                                     <ul class="list_none blog_meta">
                                         <li><a href="#"><i class="ion-calendar"></i><?php echo tgl_indo($post_new->blogs_post_tanggal)?></a></li>
                                     </ul>
                                     <p><?php echo $isi?></p>
-                                    <a href="<?php echo base_url("blogs/$post_new->blogs_judul_seo ") ?>" class="text-capitalize">Lebih Lengkap</a>
+                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
                                 </div>
                             </div>
                         </div>
