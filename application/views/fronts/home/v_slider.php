@@ -1,7 +1,7 @@
 <section class="banner_section p-0 full_screen">
     <div id="carouselExampleFade" class="banner_content_wrap carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/slider/slider1.jpg">
+        <div class="carousel-item active background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/slider1.jpg">
         	<div class="banner_slide_content">
             	<div class="container"><!-- STRART CONTAINER -->
                 <div class="row justify-content-center">
@@ -17,7 +17,7 @@
             </div><!-- END CONTAINER-->
             </div>
         </div>
-        <div class="carousel-item background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/slider/slider2.jpg">
+        <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/slider2.jpg">
         	<div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
@@ -33,7 +33,7 @@
                 </div><!-- END CONTAINER-->
             </div>
         </div>
-        <div class="carousel-item background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/slider/slider3.jpg">
+        <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/slider3.jpg">
         	<div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">

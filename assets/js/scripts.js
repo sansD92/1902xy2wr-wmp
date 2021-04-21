@@ -10,7 +10,7 @@ PAGE JS
 
 (function($) {
 	'use strict';
-	
+
 	/*===================================*
 	01. LOADING JS
 	/*===================================*/
@@ -42,7 +42,7 @@ PAGE JS
           }
         }
     });
-	
+
 	/*===================================*
 	03. MENU JS
 	*===================================*/
@@ -57,8 +57,8 @@ PAGE JS
 	    }
 
 	});
-	
-	//Show Hide dropdown-menu Main navigation 
+
+	//Show Hide dropdown-menu Main navigation
 	$( document ).ready( function () {
 		$( '.dropdown-menu a.dropdown-toggler' ).on( 'click', function ( e ) {
 			var $el = $( this );
@@ -68,17 +68,17 @@ PAGE JS
 			}
 			var $subMenu = $( this ).next( ".dropdown-menu" );
 			$subMenu.toggleClass( 'show' );
-			
+
 			$( this ).parent( "li" ).toggleClass( 'show' );
-	
+
 			$( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function ( e ) {
 				$( '.dropdown-menu .show' ).removeClass( "show" );
 			} );
-			
+
 			return false;
 		});
 	});
-	
+
 	//Hide Navbar Dropdown After Click On Links
 	var navBar = $(".header_wrap");
 	var navbarLinks = navBar.find(".navbar-collapse ul li a.page-scroll");
@@ -93,7 +93,7 @@ PAGE JS
         });
 
     });
-	
+
 	//Main navigation Active Class Add Remove
 	$('.navbar-toggler').on('click', function() {
 		$("header").toggleClass("active");
@@ -102,17 +102,17 @@ PAGE JS
 			$(".search-overlay").removeClass('open');
 			$(".search_trigger").removeClass('open');
 		}
-	});	
+	});
 
 	/*===================================*
 	04. SEARCH JS
 	*===================================*/
-    
+
 	$(".close-search").on("click", function() {
 		$('.search-overlay').removeClass("open");
 		$('.search_overlay').remove();
 	});
-	
+
 	var removeClass = true;
 	$(".search_trigger").click(function () {
 		$(".search-overlay").after('<div class="search_overlay"></div>');
@@ -136,7 +136,7 @@ PAGE JS
 		}
 		removeClass = true;
 	});
-	
+
 	/*===================================*
 	05. SLIDER JS
 	*===================================*/
@@ -157,7 +157,7 @@ PAGE JS
 				autoplayTimeout : $carousel.data("autoplay-timeout"),
 			});
 		});
-		
+
 		var owl = $('.owl-thumbs-slider');
 		owl.owlCarousel({
 			loop: false,
@@ -168,7 +168,7 @@ PAGE JS
 			thumbs: true,
 			navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
 		});
-		 
+
 		$('.carousel_slide2').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -201,7 +201,7 @@ PAGE JS
 				}
 			});
 		});
-		
+
 		$('.carousel_slide3').each( function() {
 			 var $carousel = $(this);
 			 $carousel.owlCarousel({
@@ -234,7 +234,7 @@ PAGE JS
 				 }
 			 });
 		});
-		 
+
 		$('.carousel_slide4').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -267,7 +267,7 @@ PAGE JS
 				}
 			});
 		});
-		
+
 		$('.carousel_slide5').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -300,7 +300,7 @@ PAGE JS
 				}
 			});
 		});
-		
+
 		$('.cl_logo_slider').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -332,7 +332,7 @@ PAGE JS
 				}
 			});
 		});
-		
+
 		$('.cl_logo_slider5').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -365,7 +365,7 @@ PAGE JS
 			});
 		});
 	});
-	
+
 	$('.carousel_slider').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
@@ -388,8 +388,8 @@ PAGE JS
 				responsive: $carousel.data("responsive")
 			});
 		});
-		
-		
+
+
 		var $sync1 = $("#slider_img"),
             $sync2 = $("#thumb_img"),
             duration = 300;
@@ -461,7 +461,7 @@ PAGE JS
             }
             return "stop";
         }
-	
+
 	/*===================================*
 	06. PORTFOLIO JS
 	*===================================*/
@@ -478,7 +478,7 @@ PAGE JS
 			});
 			$portfolio_selectors.isotope();
 		});
-	
+
 		var $portfolio_filter = $('.portfolio_filter > li > a');
 		$portfolio_filter.on('click', function () {
 			$portfolio_filter.removeClass('current');
@@ -496,13 +496,13 @@ PAGE JS
 			$portfolio_selectors.isotope({filter: selector});
 			return false;
 		});
-		
+
 		$('.portfolio_filter').change( function() {
 			$portfolio_selectors.isotope({
 			  filter: this.value
 			});
 		});
-	
+
 		$(window).resize(function () {
 			$portfolio_selectors.ready(function () {
 				setTimeout(function () {
@@ -512,7 +512,7 @@ PAGE JS
 			});
 		});
 	});
-	
+
 	$( window ).on( "load", function() {
 		var $blog_selectors = $('.blog_container');
 		$blog_selectors.ready(function () {
@@ -525,15 +525,15 @@ PAGE JS
 				}
 			});
 		});
-	
+
 		$(window).resize(function () {
 			setTimeout(function () {
 				$blog_selectors.find('.portfolio-item').removeClass('animation').removeClass('animated'); // avoid problem to filter after window resize
 				$blog_selectors.isotope('layout');
 			}, 300);
 		});
-	});	
-	
+	});
+
 	$( window ).on( "load", function() {
 		var $shop_selectors = $('.shop_container');
 		$shop_selectors.ready(function () {
@@ -546,7 +546,7 @@ PAGE JS
 				}
 			});
 		});
-	
+
 		$(window).resize(function () {
 			setTimeout(function () {
 				$shop_selectors.find('.shop-item').removeClass('animation').removeClass('animated'); // avoid problem to filter after window resize
@@ -554,7 +554,7 @@ PAGE JS
 			}, 300);
 		});
 	});
-	 
+
 	/*===================================*
      07.COUNTDOWN JS
     *===================================*/
@@ -564,7 +564,7 @@ PAGE JS
             $(this).html(tm.strftime('<span class="countdown_box"><span class="countdown days">%D </span><span class="cd_text">Days</span></span><span class="countdown_box"><span class="countdown hours">%H</span><span class="cd_text">Hours</span></span><span class="countdown_box"><span class="countdown minutes">%M</span><span class="cd_text">Minutes</span></span><span class="countdown_box"><span class="countdown seconds">%S</span><span class="cd_text">Seconds</span></span>'));
         });
     });
-	
+
 	/*===================================*
 	08. CONTACT FORM JS
 	*===================================*/
@@ -598,7 +598,7 @@ PAGE JS
 	        }
 	    });
 	});
-	
+
 	/*===================================*
 	09. SCROLLUP JS
 	*===================================*/
@@ -609,7 +609,7 @@ PAGE JS
 			$('.scrollup').fadeOut();
 		}
 	});
-	
+
 	$(".scrollup").on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
@@ -617,8 +617,8 @@ PAGE JS
 		}, 600);
 		return false;
 	});
-	
-	
+
+
 	/*===================================*
 	10. POPUP JS
 	*===================================*/
@@ -627,7 +627,7 @@ PAGE JS
 		preloader: true,
 		mainClass: 'mfp-zoom'
 	});
-	
+
 	$('.image_gallery').each(function() { // the containers for all your galleries
 		$(this).magnificPopup({
 			delegate: 'a', // the selector for gallery item
@@ -644,14 +644,14 @@ PAGE JS
 			}
 		});
 	});
-	
+
 	$(document).ready(function() {
 		$('.popup-ajax').magnificPopup({
 			type: 'ajax',
 		});
 	});
 
-	
+
 	$('.portfolio_item .image_popup').on('click', function () {
 		$(this).find('.link_container').magnificPopup('open');
 	});
@@ -664,7 +664,7 @@ PAGE JS
 			}
 		});
 	});
-	
+
 	/*==============================================================
     11. VIDEO JS
     ==============================================================*/
@@ -681,27 +681,27 @@ PAGE JS
     12. FIT VIDEO JS
     ==============================================================*/
     $(".fit-videos").fitVids();
-	
+
 	/*===================================*
 	13. ANIMATION JS
 	*===================================*/
 	$(function() {
-	
+
 		function ckScrollInit(items, trigger) {
 			items.each(function() {
 				var ckElement = $(this),
 					AnimationClass = ckElement.attr('data-animation'),
 					AnimationDelay = ckElement.attr('data-animation-delay');
-	
+
 				ckElement.css({
 					'-webkit-animation-delay': AnimationDelay,
 					'-moz-animation-delay': AnimationDelay,
 					'animation-delay': AnimationDelay,
 					opacity: 0
 				});
-	
+
 				var ckTrigger = (trigger) ? trigger : ckElement;
-	
+
 				ckTrigger.waypoint(function() {
 					ckElement.addClass("animated").css("opacity", "1");
 					ckElement.addClass('animated').addClass(AnimationClass);
@@ -711,12 +711,12 @@ PAGE JS
 				});
 			});
 		}
-	
+
 		ckScrollInit($('.animation'));
 		ckScrollInit($('.staggered-animation'), $('.staggered-animation-wrap'));
-	
+
 	});
-	
+
 	/*===================================*
 	14. BACKGROUND IMAGE JS
 	*===================================*/
@@ -727,23 +727,23 @@ PAGE JS
 			$(this).css('background', 'url(' + attr + ') center center/cover');
 		}
 	});
-	
+
 	/*===================================*
 	15.  TAB SLIDER JS
 	*===================================*/
 	var windowWidth = 0;
 	var windowHeight = 0;
- 
+
 	 $.martanianConfigureSlider = function() {
-    
+
         $( '.content_slider' ).each( function() {
-        
+
             var slider = $( this ).children( '.slider_center' );
             var descriptions = slider.children( '.content_box' ).children( '.content_wrap' ).children( '.descriptions_wrap' );
             var activeInsurance = slider.children( '.content_box' ).children( '.content_wrap' ).children( '.tabs' ).children( 'li.active' ).data( 'key' );
-            
+
             if( typeof activeInsurance == 'undefined' || activeInsurance === false ) {
-            
+
                 activeInsurance = slider.children( '.content_box' ).children( '.content_wrap' ).children( '.tabs' ).children( 'li' ).first().data( 'key' );
                 slider.children( '.content_box' ).children( '.content_wrap' ).children( '.tabs' ).children( 'li' ).first().addClass( 'active' );
             }
@@ -752,52 +752,52 @@ PAGE JS
             descriptions.css({ 'height': descriptions.children( '.description[data-key="'+ activeInsurance +'"]' ).height() });
 
             slider.children( '.slider_images' ).children( '.image[data-key="'+ activeInsurance +'"]' ).show();
-            
+
         });
 
-	}; 
+	};
 	 $( '.content_slider .tabs li' ).click( function() {
-    
+
         if( !$( this ).hasClass( 'active' ) ) {
-                     
+
             var newInsuranceKey = $( this ).data( 'key' );
             var oldInsuranceKey = $( this ).siblings( '.active' ).data( 'key' );
-            
+
             var slider = $( this ).parent().parent().parent().parent();
             var newHeight = 0;
-            
+
             var oldDescription = slider.children( '.content_box' ).children( '.content_wrap' ).children( '.descriptions_wrap' ).children( '.description[data-key="'+ oldInsuranceKey +'"]' );
             var newDescription = slider.children( '.content_box' ).children( '.content_wrap' ).children( '.descriptions_wrap' ).children( '.description[data-key="'+ newInsuranceKey +'"]' );
-            
+
             $( '.content_slider .tabs li' ).removeClass( 'active' );
             $( this ).addClass( 'active' );
-            
-            oldDescription.addClass( 'animated speed fadeOut' );                                       
-           
+
+            oldDescription.addClass( 'animated speed fadeOut' );
+
             slider.children( '.slider_images' ).children( '.image[data-key="'+ oldInsuranceKey +'"]' ).fadeOut( 350 );
             slider.children( '.slider_images' ).children( '.image[data-key="'+ newInsuranceKey +'"]' ).fadeIn( 350 );
-            
+
             setTimeout( function() {
-            
+
                 newDescription.addClass( 'animated speed fadeIn' ).show();
                 newHeight = newDescription.height();
-                
+
                 slider.children( '.content_box' ).children( '.content_wrap' ).children( '.descriptions_wrap' ).animate({ 'height': newHeight }, 250 );
 
                 setTimeout( function() {
 
                     oldDescription.removeClass( 'animated speed fadeOut' ).hide();
                     newDescription.removeClass( 'animated speed fadeIn' );
-                
+
                 }, 450 );
-            
+
             }, 350 );
         }
-    
+
     });
-	
+
 	$.martanianConfigureSlider();
-	
+
 	/*===================================*
 	16. PROGRESS BAR JS
 	*===================================*/
@@ -807,7 +807,7 @@ PAGE JS
 				return $(this).attr("aria-valuenow") + "%";
 			}
 		)
-	
+
 		$('.count_pr').css("left",
 			function() {
 				return $(this).attr("data-percent") + "%";
@@ -815,7 +815,7 @@ PAGE JS
 		)
 	});
 
-	
+
 	/*===================================*
 	17. SHOW HIDE MAP CONTACT FORM JS
 	*===================================*/
@@ -825,14 +825,14 @@ PAGE JS
 		if($this.hasClass('SeeMore2')){
 			$this.text('Contact');
 			$('.field_form').hide();
-			$('.map').show();			
+			$('.map').show();
 		} else {
 			$this.text('View Map');
 			$('.map').hide();
 			$('.field_form').show();
 		}
 	});
-	
+
 	/*===================================*
 	18. QUANTITY JS
 	*===================================*/
@@ -846,7 +846,7 @@ PAGE JS
 			if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
 		}
 	});
-		
+
     /*===================================*
 	19. PRICE FILTER JS
 	*===================================*/
@@ -864,14 +864,14 @@ PAGE JS
 		});
 		$( "#flt_price" ).html( "$" + $( "#price_filter" ).slider( "values", 0 ) + " - $" + $( "#price_filter" ).slider( "values", 1 ) );
 	});
-  
+
   	/*===================================*
 	20. ZOOM IMAGE JS
 	*===================================*/
 	var image = $('#product_img');
 	var zoomConfig = {};
 	var zoomActive = false;
-	
+
 	image.on('mousemove', function(){
     zoomActive = !zoomActive;
 	if(zoomActive) {
@@ -880,24 +880,24 @@ PAGE JS
 			var divWidth = $(".pr_detail").width();
 			$("#product_img").elevateZoom({
 				cursor: "crosshair",
-				easing : true, 
-				scrollZoom: true, 
+				easing : true,
+				scrollZoom: true,
 				gallery:'pr_item_gallery',
-				zoomWindowOffetx: 30, 
+				zoomWindowOffetx: 30,
 				zoomWindowWidth:divWidth,
 				zoomWindowHeight:firstImgHeight,
 				borderSize: 0,
 				galleryActiveClass: "active"
-			}); 
+			});
 		}
 		else {
 			$("#product_img").elevateZoom({
 				cursor: "crosshair",
-				easing : true,  
+				easing : true,
 				gallery:'pr_item_gallery',
 				zoomType: "inner",
 				galleryActiveClass: "active"
-			}); 
+			});
 		}
 	}
 	else {
@@ -905,7 +905,7 @@ PAGE JS
 			$('.zoomContainer').remove();// remove zoom container from DOM
 		}
 	});
-	
+
 	$.magnificPopup.defaults.callbacks = {
     open: function() {
       $('body').addClass('zoom_image');
@@ -918,7 +918,7 @@ PAGE JS
       }, 100)
     }
   };
-	
+
 	/*===================================*
 	21. RATING STAR JS
 	*===================================*/
@@ -934,26 +934,26 @@ PAGE JS
 			}
 		});
 	});
-	
+
 	/*===================================*
 	22. PAYMENT OPTION JS
 	*===================================*/
 	$('[name="payment_option"]').on('click', function(){
-    
+
 		var $value = $(this).attr('value');
-	
+
 		$('.payment-text').slideUp();
 		$('[data-method="'+$value+'"]').slideDown();
-		
+
 	})
-	
+
 	/*===================================*
 	23. COUNTER JS
 	*===================================*/
 	$('.counter').counterUp({
 		time: 1500
 	});
-	
+
 	/*===================================*
 	24. TOOLTIP JS
 	*===================================*/
@@ -965,14 +965,14 @@ PAGE JS
 	$(function () {
 		$('[data-toggle="popover"]').popover()
 	})
-	
+
 	/*===================================*
 	25. PARALLAX JS
 	*===================================*/
 	$(window).on('load', function() {
         $('.parallax_bg').parallaxBackground();
 	});
-	
+
 	/*===================================*
 	26. ONLOAD POPUP JS
 	*===================================*/
@@ -981,7 +981,7 @@ PAGE JS
 			$("#onload-popup").modal('show', {}, 500)
 		}, 3000);
 	});
-	
+
 	/*===================================*
 	27. DATEPICKER JS
 	*===================================*/
@@ -992,7 +992,7 @@ PAGE JS
         zIndex: 2048,
       });
     });
-	
+
 	/*===================================*
 	28. TIMEPICKER JS
 	*===================================*/
@@ -1001,11 +1001,11 @@ PAGE JS
 			var $timepicker = $(this);
 			$timepicker.mdtimepicker({
 				readOnly: false,
-				theme: $timepicker.data("theme"),	 
+				theme: $timepicker.data("theme"),
 			});
 		});
 	}
-	
+
 	/*===================================*
 	29. TAB SLIDE JS
 	*===================================*/
@@ -1022,7 +1022,7 @@ PAGE JS
 				height: k
 		})
 		$(".sliding_tab li a").on("click", function() {
-			$(".sliding_tab li a.active_hover").removeClass("active_hover"), 
+			$(".sliding_tab li a.active_hover").removeClass("active_hover"),
 			$(this).closest('.sliding_tab li a').addClass("active_hover")
 			var t = $(".sliding_tab li a.active_hover").position().left,
 				w = $(".sliding_tab li a.active_hover").css("width"),
@@ -1035,7 +1035,7 @@ PAGE JS
 		})
 		}
 	}
-	
+
 	/*===================================*
 	30.Current Date JS
 	*===================================*/
@@ -1046,7 +1046,7 @@ PAGE JS
         var datevalue = day[date.getDay()]+', '+month[date.getMonth()]+' '+date.getDate()+', '+date.getFullYear();
         $('#current_time').html(datevalue);
     }
-	
+
 	/*===================================*
 	31.List Grid JS
 	*===================================*/
@@ -1060,7 +1060,7 @@ PAGE JS
 			$(this).addClass('active').siblings().removeClass('active');
 		}
 	});
-	
+
 	/*===================================*
 	32. Select dropdowns
 	*===================================*/
@@ -1068,21 +1068,21 @@ PAGE JS
 	// Traverse through all dropdowns
 	$.each($('select'), function (i, val) {
 		var $el = $(val);
-		
+
 		if (!$el.val()) {
 			$el.addClass('not_chosen');
 		}
-		
+
 		$el.on('change', function () {
 			if (!$el.val())
 				$el.addClass('not_chosen');
 			else
 				$el.removeClass('not_chosen');
 		});
-		
+
 	  });
 	}
-	
+
 	/*===================================*
 	33. Switcher Js
 	*===================================*/
@@ -1094,7 +1094,7 @@ PAGE JS
 			if( Checkfilter.filter(':checked').length > 0 ) {
 				$('.switch_box').find('.pt_right').addClass('pt_switch_active');
 				$('.pricing_box').find('.price_tag_right').removeClass('hide');
-			} 
+			}
 			else {
 				$('.switch_box').find('.pt_left').addClass('pt_switch_active');
 				$('.pricing_box').find('.price_tag_left').removeClass('hide');
@@ -1112,7 +1112,7 @@ PAGE JS
 			});
 		});
 	});
-	
+
 	/*===================================*
 	34. Hover Parallax Js
 	*===================================*/
@@ -1145,6 +1145,6 @@ PAGE JS
 			}
 		});
 	}
-	
+
 
 })(jQuery);
