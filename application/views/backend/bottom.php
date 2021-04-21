@@ -2,7 +2,7 @@
   <strong>Copyright &copy; <?php echo date('Y');?></a>.</strong>
   All rights reserved
   <div class="float-right d-none d-sm-inline-block">
-    <b>aSPanel Admin</b>
+    <b>WMP Panel Admin</b>
   </div>
 </footer>
 

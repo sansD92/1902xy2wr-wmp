@@ -32,8 +32,8 @@
 
         <!-- Menu Footer-->
         <li class="user-footer">
-          <a href="<?php echo base_url(); ?>paneladmin/profil" class="btn btn-default btn-flat">Profil</a>
-          <a href="<?php echo base_url(); ?>paneladmin/logout" class="btn btn-default btn-flat float-right">Keluar</a>
+          <a href="<?php echo base_url(); ?>aspanel/profil" class="btn btn-default btn-flat">Profil</a>
+          <a href="<?php echo base_url(); ?>aspanel/logout" class="btn btn-default btn-flat float-right">Keluar</a>
         </li>
       </ul>
     </li>
@@ -42,24 +42,18 @@
 </nav>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="<?php echo base_url('paneladmin/home')?>" class="brand-link">
+  <a href="<?php echo base_url('aspanel/home')?>" class="brand-link">
 
-    <center><span class="brand-text font-weight-light">aSPanel Admin</span></center>
+    <center><span class="brand-text font-weight-light">WMP Panel Admin</span></center>
   </a>
 
 <div class="sidebar">
   <!-- Sidebar user panel (optional) -->
-  <div class="user-panel mt-3">
-    <div class="info d-block text-white">
-      <h2 class="text-center"><label id="hours"><?= date('H') ?></label>:<label id="minutes"><?= date('i') ?></label>:<label id="seconds"><?= date('s') ?></label></h2>
-    </div>
-  </div>
-
   <!-- Sidebar Menu -->
   <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/home" class="nav-link <?php echo $home_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/home" class="nav-link <?php echo $home_stat; ?>" >
           <i class="nav-icon fas fa-th"></i>
           <p>
             Dashboard
@@ -68,7 +62,7 @@
       </li>
     <?php  if($this->session->level=='1' OR $this->session->level=='2'){ ?>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/identitaswebsite" class="nav-link <?php echo $identitas_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/identitaswebsite" class="nav-link <?php echo $identitas_stat; ?>" >
           <i class="nav-icon fas fa-cogs"></i>
           <p>
             Data Website
@@ -76,7 +70,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/konsumen" class="nav-link" >
+        <a href="<?php echo base_url(); ?>aspanel/konsumen" class="nav-link" >
           <i class="nav-icon fas fa-user-check"></i>
           <p>
             Daftar Klien
@@ -97,7 +91,7 @@
         <ul class="nav nav-treeview">
             <?php  if($this->session->level=='1'){ ?>
           <li class="nav-item">
-            <a href="<?php echo base_url(); ?>paneladmin/divisi" class="nav-link <?php echo $message_stat; ?>">
+            <a href="<?php echo base_url(); ?>aspanel/divisi" class="nav-link <?php echo $message_stat; ?>">
               <i class="far fa-circle nav-icon"></i>
               <p>Divisi / Posisi</p>
             </a>
@@ -105,19 +99,19 @@
           <?php } ?>
 
           <li class="nav-item">
-            <a href="<?php echo base_url(); ?>paneladmin/lowongan" class="nav-link <?php echo $products_stat; ?>">
+            <a href="<?php echo base_url(); ?>aspanel/lowongan" class="nav-link <?php echo $products_stat; ?>">
               <i class="far fa-circle nav-icon"></i>
               <p>Lowongan</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo base_url(); ?>paneladmin/permohonan" class="nav-link <?php echo $gallery_stat; ?>">
+            <a href="<?php echo base_url(); ?>aspanel/permohonan" class="nav-link <?php echo $gallery_stat; ?>">
               <i class="far fa-circle nav-icon"></i>
               <p>Permohonan</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo base_url(); ?>paneladmin/data_karyawan" class="nav-link <?php echo $sliders_stat; ?> ">
+            <a href="<?php echo base_url(); ?>aspanel/data_karyawan" class="nav-link <?php echo $sliders_stat; ?> ">
               <i class="far fa-circle nav-icon"></i>
               <p>Data Karyawan</p>
             </a>
@@ -125,7 +119,7 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/cuti" class="nav-link <?php echo $cuti_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/cuti" class="nav-link <?php echo $cuti_stat; ?>" >
           <i class="nav-icon far fa-calendar-alt"></i>
           <p>
             Cuti
@@ -133,7 +127,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/gaji" class="nav-link <?php echo $gaji_stat; ?>">
+        <a href="<?php echo base_url(); ?>aspanel/gaji" class="nav-link <?php echo $gaji_stat; ?>">
           <i class="nav-icon fas fa-money-bill-wave-alt"></i>
           <p>
             Gaji
@@ -141,7 +135,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>paneladmin/pengumuman" class="nav-link <?php echo $pengumuman_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/pengumuman" class="nav-link <?php echo $pengumuman_stat; ?>" >
           <i class="nav-icon fas fa-bullhorn"></i>
           <p>
             Pengumuman
@@ -163,7 +157,7 @@
           <ul class="nav nav-treeview">
               <?php  if($this->session->level=='1'){ ?>
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>paneladmin/products_cat" class="nav-link <?php echo $produk_category; ?> ">
+              <a href="<?php echo base_url(); ?>aspanel/products_cat" class="nav-link <?php echo $produk_category; ?> ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Category</p>
               </a>
@@ -171,13 +165,13 @@
             <?php } ?>
 
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>paneladmin/products" class="nav-link <?php echo $produk; ?>">
+              <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link <?php echo $produk; ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Works</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>paneladmin/services" class="nav-link <?php echo $services; ?>">
+              <a href="<?php echo base_url(); ?>aspanel/services" class="nav-link <?php echo $services; ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Services</p>
               </a>
@@ -187,7 +181,7 @@
         </li>
         <?php  if($this->session->level=='1'){ ?>
         <li class="nav-item ">
-          <a href="<?php echo base_url(); ?>paneladmin/testimonial" class="nav-link <?php echo $testimonial_stat; ?>">
+          <a href="<?php echo base_url(); ?>aspanel/testimonial" class="nav-link <?php echo $testimonial_stat; ?>">
             <i class="nav-icon fas fa-cogs"></i>
             <p>
               Reviews
@@ -196,7 +190,7 @@
         </li>
         <?php } ?>
         <li class="nav-item ">
-          <a href="<?php echo base_url(); ?>paneladmin/blogs" class="nav-link <?php echo $blogs_stat; ?>">
+          <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link <?php echo $blogs_stat; ?>">
             <i class="nav-icon fas fa-blog"></i>
             <p>
               Artikel
@@ -206,7 +200,7 @@
 
 
       <li class="nav-item ">
-        <a href="<?php echo base_url(); ?>paneladmin/profil" class="nav-link <?php echo $konfig_stat; ?>">
+        <a href="<?php echo base_url(); ?>aspanel/profil" class="nav-link <?php echo $konfig_stat; ?>">
           <i class="nav-icon fas fa-cogs"></i>
           <p>
             Pengaturan

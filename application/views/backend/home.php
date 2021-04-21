@@ -29,7 +29,7 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
-              <?php $jmlproducts1 = $this->Panel_m->view('user')->num_rows(); ?>
+              <?php $jmlproducts1 = $this->As_m->view('user')->num_rows(); ?>
               <div class="inner">
                 <h3><?php echo $jmlproducts1; ?></h3>
                 <p>Total Karyawan</p>
@@ -41,47 +41,6 @@
             </div>
           </div>
           <?php } ?>
-          <!-- ./col -->
-            <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-                
-                
-                <?php 
-                    if ($this->session->level=='1'){
-                        $jmlproducts1 = $this->Panel_m->view('cuti')->num_rows();
-                    }else{
-                        $jmlproducts1 = $this->Panel_m->view_where('cuti',array('username'=>$this->session->username))->num_rows();
-                ?>
-                <?php }?>
-          
-              <div class="inner">
-                <h3><?php echo $jmlproducts1; ?></h3>
-                <p>Jumlah Cuti</p>
-              </div>
-              <div class="icon">
-                <i class="far fa-calendar-alt"></i>
-              </div>
-            <a href="<?php echo base_url('paneladmin/cuti') ?>" class="small-box-footer">Info Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-
-          </div>
-          <!-- ./col -->
-            <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <?php $jmlproducts1 = $this->Panel_m->view_where('pengumuman',array('pengumuman_stat'=>'publish'))->num_rows(); ?>
-              <div class="inner">
-                <h3><?php echo $jmlproducts1; ?></h3>
-                <p>Pengumuman</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-bullhorn"></i>
-              </div>
-            <a href="<?php echo base_url('paneladmin/pengumuman') ?>" class="small-box-footer">Info Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-
-          </div>
         </div>
         <!-- /.row -->
         <!-- Main row -->

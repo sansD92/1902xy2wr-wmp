@@ -1,4 +1,5 @@
-<meta name="viewport" content="width=device-width, initial-scale=1" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/frontend/wmp_favicon_big.png">
+
 <link href="<?php echo base_url()?>assets/backend/css/all.min.css" rel="stylesheet">
 <link href="<?php echo base_url()?>assets/backend/css/stylescustom.css" rel="stylesheet">
 <link href="<?php echo base_url()?>assets/backend/css/ionicons.min.css" rel="stylesheet">
