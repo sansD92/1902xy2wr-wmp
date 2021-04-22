@@ -90,13 +90,13 @@ Indonesia</li>
                                  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola Perusahaan</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Code Of Conduct</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Dewan Komisaris</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Direksi</a></li>
-                                             <li><a class="dropdown-item nav-link nav_item" href="#">Komite Nominasi & Nemunerasi</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Komite Audit</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Sekretaris Perusahaan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Internal Audit Charter</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-codeofconduct">Code Of Conduct</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-pedomandewan">Pedoman Dewan Komisaris</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-pedomandireksi">Pedoman Direksi</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-komitenominasi">Komite Nominasi & Nemunerasi</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-komiteaudit">Komite Audit</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-sekretarisperusahaan">Sekretaris Perusahaan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola-internalaudit">Internal Audit Charter</a></li>
                                         </ul>
                                     </div>
                                 </li>
