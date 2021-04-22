@@ -37,4 +37,9 @@ class Main extends CI_Controller {
 
 
 }
+public function produk()
+{
+  $this->load->view('fronts/produk/v_produk');
+}
+
 }

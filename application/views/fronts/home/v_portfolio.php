@@ -91,8 +91,7 @@
                               </div>
                         </div>
                     </li>
-
-                     <li class="portfolio-item livestock">
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/live5.jpg" alt="image">
@@ -107,8 +106,7 @@
                               </div>
                         </div>
                     </li>
-
-                     <li class="portfolio-item livestock">
+                    <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/live6.jpg" alt="image">
@@ -139,7 +137,6 @@
                               </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item meat" style=" display: none;">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">

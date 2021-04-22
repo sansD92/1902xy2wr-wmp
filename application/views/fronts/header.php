@@ -63,12 +63,12 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Pasir Tengah</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Cianjur Arta Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Prima Widodo Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Garut Makmur Perkasa</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodo Makmur Unggas</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodofood Makmur Sejahtera</a></li>                 
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Pasir Tengah</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Cianjur Arta Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Prima Widodo Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Garut Makmur Perkasa</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Widodo Makmur Unggas</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Widodofood Makmur Sejahtera</a></li>
                         </ul>
                     </div>
                 </li>
