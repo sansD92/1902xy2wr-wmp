@@ -12,7 +12,7 @@
         <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
         	<div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/cianjur_farm.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/cianjur_farm.jpg">
 						<div class="inner">
 							<h5>CIANJUR FARM</h5>
 
@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rph_cam.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rph_cam.jpg">
 						<div class="inner">
 
 							<h5>RPH CIANJUR</h5>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rpa_giritontro.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rpa_giritontro.jpg">
 						<div class="inner">
 
 							<h5>RPA GIRITONTRO</h5>
@@ -65,7 +65,7 @@
             </div>
            <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/pwm.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/pwm.jpg">
 						<div class="inner">
 
 							<h5>PWM PRODUCTION</h5>
@@ -83,7 +83,7 @@
             </div>
            <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/feedmill.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/feedmill.jpg">
 						<div class="inner">
 
 							<h5>FEEDMILL</h5>
@@ -101,7 +101,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg " data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/gmp.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/gmp.jpg">
 						<div class="inner">
 
 							<h5>GMP PABRIK KULIT</h5>
