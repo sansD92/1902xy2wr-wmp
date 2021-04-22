@@ -116,7 +116,7 @@ Indonesia</li>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-link " href="#">Berita</a>
+                      <a class="nav-link " href="<?php echo base_url()?>berita">Berita</a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
