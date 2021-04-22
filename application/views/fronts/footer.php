@@ -39,7 +39,7 @@ Indonesia
             </div>
         </div>
     </div>
-    <div style="background-color: #E1282F"class="bottom_footer background_bg" data-img-src="<?php echo base_url()?>assets/frontend/gununganbawah-06.jpg">
+    <div >
         <div  class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
