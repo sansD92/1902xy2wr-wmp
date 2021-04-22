@@ -34,7 +34,7 @@
                     <div class="col-6 couter_border">
                         <div class="box_counter text-center">
                             <img src="<?php echo base_url()?>assets/frontend/campur/icon4.png">
-                            <h3 class="counter_text"><span class="counter">15.000</span>+</h3>
+                            <h3 class="counter_text"><span class="counter">1558</span>+</h3>
                             <p>SDM di Wilayah Indonesia</p>
                         </div>
                     </div>
