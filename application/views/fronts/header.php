@@ -15,6 +15,7 @@ Indonesia</li>
                         <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                         <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
