@@ -18,6 +18,13 @@ $route['produk3'] = "Produk/produk3";
 $route['produk4'] = "Produk/produk4";
 $route['produk5'] = "Produk/produk5";
 $route['produk6'] = "Produk/produk6";
+
+$route['lini1'] = "Linibisnis/lini1";
+$route['lini2'] = "Linibisnis/lini2";
+$route['lini3'] = "Linibisnis/lini3";
+$route['lini4'] = "Linibisnis/lini4";
+$route['lini5'] = "Linibisnis/lini5";
+
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;
 $route['petacrawl\.xml'] = "petacrawl";
