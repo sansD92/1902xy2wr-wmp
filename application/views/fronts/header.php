@@ -31,7 +31,7 @@ Indonesia</li>
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link active" href="#">Beranda</a>
+                    <a class="nav-link <?php echo $status; ?>" href="<?php echo base_url()?>">Beranda</a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
@@ -60,7 +60,7 @@ Indonesia</li>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Produk</a>
+                    <a class="dropdown-toggle nav-link <?php echo $status_produk; ?>" href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Pasir Tengah</a></li>
