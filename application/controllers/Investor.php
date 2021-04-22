@@ -42,4 +42,82 @@ public function informasipendukung()
     
   $this->load->view('fronts/investor/v_informasipendukung',$data);
 }
+
+public function tatakelola1()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola1',$data);
+}
+public function tatakelola2()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola2',$data);
+}
+public function tatakelola3()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola3',$data);
+}
+public function tatakelola4()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola4',$data);
+}
+public function tatakelola5()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola5',$data);
+}
+public function tatakelola6()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola6',$data);
+}
+public function tatakelola7()
+{
+   
+      $data['status']   = 'active';
+     
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+    
+    
+  $this->load->view('fronts/investor/v_tatakelola7',$data);
+}
 }

@@ -15,6 +15,14 @@ $route['investor-informasipemegangsaham'] = "Investor/informasipemegangsaham";
 $route['investor-kegiatan'] = "Investor/kegiatan";
 $route['investor-informasipendukung'] = "Investor/informasipendukung";
 
+$route['tatakelola-codeofconduct'] = "Investor/tatakelola1";
+$route['tatakelola-pedomandewan'] = "Investor/tatakelola2";
+$route['tatakelola-pedomandireksi'] = "Investor/tatakelola3";
+$route['tatakelola-komitenominasi'] = "Investor/tatakelola4";
+$route['tatakelola-komiteaudit'] = "Investor/tatakelola5";
+$route['tatakelola-sekretarisperusahaan'] = "Investor/tatakelola6";
+$route['tatakelola-internalaudit'] = "Investor/tatakelola7";
+
 $route['produk1'] = "Produk/produk1";
 $route['produk2'] = "Produk/produk2";
 $route['produk3'] = "Produk/produk3";
