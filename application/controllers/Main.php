@@ -24,8 +24,8 @@ class Main extends CI_Controller {
 
     if (is_numeric($dari)) {
 			$config['per_page'] = 20;
-			$data['promo_stat']   = 'class="active"';
-			$data['header']   = 'Dapatkan Promo Menarik Hanya di Arkansys Jasa Digital Marketing Indonesia Terbaik';
+			$data['status']   = 'active';
+      $data['status_produk']   = '';
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 			$data['posts']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','ASC',$dari,$config['per_page']);
 
@@ -39,7 +39,9 @@ class Main extends CI_Controller {
 }
 public function produk()
 {
-  $this->load->view('fronts/produk/v_produk');
+  $data['status']   = '';
+  $data['status_produk']   = 'active';
+  $this->load->view('fronts/produk/v_produk',$data);
 }
 
 }
