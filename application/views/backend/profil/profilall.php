@@ -13,7 +13,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url() ?>paneladmin/home">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url() ?>aspanel/home">Dashboard</a></li>
             <li class="breadcrumb-item active">User Profil</li>
           </ol>
         </div>
@@ -32,7 +32,7 @@
             <div class="card-body box-profile">
               <div class="text-center">
                 <img class="profile-user-img img-fluid img-circle"
-                     src="<?php echo base_url()?>bahan/foto_profil/<?php echo $users['user_gambar'];?>"
+                     src="<?php echo base_url()?>assets/frontend/user/<?php echo $users['user_gambar'];?>"
                      alt="User profile picture">
               </div>
 
@@ -48,7 +48,7 @@
                   <b>Terakhir aktif</b><br> <a class=""><?php echo tgl_indo($users['user_login_tanggal']);?> <?php echo $users['user_login_jam'];?></a>
                 </li>
               </ul>
-              <a href="<?php echo base_url(); ?>paneladmin/logout" class="btn btn-primary btn-block"><b>Keluar</b></a>
+              <a href="<?php echo base_url(); ?>aspanel/logout" class="btn btn-primary btn-block"><b>Keluar</b></a>
             </div>
             <!-- /.card-body -->
           </div>
@@ -61,7 +61,7 @@
             <div class="card-header p-2">
               <ul class="nav nav-pills">
                 <li class="nav-item"><a class="nav-link active" href="#security" data-toggle="tab">Edit Keamanan</a></li>
-                
+
 
               </ul>
             </div><!-- /.card-header -->
@@ -69,7 +69,7 @@
               <div class="tab-content">
                 <div class="active tab-pane" id="security">
                   <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-                  echo form_open_multipart('paneladmin/profil',$attributes); ?>
+                  echo form_open_multipart('aspanel/profil',$attributes); ?>
                     <input type="hidden" name="id_user" value="<?php echo $record['id_user']?>">
                     <div class="form-group row">
                       <label for="inputName" class="col-sm-3 col-form-label">Username</label>
@@ -100,15 +100,15 @@
                       <div class="col-sm-9">
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar">
-                          <label class="custom-file-label" for="exampleInputFile">Belum ada upload foto profil <?php echo $record['user_gambar'] ?></label>
+                          <label class="custom-file-label" for="exampleInputFile"><?php echo $record['user_gambar'] ?></label>
                         </div>
                       </div>
 
                     </div>
                     <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Penampakan</label>
+                      <label class="col-sm-3 col-form-label">Preview</label>
                     <div class="col-sm-9">
-                      <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_profil/<?php echo $record['user_gambar'] ?>" alt="Photo">
+                      <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/user/<?php echo $record['user_gambar'] ?>" alt="Photo">
                     </div>
                     </div>
                     <div class="form-group row">
@@ -119,7 +119,7 @@
                     </div>
                   <?php echo form_close(); ?>
                 </div>
-             
+
 
                 <!-- /.tab-pane -->
               </div>

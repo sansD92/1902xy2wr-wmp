@@ -15,13 +15,13 @@
     <!-- Notifications Dropdown Menu -->
     <li class="nav-item dropdown user-menu">
       <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-        <img src="<?php echo base_url()?>bahan/foto_profil/<?php echo $users['user_gambar'];?>" class="user-image img-circle elevation-2" alt="Foto Profil">
+        <img src="<?php echo base_url()?>assets/frontend/user/<?php echo $users['user_gambar'];?>" class="user-image img-circle elevation-2" alt="Foto Profil">
         <span class="d-none d-md-inline">Hai, <?php echo $users['username'];?></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <!-- User image -->
         <li class="user-header bg-primary">
-          <img src="<?php echo base_url()?>bahan/foto_profil/<?php echo $users['user_gambar'];?>" class="img-circle elevation-2" alt="User Image">
+          <img src="<?php echo base_url()?>assets/frontend/user/<?php echo $users['user_gambar'];?>" class="img-circle elevation-2" alt="User Image">
 
           <p>
             <?php echo "$users[nama]";?>
@@ -69,7 +69,33 @@
           </p>
         </a>
       </li>
-        <?php }?>            
+        <li class="nav-item <?php echo $karyawan_menu_open; ?>">
+          <a href="#" class="nav-link  <?php echo $cat_products_stat; ?>">
+            <i class="nav-icon far fas fa-fw fa-users"></i>
+            <p>
+              Karyawan
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/divisi" class="nav-link <?php echo $message_stat; ?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Divisi / Posisi</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/data_karyawan" class="nav-link <?php echo $sliders_stat; ?> ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Data Karyawan</p>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <?php } ?>
         <li class="nav-item ">
           <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link <?php echo $blogs_stat; ?>">
             <i class="nav-icon fas fa-blog"></i>

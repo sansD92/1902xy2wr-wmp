@@ -6,12 +6,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Daftar Artikel</h1>
+          <h1>Sampah Data Karyawan</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="home">Dashboard</a></li>
-            <li class="breadcrumb-item active">Daftar Artikel</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Home</a></li>
+            <li class="breadcrumb-item active"><a href="<?php echo base_url()?>aspanel/data_karyawan">Daftar Karyawan</a></li>
+            <li class="breadcrumb-item active">Sampah Data Karyawan</li>
           </ol>
         </div>
       </div>
@@ -23,15 +24,14 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/blogs_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/blogs_storage_bin"><i class="fas fa-trash"></i> Sampah</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Kembali" href="<?php echo base_url()?>aspanel/data_karyawan">Kembali</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Tanggal</th>
-                  <th>Judul</th>
+                  <th>Nama Karyawan</th>
+                  <th>Level</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -39,16 +39,16 @@
                 <?php
                 $no = 1;
                 foreach ($record as $row){
-                  $tgl_posting = $this->mylibrary->tgl_indo($row['blogs_post_tanggal']);
+
                   ?>
 
                 <tr>
-                  <td><?=$tgl_posting?></td>
-                  <td><a class="btn btn-primary btn-sm" title="Lihat" href="<?php echo base_url()?>blogs/<?=$row['blogs_judul_seo']?>" target="_blank"> <i class="fas fa-eye"> <?=$row['blogs_dibaca']?></i></a><?=$row['blogs_judul']?></td>
+                  <td><?=$row['nama']?></td>
+                  <td><?=$row['user_level_nama']?></td>
                   <td>
                     <?php
-                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/blogs_update/$row[blogs_id]'><i class='fas fa-edit'></i></a>
-                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/blogs_delete_temp/$row[blogs_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
+                    echo"<a class='btn btn-primary btn-sm' title='Kembalikan' href='".base_url()."aspanel/data_karyawan_restore/$row[id_user]'><i class='fab fa-creative-commons-sa'></i></a>
+                    <a class='btn btn-danger btn-sm' title='Hapus Permanen' href='".base_url()."aspanel/data_karyawan_delete/$row[id_user]' onclick=\"return confirm('Yakin ingin menghapus permanen data karyawan ini?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>
@@ -57,8 +57,8 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                 <th>Tanggal</th>
-                  <th>Judul</th>
+                  <th>Nama Karyawan</th>
+                  <th>Level</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>

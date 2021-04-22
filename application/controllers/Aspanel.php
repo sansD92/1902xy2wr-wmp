@@ -180,19 +180,19 @@ class Aspanel extends CI_Controller {
 	{
 		cek_session_akses($this->session->id_session);
 		if (isset($_POST['submit'])){
-			$config['upload_path'] = 'bahan/foto_profil/';
+			$config['upload_path'] = 'assets/frontend/user/';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 			$this->upload->initialize($config);
 			$this->upload->do_upload('gambar');
 			$hasil22=$this->upload->data();
 			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_profil/'.$hasil22['file_name'];
+			$config['source_image'] = './assets/frontend/user/'.$hasil22['file_name'];
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
 			$config['quality']= '90%';
 			$config['width']= 200;
 			$config['height']= 200;
-			$config['new_image']= './bahan/foto_profil/'.$hasil22['file_name'];
+			$config['new_image']= './assets/frontend/user/'.$hasil22['file_name'];
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
@@ -217,7 +217,7 @@ class Aspanel extends CI_Controller {
 																$_image = $this->db->get_where('user',$where)->row();
 																$query = $this->db->update('user',$data,$where);
 																if($query){
-																	unlink("bahan/foto_profil/".$_image->user_gambar);
+																	unlink("assets/frontend/user/".$_image->user_gambar);
 																}
 															}else if ($hasil22['file_name']==''){
 																$data = array(
@@ -242,7 +242,7 @@ class Aspanel extends CI_Controller {
 																$_image = $this->db->get_where('user',$where)->row();
 																$query = $this->db->update('user',$data,$where);
 																if($query){
-																	unlink("bahan/foto_profil/".$_image->user_gambar);
+																	unlink("assets/frontend/user/".$_image->user_gambar);
 																}
 															}
 			redirect('aspanel/profil');
@@ -286,19 +286,19 @@ class Aspanel extends CI_Controller {
 				cek_session_akses($this->session->id_session);
 				$id = $this->uri->segment(3);
 				if (isset($_POST['submit'])){
-					$config['upload_path'] = 'bahan/foto_profil/';
+					$config['upload_path'] = 'assets/frontend/user/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_profil/'.$hasil22['file_name'];
+					$config['source_image'] = './assets/frontend/user/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
 					$config['quality']= '90%';
 					$config['width']= 200;
 					$config['height']= 200;
-					$config['new_image']= './bahan/foto_profil/'.$hasil22['file_name'];
+					$config['new_image']= './assets/frontend/user/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -327,7 +327,7 @@ class Aspanel extends CI_Controller {
 																	$_image = $this->db->get_where('user',$where)->row();
 																	$query = $this->db->update('user',$data,$where);
 																	if($query){
-																		unlink("bahan/foto_profil/".$_image->user_gambar);
+																		unlink("assets/frontend/user/".$_image->user_gambar);
 																	}
 																}else if ($hasil22['file_name']==''){
 																	$data = array(
@@ -356,7 +356,7 @@ class Aspanel extends CI_Controller {
 																	$_image = $this->db->get_where('user',$where)->row();
 																	$query = $this->db->update('user',$data,$where);
 																	if($query){
-																		unlink("bahan/foto_profil/".$_image->user_gambar);
+																		unlink("assets/frontend/user/".$_image->user_gambar);
 																	}
 																}
 
@@ -1651,7 +1651,7 @@ class Aspanel extends CI_Controller {
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish'),'id_user','DESC');
 				}elseif($this->session->level=='2'){
-					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish'),'id_user','DESC');
+					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish','level'=>'3'),'id_user','DESC');
 				}else{
 					redirect('aspanel/home');
 				}
@@ -1770,11 +1770,24 @@ class Aspanel extends CI_Controller {
 		 			$data['produk']   = '';
 		 			$data['services']   = '';
 
-					$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-					$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
-					$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
-					$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
-					$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
+					if ($this->session->level=='1'){
+						$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
+						$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
+						$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
+						$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
+						$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
+
+						$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
+						}elseif($this->session->level=='2'){
+							$data['records'] = $this->Crud_m->view_where_ordering('user_level',array('user_level_id'=>'3'),'user_level_id','DESC');
+							$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
+							$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
+							$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
+							$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
+							$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
+						}else{
+							redirect('aspanel/home');
+						}
 					$this->load->view('backend/data_karyawan/v_tambahkan', $data);
 				}
 	}
@@ -3444,11 +3457,10 @@ class Aspanel extends CI_Controller {
 		$data['produk_category']   = '';
 		$data['produk']   = '';
 		$data['services']   = '';
-		cek_session_akses ('divisi',$this->session->id_session);
-				if ($this->session->level=='1'){
+				if ($this->session->level=='1' OR $this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'publish'),'divisi_id','DESC');
 				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_post_oleh'=>$this->session->username,'divisi_status'=>'publish'),'divisi_id','DESC');
+					redirect('aspanel/home');
 				}
 				$this->load->view('backend/divisi/v_daftar', $data);
 	}
@@ -4860,6 +4872,8 @@ class Aspanel extends CI_Controller {
 
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_where_ordering('blogs',array('blogs_status'=>'publish'),'blogs_id','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('blogs',array('blogs_status'=>'publish'),'blogs_id','DESC');
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('blogs',array('blogs_post_oleh'=>$this->session->username,'blogs_status'=>'publish'),'blogs_id','DESC');
 				}
@@ -5081,6 +5095,8 @@ class Aspanel extends CI_Controller {
 		}else{
 			if ($this->session->level=='1'){
 					 $proses = $this->As_m->edit('blogs', array('blogs_id' => $id))->row_array();
+			}elseif($this->session->level=='2'){
+				$proses = $this->As_m->edit('blogs', array('blogs_id' => $id))->row_array();
 			}else{
 					$proses = $this->As_m->edit('blogs', array('blogs_id' => $id, 'blogs_post_oleh' => $this->session->username))->row_array();
 			}
