@@ -77,9 +77,29 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Investor</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan Update dan Presentasi Perusahaan</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pendukung</a></li>
+                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Investor</a>
+                                    <div class="dropdown-menu">
+                                        <ul> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan Update dan Presentasi Perusahaan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pendukung</a></li>
+                                        </ul>
+                                    </div>
+                                </li> 
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola Perusahaan</a>
+                                    <div class="dropdown-menu">
+                                        <ul> 
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Code Of Conduct</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Dewan Komisaris</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Direksi</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="#">Komite Nominasi & Nemunerasi</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Komite Audit</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Sekretaris Perusahaan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Internal Audit Charter</a></li>
+                                        </ul>
+                                    </div>
+                                </li> 
                         </ul>
                     </div>
                 </li>
