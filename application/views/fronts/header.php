@@ -36,7 +36,7 @@ Indonesia</li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
                         <div class="dropdown-menu">
-                            <ul> 
+                            <ul>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Filosofi Visi & Misi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Milestone WMP</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Motto</a></li>
@@ -47,23 +47,65 @@ Indonesia</li>
                             </ul>
                         </div>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Lini Bisnis</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Integrated Livestock</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Meat Processing</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Integrated Poultry</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Commodity</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Construction & Energy </a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Produk</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Produk</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Pasir Tengah</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Cianjur Arta Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodo Makmur Unggas</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodofood Makmur Sejahtera</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Langgeng Makmur Perkasa</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Investor</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tata Kelola & Investor</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan Update dan Presentasi Perusahaan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pendukung</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Kontribusi Sosial</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Kesatriaan Entrepreneur Indonesia</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Kemitraan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan CSR</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Berkelanjutan</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Berita</a>
+                <li class="dropdown">
+                    <a class="nav-link " href="#">Berita & Media</a>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Karir</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Ikhtisar</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Bergabung Bersama Kami</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Hubungi Kami</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
