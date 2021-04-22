@@ -36,6 +36,8 @@ $route['lini3'] = "Linibisnis/lini3";
 $route['lini4'] = "Linibisnis/lini4";
 $route['lini5'] = "Linibisnis/lini5";
 
+$route['berita'] = "Berita/index";
+
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;
 $route['petacrawl\.xml'] = "petacrawl";
