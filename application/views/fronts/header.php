@@ -39,7 +39,7 @@ Indonesia</li>
                             <ul>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Visi & Misi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
-                            
+
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
@@ -52,11 +52,11 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Integrated Livestock</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Meat Processing</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Integrated Poultry</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Commodity</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Construction & Energy </a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini1">Integrated Livestock</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini2">Meat Processing</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini3">Integrated Poultry</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini4">Commodity</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini5">Construction & Energy </a></li>
                         </ul>
                     </div>
                 </li>
@@ -79,17 +79,17 @@ Indonesia</li>
                         <ul>
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Investor</a>
                                     <div class="dropdown-menu">
-                                        <ul> 
+                                        <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan Update dan Presentasi Perusahaan</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pendukung</a></li>
                                         </ul>
                                     </div>
-                                </li> 
+                                </li>
 
                                  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola Perusahaan</a>
                                     <div class="dropdown-menu">
-                                        <ul> 
+                                        <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Code Of Conduct</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Dewan Komisaris</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Direksi</a></li>
@@ -99,7 +99,7 @@ Indonesia</li>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Internal Audit Charter</a></li>
                                         </ul>
                                     </div>
-                                </li> 
+                                </li>
                         </ul>
                     </div>
                 </li>
