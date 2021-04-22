@@ -80,9 +80,9 @@ Indonesia</li>
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Investor</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan Update dan Presentasi Perusahaan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pendukung</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>investor-informasipemegangsaham">Informasi Pemegang Saham</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>investor-kegiatan">Kegiatan Update dan Presentasi Perusahaan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>investor-informasipendukung">Informasi Pendukung</a></li>
                                         </ul>
                                     </div>
                                 </li>

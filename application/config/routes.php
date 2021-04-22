@@ -11,6 +11,9 @@ $route['strukturcompany'] = "Tentangkami/strukturcompany";
 $route['strukturorganisasi'] = "Tentangkami/strukturorganisasi";
 
 
+$route['investor-informasipemegangsaham'] = "Investor/informasipemegangsaham";
+$route['investor-kegiatan'] = "Investor/kegiatan";
+$route['investor-informasipendukung'] = "Investor/informasipendukung";
 
 $route['produk1'] = "Produk/produk1";
 $route['produk2'] = "Produk/produk2";
