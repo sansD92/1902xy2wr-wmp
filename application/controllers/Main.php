@@ -43,9 +43,6 @@ public function produk()
   $data['status_produk']   = 'active';
   $this->load->view('fronts/produk/v_produk',$data);
 }
-public function visimisi()
-{
-  $this->load->view('fronts/tentangkami/v_visimisi');
-}
+
 
 }

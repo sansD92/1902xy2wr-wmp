@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                    <h6 class="widget_title">BERHUBUNGAN DENGAN KAMI</h6>
+                    <h2>BERHUBUNGAN DENGAN KAMI</h2>
                     <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="list_none footer_social">
 
@@ -13,7 +13,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 mt-4 mt-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-                    <h6 class="widget_title">KONTAK KAMI</h6>
+                    <h2 >KONTAK KAMI</h2>
                     <ul class="contact_info contact_info_light list_none">
                         <li>
                             <span class="ti-location-pin"></span>

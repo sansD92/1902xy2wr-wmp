@@ -37,13 +37,13 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Filosofi Visi & Misi</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Milestone WMP</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Motto</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Dewan Komisaris</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Dewan Direksi</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Company WMP</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Organisasi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Visi & Misi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
+                            
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
                             </ul>
                         </div>
                 </li>
@@ -60,7 +60,7 @@ Indonesia</li>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link <?php echo $status_produk; ?>" href="#" data-toggle="dropdown">Produk</a>
+                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Pasir Tengah</a></li>

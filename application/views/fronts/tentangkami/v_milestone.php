@@ -19,13 +19,13 @@
     	<div class="row">
         	<div class="col-md-12 text-center">
             	<div class="page-title">
-            		<h1>Filosopi Visi & Misi</h1>
+            		<h1>Milestone WMP</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Filosofi Visi & Misi</li>
+                    <li class="breadcrumb-item active" aria-current="page">Milestone WMP</li>
                   </ol>
                 </nav>
             </div>
@@ -45,7 +45,7 @@
             </div>
             <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
                 <div class="heading_s3 mb-3"> 
-                  <h3>VISI MISI</h3>
+                  <h3>MILESTONE WMP</h3>
                 </div>
                 <p>Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.</p>
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Iipsum dolor sit amet, consectetur adipiscing elitllus blandit massa enim.</p>
