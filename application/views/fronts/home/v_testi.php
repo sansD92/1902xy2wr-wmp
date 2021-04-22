@@ -18,7 +18,7 @@
                             </div>
                             <div class="testi_meta">
                                 <h6 style="color: #fff">TUMIYANA</h6>
-                                <span style="color: #fff">President Commissioner Widodo Makmur Perkasa</span>
+                                <span style="color: #fff"> Chief Excecutive Officer Widodo Makmur Perkasa</span>
                             	<p style="color: #fff">Indonesia memiliki Matahari bersinar 12 bulan serta Hujan selama 6 sampai 7 bulan, sangat disayangkan jika anugerah itu kita sia-siakan. Sobat Muda Indonesia, ayo kita berorkestrasi untuk Bertani.
 </p>
                             </div>

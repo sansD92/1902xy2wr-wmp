@@ -65,14 +65,15 @@ Indonesia</li>
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="#">PT Pasir Tengah</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="#">PT Cianjur Arta Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Prima Widodo Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Garut Makmur Perkasa</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodo Makmur Unggas</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodofood Makmur Sejahtera</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Langgeng Makmur Perkasa</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">PT Widodofood Makmur Sejahtera</a></li>                 
                         </ul>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tata Kelola & Investor</a>
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Investor</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="#">Informasi Pemegang Saham</a></li>
@@ -93,7 +94,7 @@ Indonesia</li>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-link " href="#">Berita & Media</a>
+                    <a class="nav-link " href="#">Berita</a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
