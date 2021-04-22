@@ -6,90 +6,90 @@
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/livestock1.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto1; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto1; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock1</a></h5>
-														<p>Kalimat livestock1</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/livestock2.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto2; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto2; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock2</a></h5>
-														<p>Kalimat livestock2</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/livestock3.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto3; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto3; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock3</a></h5>
-														<p>Kalimat livestock3</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/livestock4.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto4; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto4; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock4</a></h5>
-														<p>Kalimat livestock4</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/live5.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto5; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto5; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock5</a></h5>
-														<p>Kalimat livestock5</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
 						<li class="portfolio-item livestock">
 								<div class="portfolio_item">
 										<a href="#" class="image_link">
-												<img src="<?php echo base_url()?>assets/frontend/produk/live6.jpg" alt="image">
+												<img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk_foto6; ?>" alt="image">
 										</a>
 												<div class="portfolio_content">
 														<div class="link_container">
-																<a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
+																<a href="<?php echo base_url()?>assets/images/<?php echo $produk_foto6; ?>" class="image_popup"><i class="ion-image"></i></a>
 																<a href="#"><i class="ion-plus"></i></a>
 														</div>
-														<h5><a href="#">Livestock6</a></h5>
-														<p>Kalimat livestock6</p>
+														<h5><a href="#">Judul</a></h5>
+														<p>Kalimat Deskripsi</p>
 											</div>
 								</div>
 						</li>
