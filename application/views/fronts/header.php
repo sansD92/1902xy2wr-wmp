@@ -33,8 +33,19 @@ Indonesia</li>
                 <li class="dropdown dropdown-mega-menu">
                     <a class="nav-link active" href="#">Beranda</a>
                 </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="#">Tentang Kami</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Filosofi Visi & Misi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Milestone WMP</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Motto</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Dewan Komisaris</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Dewan Direksi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Company WMP</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Organisasi</a></li>
+                            </ul>
+                        </div>
                 </li>
                 <li class="dropdown dropdown-mega-menu">
                     <a class="nav-link " href="#">Lini Bisnis</a>
