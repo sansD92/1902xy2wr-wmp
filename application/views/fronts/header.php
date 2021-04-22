@@ -1,4 +1,4 @@
-<header class="header_wrap dark_skin hover_menu_style1">
+<header class="header_wrap dark_skin hover_menu_style1 background_bg" data-img-src="<?php echo base_url()?>assets/frontend/bar08.jpg">
   <div class="top-header bg_blue light_skin d-none d-md-block border-0">
         <div class="container">
             <div class="row align-items-center">
@@ -20,7 +20,7 @@ Indonesia</li>
             </div>
         </div>
     </div>
-  <div class="container">
+  <div class="container " >
     <nav class="navbar navbar-expand-lg">
     	<a class="navbar-brand" href="<?php echo base_url()?>">
 			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
