@@ -41,5 +41,9 @@ public function produk()
 {
   $this->load->view('fronts/produk/v_produk');
 }
+public function visimisi()
+{
+  $this->load->view('fronts/tentangkami/v_visimisi');
+}
 
 }

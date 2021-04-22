@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Main';
 $route['login'] = "Aspanel/login";
 $route['produk'] = "Main/produk";
+$route['visimisi'] = "Main/visimisi";
 
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;
