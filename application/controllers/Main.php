@@ -37,11 +37,9 @@ class Main extends CI_Controller {
 
 
 }
-public function produk()
+public function visimisi()
 {
-  $data['status']   = '';
-  $data['status_produk']   = 'active';
-  $this->load->view('fronts/produk/v_produk',$data);
+  $this->load->view('fronts/tentangkami/v_visimisi');
 }
 
 }
