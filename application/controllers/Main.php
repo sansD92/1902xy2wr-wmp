@@ -37,12 +37,4 @@ class Main extends CI_Controller {
 
 
 }
-public function produk()
-{
-  $data['status']   = '';
-  $data['status_produk']   = 'active';
-  $this->load->view('fronts/produk/v_produk',$data);
-}
 
-
-}

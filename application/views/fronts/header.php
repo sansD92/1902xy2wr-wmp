@@ -44,6 +44,7 @@ Indonesia</li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
+
                             </ul>
                         </div>
                 </li>
@@ -63,12 +64,12 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Pasir Tengah</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Cianjur Arta Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Prima Widodo Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Garut Makmur Perkasa</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Widodo Makmur Unggas</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">PT Widodofood Makmur Sejahtera</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">PT Pasir Tengah</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">PT Cianjur Arta Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">PT Prima Widodo Makmur</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">PT Garut Makmur Perkasa</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">PT Widodo Makmur Unggas</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">PT Widodofood Makmur Sejahtera</a></li>
                         </ul>
                     </div>
                 </li>
