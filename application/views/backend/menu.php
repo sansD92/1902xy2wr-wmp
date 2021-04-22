@@ -69,53 +69,7 @@
           </p>
         </a>
       </li>
-        <?php }?>
-      <?php  if($this->session->level=='1' OR $this->session->level=='2'){ ?>
-        <li class="nav-item <?php echo $produk_menu_open; ?>">
-          <a href="#" class="nav-link <?php echo $produk_category; ?> <?php echo $produk; ?> <?php echo $services; ?>">
-            <i class="nav-icon far fas fa-fw fa-users"></i>
-            <p>
-              Our Product
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <?php }?>
-
-          <ul class="nav nav-treeview">
-              <?php  if($this->session->level=='1'){ ?>
-            <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/products_cat" class="nav-link <?php echo $produk_category; ?> ">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Category</p>
-              </a>
-            </li>
-            <?php } ?>
-
-            <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link <?php echo $produk; ?>">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Works</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/services" class="nav-link <?php echo $services; ?>">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Services</p>
-              </a>
-            </li>
-
-          </ul>
-        </li>
-        <?php  if($this->session->level=='1'){ ?>
-        <li class="nav-item ">
-          <a href="<?php echo base_url(); ?>aspanel/testimonial" class="nav-link <?php echo $testimonial_stat; ?>">
-            <i class="nav-icon fas fa-cogs"></i>
-            <p>
-              Reviews
-            </p>
-          </a>
-        </li>
-        <?php } ?>
+        <?php }?>            
         <li class="nav-item ">
           <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link <?php echo $blogs_stat; ?>">
             <i class="nav-icon fas fa-blog"></i>
@@ -124,8 +78,6 @@
             </p>
           </a>
         </li>
-
-
       <li class="nav-item ">
         <a href="<?php echo base_url(); ?>aspanel/profil" class="nav-link <?php echo $konfig_stat; ?>">
           <i class="nav-icon fas fa-cogs"></i>

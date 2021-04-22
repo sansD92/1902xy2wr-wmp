@@ -18,6 +18,7 @@
             	<div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
 									<?php  foreach ($posts as $post_new){
 										$isi = character_limiter($post_new->blogs_desk,250);
+										$judul = character_limiter($post_new->blogs_judul,50);
 										?>
 										<div class="items">
                         <div class="blog_post blog_style1">
@@ -34,12 +35,12 @@
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#"><?php echo $post_new->blogs_judul?></a></h6>
+                                    <h6 class="blog_title"><a href="#"><?php echo $judul?></a></h6>
                                     <ul class="list_none blog_meta">
                                         <li><a href="#"><i class="ion-calendar"></i><?php echo tgl_indo($post_new->blogs_post_tanggal)?></a></li>
                                     </ul>
-                                    <p><?php echo $isi?></p>
-                                    <a href="#" class="text-capitalize">Lebih Lengkap</a>
+                                    <p><?php echo $isi?>.<a href="#" class="text-capitalize">Baca Lebih Lengkap</a></p>
+
                                 </div>
                             </div>
                         </div>

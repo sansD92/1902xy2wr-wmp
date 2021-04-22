@@ -11,9 +11,9 @@ Indonesia</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list_none social_icons text-center border_social rounded_social social_white text-md-right mt-2 mt-md-0">
+                    <ul class="list_none social_icons text-center rounded_social social_white text-md-right mt-2 mt-md-0">
                         <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>                        
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
                     </ul>
                 </div>
