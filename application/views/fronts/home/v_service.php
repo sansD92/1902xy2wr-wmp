@@ -3,8 +3,8 @@
     	<div class="row">
         	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
-                	<span class="sub_title">INTI BISNIS</span>
-                    <h2>INTI BISNIS</h2>
+                	<span class="sub_title">AKTIVITAS BISNIS</span>
+                    <h2>AKTIVITAS BISNIS</h2>
                 </div>
                 <!-- <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.<br class="d-none d-sm-block"> Nullam id varius nunc id varius nunc.</p> -->
             </div>

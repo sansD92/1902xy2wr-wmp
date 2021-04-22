@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-center">
         	<div class="col-md-5 text_white text-center text-md-left mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             	<div class="heading_s1 heading_light text-center text-md-left">
-                	<h2>Highlight!</h2>
+                	<h2>Highlight</h2>
                 </div>
                 <p>Bergabunglah Bersama Widodo Makmur Perkasa</p>
                 <a href="#" class="btn btn-outline-white">Gabung</a>

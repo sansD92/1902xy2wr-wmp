@@ -22,7 +22,7 @@
 												<div class="bisnis_post bisnis_style1">
 														<div class="blog_img">
 																<a href="#">
-																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/pst.jpg">
+																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/cattle.jpg">
 																</a>
 														</div>
 														<div class="blog_content bg-white">
@@ -78,7 +78,7 @@
 												<div class="bisnis_post bisnis_style1">
 														<div class="blog_img">
 																<a href="#">
-																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/lmpnew.jpeg">
+																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/LMP2.jpg">
 																</a>
 														</div>
 														<div class="blog_content bg-white">

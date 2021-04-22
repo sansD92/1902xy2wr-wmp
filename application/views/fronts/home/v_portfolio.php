@@ -17,12 +17,12 @@
         <div class="row mb-3 mb-sm-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
-                    <li><a href="#" class="current" data-filter=".livestock">Integrated Livestock</a></li>
-                    <li><a href="#" data-filter=".meat">Meat Processing</a></li>
-                    <li><a href="#" data-filter=".meatp">Processing</a></li>
-                    <li><a href="#" data-filter=".leather">Leather</a></li>
-                    <li><a href="#" data-filter=".poultry">Integrated Poultry</a></li>
-                    <li><a href="#" data-filter=".comodity">Commodity</a></li>
+                    <li><a href="#" class="current" data-filter=".livestock">PT Pasir Tengah</a></li>
+                    <li><a href="#" data-filter=".meat">PT Cianjur Arta Makmur</a></li>
+                    <li><a href="#" data-filter=".meatp">PT Prima Widodo Makmur</a></li>
+                    <li><a href="#" data-filter=".leather">PT Garut Makmur Perkasa</a></li>
+                    <li><a href="#" data-filter=".poultry">PT Widodo Makmur Unggas</a></li>
+                    <li><a href="#" data-filter=".comodity">PT Widodofood Makmur Sejahtera</a></li>
                 </ul>
             </div>
         </div>

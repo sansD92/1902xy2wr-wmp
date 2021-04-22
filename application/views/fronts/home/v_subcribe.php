@@ -1,4 +1,4 @@
-<section class="small_pt small_pb bg_blue">
+<section style="background-color: #000"class="small_pt small_pb bg_blue">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 text_white text-center">
@@ -8,7 +8,7 @@
                     <div class="newsletter_form newslattter_small">
                         <form>
                             <input class="form-control" type="text" required="" placeholder="Alamat Email">
-                            <button type="submit" title="Subscribe" class="btn btn-default" name="submit" value="Submit">
+                            <button type="submit" title="Subscribe" class="btn btn-default" name="submit" style="background-color: #000" value="Submit">
                             	Berlangganan
                             </button>
                         </form>
