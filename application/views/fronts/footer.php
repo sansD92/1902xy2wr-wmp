@@ -2,7 +2,7 @@
     <div class="top_footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="col-lg-6 col-md-12" >
                     <h2>BERHUBUNGAN DENGAN KAMI</h2>
                     <p>Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.</p>
                     <ul class="list_none footer_social">
@@ -12,7 +12,7 @@
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-md-12 mt-4 mt-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                <div class="col-lg-6 col-md-12 mt-4 mt-lg-0" >
                     <h2 >KONTAK KAMI</h2>
                     <ul class="contact_info contact_info_light list_none">
                         <li>
