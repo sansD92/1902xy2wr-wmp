@@ -37,7 +37,7 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Filosofi Visi & Misi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Visi & Misi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Milestone WMP</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Motto</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="#">Dewan Komisaris</a></li>
