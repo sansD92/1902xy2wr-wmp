@@ -7818,9 +7818,8 @@ select[multiple] option {
 	transform: translateY(-50%) translateZ(60px) scale(0.94);
 	top: 50%;
 	position: absolute;
-	left: 0;
+	left: 5;
 	width: 100%;
-	padding: 2rem;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: 1px solid transparent;

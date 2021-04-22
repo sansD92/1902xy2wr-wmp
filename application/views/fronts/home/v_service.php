@@ -20,9 +20,15 @@
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Responsive Design</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+                          <h5>Peternakan Sapi</h5>
+													<ul>
+														<ol>Total Kapasitas</ol>
+														<ol>172.000 ekor</ol>
+														<ol>4 farm</ol>
+														<ol>140 hektar</ol>
+														<ol>15% national market share</ol>
+													</ul>
+													<a href="<?php echo base_url()?>produk1" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -31,16 +37,20 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rph_cam.jpg">
 						<div class="inner">
-
 							<h5>Rumah Potong Hewan</h5>
-
 						</div>
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Retina Ready</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+              <h5>Rumah Potong Hewan</h5>
+							<ul>
+								<ol>300 ekor/hari</ol>
+								<ol>warehouse 300 ton</ol>
+								<ol>chiller & cold storage 500 ton</ol>
+								<ol>52 ton blast freezer</ol>
+								<ol>sertivikasi NKV & halal MUI</ol>
+							</ul>
+							<a href="<?php echo base_url()?>produk2" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -49,16 +59,19 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/wmunew1.jpg">
 						<div class="inner">
-
 							<h5>Rumah Potong Ayam</h5>
-
 						</div>
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Parallax Effact</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+                          <h5>Rumah Potong Ayam</h5>
+													<ul>
+														<ol>24.000 ekor/jam</ol>
+														<ol>storage</ol>
+														<ol>blast</ol>
+														<ol>freezer</ol>
+													</ul>
+													<a href="<?php echo base_url()?>produk5" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -67,16 +80,21 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/pwm.jpg">
 						<div class="inner">
-
 							<h5>Produksi Olahan</h5>
-
 						</div>
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Parallax Effact</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+                          <h5>Produksi Olahan</h5>
+													<ul>
+														<ol>produksi sosis</ol>
+														<ol>nugget</ol>
+														<ol>patty </ol>
+														<ol>bakso</ol>
+														<ol>minipao </ol>
+														<ol>dendeng</ol>
+													</ul>
+													<a href="<?php echo base_url()?>produk3" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -85,16 +103,16 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/feedmill.jpg">
 						<div class="inner">
-
 							<h5>Pemprosesan  Beras</h5>
-
 						</div>
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Parallax Effact</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+                          <h5>Pemprosesan  Beras</h5>
+													<ul>
+														<ol>50.000 ton</ol>
+													</ul>
+						 <a href="<?php echo base_url()?>produk6" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -103,16 +121,16 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/gmp.jpg">
 						<div class="inner">
-
 							<h5>PABRIK KULIT</h5>
-
 						</div>
 					</div>
 					<div class="back bg_blue">
 						<div class="inner">
-                          <h5>Parallax Effact</h5>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                          <a href="#" class="btn btn-outline-white">Read More</a>
+                          <h5>PABRIK KULIT</h5>
+													<ul>
+														<ol>lembar kulit</ol>
+													</ul>
+							<a href="<?php echo base_url()?>produk4" class="btn btn-outline-white">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
