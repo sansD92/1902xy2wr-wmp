@@ -1,7 +1,7 @@
 <section class="counter_wrap background_bg fixed_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/sawah.jpeg">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+        	<div class="col-md-12">
             	<div class="heading_s4 text-center">
                 	<span style="color: #fff"class="sub_title">Quotes</span>
                 	<h2 style="color: #fff">WMP</h2>
@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-        	<div class="col-md-8 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+        	<div class="col-md-8 " >
             	<div class="testimonial_slider testimonial_style3 carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-loop="true" data-autoplay="true">
                 	<div class="item">
                     	<div class="testimonial_box">

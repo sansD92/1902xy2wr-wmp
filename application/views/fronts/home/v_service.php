@@ -1,7 +1,7 @@
 <section class="small_pb">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+        	<div class="col-md-12">
                 <div class="heading_s4 text-center">
                 	<span class="sub_title">AKTIVITAS BISNIS</span>
                     <h2>AKTIVITAS BISNIS</h2>
@@ -9,7 +9,7 @@
                 <!-- <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.<br class="d-none d-sm-block"> Nullam id varius nunc id varius nunc.</p> -->
             </div>
         </div>
-        <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+        <div class="row " >
         	<div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/cianjur_farm.jpg">
@@ -47,7 +47,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rpa_giritontro.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/wmunew1.jpg">
 						<div class="inner">
 
 							<h5>Rumah Potong Ayam</h5>

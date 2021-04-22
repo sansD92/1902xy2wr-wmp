@@ -1,4 +1,4 @@
-<footer style="background-color: #E1282F" class="footer_dark">
+<footer style="background-color: #E1282F" class="footer_dark background_bg" data-img-src="<?php echo base_url()?>assets/frontend/footer.jpg">
     <div class="top_footer">
         <div class="container">
             <div class="row">
@@ -39,8 +39,8 @@ Indonesia
             </div>
         </div>
     </div>
-    <div style="background-color: #E1282F"class="bottom_footer">
-        <div style="background-color: #E1282F" class="container">
+    <div style="background-color: #E1282F"class="bottom_footer background_bg" data-img-src="<?php echo base_url()?>assets/frontend/footer.jpg">
+        <div  class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <p class="copyright m-md-0 text-center text-md-left">Widodo Makmur Perkasa</p>

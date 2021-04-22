@@ -1,7 +1,7 @@
 <section class="gray_bg" >
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+        	<div class="col-md-12">
             	<div class="heading_s4 text-center">
                 	<span class="sub_title">Berita Terbaru</span>
                 	<h2>Berita WMP</h2>

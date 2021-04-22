@@ -1,7 +1,7 @@
 <section class="small_pb light_gray_bg">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+        	<div class="col-md-12 " >
                 <div class="heading_s4 text-center">
                 	<span class="sub_title">LINI BISNIS</span>
                     <h2>Lini Bisnis</h2>
@@ -15,7 +15,7 @@
         </div>
 
 
-				<div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+				<div class="row ">
 					<div class="col-md-12">
 							<div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="10" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
 										<div class="items">

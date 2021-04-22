@@ -1,7 +1,7 @@
 <section id="about" class="overflow_hide">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
+            <div class="col-md-6" >
                 <div class="overlay_bg about_video_img mb-4 mb-lg-0">
                     <img src="<?php echo base_url()?>assets/frontend/prosuk.jpg" alt="about_img4"/>
                     <a href="https://www.youtube.com/watch?v=BxWT2FV8kTs" class="video_popup video_play"><img class="bounce_img" src="<?php echo base_url()?>assets/images/play-icon.png" alt="play-icon"></a>

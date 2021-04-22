@@ -6,7 +6,7 @@
             	<div class="container"><!-- STRART CONTAINER -->
                 <div class="row justify-content-center">
                     <div class="col-lg-9 col-sm-12 text-center">
-                        <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
+                        <div class="banner_content animation text_white" >
                             <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build</h2>
                             <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Lorem is simply text of the printing and typesetting industry.</p>
                             <a class="btn btn-default animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Get Started</a>
