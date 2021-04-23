@@ -108,10 +108,10 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Kesatriaan Entrepreneur Indonesia</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Kemitraan</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Kegiatan CSR</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Berkelanjutan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib">Kesatriaan Entrepreneur Indonesia</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan">Kemitraan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan_unggas">Kegiatan CSR</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>laporan">Laporan Berkelanjutan</a></li>
                         </ul>
                     </div>
                 </li>

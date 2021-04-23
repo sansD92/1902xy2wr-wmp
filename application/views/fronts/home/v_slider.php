@@ -2,6 +2,7 @@
     <div id="carouselExampleFade" class="banner_content_wrap carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/sapi1.jpg">
+
         	<div class="banner_slide_content">
             	<div class="container"><!-- STRART CONTAINER -->
                 <div class="row justify-content-center">
@@ -18,6 +19,7 @@
             </div>
         </div>
         <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/beranda1.jpg">
+
         	<div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
@@ -33,7 +35,9 @@
                 </div><!-- END CONTAINER-->
             </div>
         </div>
+
         <div class="carousel-item background_bg " data-img-src="<?php echo base_url()?>assets/frontend/slider/ayam1.jpg">
+
         	<div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
