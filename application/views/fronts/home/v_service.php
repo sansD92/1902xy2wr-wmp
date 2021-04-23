@@ -121,7 +121,7 @@
             	<div class="flip_box text_white">
 					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/gmp.jpg">
 						<div class="inner">
-							<h5>PABRIK KULIT</h5>
+							<h5>Penyamakan Kulit</h5>
 						</div>
 					</div>
 					<div class="back bg_blue">
