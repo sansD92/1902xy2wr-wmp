@@ -24,7 +24,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -42,7 +42,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -60,7 +60,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -256,7 +256,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -375,7 +375,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -399,7 +399,7 @@ class Aspanel extends CI_Controller {
 				$data['sliders_stat']   = '';
 				$data['products_stat']   = '';
 				$data['cat_products_stat']   = '';
-				$data['testimonial_stat']   = '';
+				$data['slider_stat']   = '';
 				$data['blogs_stat']   = '';
 				$data['message_stat']   = '';
 				$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -590,7 +590,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
@@ -834,8 +834,8 @@ class Aspanel extends CI_Controller {
 	/* konsumen - tutup */
 
 
-	/*	Bagian untuk Testimonial - Pembuka	*/
-	public function testimonial()
+	/*	Bagian untuk slider - Pembuka	*/
+	public function slider()
 	{
 		$data['karyawan_menu_open']   = '';
 		$data['home_stat']   = '';
@@ -844,7 +844,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = 'active';
+		$data['slider_stat']   = 'active';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -860,22 +860,22 @@ class Aspanel extends CI_Controller {
 		$data['produk_category']   = '';
 		$data['produk']   = '';
 		$data['services']   = '';
-		cek_session_akses ('testimonial',$this->session->id_session);
+		cek_session_akses ('slider',$this->session->id_session);
 				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('testimonial',array('testimonial_status'=>'publish'),'testimonial_id','DESC');
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'publish'),'slider_id','DESC');
 				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('testimonial',array('testimonial_post_oleh'=>$this->session->username,'testimonial_status'=>'publish'),'testimonial_id','DESC');
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_post_oleh'=>$this->session->username,'slider_status'=>'publish'),'slider_id','DESC');
 				}
-				$this->load->view('backend/testimonial/v_daftar', $data);
+				$this->load->view('backend/slider/v_daftar', $data);
 	}
-	public function testimonial_storage_bin()
+	public function slider_storage_bin()
 	{
 
-		cek_session_akses ('testimonial',$this->session->id_session);
+		cek_session_akses ('slider',$this->session->id_session);
 				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('testimonial',array('testimonial_status'=>'delete'),'testimonial_id','DESC');
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'delete'),'slider_id','DESC');
 				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('testimonial',array('testimonial_post_oleh'=>$this->session->username,'testimonial_status'=>'delete'),'testimonial_id','DESC');
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_post_oleh'=>$this->session->username,'slider_status'=>'delete'),'slider_id','DESC');
 				}
 				$data['karyawan_menu_open']   = '';
 				$data['home_stat']   = '';
@@ -884,7 +884,7 @@ class Aspanel extends CI_Controller {
 				$data['sliders_stat']   = '';
 				$data['products_stat']   = '';
 				$data['cat_products_stat']   = '';
-				$data['testimonial_stat']   = 'active';
+				$data['slider_stat']   = 'active';
 				$data['blogs_stat']   = '';
 				$data['message_stat']   = '';
 				$data['gallery_stat']   = '';
@@ -900,34 +900,34 @@ class Aspanel extends CI_Controller {
 				$data['produk_category']   = '';
 				$data['produk']   = '';
 				$data['services']   = '';
-				$this->load->view('backend/testimonial/v_daftar_hapus', $data);
+				$this->load->view('backend/slider/v_daftar_hapus', $data);
 	}
-	public function testimonial_tambahkan()
+	public function slider_tambahkan()
 	{
-		cek_session_akses('testimonial',$this->session->id_session);
+		cek_session_akses('slider',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'bahan/foto_testimonial/';
+					$config['upload_path'] = 'assets/frontend/slider/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_testimonial/'.$hasil22['file_name'];
+					$config['source_image'] = './assets/frontend/slider/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
 					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_testimonial/'.$hasil22['file_name'];
+					$config['new_image']= './assets/frontend/slider/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
-					if ($this->input->post('testimonial_keyword')!=''){
-								$tag_seo = $this->input->post('testimonial_keyword');
+					if ($this->input->post('slider_keyword')!=''){
+								$tag_seo = $this->input->post('slider_keyword');
 								$tag=implode(',',$tag_seo);
 						}else{
 								$tag = '';
 						}
-					$tag = $this->input->post('testimonial_keyword');
+					$tag = $this->input->post('slider_keyword');
 					$tags = explode(",", $tag);
 					$tags2 = array();
 					foreach($tags as $t)
@@ -946,34 +946,34 @@ class Aspanel extends CI_Controller {
 					$tags = implode(",", $tags2);
 					if ($hasil22['file_name']==''){
 									$data = array(
-										'testimonial_post_oleh'=>$this->session->username,
-										'testimonial_judul'=>$this->db->escape_str($this->input->post('testimonial_judul')),
-										'testimonial_judul_seo'=>$this->mylibrary->seo_title($this->input->post('testimonial_judul')),
-										'testimonial_desk'=>$this->input->post('testimonial_desk'),
-										'testimonial_post_hari'=>hari_ini(date('w')),
-										'testimonial_post_tanggal'=>date('Y-m-d'),
-										'testimonial_post_jam'=>date('H:i:s'),
-										'testimonial_dibaca'=>'0',
-										'testimonial_status'=>'publish',
-										'testimonial_meta_desk'=>$this->input->post('testimonial_meta_desk'),
-										'testimonial_keyword'=>$tag);
+										'slider_post_oleh'=>$this->session->username,
+										'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
+										'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
+										'slider_desk'=>$this->input->post('slider_desk'),
+										'slider_post_hari'=>hari_ini(date('w')),
+										'slider_post_tanggal'=>date('Y-m-d'),
+										'slider_post_jam'=>date('H:i:s'),
+										'slider_dibaca'=>'0',
+										'slider_status'=>'publish',
+										'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
+										'slider_keyword'=>$tag);
 											}else{
 												$data = array(
-													'testimonial_post_oleh'=>$this->session->username,
-													'testimonial_judul'=>$this->db->escape_str($this->input->post('testimonial_judul')),
-													'testimonial_judul_seo'=>$this->mylibrary->seo_title($this->input->post('testimonial_judul')),
-													'testimonial_desk'=>$this->input->post('testimonial_desk'),
-													'testimonial_post_hari'=>hari_ini(date('w')),
-													'testimonial_post_tanggal'=>date('Y-m-d'),
-													'testimonial_post_jam'=>date('H:i:s'),
-													'testimonial_dibaca'=>'0',
-													'testimonial_status'=>'publish',
-													'testimonial_gambar'=>$hasil22['file_name'],
-													'testimonial_meta_desk'=>$this->input->post('testimonial_meta_desk'),
-													'testimonial_keyword'=>$tag);
+													'slider_post_oleh'=>$this->session->username,
+													'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
+													'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
+													'slider_desk'=>$this->input->post('slider_desk'),
+													'slider_post_hari'=>hari_ini(date('w')),
+													'slider_post_tanggal'=>date('Y-m-d'),
+													'slider_post_jam'=>date('H:i:s'),
+													'slider_dibaca'=>'0',
+													'slider_status'=>'publish',
+													'slider_gambar'=>$hasil22['file_name'],
+													'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
+													'slider_keyword'=>$tag);
 												}
-								$this->As_m->insert('testimonial',$data);
-								redirect('aspanel/testimonial');
+								$this->As_m->insert('slider',$data);
+								redirect('aspanel/slider');
 				}else{
 					$data['karyawan_menu_open']   = '';
 					$data['home_stat']   = '';
@@ -982,7 +982,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = 'active';
+					$data['slider_stat']   = 'active';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
@@ -998,39 +998,38 @@ class Aspanel extends CI_Controller {
 					$data['produk_category']   = '';
 					$data['produk']   = '';
 					$data['services']   = '';
-					cek_session_akses ('testimonial',$this->session->id_session);
-					$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+					cek_session_akses ('slider',$this->session->id_session);
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
-					$this->load->view('backend/testimonial/v_tambahkan', $data);
+					$this->load->view('backend/slider/v_tambahkan', $data);
 				}
 	}
-	public function testimonial_update()
+	public function slider_update()
 	{
-		cek_session_akses('testimonial',$this->session->id_session);
+		cek_session_akses('slider',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-			$config['upload_path'] = 'bahan/foto_testimonial/';
+			$config['upload_path'] = 'assets/frontend/slider/';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 			$this->upload->initialize($config);
 			$this->upload->do_upload('gambar');
 			$hasil22=$this->upload->data();
 			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_testimonial/'.$hasil22['file_name'];
+			$config['source_image'] = './assets/frontend/slider/'.$hasil22['file_name'];
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
 			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_testimonial/'.$hasil22['file_name'];
+			$config['new_image']= './assets/frontend/slider/'.$hasil22['file_name'];
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
-			if ($this->input->post('testimonial_keyword')!=''){
-						$tag_seo = $this->input->post('testimonial_keyword');
+			if ($this->input->post('slider_keyword')!=''){
+						$tag_seo = $this->input->post('slider_keyword');
 						$tag=implode(',',$tag_seo);
 				}else{
 						$tag = '';
 				}
-			$tag = $this->input->post('testimonial_keyword');
+			$tag = $this->input->post('slider_keyword');
 			$tags = explode(",", $tag);
 			$tags2 = array();
 			foreach($tags as $t)
@@ -1049,45 +1048,45 @@ class Aspanel extends CI_Controller {
 			$tags = implode(",", $tags2);
 						if ($hasil22['file_name']==''){
 										$data = array(
-											'testimonial_post_oleh'=>$this->session->username,
-											'testimonial_judul'=>$this->db->escape_str($this->input->post('testimonial_judul')),
-											'testimonial_judul_seo'=>$this->mylibrary->seo_title($this->input->post('testimonial_judul')),
+											'slider_post_oleh'=>$this->session->username,
+											'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
+											'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 											'products_cat_id'=>$this->input->post('products_cat_id'),
-											'testimonial_desk'=>$this->input->post('testimonial_desk'),
-											'testimonial_post_hari'=>hari_ini(date('w')),
-											'testimonial_post_tanggal'=>date('Y-m-d'),
-											'testimonial_post_jam'=>date('H:i:s'),
-											'testimonial_meta_desk'=>$this->input->post('testimonial_meta_desk'),
-											'testimonial_keyword'=>$tag);
-											$where = array('testimonial_id' => $this->input->post('testimonial_id'));
-											$this->db->update('testimonial', $data, $where);
+											'slider_desk'=>$this->input->post('slider_desk'),
+											'slider_post_hari'=>hari_ini(date('w')),
+											'slider_post_tanggal'=>date('Y-m-d'),
+											'slider_post_jam'=>date('H:i:s'),
+											'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
+											'slider_keyword'=>$tag);
+											$where = array('slider_id' => $this->input->post('slider_id'));
+											$this->db->update('slider', $data, $where);
 						}else{
 										$data = array(
-											'testimonial_post_oleh'=>$this->session->username,
-											'testimonial_judul'=>$this->db->escape_str($this->input->post('testimonial_judul')),
-											'testimonial_judul_seo'=>$this->mylibrary->seo_title($this->input->post('testimonial_judul')),
+											'slider_post_oleh'=>$this->session->username,
+											'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
+											'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 											'products_cat_id'=>$this->input->post('products_cat_id'),
-											'testimonial_desk'=>$this->input->post('testimonial_desk'),
-											'testimonial_post_hari'=>hari_ini(date('w')),
-											'testimonial_post_tanggal'=>date('Y-m-d'),
-											'testimonial_post_jam'=>date('H:i:s'),
-											'testimonial_gambar'=>$hasil22['file_name'],
-											'testimonial_meta_desk'=>$this->input->post('testimonial_meta_desk'),
-											'testimonial_keyword'=>$tag);
-											$where = array('testimonial_id' => $this->input->post('testimonial_id'));
-											$_image = $this->db->get_where('testimonial',$where)->row();
-											$query = $this->db->update('testimonial',$data,$where);
+											'slider_desk'=>$this->input->post('slider_desk'),
+											'slider_post_hari'=>hari_ini(date('w')),
+											'slider_post_tanggal'=>date('Y-m-d'),
+											'slider_post_jam'=>date('H:i:s'),
+											'slider_gambar'=>$hasil22['file_name'],
+											'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
+											'slider_keyword'=>$tag);
+											$where = array('slider_id' => $this->input->post('slider_id'));
+											$_image = $this->db->get_where('slider',$where)->row();
+											$query = $this->db->update('slider',$data,$where);
 											if($query){
-												unlink("bahan/foto_testimonial/".$_image->sliders_gambar);
+												unlink("assets/frontend/slider/".$_image->sliders_gambar);
 											}
 
 						}
-						redirect('aspanel/testimonial');
+						redirect('aspanel/slider');
 		}else{
 			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('testimonial', array('testimonial_id' => $id))->row_array();
+					 $proses = $this->As_m->edit('slider', array('slider_id' => $id))->row_array();
 			}else{
-					$proses = $this->As_m->edit('testimonial', array('testimonial_id' => $id, 'testimonial_post_oleh' => $this->session->username))->row_array();
+					$proses = $this->As_m->edit('slider', array('slider_id' => $id, 'slider_post_oleh' => $this->session->username))->row_array();
 			}
 			$data = array('rows' => $proses);
 			$data['karyawan_menu_open']   = '';
@@ -1097,7 +1096,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = 'active';
+			$data['slider_stat']   = 'active';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
@@ -1113,42 +1112,41 @@ class Aspanel extends CI_Controller {
 			$data['produk_category']   = '';
 			$data['produk']   = '';
 			$data['services']   = '';
-			cek_session_akses ('testimonial',$this->session->id_session);
-			$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+			cek_session_akses ('slider',$this->session->id_session);
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
-			$this->load->view('backend/testimonial/v_update', $data);
+			$this->load->view('backend/slider/v_update', $data);
 		}
 	}
-	function testimonial_delete_temp()
+	function slider_delete_temp()
 	{
 
-			cek_session_akses ('testimonial',$this->session->id_session);
-			$data = array('testimonial_status'=>'delete');
-			$where = array('testimonial_id' => $this->uri->segment(3));
-			$this->db->update('testimonial', $data, $where);
-			redirect('aspanel/testimonial');
+			cek_session_akses ('slider',$this->session->id_session);
+			$data = array('slider_status'=>'delete');
+			$where = array('slider_id' => $this->uri->segment(3));
+			$this->db->update('slider', $data, $where);
+			redirect('aspanel/slider');
 	}
-	function testimonial_restore()
+	function slider_restore()
 	{
 
-			cek_session_akses ('testimonial',$this->session->id_session);
-			$data = array('testimonial_status'=>'Publish');
-			$where = array('testimonial_id' => $this->uri->segment(3));
-			$this->db->update('testimonial', $data, $where);
-			redirect('aspanel/testimonial_storage_bin');
+			cek_session_akses ('slider',$this->session->id_session);
+			$data = array('slider_status'=>'Publish');
+			$where = array('slider_id' => $this->uri->segment(3));
+			$this->db->update('slider', $data, $where);
+			redirect('aspanel/slider_storage_bin');
 	}
-	public function testimonial_delete()
+	public function slider_delete()
 	{
-			cek_session_akses ('testimonial',$this->session->id_session);
+			cek_session_akses ('slider',$this->session->id_session);
 			$id = $this->uri->segment(3);
-			$_id = $this->db->get_where('testimonial',['testimonial_id' => $id])->row();
-			 $query = $this->db->delete('testimonial',['testimonial_id'=>$id]);
+			$_id = $this->db->get_where('slider',['slider_id' => $id])->row();
+			 $query = $this->db->delete('slider',['slider_id'=>$id]);
 			if($query){
-							 unlink("./bahan/foto_testimonial/".$_id->testimonials_gambar);
+							 unlink("./bahan/foto_slider/".$_id->sliders_gambar);
 		 }
-		redirect('aspanel/testimonial_storage_bin');
+		redirect('aspanel/slider_storage_bin');
 	}
-	/*	Bagian untuk Testimonial - Penutup	*/
+	/*	Bagian untuk slider - Penutup	*/
 
 	/*	Bagian untuk Message - Pembuka	*/
 	public function message()
@@ -1160,7 +1158,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = 'active';
 		cek_session_akses ('products',$this->session->id_session);
@@ -1184,7 +1182,7 @@ class Aspanel extends CI_Controller {
  		$data['sliders_stat']   = '';
  		$data['products_stat']   = '';
  		$data['cat_products_stat']   = '';
- 		$data['testimonial_stat']   = '';
+ 		$data['slider_stat']   = '';
  		$data['blogs_stat']   = '';
  		$data['message_stat']   = '';
  		$data['gallery_stat']   = '';
@@ -1216,7 +1214,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1380,7 +1378,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1580,7 +1578,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1638,7 +1636,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = 'active';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1666,7 +1664,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = 'active';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1760,7 +1758,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = 'active';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = 'active';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -1960,7 +1958,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = 'active';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -2009,716 +2007,6 @@ class Aspanel extends CI_Controller {
 	}
 	/*	Bagian untuk Data Karyawan - Penutup	*/
 
-	/*	Bagian untuk Data Absensi - Pembuka	*/
-	public function absen()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = 'menu-open';
-	    $data['jamkerja_stat']   = '';
-	    $data['absen_stat']   = 'active';
-	    $data['dataabsen_stat']   = '';
-	    $data['cuti_stat']   = '';
-	    $data['gaji_stat']   = '';
-	    $data['pengumuman_stat']   = '';
-	    $data['konfig_stat']   = '';
-
-				if ($this->session->level=='1'){
-						$now = date('H:i:s');
-						$data['absen'] = $this->As_m->absen_harian_user($this->session->id_user)->num_rows();
-				}elseif ($this->session->level=='2'){
-					$now = date('H:i:s');
-					$data['absen'] = $this->As_m->absen_harian_user($this->session->id_user)->num_rows();
-				}elseif ($this->session->level=='3'){
-					$now = date('H:i:s');
-					$data['absen'] = $this->As_m->absen_harian_user($this->session->id_user)->num_rows();
-				}else{
-						redirect('aspanel/absen');
-				}
-				$this->load->view('backend/data_absen/v_daftar', $data);
-	}
-	public function absen_storage_bin()
-	{
-		$data['karyawan_menu_open']   = 'menu-open';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = 'active';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-		cek_session_akses ('data_karyawan',$this->session->id_session);
-				if ($this->session->level=='1'){
-					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
-			}else{
-				$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
-			}
-			$this->load->view('backend/data_karyawan/v_daftar_hapus', $data);
-	}
-	public function absen_tambahkan()
-	{
-		cek_session_akses('data_karyawan',$this->session->id_session);
-		if (isset($_POST['submit'])){
-
-					$config['upload_path'] = 'bahan/foto_karyawan/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar');
-					$hasil22=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_karyawan/'.$hasil22['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['width']= 800;
-					$config['height']= 800;
-					$config['new_image']= './bahan/foto_karyawan/'.$hasil22['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-
-												if ($hasil22['file_name']==''){
-
-												$data = array(
-													'username' => $this->input->post('username'),
-													'email' => $this->input->post('email'),
-													'password' => sha1($this->input->post('password')),
-													'user_status' => '1',
-													'level' => $this->input->post('user_status'),
-													'user_stat' => 'publish',
-													'user_post_hari'=>hari_ini(date('w')),
-													'user_post_tanggal'=>date('Y-m-d'),
-													'user_post_jam'=>date('H:i:s'),
-													'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-													'nama' => $this->input->post('nama'));
-												}else {
-												$data = array(
-													'username' => $this->input->post('username'),
-													'email' => $this->input->post('email'),
-													'password' => sha1($this->input->post('password')),
-													'user_status' => '1',
-													'level' => $this->input->post('user_status'),
-													'user_stat' => 'publish',
-													'user_post_hari'=>hari_ini(date('w')),
-													'user_post_tanggal'=>date('Y-m-d'),
-													'user_post_jam'=>date('H:i:s'),
-													'user_gambar'=>$hasil22['file_name'],
-													'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-													'nama' => $this->input->post('nama'));
-												}
-											$id_pelanggan = $this->Crud_m->tambah_user($data);
-											$data_user_detail = array(
-													'id_user' => $id_pelanggan,
-													'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-													'user_detail_agama' => $this->input->post('user_detail_agama'),
-													'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-													'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-													'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-													'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-													'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-													'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-													'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-													'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-											$this->Crud_m->tambah_user_detail($data_user_detail);
-											redirect('aspanel/data_karyawan');
-				}else{
-					$data['karyawan_menu_open']   = 'menu-open';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = 'active';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = 'active';
-					$data['testimonial_stat']   = '';
-					$data['blogs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-					cek_session_akses ('data_karyawan',$this->session->id_session);
-					$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-					$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
-					$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
-					$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
-					$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
-					$this->load->view('backend/data_karyawan/v_tambahkan', $data);
-				}
-	}
-	public function absen_update()
-	{
-		cek_session_akses('data_karyawan',$this->session->id_session);
-		$id = $this->uri->segment(3);
-		if (isset($_POST['submit'])){
-
-			$config['upload_path'] = 'bahan/foto_karyawan/';
-			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar');
-			$hasil22=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_karyawan/'.$hasil22['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['width']= 800;
-			$config['height']= 800;
-			$config['new_image']= './bahan/foto_karyawan/'.$hasil22['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-			$pass = sha1($this->input->post('password'));
-
-
-						if ($hasil22['file_name']=='' AND $this->input->post('password')==''){
-							$data = array(
-								'username' => $this->input->post('username'),
-								'email' => $this->input->post('email'),
-								'level' => $this->input->post('user_status'),
-								'user_update_hari'=>hari_ini(date('w')),
-								'user_update_tanggal'=>date('Y-m-d'),
-								'user_update_jam'=>date('H:i:s'),
-								'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-								'nama' => $this->input->post('nama'));
-
-
-							$data2 = array(
-							'id_user' => $this->input->post('id_user'),
-							'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-							'user_detail_agama' => $this->input->post('user_detail_agama'),
-							'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-							'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-							'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-							'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-							'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-							'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-							'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-							'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-							$where = array('id_user' => $this->input->post('id_user'));
-							$id = $this->db->update('user',$data,$where);
-							$id2 = $this->db->update('user_detail',$data2,$where);
-
-
-						}else if($this->input->post('password')==''){
-								$data = array(
-									'username' => $this->input->post('username'),
-									'email' => $this->input->post('email'),
-									'level' => $this->input->post('user_status'),
-									'user_update_hari'=>hari_ini(date('w')),
-									'user_update_tanggal'=>date('Y-m-d'),
-									'user_update_jam'=>date('H:i:s'),
-									'user_gambar'=>$hasil22['file_name'],
-									'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-									'nama' => $this->input->post('nama'));
-
-
-								$data2 = array(
-								'id_user' => $this->input->post('id_user'),
-								'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-								'user_detail_agama' => $this->input->post('user_detail_agama'),
-								'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-								'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-								'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-								'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-								'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-								'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-								'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-								'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-								$where = array('id_user' => $this->input->post('id_user'));
-								$_image = $this->db->get_where('user',$where)->row();
-								$id2 = $this->db->update('user_detail',$data2,$where);
-								$query = $this->db->update('user',$data,$where);
-								if($query){
-									unlink("bahan/foto_karyawan/".$_image->user_gambar);
-								}
-
-							}else if($hasil22['file_name']==''){
-									$data = array(
-										'username' => $this->input->post('username'),
-										'email' => $this->input->post('email'),
-										'password' => $pass,
-										'level' => $this->input->post('user_status'),
-										'user_update_hari'=>hari_ini(date('w')),
-										'user_update_tanggal'=>date('Y-m-d'),
-										'user_update_jam'=>date('H:i:s'),
-										'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-										'nama' => $this->input->post('nama'));
-
-
-									$data2 = array(
-									'id_user' => $this->input->post('id_user'),
-									'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-									'user_detail_agama' => $this->input->post('user_detail_agama'),
-									'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-									'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-									'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-									'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-									'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-									'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-									'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-									'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-									$where = array('id_user' => $this->input->post('id_user'));
-									$id = $this->db->update('user',$data,$where);
-									$id2 = $this->db->update('user_detail',$data2,$where);
-
-
-								}else{
-							$data = array(
-								'username' => $this->input->post('username'),
-								'email' => $this->input->post('email'),
-								'password' => sha1($this->input->post('password')),
-								'level' => $this->input->post('user_status'),
-								'user_update_hari'=>hari_ini(date('w')),
-								'user_update_tanggal'=>date('Y-m-d'),
-								'user_update_jam'=>date('H:i:s'),
-								'user_gambar'=>$hasil22['file_name'],
-								'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-								'nama' => $this->input->post('nama'));
-
-								$data2 = array(
-								'id_user' => $this->input->post('id_user'),
-								'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-								'user_detail_agama' => $this->input->post('user_detail_agama'),
-								'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-								'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-								'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-								'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-								'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-								'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-								'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-								'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-								$where = array('id_user' => $this->input->post('id_user'));
-								$_image = $this->db->get_where('user',$where)->row();
-
-								$id2 = $this->db->update('user_detail',$data2,$where);
-								$query = $this->db->update('user',$data,$where);
-								if($query){
-									unlink("bahan/foto_karyawan/".$_image->user_gambar);
-								}
-							}
-						redirect('aspanel/absen');
-		}else{
-			if ($this->session->level=='1'){
-						 $proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
-				}else{
-						$proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
-				}
-			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = 'menu-open';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = 'active';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
-			$data['blogs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-			cek_session_akses ('data_karyawan',$this->session->id_session);
-			$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-			$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
-			$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
-			$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
-			$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
-			$this->load->view('backend/data_karyawan/v_update', $data);
-		}
-	}
-	/*	Bagian untuk Absensi - Penutup	*/
-
-
-	/*	Bagian untuk Data Absensi - Pembuka	*/
-	public function data_absensi()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = 'menu-open';
-	    $data['jamkerja_stat']   = '';
-	    $data['absen_stat']   = '';
-	    $data['dataabsen_stat']   = 'active';
-	    $data['cuti_stat']   = '';
-	    $data['gaji_stat']   = '';
-	    $data['pengumuman_stat']   = '';
-	    $data['konfig_stat']   = '';
-
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish'),'id_user','DESC');
-				}elseif ($this->session->level=='2'){
-					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'publish'),'id_user','DESC');
-				}elseif ($this->session->level=='3'){
-					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('username'=>$this->session->username,'user_stat'=>'publish'),'id_user','DESC');
-				}else{
-					redirect('aspanel/data_karyawan');
-				}
-				$this->load->view('backend/data_absensi/v_daftar', $data);
-	}
-	public function data_absensi_storage_bin()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = 'menu-open';
-	    $data['jamkerja_stat']   = '';
-	    $data['absen_stat']   = '';
-	    $data['dataabsen_stat']   = 'active';
-	    $data['cuti_stat']   = '';
-	    $data['gaji_stat']   = '';
-	    $data['pengumuman_stat']   = '';
-	    $data['konfig_stat']   = '';
-		cek_session_akses ('data_karyawan',$this->session->id_session);
-				if ($this->session->level=='1'){
-					$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
-			}else{
-				$data['record'] = $this->Crud_m->view_join_where2_ordering('user','user_level','level','user_level_id',array('user_stat'=>'delete'),'id_user','DESC');
-			}
-			$this->load->view('backend/data_karyawan/v_daftar_hapus', $data);
-	}
-	public function data_absensi_tambahkan()
-	{
-		cek_session_akses('data_karyawan',$this->session->id_session);
-		if (isset($_POST['submit'])){
-
-					$config['upload_path'] = 'bahan/foto_karyawan/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar');
-					$hasil22=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_karyawan/'.$hasil22['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['width']= 800;
-					$config['height']= 800;
-					$config['new_image']= './bahan/foto_karyawan/'.$hasil22['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-
-												if ($hasil22['file_name']==''){
-
-												$data = array(
-													'username' => $this->input->post('username'),
-													'email' => $this->input->post('email'),
-													'password' => sha1($this->input->post('password')),
-													'user_status' => '1',
-													'level' => $this->input->post('user_status'),
-													'user_stat' => 'publish',
-													'user_post_hari'=>hari_ini(date('w')),
-													'user_post_tanggal'=>date('Y-m-d'),
-													'user_post_jam'=>date('H:i:s'),
-													'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-													'nama' => $this->input->post('nama'));
-												}else {
-												$data = array(
-													'username' => $this->input->post('username'),
-													'email' => $this->input->post('email'),
-													'password' => sha1($this->input->post('password')),
-													'user_status' => '1',
-													'level' => $this->input->post('user_status'),
-													'user_stat' => 'publish',
-													'user_post_hari'=>hari_ini(date('w')),
-													'user_post_tanggal'=>date('Y-m-d'),
-													'user_post_jam'=>date('H:i:s'),
-													'user_gambar'=>$hasil22['file_name'],
-													'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-													'nama' => $this->input->post('nama'));
-												}
-											$id_pelanggan = $this->Crud_m->tambah_user($data);
-											$data_user_detail = array(
-													'id_user' => $id_pelanggan,
-													'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-													'user_detail_agama' => $this->input->post('user_detail_agama'),
-													'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-													'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-													'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-													'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-													'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-													'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-													'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-													'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-											$this->Crud_m->tambah_user_detail($data_user_detail);
-											redirect('aspanel/data_karyawan');
-				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
-					$data['blogs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = '';
-					$data['kehadiran_menu_open']   = 'menu-open';
-            	    $data['jamkerja_stat']   = '';
-            	    $data['absen_stat']   = '';
-            	    $data['dataabsen_stat']   = 'active';
-            	    $data['cuti_stat']   = '';
-            	    $data['gaji_stat']   = '';
-            	    $data['pengumuman_stat']   = '';
-            	    $data['konfig_stat']   = '';
-					cek_session_akses ('data_karyawan',$this->session->id_session);
-					$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-					$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
-					$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
-					$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
-					$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
-					$this->load->view('backend/data_karyawan/v_tambahkan', $data);
-				}
-	}
-	public function data_absensi_update()
-	{
-		cek_session_akses('data_karyawan',$this->session->id_session);
-		$id = $this->uri->segment(3);
-		if (isset($_POST['submit'])){
-
-			$config['upload_path'] = 'bahan/foto_karyawan/';
-			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar');
-			$hasil22=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_karyawan/'.$hasil22['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['width']= 800;
-			$config['height']= 800;
-			$config['new_image']= './bahan/foto_karyawan/'.$hasil22['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-			$pass = sha1($this->input->post('password'));
-
-
-						if ($hasil22['file_name']=='' AND $this->input->post('password')==''){
-							$data = array(
-								'username' => $this->input->post('username'),
-								'email' => $this->input->post('email'),
-								'level' => $this->input->post('user_status'),
-								'user_update_hari'=>hari_ini(date('w')),
-								'user_update_tanggal'=>date('Y-m-d'),
-								'user_update_jam'=>date('H:i:s'),
-								'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-								'nama' => $this->input->post('nama'));
-
-
-							$data2 = array(
-							'id_user' => $this->input->post('id_user'),
-							'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-							'user_detail_agama' => $this->input->post('user_detail_agama'),
-							'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-							'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-							'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-							'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-							'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-							'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-							'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-							'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-							$where = array('id_user' => $this->input->post('id_user'));
-							$id = $this->db->update('user',$data,$where);
-							$id2 = $this->db->update('user_detail',$data2,$where);
-
-
-						}else if($this->input->post('password')==''){
-								$data = array(
-									'username' => $this->input->post('username'),
-									'email' => $this->input->post('email'),
-									'level' => $this->input->post('user_status'),
-									'user_update_hari'=>hari_ini(date('w')),
-									'user_update_tanggal'=>date('Y-m-d'),
-									'user_update_jam'=>date('H:i:s'),
-									'user_gambar'=>$hasil22['file_name'],
-									'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-									'nama' => $this->input->post('nama'));
-
-
-								$data2 = array(
-								'id_user' => $this->input->post('id_user'),
-								'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-								'user_detail_agama' => $this->input->post('user_detail_agama'),
-								'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-								'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-								'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-								'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-								'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-								'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-								'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-								'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-								$where = array('id_user' => $this->input->post('id_user'));
-								$_image = $this->db->get_where('user',$where)->row();
-								$id2 = $this->db->update('user_detail',$data2,$where);
-								$query = $this->db->update('user',$data,$where);
-								if($query){
-									unlink("bahan/foto_karyawan/".$_image->user_gambar);
-								}
-
-							}else if($hasil22['file_name']==''){
-									$data = array(
-										'username' => $this->input->post('username'),
-										'email' => $this->input->post('email'),
-										'password' => $pass,
-										'level' => $this->input->post('user_status'),
-										'user_update_hari'=>hari_ini(date('w')),
-										'user_update_tanggal'=>date('Y-m-d'),
-										'user_update_jam'=>date('H:i:s'),
-										'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-										'nama' => $this->input->post('nama'));
-
-
-									$data2 = array(
-									'id_user' => $this->input->post('id_user'),
-									'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-									'user_detail_agama' => $this->input->post('user_detail_agama'),
-									'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-									'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-									'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-									'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-									'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-									'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-									'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-									'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-									$where = array('id_user' => $this->input->post('id_user'));
-									$id = $this->db->update('user',$data,$where);
-									$id2 = $this->db->update('user_detail',$data2,$where);
-
-
-								}else{
-							$data = array(
-								'username' => $this->input->post('username'),
-								'email' => $this->input->post('email'),
-								'password' => sha1($this->input->post('password')),
-								'level' => $this->input->post('user_status'),
-								'user_update_hari'=>hari_ini(date('w')),
-								'user_update_tanggal'=>date('Y-m-d'),
-								'user_update_jam'=>date('H:i:s'),
-								'user_gambar'=>$hasil22['file_name'],
-								'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-								'nama' => $this->input->post('nama'));
-
-								$data2 = array(
-								'id_user' => $this->input->post('id_user'),
-								'user_detail_jekel' => $this->input->post('user_detail_jekel'),
-								'user_detail_agama' => $this->input->post('user_detail_agama'),
-								'user_detail_tempatlahir' => $this->input->post('user_detail_tempatlahir'),
-								'user_detail_tgllahir' => $this->input->post('user_detail_tgllahir'),
-								'user_detail_perkawinan' => $this->input->post('user_detail_perkawinan'),
-								'user_detail_pendidikan' => $this->input->post('user_detail_pendidikan'),
-								'user_detail_tempattinggal' => $this->input->post('user_detail_tempattinggal'),
-								'user_detail_no_telp' => $this->input->post('user_detail_no_telp'),
-								'user_detail_divisi' => $this->input->post('user_detail_divisi'),
-								'user_detail_ktp' => $this->input->post('user_detail_ktp'));
-
-								$where = array('id_user' => $this->input->post('id_user'));
-								$_image = $this->db->get_where('user',$where)->row();
-
-								$id2 = $this->db->update('user_detail',$data2,$where);
-								$query = $this->db->update('user',$data,$where);
-								if($query){
-									unlink("bahan/foto_karyawan/".$_image->user_gambar);
-								}
-							}
-						redirect('aspanel/data_karyawan');
-		}else{
-			if ($this->session->level=='1'){
-						 $proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
-				}else{
-						$proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
-				}
-			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
-			$data['blogs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = '';
-			$data['kehadiran_menu_open']   = 'menu-open';
-    	    $data['jamkerja_stat']   = '';
-    	    $data['absen_stat']   = '';
-    	    $data['dataabsen_stat']   = 'active';
-    	    $data['cuti_stat']   = '';
-    	    $data['gaji_stat']   = '';
-    	    $data['pengumuman_stat']   = '';
-    	    $data['konfig_stat']   = '';
-			cek_session_akses ('data_karyawan',$this->session->id_session);
-			$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-			$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
-			$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
-			$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
-			$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
-			$this->load->view('backend/data_karyawan/v_update', $data);
-		}
-	}
-	function data_absensi_delete_temp()
-	{
-			cek_session_akses ('data_karyawan',$this->session->id_session);
-			$data = array('user_stat'=>'delete');
-			$where = array('id_user' => $this->uri->segment(3));
-			$this->db->update('user', $data, $where);
-			redirect('aspanel/data_karyawan');
-	}
-	function data_absensi_restore()
-	{
-			cek_session_akses ('data_karyawan',$this->session->id_session);
-			$data = array('user_stat'=>'Publish');
-			$where = array('id_user' => $this->uri->segment(3));
-			$this->db->update('user', $data, $where);
-			redirect('aspanel/data_karyawan_storage_bin');
-	}
-	public function data_absensi_delete()
-	{
-			cek_session_akses ('data_karyawan',$this->session->id_session);
-			$id = $this->uri->segment(3);
-			$_id = $this->db->get_where('user',['id_user' => $id])->row();
-			$query = $this->db->delete('user',['id_user'=> $id]);
-			$_id2 = $this->db->get_where('user_detail',['id_user' => $id])->row();
-			$query2 = $this->db->delete('user_detail',['id_user'=> $id]);
-			if($query){
-							 unlink("./bahan/foto_karyawan/".$_id->user_gambar);
-		 }
-		redirect('aspanel/data_karyawan_storage_bin');
-	}
-	/*	Bagian untuk Data Absensi - Penutup	*/
 
 	/*	Bagian untuk products cat - Pembuka	*/
 	public function products_cat()
@@ -2730,7 +2018,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -2763,7 +2051,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -2869,7 +2157,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
@@ -2983,7 +2271,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
@@ -3044,7 +2332,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -3076,7 +2364,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -3182,7 +2470,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
@@ -3297,7 +2585,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
@@ -3346,98 +2634,6 @@ class Aspanel extends CI_Controller {
 	/*	Bagian untuk Product Category - Penutup	*/
 
 
-	/*	Bagian untuk Jam kerja - Pembuka	*/
-	public function jam_kerja()
-	{
-
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = 'menu-open';
-	    $data['jamkerja_stat']   = 'active';
-	    $data['absen_stat']   = '';
-	    $data['dataabsen_stat']   = '';
-	    $data['cuti_stat']   = '';
-	    $data['gaji_stat']   = '';
-	    $data['pengumuman_stat']   = '';
-	    $data['konfig_stat']   = '';
-
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_ordering('user_jam','user_jam_id','DESC');
-				}elseif($this->session->level=='2'){
-						$data['record'] = $this->Crud_m->view_ordering('user_jam','user_jam_id','DESC');
-				}else{
-						redirect('aspanel/jam_kerja');
-				}
-
-				$this->load->view('backend/jamkerja/v_daftar', $data);
-	}
-	public function jam_kerja_storage_bin()
-	{
-		$data['karyawan_menu_open']   = 'menu-open';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = 'active';
-		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = ''; 	     		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'delete'),'divisi_id','DESC');
-				}elseif($this->session->level=='2'){
-						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'delete'),'divisi_id','DESC');
-				}else{
-						redirect('aspanel/jam_kerja');
-				}
-				$this->load->view('backend/divisi/v_daftar_hapus', $data);
-	}
-	public function jam_kerja_update()
-	{
-		cek_session_akses('jam_kerja',$this->session->id_session);
-		$id = $this->uri->segment(3);
-		if (isset($_POST['submit'])){
-										$data = array(
-											'user_jam_mulai'=>$this->input->post('user_jam_mulai'),
-											'user_jam_selesai'=>$this->input->post('user_jam_selesai'));
-											$where = array('user_jam_judul_seo' => $this->input->post('user_jam_judul_seo'));
-											$this->db->update('user_jam', $data, $where);
-
-						redirect('aspanel/jam_kerja');
-		}else{
-			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('user_jam', array('user_jam_judul_seo' => $id))->row_array();
-			}else{
-					$proses = $this->As_m->edit('user_jam', array('user_jam_judul_seo' => $id))->row_array();
-			}
-			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
-			$data['blogs_stat']   = 'active';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = 'menu-open'; 	    $data['jamkerja_stat']   = 'active'; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-			cek_session_akses ('jam_kerja',$this->session->id_session);
-			$this->load->view('backend/jamkerja/v_update', $data);
-		}
-	}
-	/*	Bagian untuk Jam kerja - Penutup	*/
 
 	/*	Bagian untuk Divisi - Pembuka	*/
 	public function divisi()
@@ -3449,7 +2645,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = 'active';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3473,7 +2669,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = 'active';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3515,7 +2711,7 @@ class Aspanel extends CI_Controller {
 					$data['profil_stat']   = '';
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['cat_products_stat']   = 'active';
 					$data['message_stat']   = 'active';
@@ -3561,7 +2757,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = 'active';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3613,7 +2809,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = 'active';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3640,7 +2836,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = 'active';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3686,7 +2882,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = 'active';
 					$data['cat_products_stat']   = 'active';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3735,7 +2931,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = 'active';
 			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3789,7 +2985,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -3828,7 +3024,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -3884,7 +3080,7 @@ class Aspanel extends CI_Controller {
                 		$data['sliders_stat']   = '';
                 		$data['products_stat']   = '';
                 		$data['cat_products_stat']   = '';
-                		$data['testimonial_stat']   = '';
+                		$data['slider_stat']   = '';
                 		$data['blogs_stat']   = '';
                 		$data['message_stat']   = '';
                 		$data['gallery_stat']   = '';
@@ -3983,7 +3179,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4023,7 +3219,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4081,7 +3277,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4120,7 +3316,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4174,7 +3370,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4228,7 +3424,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4267,7 +3463,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4325,7 +3521,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4363,7 +3559,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4413,7 +3609,7 @@ class Aspanel extends CI_Controller {
             		$data['sliders_stat']   = '';
             		$data['products_stat']   = '';
             		$data['cat_products_stat']   = '';
-            		$data['testimonial_stat']   = '';
+            		$data['slider_stat']   = '';
             		$data['blogs_stat']   = '';
             		$data['message_stat']   = '';
             		$data['gallery_stat']   = '';
@@ -4464,7 +3660,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4504,7 +3700,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4562,7 +3758,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = 'active';
@@ -4600,7 +3796,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = 'active';
@@ -4638,7 +3834,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = 'active';
@@ -4696,7 +3892,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = 'active';
@@ -4751,7 +3947,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = 'active';
@@ -4833,7 +4029,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = 'active';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -4853,7 +4049,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = 'active';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4888,7 +4084,7 @@ class Aspanel extends CI_Controller {
 		$data['sliders_stat']   = '';
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
-		$data['testimonial_stat']   = '';
+		$data['slider_stat']   = '';
 		$data['blogs_stat']   = 'active';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
@@ -4993,7 +4189,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
-					$data['testimonial_stat']   = '';
+					$data['slider_stat']   = '';
 					$data['blogs_stat']   = 'active';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
@@ -5108,7 +4304,7 @@ class Aspanel extends CI_Controller {
 			$data['sliders_stat']   = '';
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
-			$data['testimonial_stat']   = '';
+			$data['slider_stat']   = '';
 			$data['blogs_stat']   = 'active';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
