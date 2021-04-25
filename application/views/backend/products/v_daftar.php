@@ -6,12 +6,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>List Works</h1>
+          <h1>Daftar Produk</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">List Works</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Home</a></li>
+            <li class="breadcrumb-item active">Daftar Produk</li>
           </ol>
         </div>
       </div>
@@ -24,11 +24,11 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
-            <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/products_tambahkan"><i class="fas fa-plus-circle"></i> Add</a> 
+            <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_tambahkan"><i class="fas fa-plus-circle"></i> Tambah</a>
             <?php  if($this->session->level=='1'){ ?>
-              <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/products_cat"><i class="fas fa-plus-circle"></i> Category</a></h3>
+              <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_cat"><i class="fas fa-plus-circle"></i> Kategori</a></h3>
             <?php }?>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>paneladmin/products_storage_bin"><i class="fas fa-trash"></i> Storage Bin</a></h3>
+              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_storage_bin"><i class="fas fa-trash"></i> File Sampah</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -48,12 +48,12 @@
 
                 <tr>
                   <td><?=$tgl_posting?></td>
-                  <td><a href="<?php echo base_url()?>paneladmin/products_disc/<?=$row['products_id']?>"></a> <?=$row['products_judul']?></td>
+                  <td><a href="<?php echo base_url()?>aspanel/products_disc/<?=$row['products_id']?>"></a> <?=$row['products_judul']?></td>
                   <td>
                     <?php
                     echo"
-                    <a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."paneladmin/products_update/$row[products_judul_seo]'><i class='fas fa-edit'></i></a>
-                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."paneladmin/products_delete_temp/$row[products_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
+                    <a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/products_update/$row[products_judul_seo]'><i class='fas fa-edit'></i></a>
+                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/products_delete_temp/$row[products_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>

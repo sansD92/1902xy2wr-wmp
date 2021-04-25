@@ -1171,6 +1171,319 @@ class Aspanel extends CI_Controller {
 	}
 	/*	Bagian untuk Message - Penutup	*/
 
+	/*	Bagian untuk products cat - Pembuka	*/
+	public function products_cat()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['blogs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['produk_category']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+		cek_session_akses ('products_cat',$this->session->id_session);
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'publish'),'products_cat_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'publish'),'products_cat_id','DESC');
+				}
+				$this->load->view('backend/products_cat/v_daftar', $data);
+	}
+	public function products_cat_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['blogs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['produk_category']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+		cek_session_akses ('products_cat',$this->session->id_session);
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'delete'),'products_cat_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'delete'),'products_cat_id','DESC');
+				}
+				$this->load->view('backend/products_cat/v_daftar_hapus', $data);
+	}
+	public function products_cat_tambahkan()
+	{
+		cek_session_akses('products_cat',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'bahan/foto_products/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '60%';
+					$config['width']= 150;
+					$config['height']= 150;
+					$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					if ($this->input->post('products_cat_keyword')!=''){
+								$tag_seo = $this->input->post('products_cat_keyword');
+								$tag=implode(',',$tag_seo);
+						}else{
+								$tag = '';
+						}
+					$tag = $this->input->post('products_cat_keyword');
+					$tags = explode(",", $tag);
+					$tags2 = array();
+					foreach($tags as $t)
+					{
+						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+						$a = $this->db->query($sql)->result_array();
+						if(count($a) == 0){
+							$data = array('keyword_nama'=>$this->db->escape_str($t),
+									'keyword_username'=>$this->session->username,
+									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+									'count'=>'0');
+							$this->As_m->insert('keyword',$data);
+						}
+						$tags2[] = $this->mylibrary->seo_title($t);
+					}
+					$tags = implode(",", $tags2);
+					if ($hasil22['file_name']==''){
+									$data = array(
+													'products_cat_post_oleh'=>$this->session->username,
+													'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
+													'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
+													'products_cat_desk'=>$this->input->post('products_cat_desk'),
+													'products_cat_post_hari'=>hari_ini(date('w')),
+													'products_cat_post_tanggal'=>date('Y-m-d'),
+													'products_cat_post_jam'=>date('H:i:s'),
+													'products_cat_dibaca'=>'0',
+													'products_cat_status'=>'publish',
+													'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
+													'products_cat_keyword'=>$tag);
+											}else{
+												$data = array(
+													'products_cat_post_oleh'=>$this->session->username,
+													'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
+													'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
+													'products_cat_desk'=>$this->input->post('products_cat_desk'),
+													'products_cat_post_hari'=>hari_ini(date('w')),
+													'products_cat_post_tanggal'=>date('Y-m-d'),
+													'products_cat_post_jam'=>date('H:i:s'),
+													'products_cat_dibaca'=>'0',
+													'products_cat_status'=>'publish',
+													'products_catgambar'=>$hasil22['file_name'],
+													'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
+													'products_cat_keyword'=>$tag);
+												}
+								$this->As_m->insert('products_category',$data);
+								redirect('aspanel/products_cat');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['blogs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = 'menu-open';
+					$data['produk_category']   = 'active';
+					$data['produk']   = '';
+					$data['services']   = '';
+					cek_session_akses ('products_cat',$this->session->id_session);
+					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+					$this->load->view('backend/products_cat/v_tambahkan', $data);
+				}
+	}
+	public function products_cat_update()
+	{
+		cek_session_akses('products_cat',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'bahan/foto_products/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '100%';
+			$config['width']= 150;
+			$config['height']= 150;
+			$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+			if ($this->input->post('products_cat_keyword')!=''){
+						$tag_seo = $this->input->post('products_cat_keyword');
+						$tag=implode(',',$tag_seo);
+				}else{
+						$tag = '';
+				}
+			$tag = $this->input->post('products_cat_keyword');
+			$tags = explode(",", $tag);
+			$tags2 = array();
+			foreach($tags as $t)
+			{
+				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+				$a = $this->db->query($sql)->result_array();
+				if(count($a) == 0){
+					$data = array('keyword_nama'=>$this->db->escape_str($t),
+							'keyword_username'=>$this->session->username,
+							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+							'count'=>'0');
+					$this->As_m->insert('keyword',$data);
+				}
+				$tags2[] = $this->mylibrary->seo_title($t);
+			}
+			$tags = implode(",", $tags2);
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'products_cat_update_oleh'=>$this->session->username,
+											'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
+											'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
+											'products_cat_desk'=>$this->input->post('products_cat_desk'),
+											'products_cat_update_hari'=>hari_ini(date('w')),
+											'products_cat_update_tanggal'=>date('Y-m-d'),
+											'products_cat_update_jam'=>date('H:i:s'),
+											'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
+											'products_cat_keyword'=>$tag);
+											$where = array('products_cat_id' => $this->input->post('products_cat_id'));
+											$this->db->update('products_category', $data, $where);
+						}else{
+										$data = array(
+											'products_cat_update_oleh'=>$this->session->username,
+											'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
+											'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
+											'products_cat_desk'=>$this->input->post('products_cat_desk'),
+											'products_cat_update_hari'=>hari_ini(date('w')),
+											'products_cat_update_tanggal'=>date('Y-m-d'),
+											'products_cat_update_jam'=>date('H:i:s'),
+											'products_cat_gambar'=>$hasil22['file_name'],
+											'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
+											'products_cat_keyword'=>$tag);
+											$where = array('products_cat_id' => $this->input->post('products_cat_id'));
+											$_image = $this->db->get_where('products_category',$where)->row();
+											$query = $this->db->update('products_category',$data,$where);
+											if($query){
+												unlink("bahan/foto_products/".$_image->products_cat_gambar);
+											}
+
+						}
+						redirect('aspanel/products_cat');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('products_category', array('products_cat_id' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('products_category', array('products_cat_id' => $id, 'products_cat_post_oleh' => $this->session->username))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = 'active';
+			$data['slider_stat']   = '';
+			$data['blogs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = 'menu-open';
+				$data['jamkerja_stat']   = '';
+				$data['absen_stat']   = '';
+				$data['dataabsen_stat']   = 'active';
+				$data['cuti_stat']   = '';
+				$data['gaji_stat']   = '';
+				$data['pengumuman_stat']   = '';
+				$data['konfig_stat']   = '';
+				$data['produk_menu_open']   = 'menu-open';
+				$data['produk_category']   = 'active';
+				$data['produk']   = '';
+				$data['services']   = '';
+			cek_session_akses ('products_cat',$this->session->id_session);
+			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+			$this->load->view('backend/products_cat/v_update', $data);
+		}
+	}
+	function products_cat_delete_temp()
+	{
+			cek_session_akses ('products_cat',$this->session->id_session);
+			$data = array('products_cat_status'=>'delete');
+			$where = array('products_cat_id' => $this->uri->segment(3));
+			$this->db->update('products_category', $data, $where);
+			redirect('aspanel/products_cat');
+	}
+	function products_cat_restore()
+	{
+			cek_session_akses ('products_cat_cat',$this->session->id_session);
+			$data = array('products_cat_status'=>'Publish');
+			$where = array('products_cat_id' => $this->uri->segment(3));
+			$this->db->update('products_category', $data, $where);
+			redirect('aspanel/products_cat_storage_bin');
+	}
+	public function products_cat_delete()
+	{
+			cek_session_akses ('products_cat',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('products_category',['products_cat_id' => $id])->row();
+			 $query = $this->db->delete('products_category',['products_cat_id'=>$id]);
+			if($query){
+							 unlink("./bahan/foto_products/".$_id->products_cat_gambar);
+		 }
+		redirect('aspanel/products_cat_storage_bin');
+	}
+	/*	Bagian untuk Product Category - Penutup	*/
+
 
 	/*	Bagian untuk Product - Pembuka	*/
 	public function products()
@@ -1234,78 +1547,18 @@ class Aspanel extends CI_Controller {
 	{
 		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'bahan/foto_products/';
+					$config['upload_path'] = 'assets/frontend/produk/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
+					$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
 					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar2');
-					$hasilgmbr2=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasilgmbr2['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasilgmbr2['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar3');
-					$hasilgmbr3=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasilgmbr3['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasilgmbr3['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar4');
-					$hasilgmbr4=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasilgmbr4['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasilgmbr4['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar5');
-					$hasilgmbr5=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasilgmbr5['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasilgmbr5['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar6');
-					$hasilgmbr6=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasilgmbr6['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
-					$config['new_image']= './bahan/foto_products/'.$hasilgmbr6['file_name'];
+					$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -1332,7 +1585,7 @@ class Aspanel extends CI_Controller {
 						$tags2[] = $this->mylibrary->seo_title($t);
 					}
 					$tags = implode(",", $tags2);
-					if ($hasil22['file_name']=='' && $hasilgmbr2['file_name']=='' && $hasilgmbr3['file_name']=='' && $hasilgmbr4['file_name']=='' && $hasilgmbr5['file_name']=='' && $hasilgmbr6['file_name']==''){
+					if ($hasil22['file_name']=='' ){
 									$data = array(
 													'products_post_oleh'=>$this->session->username,
 													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
@@ -1360,11 +1613,6 @@ class Aspanel extends CI_Controller {
 													'products_dibaca'=>'0',
 													'products_status'=>'publish',
 													'products_gambar'=>$hasil22['file_name'],
-													'products_gambar2'=>$hasilgmbr2['file_name'],
-													'products_gambar3'=>$hasilgmbr3['file_name'],
-													'products_gambar4'=>$hasilgmbr4['file_name'],
-													'products_gambar5'=>$hasilgmbr5['file_name'],
-													'products_gambar6'=>$hasilgmbr6['file_name'],
 													'products_meta_desk'=>$this->input->post('products_meta_desk'),
 													'products_keyword'=>$tag);
 												}
@@ -1397,77 +1645,17 @@ class Aspanel extends CI_Controller {
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-			$config['upload_path'] = 'bahan/foto_products/';
+			$config['upload_path'] = 'assets/frontend/produk/';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 			$this->upload->initialize($config);
 			$this->upload->do_upload('gambar');
 			$hasil22=$this->upload->data();
 			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
+			$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
 			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar2');
-			$hasilgmbr2=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasilgmbr2['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasilgmbr2['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar3');
-			$hasilgmbr3=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasilgmbr3['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasilgmbr3['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar4');
-			$hasilgmbr4=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasilgmbr4['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasilgmbr4['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar5');
-			$hasilgmbr5=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasilgmbr5['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasilgmbr5['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar6');
-			$hasilgmbr6=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasilgmbr6['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './bahan/foto_products/'.$hasilgmbr6['file_name'];
+			$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
@@ -1494,7 +1682,7 @@ class Aspanel extends CI_Controller {
 				$tags2[] = $this->mylibrary->seo_title($t);
 			}
 			$tags = implode(",", $tags2);
-						if ($hasil22['file_name']=='' && $hasilgmbr2['file_name']=='' && $hasilgmbr3['file_name']=='' && $hasilgmbr4['file_name']=='' && $hasilgmbr5['file_name']=='' && $hasilgmbr6['file_name']==''){
+						if ($hasil22['file_name']==''){
 										$data = array(
 											'products_update_oleh'=>$this->session->username,
 											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
@@ -1508,30 +1696,6 @@ class Aspanel extends CI_Controller {
 											'products_keyword'=>$tag);
 											$where = array('products_id' => $this->input->post('products_id'));
 							 				$this->db->update('products', $data, $where);
-						}elseif ($hasilgmbr4['file_name']=='' && $hasilgmbr5['file_name']=='' && $hasilgmbr6['file_name']==''){
-										$data = array(
-											'products_update_oleh'=>$this->session->username,
-											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
-											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
-											'products_desk'=>$this->input->post('products_desk'),
-											'products_harga'=>$this->input->post('products_harga'),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
-											'products_update_hari'=>hari_ini(date('w')),
-											'products_update_tanggal'=>date('Y-m-d'),
-											'products_update_jam'=>date('H:i:s'),
-											'products_gambar'=>$hasil22['file_name'],
-											'products_gambar2'=>$hasilgmbr2['file_name'],
-											'products_gambar3'=>$hasilgmbr3['file_name'],
-											'products_meta_desk'=>$this->input->post('products_meta_desk'),
-											'products_keyword'=>$tag);
-											$where = array('products_id' => $this->input->post('products_id'));
-											$_image = $this->db->get_where('products',$where)->row();
-											$query = $this->db->update('products',$data,$where);
-											if($query){
-												unlink("bahan/foto_products/".$_image->products_gambar);
-												unlink("bahan/foto_products/".$_image->products_gambar2);
-												unlink("bahan/foto_products/".$_image->products_gambar3);
-											}
 						}else{
 										$data = array(
 											'products_update_oleh'=>$this->session->username,
@@ -1544,23 +1708,13 @@ class Aspanel extends CI_Controller {
 											'products_update_tanggal'=>date('Y-m-d'),
 											'products_update_jam'=>date('H:i:s'),
 											'products_gambar'=>$hasil22['file_name'],
-											'products_gambar2'=>$hasilgmbr2['file_name'],
-											'products_gambar3'=>$hasilgmbr3['file_name'],
-											'products_gambar4'=>$hasilgmbr4['file_name'],
-											'products_gambar5'=>$hasilgmbr5['file_name'],
-											'products_gambar6'=>$hasilgmbr6['file_name'],
 											'products_meta_desk'=>$this->input->post('products_meta_desk'),
 											'products_keyword'=>$tag);
 											$where = array('products_id' => $this->input->post('products_id'));
 											$_image = $this->db->get_where('products',$where)->row();
 											$query = $this->db->update('products',$data,$where);
 											if($query){
-												unlink("bahan/foto_products/".$_image->products_gambar);
-												unlink("bahan/foto_products/".$_image->products_gambar2);
-												unlink("bahan/foto_products/".$_image->products_gambar3);
-												unlink("bahan/foto_products/".$_image->products_gambar4);
-												unlink("bahan/foto_products/".$_image->products_gambar5);
-												unlink("bahan/foto_products/".$_image->products_gambar6);
+												unlink("assets/frontend/produk/".$_image->products_gambar);
 											}
 						}
 						redirect('aspanel/products');
@@ -1613,12 +1767,7 @@ class Aspanel extends CI_Controller {
 			$_id = $this->db->get_where('products',['products_id' => $id])->row();
 			 $query = $this->db->delete('products',['products_id'=>$id]);
 		 	if($query){
-							 unlink("./bahan/foto_products/".$_id->products_gambar);
-							 unlink("./bahan/foto_products/".$_id->products_gambar2);
-							 unlink("./bahan/foto_products/".$_id->products_gambar3);
-							 unlink("./bahan/foto_products/".$_id->products_gambar4);
-							 unlink("./bahan/foto_products/".$_id->products_gambar5);
-							 unlink("./bahan/foto_products/".$_id->products_gambar6);
+							 unlink("./assets/frontend/produk/".$_id->products_gambar);
 		 }
 		redirect('aspanel/products_storage_bin');
 	}
@@ -2008,318 +2157,7 @@ class Aspanel extends CI_Controller {
 	/*	Bagian untuk Data Karyawan - Penutup	*/
 
 
-	/*	Bagian untuk products cat - Pembuka	*/
-	public function products_cat()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = '';
-	    $data['jamkerja_stat']   = '';
-	    $data['absen_stat']   = '';
-	    $data['dataabsen_stat']   = '';
-	    $data['cuti_stat']   = '';
-	    $data['gaji_stat']   = '';
-	    $data['pengumuman_stat']   = '';
-	    $data['konfig_stat']   = '';
-			$data['produk_menu_open']   = 'menu-open';
-			$data['produk_category']   = 'active';
-			$data['produk']   = '';
-			$data['services']   = '';
-		cek_session_akses ('products_cat',$this->session->id_session);
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'publish'),'products_cat_id','DESC');
-				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'publish'),'products_cat_id','DESC');
-				}
-				$this->load->view('backend/products_cat/v_daftar', $data);
-	}
-	public function products_cat_storage_bin()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = '';
-			$data['jamkerja_stat']   = '';
-			$data['absen_stat']   = '';
-			$data['dataabsen_stat']   = '';
-			$data['cuti_stat']   = '';
-			$data['gaji_stat']   = '';
-			$data['pengumuman_stat']   = '';
-			$data['konfig_stat']   = '';
-			$data['produk_menu_open']   = 'menu-open';
-			$data['produk_category']   = 'active';
-			$data['produk']   = '';
-			$data['services']   = '';
-		cek_session_akses ('products_cat',$this->session->id_session);
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'delete'),'products_cat_id','DESC');
-				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'delete'),'products_cat_id','DESC');
-				}
-				$this->load->view('backend/products_cat/v_daftar_hapus', $data);
-	}
-	public function products_cat_tambahkan()
-	{
-		cek_session_akses('products_cat',$this->session->id_session);
-		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'bahan/foto_products/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar');
-					$hasil22=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '60%';
-					$config['width']= 150;
-					$config['height']= 150;
-					$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
-
-					if ($this->input->post('products_cat_keyword')!=''){
-								$tag_seo = $this->input->post('products_cat_keyword');
-								$tag=implode(',',$tag_seo);
-						}else{
-								$tag = '';
-						}
-					$tag = $this->input->post('products_cat_keyword');
-					$tags = explode(",", $tag);
-					$tags2 = array();
-					foreach($tags as $t)
-					{
-						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-						$a = $this->db->query($sql)->result_array();
-						if(count($a) == 0){
-							$data = array('keyword_nama'=>$this->db->escape_str($t),
-									'keyword_username'=>$this->session->username,
-									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-									'count'=>'0');
-							$this->As_m->insert('keyword',$data);
-						}
-						$tags2[] = $this->mylibrary->seo_title($t);
-					}
-					$tags = implode(",", $tags2);
-					if ($hasil22['file_name']==''){
-									$data = array(
-													'products_cat_post_oleh'=>$this->session->username,
-													'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
-													'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
-													'products_cat_desk'=>$this->input->post('products_cat_desk'),
-													'products_cat_post_hari'=>hari_ini(date('w')),
-													'products_cat_post_tanggal'=>date('Y-m-d'),
-													'products_cat_post_jam'=>date('H:i:s'),
-													'products_cat_dibaca'=>'0',
-													'products_cat_status'=>'publish',
-													'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
-													'products_cat_keyword'=>$tag);
-											}else{
-												$data = array(
-													'products_cat_post_oleh'=>$this->session->username,
-													'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
-													'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
-													'products_cat_desk'=>$this->input->post('products_cat_desk'),
-													'products_cat_post_hari'=>hari_ini(date('w')),
-													'products_cat_post_tanggal'=>date('Y-m-d'),
-													'products_cat_post_jam'=>date('H:i:s'),
-													'products_cat_dibaca'=>'0',
-													'products_cat_status'=>'publish',
-													'products_catgambar'=>$hasil22['file_name'],
-													'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
-													'products_cat_keyword'=>$tag);
-												}
-								$this->As_m->insert('products_category',$data);
-								redirect('aspanel/products_cat');
-				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = '';
-					$data['kehadiran_menu_open']   = '';
-					$data['jamkerja_stat']   = '';
-			    $data['absen_stat']   = '';
-			    $data['dataabsen_stat']   = '';
-			    $data['cuti_stat']   = '';
-			    $data['gaji_stat']   = '';
-			    $data['pengumuman_stat']   = '';
-			    $data['konfig_stat']   = '';
-					$data['produk_menu_open']   = 'menu-open';
-					$data['produk_category']   = 'active';
-					$data['produk']   = '';
-					$data['services']   = '';
-					cek_session_akses ('products_cat',$this->session->id_session);
-					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
-					$this->load->view('backend/products_cat/v_tambahkan', $data);
-				}
-	}
-	public function products_cat_update()
-	{
-		cek_session_akses('products_cat',$this->session->id_session);
-		$id = $this->uri->segment(3);
-		if (isset($_POST['submit'])){
-
-			$config['upload_path'] = 'bahan/foto_products/';
-			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar');
-			$hasil22=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './bahan/foto_products/'.$hasil22['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '100%';
-			$config['width']= 150;
-			$config['height']= 150;
-			$config['new_image']= './bahan/foto_products/'.$hasil22['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
-
-			if ($this->input->post('products_cat_keyword')!=''){
-						$tag_seo = $this->input->post('products_cat_keyword');
-						$tag=implode(',',$tag_seo);
-				}else{
-						$tag = '';
-				}
-			$tag = $this->input->post('products_cat_keyword');
-			$tags = explode(",", $tag);
-			$tags2 = array();
-			foreach($tags as $t)
-			{
-				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-				$a = $this->db->query($sql)->result_array();
-				if(count($a) == 0){
-					$data = array('keyword_nama'=>$this->db->escape_str($t),
-							'keyword_username'=>$this->session->username,
-							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-							'count'=>'0');
-					$this->As_m->insert('keyword',$data);
-				}
-				$tags2[] = $this->mylibrary->seo_title($t);
-			}
-			$tags = implode(",", $tags2);
-						if ($hasil22['file_name']==''){
-										$data = array(
-											'products_cat_update_oleh'=>$this->session->username,
-											'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
-											'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
-											'products_cat_desk'=>$this->input->post('products_cat_desk'),
-											'products_cat_update_hari'=>hari_ini(date('w')),
-											'products_cat_update_tanggal'=>date('Y-m-d'),
-											'products_cat_update_jam'=>date('H:i:s'),
-											'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
-											'products_cat_keyword'=>$tag);
-											$where = array('products_cat_id' => $this->input->post('products_cat_id'));
-							 				$this->db->update('products_category', $data, $where);
-						}else{
-										$data = array(
-											'products_cat_update_oleh'=>$this->session->username,
-											'products_cat_judul'=>$this->db->escape_str($this->input->post('products_cat_judul')),
-											'products_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_cat_judul')),
-											'products_cat_desk'=>$this->input->post('products_cat_desk'),
-											'products_cat_update_hari'=>hari_ini(date('w')),
-											'products_cat_update_tanggal'=>date('Y-m-d'),
-											'products_cat_update_jam'=>date('H:i:s'),
-											'products_cat_gambar'=>$hasil22['file_name'],
-											'products_cat_meta_desk'=>$this->input->post('products_cat_meta_desk'),
-											'products_cat_keyword'=>$tag);
-											$where = array('products_cat_id' => $this->input->post('products_cat_id'));
-											$_image = $this->db->get_where('products_category',$where)->row();
-											$query = $this->db->update('products_category',$data,$where);
-											if($query){
-												unlink("bahan/foto_products/".$_image->products_cat_gambar);
-											}
-
-						}
-						redirect('aspanel/products_cat');
-		}else{
-			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('products_category', array('products_cat_id' => $id))->row_array();
-			}else{
-					$proses = $this->As_m->edit('products_category', array('products_cat_id' => $id, 'products_cat_post_oleh' => $this->session->username))->row_array();
-			}
-			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = 'active';
-			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = '';
-			$data['kehadiran_menu_open']   = 'menu-open';
-		    $data['jamkerja_stat']   = '';
-		    $data['absen_stat']   = '';
-		    $data['dataabsen_stat']   = 'active';
-		    $data['cuti_stat']   = '';
-		    $data['gaji_stat']   = '';
-		    $data['pengumuman_stat']   = '';
-		    $data['konfig_stat']   = '';
-				$data['produk_menu_open']   = 'menu-open';
-				$data['produk_category']   = 'active';
-				$data['produk']   = '';
-				$data['services']   = '';
-			cek_session_akses ('products_cat',$this->session->id_session);
-			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
-			$this->load->view('backend/products_cat/v_update', $data);
-		}
-	}
-	function products_cat_delete_temp()
-	{
-      cek_session_akses ('products_cat',$this->session->id_session);
-			$data = array('products_cat_status'=>'delete');
-      $where = array('products_cat_id' => $this->uri->segment(3));
-			$this->db->update('products_category', $data, $where);
-			redirect('aspanel/products_cat');
-	}
-	function products_cat_restore()
-	{
-      cek_session_akses ('products_cat_cat',$this->session->id_session);
-			$data = array('products_cat_status'=>'Publish');
-      $where = array('products_cat_id' => $this->uri->segment(3));
-			$this->db->update('products_category', $data, $where);
-			redirect('aspanel/products_cat_storage_bin');
-	}
-	public function products_cat_delete()
-	{
-			cek_session_akses ('products_cat',$this->session->id_session);
-			$id = $this->uri->segment(3);
-			$_id = $this->db->get_where('products_category',['products_cat_id' => $id])->row();
-			 $query = $this->db->delete('products_category',['products_cat_id'=>$id]);
-		 	if($query){
-							 unlink("./bahan/foto_products/".$_id->products_cat_gambar);
-		 }
-		redirect('aspanel/products_cat_storage_bin');
-	}
-	/*	Bagian untuk Product Category - Penutup	*/
 
 
 	/*	Bagian untuk products cat - Pembuka	*/

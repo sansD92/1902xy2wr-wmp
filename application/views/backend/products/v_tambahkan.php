@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>paneladmin/products">Products</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Products</a></li>
             <li class="breadcrumb-item active">Add Products</li>
           </ol>
         </div>
@@ -36,7 +36,7 @@
 
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('paneladmin/products_tambahkan',$attributes); ?>
+            echo form_open_multipart('aspanel/products_tambahkan',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
 
@@ -148,7 +148,7 @@
               </div>
               <div class="card-footer">
                 <button type="submit" name ="submit" class="btn btn-success" title="Add Products"><i class="fas fa-file-upload"></i> Add</button>
-                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>paneladmin/products"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
+                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
 
               </div>
                 <?php echo form_close(); ?>
