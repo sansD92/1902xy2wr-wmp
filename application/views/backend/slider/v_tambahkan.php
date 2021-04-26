@@ -50,40 +50,16 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="slider_desk" style="width: 100%; height: 100px;"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Meta Deskripsi</label>
-                        <input type="text" class="form-control" name="slider_meta_desk" placeholder="Meta Deskripsi">
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <!-- text input -->
-                      <div class="form-group">
-                        <label>Kata kunci</label>
-                        <input type="text" class="form-control tags" id="slider_keyword" value="" name="slider_keyword"  data-role="tagsinput"/>
-                          <?php foreach ($tag as $tag){    } ?>
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
                         <label>Gambar</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
                           <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                         <p> Dimensi foto Landscape 694px x 420px & maksimal ukuran file 1 Mb </p>
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
               <div class="card-footer">

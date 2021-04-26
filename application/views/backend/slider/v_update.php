@@ -78,7 +78,7 @@
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar">
                           <label class="custom-file-label" for="exampleInputFile">File gambar sebelumnya <?php echo $rows['slider_gambar'] ?></label>
-                         <p> Dimensi foto Landscape 694px x 420px & maksimal ukuran file 1 Mb </p>
+                        
                         </div>
                       </div>
                     </div>

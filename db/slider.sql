@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2021 at 08:04 AM
+-- Generation Time: Apr 26, 2021 at 08:49 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.27
 
@@ -52,8 +52,9 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slider_id`, `slider_judul`, `slider_judul_seo`, `slider_desk`, `slider_keyword`, `slider_meta_desk`, `slider_gambar`, `slider_post_oleh`, `slider_post_hari`, `slider_post_tanggal`, `slider_post_jam`, `slider_update_oleh`, `slider_update_hari`, `slider_update_tanggal`, `slider_update_jam`, `slider_dibaca`, `slider_status`) VALUES
-(79, 'Slider 1', 'slider-1', '<p><br></p>', 'slider 1', '', '1.jpg', 'dhawy', 'Senin', '2021-04-26', '11:01:45', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
-(80, 'slider2', 'slider2', '', '', 'Active', '2.jpg', 'dhawy', 'Senin', '2021-04-26', '12:58:24', '', '', '0000-00-00', '00:00:00', 0, 'publish');
+(79, 'Slider sapi', 'slider-sapi', '', '', 'turunan', '1.jpg', 'dhawy', 'Senin', '2021-04-26', '13:49:23', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(80, 'slider2', 'slider2', '', '', 'active', '2.jpg', 'dhawy', 'Senin', '2021-04-26', '13:29:13', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(81, 'slider Ayam', 'slider-ayam', '', '', 'turunan', 'ayam12.jpg', 'dhawy', 'Senin', '2021-04-26', '13:49:17', '', '', '0000-00-00', '00:00:00', 0, 'publish');
 
 --
 -- Indexes for dumped tables
@@ -73,7 +74,7 @@ ALTER TABLE `slider`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

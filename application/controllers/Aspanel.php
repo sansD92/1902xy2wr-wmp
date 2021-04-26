@@ -949,28 +949,24 @@ class Aspanel extends CI_Controller {
 										'slider_post_oleh'=>$this->session->username,
 										'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 										'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
-										'slider_desk'=>$this->input->post('slider_desk'),
 										'slider_post_hari'=>hari_ini(date('w')),
 										'slider_post_tanggal'=>date('Y-m-d'),
 										'slider_post_jam'=>date('H:i:s'),
 										'slider_dibaca'=>'0',
 										'slider_status'=>'publish',
-										'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
-										'slider_keyword'=>$tag);
+										'slider_meta_desk'=>'non');
 											}else{
 												$data = array(
 													'slider_post_oleh'=>$this->session->username,
 													'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 													'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
-													'slider_desk'=>$this->input->post('slider_desk'),
 													'slider_post_hari'=>hari_ini(date('w')),
 													'slider_post_tanggal'=>date('Y-m-d'),
 													'slider_post_jam'=>date('H:i:s'),
 													'slider_dibaca'=>'0',
 													'slider_status'=>'publish',
 													'slider_gambar'=>$hasil22['file_name'],
-													'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
-													'slider_keyword'=>$tag);
+													'slider_meta_desk'=>'non');
 												}
 								$this->As_m->insert('slider',$data);
 								redirect('aspanel/slider');
@@ -1120,15 +1116,6 @@ class Aspanel extends CI_Controller {
 
 			cek_session_akses ('slider',$this->session->id_session);
 			$data = array('slider_status'=>'delete');
-			$where = array('slider_id' => $this->uri->segment(3));
-			$this->db->update('slider', $data, $where);
-			redirect('aspanel/slider');
-	}
-	function slider_status_utama()
-	{
-
-			cek_session_akses ('slider',$this->session->id_session);
-			$data = array('slider_meta_desk'=>'Active');
 			$where = array('slider_id' => $this->uri->segment(3));
 			$this->db->update('slider', $data, $where);
 			redirect('aspanel/slider');
