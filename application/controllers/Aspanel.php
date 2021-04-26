@@ -731,7 +731,7 @@ class Aspanel extends CI_Controller {
 		            $data['record_statpros'] = $this->Crud_m->view_ordering('konsumen_statpros','konsumen_statpros_id','ASC');
 		            $data['record_statprospek'] = $this->Crud_m->view_ordering('konsumen_statprospek','konsumen_statprospek_id','DESC');
 		            $data['record_minggu'] = $this->Crud_m->view_ordering('konsumen_minggu','konsumen_minggu_id','ASC');
-		            $data['record_kategori'] = $this->Crud_m->view_ordering('products_category','products_cat_id','ASC');
+		            $data['record_kategori'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','ASC');
 		            $data['record_medpro'] = $this->Crud_m->view_ordering('media_promosi','media_promosi_id','ASC');
 		            $data['record_bayar'] = $this->Crud_m->view_ordering('konsumen_pembayaran','konsumen_pembayaran_id','ASC');
 					$this->load->view('backend/konsumen/v_tambahkan', $data);
@@ -871,13 +871,14 @@ class Aspanel extends CI_Controller {
 	}
 	public function slider_storage_bin()
 	{
-
-		cek_session_akses ('slider',$this->session->id_session);
 				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'delete'),'slider_id','DESC');
+				}elseif ($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'delete'),'slider_id','DESC');
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_post_oleh'=>$this->session->username,'slider_status'=>'delete'),'slider_id','DESC');
 				}
+
 				$data['karyawan_menu_open']   = '';
 				$data['home_stat']   = '';
 				$data['identitas_stat']   = '';
@@ -901,6 +902,7 @@ class Aspanel extends CI_Controller {
 				$data['produk_category']   = '';
 				$data['produk']   = '';
 				$data['services']   = '';
+
 				$this->load->view('backend/slider/v_daftar_hapus', $data);
 	}
 	public function slider_tambahkan()
@@ -1113,7 +1115,7 @@ class Aspanel extends CI_Controller {
 	function slider_delete_temp()
 	{
 
-			cek_session_akses ('slider',$this->session->id_session);
+
 			$data = array('slider_status'=>'delete');
 			$where = array('slider_id' => $this->uri->segment(3));
 			$this->db->update('slider', $data, $where);
@@ -1122,7 +1124,6 @@ class Aspanel extends CI_Controller {
 	function slider_restore()
 	{
 
-			cek_session_akses ('slider',$this->session->id_session);
 			$data = array('slider_status'=>'Publish');
 			$where = array('slider_id' => $this->uri->segment(3));
 			$this->db->update('slider', $data, $where);
@@ -1130,7 +1131,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function slider_delete()
 	{
-			cek_session_akses ('slider',$this->session->id_session);
+
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('slider',['slider_id' => $id])->row();
 			 $query = $this->db->delete('slider',['slider_id'=>$id]);
@@ -1163,6 +1164,313 @@ class Aspanel extends CI_Controller {
 				$this->load->view('backend/products/v_daftar', $data);
 	}
 	/*	Bagian untuk Message - Penutup	*/
+
+	/*	Bagian untuk Bisnis - Pembuka	*/
+	public function bisnis()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['blogs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_post_oleh'=>$this->session->username,'bisnis_status'=>'publish'),'bisnis_id','DESC');
+				}
+				$this->load->view('backend/bisnis/v_daftar', $data);
+	}
+	public function bisnis_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['blogs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+		cek_session_akses ('bisnis',$this->session->id_session);
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'delete'),'bisnis_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_post_oleh'=>$this->session->username,'bisnis_status'=>'delete'),'bisnis_id','DESC');
+				}
+				$this->load->view('backend/bisnis/v_daftar_hapus', $data);
+	}
+	public function bisnis_tambahkan()
+	{
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/linibisnis/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/linibisnis/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '80%';
+					$config['new_image']= './assets/frontend/linibisnis/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					if ($this->input->post('bisnis_keyword')!=''){
+								$tag_seo = $this->input->post('bisnis_keyword');
+								$tag=implode(',',$tag_seo);
+						}else{
+								$tag = '';
+						}
+					$tag = $this->input->post('bisnis_keyword');
+					$tags = explode(",", $tag);
+					$tags2 = array();
+					foreach($tags as $t)
+					{
+						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+						$a = $this->db->query($sql)->result_array();
+						if(count($a) == 0){
+							$data = array('keyword_nama'=>$this->db->escape_str($t),
+									'keyword_username'=>$this->session->username,
+									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+									'count'=>'0');
+							$this->As_m->insert('keyword',$data);
+						}
+						$tags2[] = $this->mylibrary->seo_title($t);
+					}
+					$tags = implode(",", $tags2);
+					if ($hasil22['file_name']==''){
+									$data = array(
+													'bisnis_post_oleh'=>$this->session->username,
+													'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+													'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+													'bisnis_desk'=>$this->input->post('bisnis_desk'),
+													'bisnis_post_hari'=>hari_ini(date('w')),
+													'bisnis_post_tanggal'=>date('Y-m-d'),
+													'bisnis_post_jam'=>date('H:i:s'),
+													'bisnis_dibaca'=>'0',
+													'bisnis_status'=>'publish',
+													'bisnis_meta_desk'=>$this->input->post('bisnis_meta_desk'),
+													'bisnis_keyword'=>$tag);
+											}else{
+												$data = array(
+													'bisnis_post_oleh'=>$this->session->username,
+													'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+													'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+													'bisnis_desk'=>$this->input->post('bisnis_desk'),
+													'bisnis_post_hari'=>hari_ini(date('w')),
+													'bisnis_post_tanggal'=>date('Y-m-d'),
+													'bisnis_post_jam'=>date('H:i:s'),
+													'bisnis_dibaca'=>'0',
+													'bisnis_status'=>'publish',
+													'bisnis_gambar'=>$hasil22['file_name'],
+													'bisnis_meta_desk'=>$this->input->post('bisnis_meta_desk'),
+													'bisnis_keyword'=>$tag);
+												}
+								$this->As_m->insert('bisnis',$data);
+								redirect('aspanel/bisnis');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['blogs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = 'menu-open';
+					$data['bisnis']   = 'active';
+					$data['produk']   = '';
+					$data['services']   = '';
+
+					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+					$this->load->view('backend/bisnis/v_tambahkan', $data);
+				}
+	}
+	public function bisnis_update()
+	{
+
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/linibisnis/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/linibisnis/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '80%';
+			$config['new_image']= './assets/frontend/linibisnis/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+			if ($this->input->post('bisnis_keyword')!=''){
+						$tag_seo = $this->input->post('bisnis_keyword');
+						$tag=implode(',',$tag_seo);
+				}else{
+						$tag = '';
+				}
+			$tag = $this->input->post('bisnis_keyword');
+			$tags = explode(",", $tag);
+			$tags2 = array();
+			foreach($tags as $t)
+			{
+				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+				$a = $this->db->query($sql)->result_array();
+				if(count($a) == 0){
+					$data = array('keyword_nama'=>$this->db->escape_str($t),
+							'keyword_username'=>$this->session->username,
+							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+							'count'=>'0');
+					$this->As_m->insert('keyword',$data);
+				}
+				$tags2[] = $this->mylibrary->seo_title($t);
+			}
+			$tags = implode(",", $tags2);
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'bisnis_update_oleh'=>$this->session->username,
+											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+											'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+											'bisnis_desk'=>$this->input->post('bisnis_desk'),
+											'bisnis_update_hari'=>hari_ini(date('w')),
+											'bisnis_update_tanggal'=>date('Y-m-d'),
+											'bisnis_update_jam'=>date('H:i:s'),
+											'bisnis_meta_desk'=>$this->input->post('bisnis_meta_desk'),
+											'bisnis_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$this->db->update('bisnis', $data, $where);
+						}else{
+										$data = array(
+											'bisnis_update_oleh'=>$this->session->username,
+											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+											'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+											'bisnis_desk'=>$this->input->post('bisnis_desk'),
+											'bisnis_update_hari'=>hari_ini(date('w')),
+											'bisnis_update_tanggal'=>date('Y-m-d'),
+											'bisnis_update_jam'=>date('H:i:s'),
+											'bisnis_gambar'=>$hasil22['file_name'],
+											'bisnis_meta_desk'=>$this->input->post('bisnis_meta_desk'),
+											'bisnis_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis',$where)->row();
+											$query = $this->db->update('bisnis',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_gambar);
+											}
+
+						}
+						redirect('aspanel/bisnis');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('bisnis', array('bisnis_id' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('bisnis', array('bisnis_id' => $id, 'bisnis_post_oleh' => $this->session->username))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = 'active';
+			$data['slider_stat']   = '';
+			$data['blogs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = 'menu-open';
+				$data['jamkerja_stat']   = '';
+				$data['absen_stat']   = '';
+				$data['dataabsen_stat']   = 'active';
+				$data['cuti_stat']   = '';
+				$data['gaji_stat']   = '';
+				$data['pengumuman_stat']   = '';
+				$data['konfig_stat']   = '';
+				$data['produk_menu_open']   = 'menu-open';
+				$data['bisnis']   = 'active';
+				$data['produk']   = '';
+				$data['services']   = '';
+			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+			$this->load->view('backend/bisnis/v_update', $data);
+		}
+	}
+	function bisnis_delete_temp()
+	{
+
+			$data = array('bisnis_status'=>'delete');
+			$where = array('bisnis_id' => $this->uri->segment(3));
+			$this->db->update('bisnis', $data, $where);
+			redirect('aspanel/bisnis');
+	}
+	function bisnis_restore()
+	{
+
+			$data = array('bisnis_status'=>'Publish');
+			$where = array('bisnis_id' => $this->uri->segment(3));
+			$this->db->update('bisnis', $data, $where);
+			redirect('aspanel/bisnis_storage_bin');
+	}
+	public function bisnis_delete()
+	{
+
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('bisnis',['bisnis_id' => $id])->row();
+			 $query = $this->db->delete('bisnis',['bisnis_id'=>$id]);
+			if($query){
+							 unlink("./bahan/foto_products/".$_id->bisnis_gambar);
+		 }
+		redirect('aspanel/bisnis_storage_bin');
+	}
+	/*	Bagian untuk Bisnis - Penutup	*/
 
 	/*	Bagian untuk products cat - Pembuka	*/
 	public function products_cat()
@@ -1477,7 +1785,6 @@ class Aspanel extends CI_Controller {
 	}
 	/*	Bagian untuk Product Category - Penutup	*/
 
-
 	/*	Bagian untuk Product - Pembuka	*/
 	public function products()
 	{
@@ -1584,7 +1891,7 @@ class Aspanel extends CI_Controller {
 													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 													'products_desk'=>$this->input->post('products_desk'),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
+													'bisnis_id'=>$this->input->post('bisnis_id'),
 													'products_post_hari'=>hari_ini(date('w')),
 													'products_post_tanggal'=>date('Y-m-d'),
 													'products_post_jam'=>date('H:i:s'),
@@ -1599,7 +1906,7 @@ class Aspanel extends CI_Controller {
 													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 													'products_desk'=>$this->input->post('products_desk'),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
+													'bisnis_id'=>$this->input->post('bisnis_id'),
 													'products_post_hari'=>hari_ini(date('w')),
 													'products_post_tanggal'=>date('Y-m-d'),
 													'products_post_jam'=>date('H:i:s'),
@@ -1628,7 +1935,7 @@ class Aspanel extends CI_Controller {
 		 			$data['produk_category']   = '';
 		 			$data['produk']   = 'active';
 		 			$data['services']   = '';
-					$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+					$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/products/v_tambahkan', $data);
 				}
@@ -1681,7 +1988,7 @@ class Aspanel extends CI_Controller {
 											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 											'products_desk'=>$this->input->post('products_desk'),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
+											'bisnis_id'=>$this->input->post('bisnis_id'),
 											'products_update_hari'=>hari_ini(date('w')),
 											'products_update_tanggal'=>date('Y-m-d'),
 											'products_update_jam'=>date('H:i:s'),
@@ -1696,7 +2003,7 @@ class Aspanel extends CI_Controller {
 											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 											'products_desk'=>$this->input->post('products_desk'),
 											'products_harga'=>$this->input->post('products_harga'),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
+											'bisnis_id'=>$this->input->post('bisnis_id'),
 											'products_update_hari'=>hari_ini(date('w')),
 											'products_update_tanggal'=>date('Y-m-d'),
 											'products_update_jam'=>date('H:i:s'),
@@ -1734,7 +2041,7 @@ class Aspanel extends CI_Controller {
  			$data['produk_category']   = '';
  			$data['produk']   = 'active';
  			$data['services']   = '';
-			$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+			$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/products/v_update', $data);
 		}
@@ -2265,7 +2572,7 @@ class Aspanel extends CI_Controller {
 													'services_judul'=>$this->db->escape_str($this->input->post('services_judul')),
 													'services_judul_seo'=>$this->mylibrary->seo_title($this->input->post('services_judul')),
 													'services_judul_konten'=>$this->db->escape_str($this->input->post('services_judul_konten')),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
+													'bisnis_id'=>$this->input->post('bisnis_id'),
 													'services_desk'=>$this->input->post('services_desk'),
 													'services_post_hari'=>hari_ini(date('w')),
 													'services_post_tanggal'=>date('Y-m-d'),
@@ -2280,7 +2587,7 @@ class Aspanel extends CI_Controller {
 													'services_judul'=>$this->db->escape_str($this->input->post('services_judul')),
 													'services_judul_seo'=>$this->mylibrary->seo_title($this->input->post('services_judul')),
 													'services_judul_konten'=>$this->db->escape_str($this->input->post('services_judul_konten')),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
+													'bisnis_id'=>$this->input->post('bisnis_id'),
 													'services_desk'=>$this->input->post('services_desk'),
 													'services_post_hari'=>hari_ini(date('w')),
 													'services_post_tanggal'=>date('Y-m-d'),
@@ -2317,7 +2624,7 @@ class Aspanel extends CI_Controller {
 					$data['produk_category']   = '';
 					$data['produk']   = '';
 					$data['services']   = 'active';
-					$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+					$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/services/v_tambahkan', $data);
 				}
@@ -2370,7 +2677,7 @@ class Aspanel extends CI_Controller {
 											'services_judul'=>$this->db->escape_str($this->input->post('services_judul')),
 											'services_judul_seo'=>$this->mylibrary->seo_title($this->input->post('services_judul')),
 											'services_judul_konten'=>$this->db->escape_str($this->input->post('services_judul_konten')),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
+											'bisnis_id'=>$this->input->post('bisnis_id'),
 											'services_desk'=>$this->input->post('services_desk'),
 											'services_update_hari'=>hari_ini(date('w')),
 											'services_update_tanggal'=>date('Y-m-d'),
@@ -2385,7 +2692,7 @@ class Aspanel extends CI_Controller {
 											'services_judul'=>$this->db->escape_str($this->input->post('services_judul')),
 											'services_judul_seo'=>$this->mylibrary->seo_title($this->input->post('services_judul')),
 											'services_judul_konten'=>$this->db->escape_str($this->input->post('services_judul_konten')),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
+											'bisnis_id'=>$this->input->post('bisnis_id'),
 											'services_desk'=>$this->input->post('services_desk'),
 											'services_update_hari'=>hari_ini(date('w')),
 											'services_update_tanggal'=>date('Y-m-d'),
@@ -2432,7 +2739,7 @@ class Aspanel extends CI_Controller {
 				$data['produk_category']   = '';
 				$data['produk']   = '';
 				$data['services']   = 'active';
-			$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
+			$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/services/v_update', $data);
 		}
@@ -2458,7 +2765,7 @@ class Aspanel extends CI_Controller {
 			$_id = $this->db->get_where('services',['services_id' => $id])->row();
 			 $query = $this->db->delete('services',['services_id'=>$id]);
 			if($query){
-							 unlink("./bahan/foto_products/".$_id->products_cat_gambar);
+							 unlink("./bahan/foto_products/".$_id->bisnis_gambar);
 		 }
 		redirect('aspanel/services_storage_bin');
 	}
