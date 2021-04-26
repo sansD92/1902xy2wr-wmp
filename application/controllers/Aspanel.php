@@ -1124,6 +1124,15 @@ class Aspanel extends CI_Controller {
 			$this->db->update('slider', $data, $where);
 			redirect('aspanel/slider');
 	}
+	function slider_status_utama()
+	{
+
+			cek_session_akses ('slider',$this->session->id_session);
+			$data = array('slider_meta_desk'=>'Active');
+			$where = array('slider_id' => $this->uri->segment(3));
+			$this->db->update('slider', $data, $where);
+			redirect('aspanel/slider');
+	}
 	function slider_restore()
 	{
 
