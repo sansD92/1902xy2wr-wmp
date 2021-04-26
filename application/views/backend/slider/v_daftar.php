@@ -44,7 +44,13 @@
 
                 <tr>
                   <td><?=$tgl_posting?></td>
-                  <td><a class="btn btn-primary btn-sm" title="Lihat" href="<?php echo base_url()?>slider/<?=$row['slider_judul_seo']?>" target="_blank"> <i class="fas fa-eye"> <?=$row['slider_dibaca']?></i></a><?=$row['slider_judul']?></td>
+                  <td>
+                    <?php if($row['slider_meta_desk']== 'active'){?>
+                    <?php echo "[Active] ";?><?=$row['slider_judul']?>
+                    <?php }else{ ?>
+                      <?php echo"[Turunan] ";?><?=$row['slider_judul']?>
+                    <?php }?>
+
                   <td>
                     <?php
                     echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/slider_update/$row[slider_id]'><i class='fas fa-edit'></i></a>

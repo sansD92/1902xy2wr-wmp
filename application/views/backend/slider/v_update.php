@@ -51,8 +51,15 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
-                        <input type="text" class="form-control" name="slider_meta_desk" value="<?php echo $rows['slider_meta_desk'] ?>">
+                        <label>Status</label>
+                        <select class="form-control" name="slider_meta_desk">
+                          <option value="<?php echo $rows['slider_meta_desk'] ?>" selected="selected"><?php echo $rows['slider_meta_desk'] ?></option>
+                          <?php if($rows['slider_meta_desk']== 'active'){
+                            echo"<option value='turunan'>turunan</option>";
+                          }else{
+                            echo"<option value='active'>active</option>";
+                          }?>
+                        </select>
                       </div>
                     </div>
                   <div class="col-sm-12">
