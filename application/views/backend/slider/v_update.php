@@ -51,27 +51,8 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="slider_desk" style="width: 100%; height: 100px;"><?php echo $rows['slider_desk'] ?></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
                         <label>Meta Deskripsi</label>
                         <input type="text" class="form-control" name="slider_meta_desk" value="<?php echo $rows['slider_meta_desk'] ?>">
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <!-- text input -->
-                      <div class="form-group">
-                        <label>Kata kunci</label>
-                        <input type="text" class="form-control tags" id="slider_keyword" name="slider_keyword" value="<?php echo $rows['slider_keyword'] ?>">
-                      <?php   $_arrNilai = explode(',', $rows['slider_keyword']);
-                        foreach ($tag as $tag){
-                            $_ck = (array_search($tag['keyword_nama_seo'], $_arrNilai) === false)? '' : 'checked';
-                         } ?>
                       </div>
                     </div>
                   <div class="col-sm-12">
