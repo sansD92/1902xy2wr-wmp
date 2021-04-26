@@ -11,6 +11,7 @@
                         <li><a href="https://www.instagram.com/widodomakmurperkasa/"><i class="ion-social-instagram-outline"></i></a></li>
                         <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 mt-4 mt-lg-0" >

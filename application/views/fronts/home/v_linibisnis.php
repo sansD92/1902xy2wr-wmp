@@ -88,7 +88,20 @@
                             </div>
 												</div>
 										</div>
-
+										<div class="items">
+												<div class="bisnis_post bisnis_style1">
+														<div class="blog_img">
+																<a href="#">
+																		<img src="<?php echo base_url()?>assets/frontend/linibisnis/LMP2.jpg">
+																</a>
+														</div>
+														<div class="blog_content bg-white">
+                                <div class="blog_text">
+                                    <center><h6 class="blog_title"><a href="#">KEI</a></h6><br></center>
+                                </div>
+                            </div>
+												</div>
+										</div>
 
 
 								</div>

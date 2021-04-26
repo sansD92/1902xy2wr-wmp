@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2021 at 11:04 AM
+-- Generation Time: Apr 26, 2021 at 05:12 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.3.27
 
@@ -20,6 +20,76 @@ SET time_zone = "+00:00";
 --
 -- Database: `wmpdb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blogs`
+--
+
+CREATE TABLE `blogs` (
+  `blogs_id` int(11) NOT NULL,
+  `blogs_judul` varchar(220) NOT NULL,
+  `blogs_judul_seo` varchar(220) NOT NULL,
+  `blogs_desk` text NOT NULL,
+  `blogs_keyword` varchar(220) NOT NULL,
+  `blogs_meta_desk` varchar(200) NOT NULL,
+  `blogs_gambar` text NOT NULL,
+  `blogs_post_oleh` varchar(200) NOT NULL,
+  `blogs_post_hari` varchar(20) NOT NULL,
+  `blogs_post_tanggal` date NOT NULL,
+  `blogs_post_jam` time NOT NULL,
+  `blogs_update_oleh` varchar(200) NOT NULL,
+  `blogs_update_hari` varchar(20) NOT NULL,
+  `blogs_update_tanggal` date NOT NULL,
+  `blogs_update_jam` time NOT NULL,
+  `blogs_dibaca` int(50) NOT NULL,
+  `blogs_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`blogs_id`, `blogs_judul`, `blogs_judul_seo`, `blogs_desk`, `blogs_keyword`, `blogs_meta_desk`, `blogs_gambar`, `blogs_post_oleh`, `blogs_post_hari`, `blogs_post_tanggal`, `blogs_post_jam`, `blogs_update_oleh`, `blogs_update_hari`, `blogs_update_tanggal`, `blogs_update_jam`, `blogs_dibaca`, `blogs_status`) VALUES
+(11, 'Donor Darah Di Kantor Pusat Widodo Makmur Perkasa', 'donor-darah-di-kantor-pusat-widodo-makmur-perkasa', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Donor darah adalah sebuah kegiatan mulia, yang bertujuan untuk membantu sesama. Telah menjadi tradisi bagi Widodo Makmur Perkasa untuk memngadakan acara donor darah secara berkala. Bekerjasama dengan PMI jakarta Timur pada tanggal 25 Maret 2019 pukul 09.00-11.00 WIB telah dilaksanakan acara donor darah yang dilaksanakan di Kantor Pusat Widodo Makmur Perkasa di Graha Widodo Makmur Jl. Raya Cilangkap no 58, Cipayung, Jakarta Timur. Adapun acara ini diikuti oleh 80 orang peserta dari level Direksi hingga supporting level. Namun dari pemeriksaan pendahuluan, akhirnya 48 oranglah yang diijinkan untuk mendonorkan darahnya.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Beberapa pertimbangan seseorang diijinkan untuk mendonorkan darahnya adalah;</p><ol style=\"margin-bottom: 10px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><li>Tubuh dalam kondisi fit,</li><li>Tidak mengidap penyakit menular seperti AIDS, Hepatitis, Malaria</li><li>Tidak sedang mengkonsumsi obat-obatan seperti obat pengencer darah,</li><li>Tidak sedang menstruasi, hamil atau menyusui,</li><li>Tidak dalam kondisi darah rendah, berat badan di bawah normal,</li><li>Tidak dalam kondisi kurang tidur (begadang)</li></ol>', 'acara donor darah,donor darah,widodo makmur perkasa', 'Donor darah adalah sebuah kegiatan mulia, yang bertujuan untuk membantu sesama.', 'Backdrop-Donor-Darah-cetak-01-EDIT1.jpg', 'dhawy', 'Rabu', '2021-04-21', '15:15:01', 'dhawy', 'Rabu', '2021-04-21', '15:45:58', 0, 'publish'),
+(12, 'JOSO Sebagai Juara 1 Jakarta Architecture Installation Festival (JAIF) 2019', 'joso-sebagai-juara-1-jakarta-architecture-installation-festival-jaif-2019', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">JOSO sebagai salah satu anak perusahaan di lini bisnis Properti, bergerak di bidang jasa konsultan arsitektur. Telah memenangkan berbagai kompetisi arsitektur tingkat nasional & dipercaya menangani berbagai proyek arsitektur dari pemerintah, BUMN, maupun pihak swasta.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Pada acara Jakarta Architecture Installation Festival (JAIF) 2019, salah satu karya JOSO yang berjudul ‘konkavitas’ terpilih sebagai Juara 1 pilihan pengunjung. Selamat kepada JOSO & teruslah ciptakan karya-karya terbaik ke depannya!</p>', 'arsitekindonesia,joso,jaif2019,widodomakmurperkasa', 'JOSO sebagai salah satu anak perusahaan di lini bisnis Properti, bergerak di bidang jasa konsultan arsitektur. ', 'joso-jaif-EDIT.jpg', 'dhawy', 'Rabu', '2021-04-21', '15:51:12', 'dhawy', 'Rabu', '2021-04-21', '15:51:25', 0, 'publish'),
+(13, 'tesss tessss2', 'tesss-tessss2', '<p>tessss1231 asdsadqweqweqwe</p>', 'tess', 'tesad12312', '', 'panji', 'Kamis', '2021-04-22', '11:33:59', 'jiung', 'Kamis', '2021-04-22', '11:41:25', 0, 'delete');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `divisi`
+--
+
+CREATE TABLE `divisi` (
+  `divisi_id` int(11) NOT NULL,
+  `divisi_judul` varchar(220) NOT NULL,
+  `divisi_judul_seo` varchar(220) NOT NULL,
+  `divisi_desk` text NOT NULL,
+  `divisi_keyword` varchar(220) NOT NULL,
+  `divisi_meta_desk` varchar(200) NOT NULL,
+  `divisi_gambar` text NOT NULL,
+  `divisi_post_oleh` varchar(200) NOT NULL,
+  `divisi_post_hari` varchar(20) NOT NULL,
+  `divisi_post_tanggal` date NOT NULL,
+  `divisi_post_jam` time NOT NULL,
+  `divisi_update_oleh` varchar(200) NOT NULL,
+  `divisi_update_hari` varchar(20) NOT NULL,
+  `divisi_update_tanggal` date NOT NULL,
+  `divisi_update_jam` time NOT NULL,
+  `divisi_dibaca` int(50) NOT NULL,
+  `divisi_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `divisi`
+--
+
+INSERT INTO `divisi` (`divisi_id`, `divisi_judul`, `divisi_judul_seo`, `divisi_desk`, `divisi_keyword`, `divisi_meta_desk`, `divisi_gambar`, `divisi_post_oleh`, `divisi_post_hari`, `divisi_post_tanggal`, `divisi_post_jam`, `divisi_update_oleh`, `divisi_update_hari`, `divisi_update_tanggal`, `divisi_update_jam`, `divisi_dibaca`, `divisi_status`) VALUES
+(12, 'Informasi teknologi', 'informasi-teknologi', '<p>deskripsi IT</p>', '', 'IT', '', 'dhawy', 'Senin', '2020-12-07', '18:19:07', 'dhawy', 'Jumat', '2020-12-18', '07:17:24', 0, 'publish'),
+(13, 'Human Resource Development', 'human-resource-development', '<p>ini isi hrd</p>', '', 'HRD', '', 'dhawy', 'Minggu', '2020-12-27', '10:26:58', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(15, 'Finance', 'finance', '<p>Isi Finance</p><p><br></p>', '', 'FIN', '', 'dhawy', 'Minggu', '2020-12-27', '10:28:48', 'dhawy', 'Kamis', '2021-04-22', '11:03:07', 0, 'publish');
 
 -- --------------------------------------------------------
 
@@ -56,7 +126,7 @@ CREATE TABLE `identitas` (
 --
 
 INSERT INTO `identitas` (`id_identitas`, `nama_website`, `email`, `url`, `facebook`, `instagram`, `whatsapp`, `youtube`, `no_telp`, `meta_deskripsi`, `meta_keyword`, `favicon`, `logo`, `mini_logo`, `seo`, `analytics`, `pixel`, `maps`, `slogan`, `alamat`, `foto`) VALUES
-(1, 'Mitra Mugi Property', 'halo@mitramugiproperty.com', 'https://mitramugiproperty.com/', 'https://www.facebook.com/', 'https://www.instagram.com/mitramugiproperty.id/', 'https://api.whatsapp.com/send?phone=6282114015488&text=Info%20Rumah%20The%20Cimanggis%20Platinum%20Nama%20Saya...', 'https://www.youtube.com/channel/UC2j-iyoQLOuqOBnE2t3CDjw/about', '08777777777', 'Mitra Mugi Properti Perusahaan Agency yang bergerak dibidang property & real estate mengutamakan kepuasan konsumen sesuai tagline kami yaitu \"Memudahkan & Menentramkan\"', '', 'favmmp.png', 'logoweb_putih.png', '', '', 'asdasdasd', 'kodepixel213', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1401.8583472874661!2d106.85212212973634!3d-6.387010577803729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a9e1688c348dfef!2sMitra%20Mugi%20Property!5e0!3m2!1sid!2sid!4v1612955568219!5m2!1sid!2sid', 'Memudahkan & Menentramkan', '', '');
+(1, 'Widodo Makmur Perkasa', 'widodomakmurperkasa@wmp-group.co.id', 'https://wmpnew190421.widodomakmurperkasa.co.id/', 'https://www.facebook.com/', 'https://www.instagram.com/', '', 'https://www.youtube.com/', '0218430 6787', 'PT Widodo makmur Perkasa adalah perusahaan Holding yang membawahi lima lini bisnis yaitu Integrated Livestock, Meat Processing, Integrated Poultry, Food & Commodity dan Construction & Energy. Dimulai dengan usaha feedlot sejak tahun 1995 dan dikemban', '', 'favmmp.png', 'logoweb_putih.png', '', '', '', '', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15861.688563094527!2d106.9007807!3d-6.3393324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x284be730643a5ade!2sGraha%20Widodo%20Makmur!5e0!3m2!1sen!2sid!4v1618988066478!5m2!1sen!2sid', 'Menjadi Perusahaan Pangan dan Papan Terbesar di Asia Tenggara.', 'Jl. Raya Cilangkap No. 58 Cilangkap, Cipayung Jakarta Timur 13870 Indonesia', '');
 
 -- --------------------------------------------------------
 
@@ -193,7 +263,118 @@ INSERT INTO `keyword` (`keyword_id`, `keyword_nama`, `keyword_nama_seo`, `keywor
 (115, 'Corporate', 'corporate', 'dhawy', 0),
 (116, 'qeqwewq', 'qeqwewq', 'dhawy', 0),
 (117, 'dasd', 'dasd', 'dhawy', 0),
-(118, 'asdsad', 'asdsad', 'dhawy', 0);
+(118, 'asdsad', 'asdsad', 'dhawy', 0),
+(119, 'acara donor darah', 'acara-donor-darah', 'dhawy', 0),
+(120, 'donor darah', 'donor-darah', 'dhawy', 0),
+(121, 'widodo makmur perkasa', 'widodo-makmur-perkasa', 'dhawy', 0),
+(122, 'arsitekindonesia', 'arsitekindonesia', 'dhawy', 0),
+(123, 'joso', 'joso', 'dhawy', 0),
+(124, 'jaif2019', 'jaif2019', 'dhawy', 0),
+(125, 'widodomakmurperkasa', 'widodomakmurperkasa', 'dhawy', 0),
+(126, 'tess', 'tess', 'panji', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `products_id` int(11) NOT NULL,
+  `products_judul` varchar(220) NOT NULL,
+  `products_judul_seo` varchar(220) NOT NULL,
+  `products_desk` text NOT NULL,
+  `products_keyword` varchar(220) NOT NULL,
+  `products_meta_desk` varchar(200) NOT NULL,
+  `products_gambar` text NOT NULL,
+  `products_post_oleh` varchar(200) NOT NULL,
+  `products_post_hari` varchar(20) NOT NULL,
+  `products_post_tanggal` date NOT NULL,
+  `products_post_jam` time NOT NULL,
+  `products_update_oleh` varchar(200) NOT NULL,
+  `products_update_hari` varchar(20) NOT NULL,
+  `products_update_tanggal` date NOT NULL,
+  `products_update_jam` time NOT NULL,
+  `products_dibaca` int(50) NOT NULL,
+  `products_status` varchar(20) NOT NULL,
+  `products_cat_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`products_id`, `products_judul`, `products_judul_seo`, `products_desk`, `products_keyword`, `products_meta_desk`, `products_gambar`, `products_post_oleh`, `products_post_hari`, `products_post_tanggal`, `products_post_jam`, `products_update_oleh`, `products_update_hari`, `products_update_tanggal`, `products_update_jam`, `products_dibaca`, `products_status`, `products_cat_id`) VALUES
+(53, 'RPC Pudding Cake', 'rpc-pudding-cake', '<p> </p>', '', 'RPC Pudding Cake', 'rpc1.jpg', 'dhawy', 'Selasa', '2021-01-19', '12:39:03', 'dhawy', 'Selasa', '2021-01-19', '12:47:41', 0, 'publish', 12);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products_category`
+--
+
+CREATE TABLE `products_category` (
+  `products_cat_id` int(11) NOT NULL,
+  `products_cat_judul` varchar(220) NOT NULL,
+  `products_cat_judul_seo` varchar(220) NOT NULL,
+  `products_cat_desk` text NOT NULL,
+  `products_cat_keyword` varchar(220) NOT NULL,
+  `products_cat_meta_desk` varchar(200) NOT NULL,
+  `products_cat_gambar` text NOT NULL,
+  `products_cat_post_oleh` varchar(200) NOT NULL,
+  `products_cat_post_hari` varchar(20) NOT NULL,
+  `products_cat_post_tanggal` date NOT NULL,
+  `products_cat_post_jam` time NOT NULL,
+  `products_cat_update_oleh` varchar(200) NOT NULL,
+  `products_cat_update_hari` varchar(20) NOT NULL,
+  `products_cat_update_tanggal` date NOT NULL,
+  `products_cat_update_jam` time NOT NULL,
+  `products_cat_dibaca` int(50) NOT NULL,
+  `products_cat_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products_category`
+--
+
+INSERT INTO `products_category` (`products_cat_id`, `products_cat_judul`, `products_cat_judul_seo`, `products_cat_desk`, `products_cat_keyword`, `products_cat_meta_desk`, `products_cat_gambar`, `products_cat_post_oleh`, `products_cat_post_hari`, `products_cat_post_tanggal`, `products_cat_post_jam`, `products_cat_update_oleh`, `products_cat_update_hari`, `products_cat_update_tanggal`, `products_cat_update_jam`, `products_cat_dibaca`, `products_cat_status`) VALUES
+(17, 'Engagement Event', 'engagement-event', '<p>Engagement Event<br></p>', 'Engagement Event', 'Engagement Event', '', 'dhawy', 'Rabu', '2021-01-27', '08:07:46', '', '', '0000-00-00', '00:00:00', 0, 'publish');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider`
+--
+
+CREATE TABLE `slider` (
+  `slider_id` int(11) NOT NULL,
+  `slider_judul` varchar(220) NOT NULL,
+  `slider_judul_seo` varchar(220) NOT NULL,
+  `slider_desk` text NOT NULL,
+  `slider_keyword` varchar(220) NOT NULL,
+  `slider_meta_desk` varchar(200) NOT NULL,
+  `slider_gambar` text NOT NULL,
+  `slider_post_oleh` varchar(200) NOT NULL,
+  `slider_post_hari` varchar(20) NOT NULL,
+  `slider_post_tanggal` date NOT NULL,
+  `slider_post_jam` time NOT NULL,
+  `slider_update_oleh` varchar(200) NOT NULL,
+  `slider_update_hari` varchar(20) NOT NULL,
+  `slider_update_tanggal` date NOT NULL,
+  `slider_update_jam` time NOT NULL,
+  `slider_dibaca` int(50) NOT NULL,
+  `slider_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`slider_id`, `slider_judul`, `slider_judul_seo`, `slider_desk`, `slider_keyword`, `slider_meta_desk`, `slider_gambar`, `slider_post_oleh`, `slider_post_hari`, `slider_post_tanggal`, `slider_post_jam`, `slider_update_oleh`, `slider_update_hari`, `slider_update_tanggal`, `slider_update_jam`, `slider_dibaca`, `slider_status`) VALUES
+(75, 'Dini Hamdan', 'dini-hamdan', '<p style=\"text-align: justify; \">Banyak foto yg ku ingin post di feed, atulah keren banget poto dan vidionya. Makasih logayacom kalian luar biasa.</p>', 'Dini Hamdan', 'Dini Hamdan', 'dini.jpg', 'dhawy', 'Selasa', '2021-01-12', '16:55:49', '', '', '0000-00-00', '00:00:00', 0, 'Publish'),
+(76, 'Eva Ruslan', 'eva-ruslan', '<p style=\"text-align: justify; \">Keluarga aku seneng katanya timnya super baik dan aktif. Aku sama suamiku beruntung banget bisa berjodoh sama team logaya, makasih sekali lagi.&nbsp;<br></p>', 'Eva Ruslan', 'Eva Ruslan', 'eva.jpg', 'dhawy', 'Selasa', '2021-01-12', '16:55:36', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(77, 'Novia Andri', 'novia-andri', '<p style=\"text-align: justify; \">Ada sedikit kekhawatiran karena lokasi mereka di Bogor, sedangkan acara di Bekasi. Sampai mereka meyakinkan kalo bisa dateng tepat waktu dan bener mereka udah standby dari jam 6 pagi, padahal acara mulai jam 08.30, salut sama mereka. Oia hasil fotonya juga keren2 dan ternyata jarak tidak membuat mereka mengurangi kualitasnya.<br></p>', 'Novia Andri', 'Novia Andri', 'novia.jpg', 'dhawy', 'Selasa', '2021-01-12', '16:56:21', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(78, 'Jesper Kartika', 'jesper-kartika', '<p style=\"text-align: justify;\">Puas banget, karena fotografer dan videografer ramah - ramah. Tim pengarah luwes banget ngarahin dan gayanya kekinian gak jadul tetap ramah dan gak maksa. Foto video candidnya keren banget.<br></p>', 'Jesper Kartika', 'Jesper Kartika', 'jesperkartika.jpg', 'dhawy', 'Selasa', '2021-01-12', '16:55:28', '', '', '0000-00-00', '00:00:00', 0, 'publish');
 
 -- --------------------------------------------------------
 
@@ -228,7 +409,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `nama`, `email`, `password`, `level`, `id_session`, `user_post_hari`, `user_post_tanggal`, `user_post_jam`, `user_update_hari`, `user_update_tanggal`, `user_update_jam`, `user_gambar`, `user_status`, `user_login_tanggal`, `user_login_jam`, `user_login_status`, `user_stat`) VALUES
-(6, 'dhawy', 'dhawy arkan', 'dhawy@gmail.com', 'fb77c78426323aa6f4e7d9589a5656651a3ef135', '1', '1d3ee28b20064eb055ea2315493770bf-20210104164402', 'Kamis', '2020-06-25', '15:14:48', 'Senin', '2021-01-04', '16:44:02', 'avatar5.png', '1', '2021-04-19', '15:10:44', 'online', 'Publish');
+(6, 'dhawy', 'dhawy arkan', 'dhawy@gmail.com', '21d564edcc5b55c0af9b3684ef7df4d38b36c224', '1', '1d3ee28b20064eb055ea2315493770bf-20210422105518', 'Kamis', '2020-06-25', '15:14:48', 'Kamis', '2021-04-22', '21:11:05', 'user-profile-avatar-job-social-businessman-profession-user-profile-png-512_512.png', '1', '2021-04-26', '09:44:38', 'online', 'Publish'),
+(30, 'jiung', 'jiung', 'adjiesans@gmail.com', '882b2f68559fe5d91b33bafb73ee5840fd8adfb9', '1', '1d00fc6c047a79e4473a253bbb47d62e-20210422210259', 'Kamis', '2021-04-22', '10:52:42', 'Kamis', '2021-04-22', '21:02:59', 'luffy.jpg', '1', '2021-04-22', '21:03:19', 'online', 'publish'),
+(31, 'panji', 'Panji', 'panji@gmail.com', '847e04007f984790744ed34d7c5ed34fc178242c', '3', '73845d4bc9599b7e24578f97e79634dc-20210422164714', 'Kamis', '2021-04-22', '11:23:01', 'Kamis', '2021-04-22', '16:47:14', '', '1', '2021-04-22', '21:11:57', 'offline', 'publish');
 
 -- --------------------------------------------------------
 
@@ -270,20 +453,19 @@ CREATE TABLE `user_detail` (
   `user_detail_tgllahir` date NOT NULL,
   `user_detail_perkawinan` varchar(100) NOT NULL,
   `user_detail_pendidikan` varchar(100) NOT NULL,
-  `user_detail_jabatan` int(3) NOT NULL,
+  `user_detail_divisi` int(3) NOT NULL,
   `user_detail_ktp` varchar(50) NOT NULL,
-  `user_detail_tempattinggal` text NOT NULL,
-  `user_detail_kontrakmulai` date NOT NULL,
-  `user_detail_kontrakselesai` date NOT NULL,
-  `user_detail_leader` varchar(100) NOT NULL
+  `user_detail_tempattinggal` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_detail`
 --
 
-INSERT INTO `user_detail` (`user_detail_id`, `id_user`, `user_detail_no_telp`, `user_detail_jekel`, `user_detail_agama`, `user_detail_tempatlahir`, `user_detail_tgllahir`, `user_detail_perkawinan`, `user_detail_pendidikan`, `user_detail_jabatan`, `user_detail_ktp`, `user_detail_tempattinggal`, `user_detail_kontrakmulai`, `user_detail_kontrakselesai`, `user_detail_leader`) VALUES
-(25, 6, '1231312313', 'Pria', 'Islam', 'jakarta', '2021-01-29', 'Lajang', 's1', 1, '12312313123', 'bogor', '0000-00-00', '0000-00-00', '');
+INSERT INTO `user_detail` (`user_detail_id`, `id_user`, `user_detail_no_telp`, `user_detail_jekel`, `user_detail_agama`, `user_detail_tempatlahir`, `user_detail_tgllahir`, `user_detail_perkawinan`, `user_detail_pendidikan`, `user_detail_divisi`, `user_detail_ktp`, `user_detail_tempattinggal`) VALUES
+(25, 6, '1231312313', 'Pria', 'Islam', 'jakarta', '2021-01-29', 'Lajang', 's1', 12, '12312313123', 'bogor'),
+(39, 30, '01231312312', 'Pria', 'Islam', 'Jakarta', '1945-12-08', 'Menikah', 'S3', 12, '088888888', 'Jakarta'),
+(40, 31, '01231312312', 'Pria', 'Islam', 'Jakarta', '2021-04-05', 'Lajang', 'S3', 12, '2132131312', 'Jakarta');
 
 -- --------------------------------------------------------
 
@@ -365,8 +547,8 @@ CREATE TABLE `user_level` (
 
 INSERT INTO `user_level` (`user_level_id`, `user_level_nama`) VALUES
 (1, 'Super Admin'),
-(2, 'Property Consultant Leader'),
-(3, 'Property Consultant');
+(2, 'Administrator'),
+(3, 'Staff');
 
 -- --------------------------------------------------------
 
@@ -414,6 +596,18 @@ INSERT INTO `user_status` (`user_status_id`, `user_status_nama`) VALUES
 --
 
 --
+-- Indexes for table `blogs`
+--
+ALTER TABLE `blogs`
+  ADD PRIMARY KEY (`blogs_id`);
+
+--
+-- Indexes for table `divisi`
+--
+ALTER TABLE `divisi`
+  ADD PRIMARY KEY (`divisi_id`);
+
+--
 -- Indexes for table `identitas`
 --
 ALTER TABLE `identitas`
@@ -424,6 +618,24 @@ ALTER TABLE `identitas`
 --
 ALTER TABLE `keyword`
   ADD PRIMARY KEY (`keyword_id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`products_id`);
+
+--
+-- Indexes for table `products_category`
+--
+ALTER TABLE `products_category`
+  ADD PRIMARY KEY (`products_cat_id`);
+
+--
+-- Indexes for table `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`slider_id`);
 
 --
 -- Indexes for table `user`
@@ -485,6 +697,18 @@ ALTER TABLE `user_status`
 --
 
 --
+-- AUTO_INCREMENT for table `blogs`
+--
+ALTER TABLE `blogs`
+  MODIFY `blogs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `divisi`
+--
+ALTER TABLE `divisi`
+  MODIFY `divisi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT for table `identitas`
 --
 ALTER TABLE `identitas`
@@ -494,13 +718,31 @@ ALTER TABLE `identitas`
 -- AUTO_INCREMENT for table `keyword`
 --
 ALTER TABLE `keyword`
-  MODIFY `keyword_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
+  MODIFY `keyword_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `products_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+
+--
+-- AUTO_INCREMENT for table `products_category`
+--
+ALTER TABLE `products_category`
+  MODIFY `products_cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `user_agama`
@@ -512,7 +754,7 @@ ALTER TABLE `user_agama`
 -- AUTO_INCREMENT for table `user_detail`
 --
 ALTER TABLE `user_detail`
-  MODIFY `user_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `user_detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `user_jabatan`
