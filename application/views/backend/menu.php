@@ -69,6 +69,22 @@
           </p>
         </a>
       </li>
+      <li class="nav-item">
+        <a href="<?php echo base_url(); ?>aspanel/slider" class="nav-link <?php echo $slider_stat; ?>" >
+          <i class="nav-icon fas fa-cogs"></i>
+          <p>
+            Slider
+          </p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link <?php echo $produk; ?>" >
+          <i class="nav-icon fas fa-cogs"></i>
+          <p>
+            Produk
+          </p>
+        </a>
+      </li>
         <li class="nav-item <?php echo $karyawan_menu_open; ?>">
           <a href="#" class="nav-link  <?php echo $cat_products_stat; ?>">
             <i class="nav-icon far fas fa-fw fa-users"></i>
