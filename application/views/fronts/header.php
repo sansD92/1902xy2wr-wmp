@@ -65,16 +65,16 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">PT Pasir Tengah</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">PT Cianjur Arta Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">PT Prima Widodo Makmur</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">PT Garut Makmur Perkasa</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">PT Widodo Makmur Unggas</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">PT Widodofood Makmur Sejahtera</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="dropdown">
+              <!--   <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Investor</a>
                     <div class="dropdown-menu">
                         <ul>
@@ -103,21 +103,30 @@ Indonesia</li>
                                 </li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib">Kesatriaan Entrepreneur Indonesia</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan">Kemitraan</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan_unggas">Kegiatan CSR</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>laporan">Laporan Berkelanjutan</a></li>
                         </ul>
                     </div>
                 </li>
+
                 <li class="dropdown">
-                      <a class="nav-link " href="<?php echo base_url()?>berita">Berita</a>
+                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Media</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">WMP Megazine</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Youtube WMP</a></li>
+                          
+                        </ul>
+                    </div>
                 </li>
+
+              
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
