@@ -3,28 +3,28 @@
 
 <!-- START SECTION HEAD -->
 <?php $this->load->view('fronts/head.php')?>
-<!-- END SECTION HEAD --> 
+<!-- END SECTION HEAD -->
 <body>
 
 <!-- LOADER -->
-<!-- END LOADER --> 
+<!-- END LOADER -->
 
 <!-- START HEADER -->
 
 <!-- START SECTION HEADER -->
 <?php $this->load->view('fronts/header.php')?>
-<!-- END SECTION HEADER --> 
-<!-- START HEADER --> 
+<!-- END SECTION HEADER -->
+<!-- START HEADER -->
 
 <!-- START SECTION BANNER -->
 <?php $this->load->view('fronts/home/v_slider')?>
-<!-- END SECTION BANNER --> 
+<!-- END SECTION BANNER -->
 
 
 
 <!-- START SECTION ABOUT US -->
 <?php $this->load->view('fronts/home/v_about')?>
-<!-- END SECTION ABOUT US --> 
+<!-- END SECTION ABOUT US -->
 
 <!-- START SECTION FEATURE -->
 <?php $this->load->view('fronts/home/v_linibisnis')?>
@@ -38,7 +38,7 @@
 <?php $this->load->view('fronts/home/v_counter')?>
 <!-- END SECTION FEATURE -->
 
-<!-- START SECTION COUNTER --> 
+<!-- START SECTION COUNTER -->
 <!-- END SECTION COUNTER -->
 
 <!-- START SECTION SERVICE -->
@@ -53,11 +53,11 @@
 	<div class="container">
     	<div class="row align-items-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
         	<div class="col-md-8 text_white">
-                <h2 class="">GO….SYNERGY…. BE THE WINNER….!</h2>
-                
+                <h2 class="">Untuk Informasi Lebih Lanjut</h2>
+
             </div>
-            <div class="col-md-4 text-md-right">	
-            	<a href="#" class="btn btn-outline-white">Contact Us</a>
+            <div class="col-md-4 text-md-right">
+            	<a href="#" class="btn btn-outline-white">Hubungi Kami</a>
             </div>
         </div>
     </div>
@@ -80,39 +80,39 @@
 <?php $this->load->view('fronts/home/v_subcribe')?>
 <!-- END SECTION SUBCRIBE -->
 
-<!-- START FOOTER SECTION --> 
+<!-- START FOOTER SECTION -->
 <?php $this->load->view('fronts/footer')?>
-<!-- END FOOTER SECTION --> 
+<!-- END FOOTER SECTION -->
 
-<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
 
-<!-- Latest jQuery --> 
-<script src="<?php echo base_url()?>assets/js/jquery-1.12.4.min.js"></script> 
-<!-- jquery-ui --> 
+<!-- Latest jQuery -->
+<script src="<?php echo base_url()?>assets/js/jquery-1.12.4.min.js"></script>
+<!-- jquery-ui -->
 <script src="<?php echo base_url()?>assets/js/jquery-ui.js"></script>
-<!-- popper min js --> 
+<!-- popper min js -->
 <script src="<?php echo base_url()?>assets/js/popper.min.js"></script>
-<!-- Latest compiled and minified Bootstrap --> 
-<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script> 
-<!-- owl-carousel min js  --> 
-<script src="<?php echo base_url()?>assets/owlcarousel/js/owl.carousel.min.js"></script> 
-<!-- magnific-popup min js  --> 
-<script src="<?php echo base_url()?>assets/js/magnific-popup.min.js"></script> 
-<!-- waypoints min js  --> 
-<script src="<?php echo base_url()?>assets/js/waypoints.min.js"></script> 
-<!-- parallax js  --> 
-<script src="<?php echo base_url()?>assets/js/parallax.js"></script> 
-<!-- countdown js  --> 
-<script src="<?php echo base_url()?>assets/js/jquery.countdown.min.js"></script> 
+<!-- Latest compiled and minified Bootstrap -->
+<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="<?php echo base_url()?>assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup min js  -->
+<script src="<?php echo base_url()?>assets/js/magnific-popup.min.js"></script>
+<!-- waypoints min js  -->
+<script src="<?php echo base_url()?>assets/js/waypoints.min.js"></script>
+<!-- parallax js  -->
+<script src="<?php echo base_url()?>assets/js/parallax.js"></script>
+<!-- countdown js  -->
+<script src="<?php echo base_url()?>assets/js/jquery.countdown.min.js"></script>
 <!-- fit video  -->
 <script src="<?php echo base_url()?>assets/js/jquery.fitvids.js"></script>
-<!-- jquery.counterup.min js --> 
+<!-- jquery.counterup.min js -->
 <script src="<?php echo base_url()?>assets/js/jquery.counterup.min.js"></script>
-<!-- isotope min js --> 
+<!-- isotope min js -->
 <script src="<?php echo base_url()?>assets/js/isotope.min.js"></script>
 <!-- elevatezoom js -->
-<script src='<?php echo base_url()?>assets/js/jquery.elevatezoom.js'></script> 
-<!-- scripts js --> 
+<script src='<?php echo base_url()?>assets/js/jquery.elevatezoom.js'></script>
+<!-- scripts js -->
 <script src="<?php echo base_url()?>assets/js/scripts.js"></script>
 
 </body>
