@@ -860,8 +860,9 @@ class Aspanel extends CI_Controller {
 		$data['produk_category']   = '';
 		$data['produk']   = '';
 		$data['services']   = '';
-		cek_session_akses ('slider',$this->session->id_session);
 				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'publish'),'slider_id','DESC');
+				}elseif ($this->session->level=='2'){
 						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_status'=>'publish'),'slider_id','DESC');
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_post_oleh'=>$this->session->username,'slider_status'=>'publish'),'slider_id','DESC');
@@ -904,7 +905,6 @@ class Aspanel extends CI_Controller {
 	}
 	public function slider_tambahkan()
 	{
-		cek_session_akses('slider',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/slider/';
@@ -994,14 +994,13 @@ class Aspanel extends CI_Controller {
 					$data['produk_category']   = '';
 					$data['produk']   = '';
 					$data['services']   = '';
-					cek_session_akses ('slider',$this->session->id_session);
+
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/slider/v_tambahkan', $data);
 				}
 	}
 	public function slider_update()
 	{
-		cek_session_akses('slider',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -1106,7 +1105,7 @@ class Aspanel extends CI_Controller {
 			$data['produk_category']   = '';
 			$data['produk']   = '';
 			$data['services']   = '';
-			cek_session_akses ('slider',$this->session->id_session);
+
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/slider/v_update', $data);
 		}
