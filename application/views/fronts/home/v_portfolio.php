@@ -64,7 +64,7 @@
                     <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock3.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/lv3.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
@@ -79,7 +79,7 @@
                     <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock4.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/lv4.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
@@ -94,7 +94,7 @@
                     <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/live5.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/lv5.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
