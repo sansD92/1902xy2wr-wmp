@@ -41,47 +41,18 @@ Indonesia
         </div>
     </div>
     <div >
-        <div  class="container">
+        <div class="bottom_footer border_top_tran">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="copyright m-md-0 text-center text-md-left">Widodo Makmur Perkasa</p>
-                    <p class="copyright m-md-0 text-center text-md-left">&copy; WMP 2021</p>
+                    <p class="copyright m-md-0 text-center text-md-left">&copy; 2021 All Rights Reserved by WMP.</p>
                 </div>
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-4 ">
-                    <br>
-                    <br>
-                     <ul class="list_none widget_links_style1">
-                        <li><a href="#">Kontak Kami</a></li>
-                        <li><a href="#">Catatan Legal</a></li>
-                         <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Pemberitahuan Cookie</a></li>
-
+                <!-- <div class="col-md-6">
+                    <ul class="list_none footer_link text-center text-md-right">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
                     </ul>
-                </div>
-                  <div class="col-md-4 ">
-                    <br>
-                    <br>
-                     <ul class="list_none widget_links_style1">
-                        <li><a href="#">Akses</a></li>
-                        <li><a href="#">Pemberitahuan Privasi</a></li>
-                         <li><a href="#">Indonesia</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="col-md-3 ">
-                    <br>
-                    <br>
-                   <p></p>
-                </div>
-                  <div class="col-md-6 ">
-                    <br>
-                    <br>
-                   <p></p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
