@@ -12,7 +12,7 @@
         <div class="row " >
         	<div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/cianjur_farm.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/peternakan-sapi.jpg">
 						<div class="inner">
 							<h5>Peternakan Sapi</h5>
 
@@ -35,7 +35,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rph_cam.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rphcam.jpg">
 						<div class="inner">
 							<h5>Rumah Potong Hewan</h5>
 						</div>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-md-4 mt-3 mt-md-4">
             	<div class="flip_box text_white">
-					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/wmunew1.jpg">
+					<div class="front background_bg overlay_bg2" data-img-src="<?php echo base_url()?>assets/frontend/intibisnis/rpa2.jpg">
 						<div class="inner">
 							<h5>Rumah Potong Ayam</h5>
 						</div>
