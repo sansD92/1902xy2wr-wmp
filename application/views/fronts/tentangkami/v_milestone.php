@@ -38,26 +38,12 @@
 <section class="small_pb overflow_hide">
     <div class="container">
         <div class="row align-items-center">
-        	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
-            	<div>
-            		<img src="assets/images/about_img6.jpg" alt="about_img6"/>
+            <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                <div>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/milestone-05.png" alt="struktur_organisasi"/>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
-                <div class="heading_s3 mb-3"> 
-                  <h3>MILESTONE WMP</h3>
-                </div>
-                <p>Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.</p>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Iipsum dolor sit amet, consectetur adipiscing elitllus blandit massa enim.</p>
-                <p>Advancement, promising development John Lennon, our ambitions involvement underprivileged billionaire philanthropy save the world transform. </p>
-                <ul class="list_none social_icons border_social mt-2 mt-md-0">
-                	<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                </ul>
-            </div>
+           
         </div>
     </div>
 </section>
