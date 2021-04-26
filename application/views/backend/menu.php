@@ -53,7 +53,7 @@
   <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>aspanel/home" class="nav-link <?php echo $home_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/home" class="nav-link" >
           <i class="nav-icon fas fa-th"></i>
           <p>
             Dashboard
@@ -62,7 +62,7 @@
       </li>
     <?php  if($this->session->level=='1' OR $this->session->level=='2'){ ?>
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>aspanel/identitaswebsite" class="nav-link <?php echo $identitas_stat; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/identitaswebsite" class="nav-link" >
           <i class="nav-icon fas fa-cogs"></i>
           <p>
             Data Website
@@ -71,15 +71,15 @@
       </li>
 
       <li class="nav-item">
-        <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link <?php echo $produk; ?>" >
+        <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link" >
           <i class="nav-icon fas fa-cogs"></i>
           <p>
             Produk
           </p>
         </a>
       </li>
-        <li class="nav-item <?php echo $karyawan_menu_open; ?>">
-          <a href="#" class="nav-link  <?php echo $cat_products_stat; ?>">
+        <li class="nav-item ">
+          <a href="#" class="nav-link ">
             <i class="nav-icon far fas fa-fw fa-users"></i>
             <p>
               Karyawan
@@ -89,14 +89,14 @@
           <ul class="nav nav-treeview">
 
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/divisi" class="nav-link <?php echo $message_stat; ?>">
+              <a href="<?php echo base_url(); ?>aspanel/divisi" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Divisi / Posisi</p>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/data_karyawan" class="nav-link <?php echo $sliders_stat; ?> ">
+              <a href="<?php echo base_url(); ?>aspanel/data_karyawan" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Data Karyawan</p>
               </a>
@@ -106,15 +106,23 @@
         </li>
         <?php } ?>
         <li class="nav-item">
-          <a href="<?php echo base_url(); ?>aspanel/slider" class="nav-link <?php echo $slider_stat; ?>" >
+          <a href="<?php echo base_url(); ?>aspanel/slider" class="nav-link" >
             <i class="nav-icon fas fa-cogs"></i>
             <p>
               Slider
             </p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="<?php echo base_url(); ?>aspanel/bisnis" class="nav-link " >
+            <i class="nav-icon fas fa-cogs"></i>
+            <p>
+              Bisnis
+            </p>
+          </a>
+        </li>
         <li class="nav-item ">
-          <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link <?php echo $blogs_stat; ?>">
+          <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link">
             <i class="nav-icon fas fa-blog"></i>
             <p>
               Artikel
@@ -122,7 +130,7 @@
           </a>
         </li>
       <li class="nav-item ">
-        <a href="<?php echo base_url(); ?>aspanel/profil" class="nav-link <?php echo $konfig_stat; ?>">
+        <a href="<?php echo base_url(); ?>aspanel/profil" class="nav-link">
           <i class="nav-icon fas fa-cogs"></i>
           <p>
             Pengaturan
