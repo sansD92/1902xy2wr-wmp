@@ -16,6 +16,7 @@ class Main extends CI_Controller {
     $jumlah= $this->Crud_m->views_row('blogs','blogs_status','blogs_id','DESC');
     $config['total_rows'] = $jumlah;
     $config['per_page'] = 6;
+    $config['per_page_slider'] = 6;
     if ($this->uri->segment('4')==''){
       $dari = 0;
     }else{
@@ -28,6 +29,7 @@ class Main extends CI_Controller {
       $data['status_produk']   = '';
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 			$data['posts']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','ASC',$dari,$config['per_page']);
+      $data['posts_slider'] = $this->Crud_m->view_one_limit('slider','slider_status','slider_id','DESC',$dari,$config['per_page_slider']);
 
 		}else{
 			redirect('main');
