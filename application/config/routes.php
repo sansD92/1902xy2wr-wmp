@@ -5,6 +5,7 @@ $route['login'] = "Aspanel/login";
 $route['produk'] = "Main/produk";
 $route['visimisi'] = "Tentangkami/visimisi";
 $route['milestone'] = "Tentangkami/milestone";
+$route['motto'] = "Tentangkami/motto";
 $route['komisaris'] = "Tentangkami/komisaris";
 $route['direksi'] = "Tentangkami/direksi";
 $route['strukturcompany'] = "Tentangkami/strukturcompany";

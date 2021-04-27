@@ -39,6 +39,7 @@ Indonesia</li>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Visi & Misi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">Motto WMP</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
 
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris</a></li>

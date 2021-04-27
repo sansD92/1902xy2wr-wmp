@@ -39,8 +39,27 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                    <div class="heading_s1 text-center">
+                    <h2>Filosopi</h2>
+                </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MAKNA_LOGO.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/maknalogo.png" alt="struktur_organisasi"/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="small_pb overflow_hide">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                    <div class="heading_s1 text-center">
+                    <h2>Vision, Mission & Values</h2>
+                </div>
+                <div>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/vmv.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 

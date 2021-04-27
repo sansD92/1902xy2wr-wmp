@@ -20,6 +20,18 @@ class Tentangkami extends CI_Controller {
 		
   $this->load->view('fronts/tentangkami/v_visimisi',$data);
 }
+
+public function motto()
+{
+	 
+			$data['status']   = 'active';
+     
+			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+			
+		
+		
+  $this->load->view('fronts/tentangkami/v_motto',$data);
+}
  public function milestone()
 {
 	 
