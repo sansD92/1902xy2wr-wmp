@@ -34,7 +34,7 @@
                     <li class="portfolio-item livestock">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/livestock1.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/350.jpg" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
