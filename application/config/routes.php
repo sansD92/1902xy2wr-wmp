@@ -36,12 +36,15 @@ $route['lini3'] = "Linibisnis/lini3";
 $route['lini4'] = "Linibisnis/lini4";
 $route['lini5'] = "Linibisnis/lini5";
 
+
 $route['berita'] = "Berita/index";
 
 $route['kontrib'] = "Kontrib/index";
 $route['kemitraan'] = "Kontrib/kemitraan";
 $route['kemitraan_unggas'] = "Kontrib/kemitraan_unggas";
 $route['laporan'] = "Kontrib/laporan";
+
+$route['bisnis/(:any)'] = "main/bisnis/$1";
 
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;

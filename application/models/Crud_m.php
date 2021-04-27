@@ -51,6 +51,12 @@ class Crud_m extends CI_model{
       $this->db->or_where('blogs_judul_seo', $id);
       return $this->db->get($this->table_blogs)->row();
   }
+  function get_by_id_post($id,$table_ids,$table_nama,$judul_seo)
+  {
+      $this->db->where($table_ids, $id);
+      $this->db->or_where($judul_seo, $id);
+      return $this->db->get($table_nama)->row();
+  }
 
   public function view_join_where($table1,$table2,$field,$where)
   {
@@ -140,8 +146,8 @@ class Crud_m extends CI_model{
       $this->db->order_by($order,$ordering);
         return $this->db->get()->result_array();
   }
-  
-  
+
+
   public function view_join_ordering($table1,$table2,$field,$order,$ordering)
   {
     $this->db->select('*');
@@ -227,6 +233,17 @@ class Crud_m extends CI_model{
         $this->db->set('blogs_dibaca', ($count->blogs_dibaca + 1));
         $this->db->update('blogs');
     }
+    function update_counter_bisnis($id)
+     {
+          //return current article views
+          $this->db->where('bisnis_judul_seo', urldecode($id));
+          $this->db->select('bisnis_dibaca');
+          $count = $this->db->get('bisnis')->row();
+          // then increase by one
+          $this->db->where('bisnis_judul_seo', urldecode($id));
+          $this->db->set('bisnis_dibaca', ($count->bisnis_dibaca + 1));
+          $this->db->update('bisnis');
+      }
 
   public function view_ordering_limits($table,$order,$ordering,$baris,$dari)
     {

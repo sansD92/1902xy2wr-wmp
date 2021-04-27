@@ -19,13 +19,13 @@
     	<div class="row">
         	<div class="col-md-12 text-center">
             	<div class="page-title">
-            		<h1><?php echo $judul; ?></h1>
+            		<h1><?php echo $posts->bisnis_judul ?></h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?php echo $judul; ?></li>
+                    <li class="breadcrumb-item"><a href="#">Lini Bisnis</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><?php echo $posts->bisnis_judul ?></li>
                   </ol>
                 </nav>
             </div>
@@ -40,21 +40,20 @@
         <div class="row align-items-center">
         	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
             	<div>
-            		<img src="assets/images/about_img6.jpg" alt="about_img6"/>
+								<img <?php
+                    if(empty($posts->bisnis_gambar)) {
+                      echo "";
+                    }else {
+                      echo " <img src='".base_url()."assets/frontend/linibisnis/".$posts->bisnis_gambar."'> ";}
+                    ?>
+
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
                 <div class="heading_s3 mb-3">
-                  <h3><?php echo $judul; ?></h3>
+                  <h3><?php echo $posts->bisnis_judul ?></h3>
                 </div>
-                <p><?php echo $deskripsi; ?></p>
-                  <ul class="list_none social_icons border_social mt-2 mt-md-0">
-                	<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                </ul>
+                <p><?php echo $posts->bisnis_desk ?></p>
             </div>
         </div>
     </div>

@@ -1224,7 +1224,7 @@ class Aspanel extends CI_Controller {
 			$data['bisnis']   = 'active';
 			$data['produk']   = '';
 			$data['services']   = '';
-		cek_session_akses ('bisnis',$this->session->id_session);
+	
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'delete'),'bisnis_id','DESC');
 				}else{

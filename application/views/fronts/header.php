@@ -53,11 +53,9 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini1">Integrated Livestock</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini2">Meat Processing</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini3">Integrated Poultry</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini4">Commodity</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>lini5">Construction & Energy </a></li>
+                          <?php  foreach ($posts_bisnis as $post_new){ ?>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url("bisnis/$post_new->bisnis_judul_seo") ?>"><?php echo $post_new->bisnis_judul?></a></li>
+                          <?php } ?>
                         </ul>
                     </div>
                 </li>
@@ -121,12 +119,12 @@ Indonesia</li>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">WMP Megazine</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Youtube WMP</a></li>
-                          
+
                         </ul>
                     </div>
                 </li>
 
-              
+
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
