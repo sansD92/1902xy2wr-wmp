@@ -245,6 +245,18 @@ class Crud_m extends CI_model{
           $this->db->update('bisnis');
       }
 
+      function update_counter_berita($id)
+       {
+            //return current article views
+            $this->db->where('blogs_judul_seo', urldecode($id));
+            $this->db->select('blogs_dibaca');
+            $count = $this->db->get('blogs')->row();
+            // then increase by one
+            $this->db->where('blogs_judul_seo', urldecode($id));
+            $this->db->set('blogs_dibaca', ($count->blogs_dibaca + 1));
+            $this->db->update('blogs');
+        }
+
   public function view_ordering_limits($table,$order,$ordering,$baris,$dari)
     {
          $this->db->select('*');

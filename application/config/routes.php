@@ -46,6 +46,7 @@ $route['kemitraan_unggas'] = "Kontrib/kemitraan_unggas";
 $route['laporan'] = "Kontrib/laporan";
 
 $route['bisnis/(:any)'] = "main/bisnis/$1";
+$route['berita/(:any)'] = "berita/detail/$1";
 
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;
