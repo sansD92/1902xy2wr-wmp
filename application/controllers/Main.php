@@ -15,7 +15,7 @@ class Main extends CI_Controller {
 
     $jumlah= $this->Crud_m->views_row('blogs','blogs_status','blogs_id','DESC');
     $config['total_rows'] = $jumlah;
-    $config['per_page'] = 6;
+    $config['per_page'] = 5;
     $config['per_page_slider'] = 6;
     $config['per_page_bisnis'] = 10;
     if ($this->uri->segment('4')==''){
