@@ -54,6 +54,7 @@ class Crud_m extends CI_model{
   }
   function get_by_id_post($id,$table_ids,$table_nama,$judul_seo)
   {
+     $this->db->limit(5);
       $this->db->where($table_ids, $id);
       $this->db->or_where($judul_seo, $id);
       return $this->db->get($table_nama)->row();
