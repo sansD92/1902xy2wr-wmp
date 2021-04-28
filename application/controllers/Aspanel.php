@@ -3012,7 +3012,7 @@ class Aspanel extends CI_Controller {
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/blogs/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|jpeg';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
