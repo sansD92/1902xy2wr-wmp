@@ -22,6 +22,7 @@ public function produk1()
   $data['produk_foto4']   = 'livestock4.jpg';
   $data['produk_foto5']   = 'live5.jpg';
   $data['produk_foto6']   = 'live6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 public function produk2()
@@ -36,6 +37,7 @@ public function produk2()
   $data['produk_foto4']   = 'meat4.jpg';
   $data['produk_foto5']   = 'meat5.jpg';
   $data['produk_foto6']   = 'meat6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 public function produk3()
@@ -50,6 +52,7 @@ public function produk3()
   $data['produk_foto4']   = 'meatpros4.jpg';
   $data['produk_foto5']   = 'meatpros5.jpg';
   $data['produk_foto6']   = 'meatpros6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 public function produk4()
@@ -64,6 +67,7 @@ public function produk4()
   $data['produk_foto4']   = 'leather4.jpg';
   $data['produk_foto5']   = 'leather5.jpg';
   $data['produk_foto6']   = 'leather6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 public function produk5()
@@ -78,6 +82,7 @@ public function produk5()
   $data['produk_foto4']   = 'poultry4.jpg';
   $data['produk_foto5']   = 'poultry5.jpg';
   $data['produk_foto6']   = 'poultry6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 public function produk6()
@@ -92,6 +97,7 @@ public function produk6()
   $data['produk_foto4']   = 'comodity4.jpg';
   $data['produk_foto5']   = 'comodity5.jpg';
   $data['produk_foto6']   = 'comodity6.jpg';
+  $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);
 }
 }
