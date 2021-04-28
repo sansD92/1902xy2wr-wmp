@@ -15,7 +15,7 @@ class Berita extends CI_Controller {
    $this->load->library('pagination');
 		$page1 = 'Y';
 		/* menghitung jumlah total data */
-		 $jumlah= $this->Crud_m->views_row('blogs','blogs_status','blogs_id','DESC');
+		$jumlah = $this->Crud_m->total_rows();
 
 		// Mengatur base_url
 		$config['base_url'] = base_url().'berita/index/halaman/';

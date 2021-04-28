@@ -300,6 +300,7 @@ class Crud_m extends CI_model{
 	 }
 
    function total_rows() {
+    $this->db->where('blogs_status','publish');
   return $this->db->get('blogs')->num_rows();
 }
 function get_all_blogs($per_page,$dari)
