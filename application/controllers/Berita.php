@@ -50,7 +50,7 @@ class Berita extends CI_Controller {
 		 $data['status']   = 'active';
 		  $data['status_produk']   = '';
 		
-		$data['post_terbaru']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','ASC',$dari,$config['per_page']);
+		$data['post_terbaru']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
 
 		$this->pagination->initialize($config);
      $this->load->view('fronts/beritas/v_berita', $data);
