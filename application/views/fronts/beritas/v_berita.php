@@ -22,8 +22,7 @@
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"></li>
+                    <li class="breadcrumb-item"><a href="#">BERITA</a></li>
                   </ol>
                 </nav>
             </div>
@@ -36,11 +35,12 @@
 <section>
   <div class="container">
       <div class="row">
+
           <div class="col-lg-9">
               <div class="row">
                 
           <?php  foreach ($post_terbaru as $post_new){
-                                       
+                                    $jdl = character_limiter($post_new->blogs_judul,50);    
                                         ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
@@ -51,7 +51,7 @@
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $post_new->blogs_judul ?></a></h6>
+                                    <h6 class="blog_title"><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $jdl ?></a></h6>
                                     <ul class="list_none blog_meta">
                                         <li><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><i class="ion-calendar"></i> <?php echo  tgl_indo($post_new->blogs_post_tanggal); ?></a></li>
                                         
