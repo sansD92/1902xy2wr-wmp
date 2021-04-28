@@ -12,14 +12,51 @@ class Berita extends CI_Controller {
 
   public function index()
   {
-    $data['status']   = '';
-    $data['status_produk']   = '';
-    $data['status_lini']   = 'active';
-    $data['judul']   = 'Berita';
-    $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
-    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
-    $this->load->view('fronts/berita/v_berita',$data);
+   $this->load->library('pagination');
+		$page1 = 'Y';
+		/* menghitung jumlah total data */
+		$jumlah = $this->Crud_m->total_rows();
+
+		// Mengatur base_url
+		$config['base_url'] = base_url().'berita/index/halaman/';
+		//menghitung total baris
+		$config['total_rows'] = $jumlah;
+		//mengatur total data yang tampil per halamannya
+		$config['per_page'] = 5;
+		// tag pagination bootstrap
+		$config['full_tag_open']    = "<ul class='pagination'>";
+		$config['full_tag_close']   = "</ul>";
+		$config['num_tag_open']     = "<li>";
+		$config['num_tag_close']    = "</li>";
+		$config['cur_tag_open']     = "<li class='disabled'><li class='active'><a href='#'>";
+		$config['cur_tag_close']    = "<span class='sr-only'></span></a></li>";
+		$config['next_link']        = "Selanjutnya";
+		$config['next_tag_open']    = "<li>";
+		$config['next_tagl_close']  = "</li>";
+		$config['prev_link']        = "Sebelumnya";
+		$config['prev_tag_open']    = "<li>";
+		$config['prev_tagl_close']  = "</li>";
+		$config['first_link']       = "Awal";
+		$config['first_tag_open']   = "<li>";
+		$config['first_tagl_close'] = "</li>";
+		$config['last_link']        = 'Terakhir';
+		$config['last_tag_open']    = "<li>";
+		$config['last_tagl_close']  = "</li>";
+
+		// mengambil uri segment ke-4
+		$dari = $this->uri->segment('4');
+		/* memanggil model untuk ditampilkan pada masing2 modul*/
+		$data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+		 $data['status']   = 'active';
+		  $data['status_produk']   = '';
+		$this->data['post_terbaru'] 						= $this->Crud_m->get_all_blogs($config['per_page'],$dari);
+
+		$this->pagination->initialize($config);
+    $this->load->view('fronts/berita/v_berita');
   }
+
+
+
 
   public function detail($id)
 	{

@@ -299,4 +299,13 @@ class Crud_m extends CI_model{
 		   $this->db->insert('products_order_detail', $data);
 	 }
 
+   function total_rows() {
+  return $this->db->get('blogs')->num_rows();
+}
+function get_all_blogs($per_page,$dari)
+  {
+    $this->db->order_by('blogs_id', 'DESC');
+    $query = $this->db->get('blogs',$per_page,$dari);
+    return $query->result();
+  }
 }

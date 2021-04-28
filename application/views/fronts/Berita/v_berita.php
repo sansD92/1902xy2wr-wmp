@@ -19,12 +19,12 @@
     	<div class="row">
         	<div class="col-md-12 text-center">
             	<div class="page-title">
-            		<h1><?php echo $judul; ?></h1>
+            		<h1></h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?php echo $judul; ?></li>
+                    <li class="breadcrumb-item active" aria-current="page"></li>
                   </ol>
                 </nav>
             </div>

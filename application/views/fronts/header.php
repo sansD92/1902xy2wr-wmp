@@ -32,7 +32,7 @@ Indonesia</li>
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link <?php echo $status; ?>" href="<?php echo base_url()?>">Beranda</a>
+                    <a class="nav-link " href="<?php echo base_url()?>">Beranda</a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
