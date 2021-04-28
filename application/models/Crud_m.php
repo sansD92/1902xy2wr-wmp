@@ -309,4 +309,11 @@ function get_all_blogs($per_page,$dari)
     $query = $this->db->get('blogs',$per_page,$dari);
     return $query->result();
   }
+  function get_all_blogs2($per_page,$dari)
+  {
+    $this->db->order_by('blogs_id', 'DESC');
+    $this->db->where('blogs_status','publish');
+    $query = $this->db->get('blogs',$per_page,$dari);
+    return $query->result();
+  }
 }
