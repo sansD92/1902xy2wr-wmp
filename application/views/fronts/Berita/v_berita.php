@@ -13,6 +13,7 @@
 <?php $this->load->view('fronts/header.php')?>
 <!-- END HEADER -->
 
+
 <!-- START SECTION BANNER -->
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="assets/images/about_bg.jpg">
 	<div class="container">
