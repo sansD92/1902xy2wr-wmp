@@ -46,7 +46,7 @@
                     if(empty($posts->blogs_gambar)) {
                       echo "";
                     }else {
-                      echo " 
+                      echo "
                            <img src='".base_url()."assets/frontend/blogs/".$posts->blogs_gambar."'> ";}
                     ?>
                         </a>
@@ -55,23 +55,23 @@
                         <div class="blog_text">
                             <h2><?php echo $posts->blogs_judul ?></h2>
                             <ul class="list_none blog_meta">
-                                <li><a href="#"><i class="ion-calendar"></i> <?php echo  tgl_indo($posts['blogs_post_tanggal']); ?></a></li>
+                                <li><a href="#"><i class="ion-calendar"></i> <?php echo  tgl_indo($posts->blogs_post_tanggal); ?></a></li>
                                 <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
                             </ul>
                             <p><?php echo $posts->blogs_desk ?></p>
-                           
+
                             <div class="py-4 blog_post_footer">
-                              
+
                             </div>
                         </div>
                     </div>
                 </div>
-               
-              
+
+
             </div>
-           
+
         </div>
-        
+
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
