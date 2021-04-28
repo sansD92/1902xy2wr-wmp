@@ -35,27 +35,43 @@
 <!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
-<section class="small_pb overflow_hide">
+<section>
     <div class="container">
-        <div class="row align-items-center">
-        	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
-            	<div>
-								<img <?php
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="single_post">
+                    <div class="blog_img">
+                        <a href="#">
+                            <img <?php
                     if(empty($posts->blogs_gambar)) {
                       echo "";
                     }else {
-                      echo " <img src='".base_url()."assets/frontend/blogs/".$posts->blogs_gambar."'> ";}
+                      echo " 
+                           <img src='".base_url()."assets/frontend/blogs/".$posts->blogs_gambar."'> ";}
                     ?>
-
+                        </a>
+                    </div>
+                    <div class="blog_content bg-white">
+                        <div class="blog_text">
+                            <h2><?php echo $posts->blogs_judul ?></h2>
+                            <ul class="list_none blog_meta">
+                                <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
+                                <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
+                            </ul>
+                            <p><?php echo $posts->blogs_desk ?></p>
+                           
+                            <div class="py-4 blog_post_footer">
+                              
+                            </div>
+                        </div>
+                    </div>
                 </div>
+               
+              
             </div>
-            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
-                <div class="heading_s3 mb-3">
-                  <h3><?php echo $posts->blogs_judul ?></h3>
-                </div>
-                <p><?php echo $posts->blogs_desk ?></p>
-            </div>
+           
         </div>
+        
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
