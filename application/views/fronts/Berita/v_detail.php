@@ -55,7 +55,7 @@
                         <div class="blog_text">
                             <h2><?php echo $posts->blogs_judul ?></h2>
                             <ul class="list_none blog_meta">
-                                <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
+                                <li><a href="#"><i class="ion-calendar"></i> <?php echo  tgl_indo($posts['blogs_post_tanggal']); ?></a></li>
                                 <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
                             </ul>
                             <p><?php echo $posts->blogs_desk ?></p>
