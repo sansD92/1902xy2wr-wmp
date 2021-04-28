@@ -70,7 +70,7 @@
                     <div class="col-12 mt-4">
                         <ul class="pagination justify-content-center">
                             
-                             <li ><?php
+                             <li class="page-item"><?php
   echo $this->pagination->create_links();
   ?></li>
                         </ul>
