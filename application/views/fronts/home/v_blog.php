@@ -38,7 +38,6 @@
                                     <h6 class="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><a href="#"><?php echo $judul?></a>
                                   </h6>
 
-                                    <p><?php echo $isi?></p>
                                     <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">Selengkapnya</a>
                                 </div>
                             </div>
