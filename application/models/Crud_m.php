@@ -13,6 +13,7 @@ class Crud_m extends CI_model{
   public $table_blogs ='blogs';
 
 
+
   public function view_ordering($table,$order,$ordering)
   {
       $this->db->select('*');
@@ -193,7 +194,13 @@ class Crud_m extends CI_model{
          $this->db->limit($dari, $baris);
          return $this->db->get()->result();
   }
-
+  public function view_where_orders($table1,$status,$order,$ordering)
+  {
+         $this->db->from($table1);
+         $this->db->where($status,'publish');
+         $this->db->order_by($order,$ordering);
+         return $this->db->get()->result();
+  }
 
   public function viewz($table,$order,$ordering)
   {

@@ -17,7 +17,7 @@ class Berita extends CI_Controller {
     $data['status_lini']   = 'active';
     $data['judul']   = 'Berita';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
-
+    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
     $this->load->view('fronts/berita/v_berita',$data);
   }
 
@@ -25,7 +25,6 @@ class Berita extends CI_Controller {
 	{
 
 			$config['per_page'] = 4;
-      $config['per_page_bisnis'] = 10;
 			$row = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');
 			if ($this->uri->segment('4')==''){
 				$dari = 0;
@@ -34,7 +33,7 @@ class Berita extends CI_Controller {
 			}
 			if ($row)
 				{
-          $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis','bisnis_status','bisnis_id','ASC',$dari,$config['per_page_bisnis']);
+          $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
           $data['status']   = 'active';
           $data['status_produk']   = '';
 					$data['posts']            = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');
