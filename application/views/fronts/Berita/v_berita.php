@@ -8,7 +8,6 @@
 <body>
 
 
-
 <!-- START HEADER -->
 <?php $this->load->view('fronts/header.php')?>
 <!-- END HEADER -->
