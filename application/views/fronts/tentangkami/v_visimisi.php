@@ -43,7 +43,7 @@
                     <h2>Filosopi</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/maknalogo.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/maknallogo1.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
