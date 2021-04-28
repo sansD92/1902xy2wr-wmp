@@ -22,7 +22,7 @@ class Berita extends CI_Controller {
 		//menghitung total baris
 		$config['total_rows'] = $jumlah;
 		//mengatur total data yang tampil per halamannya
-		$config['per_page'] = 7;
+		$config['per_page'] = 6;
 		// tag pagination bootstrap
 		$config['full_tag_open']    = "<ul class='pagination'>";
 		$config['full_tag_close']   = "</ul>";
