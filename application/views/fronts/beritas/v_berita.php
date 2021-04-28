@@ -40,7 +40,7 @@
               <div class="row">
                 
           <?php  foreach ($post_terbaru as $post_new){
-                                    $jdl = character_limiter($post_new->blogs_judul,50);    
+                                    $jdl = character_limiter($post_new->blogs_judul,30);    
                                         ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
