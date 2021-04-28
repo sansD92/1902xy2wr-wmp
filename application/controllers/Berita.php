@@ -22,7 +22,7 @@ class Berita extends CI_Controller {
 		//menghitung total baris
 		$config['total_rows'] = $jumlah;
 		//mengatur total data yang tampil per halamannya
-		$config['per_page'] = 5;
+		$config['per_page'] = 7;
 		// tag pagination bootstrap
 		$config['full_tag_open']    = "<ul class='pagination'>";
 		$config['full_tag_close']   = "</ul>";
@@ -49,10 +49,10 @@ class Berita extends CI_Controller {
 		$data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 		 $data['status']   = 'active';
 		  $data['status_produk']   = '';
-		$this->data['post_terbaru'] 						= $this->Crud_m->get_all_blogs($config['per_page'],$dari);
+		$data['post_terbaru'] 						= $this->Crud_m->get_all_blogs($config['per_page'],$dari);
 
 		$this->pagination->initialize($config);
-    $this->load->view('fronts/beritas/v_berita');
+     $this->load->view('fronts/beritas/v_berita', $data);
   }
 
 

@@ -38,169 +38,33 @@
       <div class="row">
           <div class="col-lg-9">
               <div class="row">
+                
+          <?php  foreach ($post_terbaru as $post_new){
+                                       
+                                        ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
                             <div class="blog_img">
                                 <a href="#">
-                                    <img src="assets/images/blog_small_img1_350X198.jpg" alt="blog_small_img1_350X198">
+                                    <img src="<?php echo base_url();?>assets/frontend/blogs/<?php echo $post_new->blogs_gambar ?>">
                                 </a>
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">Why are tickets to fly to Lagos expensive?</a></h6>
+                                    <h6 class="blog_title"><a href="#"><?php echo $post_new->blogs_judul ?></a></h6>
                                     <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
+                                        <li><a href="#"><i class="ion-calendar"></i> <?php echo  tgl_indo($post_new->blogs_post_tanggal); ?></a></li>
+                                        
                                     </ul>
-                                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
+                                    
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <a href="#">
-                                    <img src="assets/images/blog_small_img2_350X198.jpg" alt="blog_small_img2_350X198">
-                                </a>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">A cheap and flexible solution for those who want a starter package </a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <a href="#">
-                                    <img src="assets/images/blog_small_img3_350X198.jpg" alt="blog_small_img3_350X198">
-                                </a>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">But I must explain to you how all this mistaken idea of denouncing</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <div class="fit-videos">
-                                    <iframe src="https://player.vimeo.com/video/231236542?title=0&byline=0&portrait=0" width="540" height="304" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">The Problem With Typefaces on the Web</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/118951274&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">How to Choose the Best Font for Your Blog's Body Copy</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <div class="carousel_slide1 owl-carousel owl-theme dots_white" data-autoheight="true" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
-                                    <a href="#">
-                                        <img src="assets/images/blog_small_img4_350X198.jpg" alt="blog_small_img4_350X198">
-                                    </a>
-                                    <a href="#">
-                                    <img src="assets/images/blog_small_img5_350X198.jpg" alt="blog_small_img5_350X198">
-                                </a>
-                                </div>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <a href="#">
-                                    <img src="assets/images/blog_small_img6_350X198.jpg" alt="blog_small_img6_350X198">
-                                </a>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">who are so beguiled and demoralized by the charms of pleasure of the moment.</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
-                        <div class="blog_post blog_style1">
-                            <div class="blog_img">
-                                <div class="fit-videos">
-                                    <iframe width="540" height="304" src="https://www.youtube.com/embed/7e90gBu4pas" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="blog_content bg-white">
-                                <div class="blog_text">
-                                    <h6 class="blog_title"><a href="#">which is the same as saying through shrinking from toil and pain</a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i> April 14, 2018</a></li>
-                                        <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
-                                    </ul>
-                                    <p>It uses a dictionary of over combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                          <?php } ?>
+                   
+                  
                 </div>
                 <div class="row">
                     <div class="col-12 mt-4">
