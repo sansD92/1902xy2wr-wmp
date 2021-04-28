@@ -15,7 +15,6 @@ class Main extends CI_Controller {
 
     $jumlah= $this->Crud_m->views_row('blogs','blogs_status','blogs_id','DESC');
     $config['total_rows'] = $jumlah;
-    $config['per_page'] = 5;
     $config['per_page_slider'] = 6;
     $config['per_page_bisnis'] = 10;
     if ($this->uri->segment('4')==''){
@@ -25,7 +24,7 @@ class Main extends CI_Controller {
     }
 
     if (is_numeric($dari)) {
-			$config['per_page'] = 20;
+			$config['per_page'] = 5;
 			$data['status']   = 'active';
       $data['status_produk']   = '';
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
