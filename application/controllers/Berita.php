@@ -52,7 +52,7 @@ class Berita extends CI_Controller {
 		$this->data['post_terbaru'] 						= $this->Crud_m->get_all_blogs($config['per_page'],$dari);
 
 		$this->pagination->initialize($config);
-    $this->load->view('fronts/berita/v_berita');
+    $this->load->view('fronts/beritas/v_berita');
   }
 
 
@@ -76,7 +76,7 @@ class Berita extends CI_Controller {
 					$data['posts']            = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');
 					$this->add_count_blogs($id);
 					$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-          $this->load->view('fronts/berita/v_detail', $data);
+          $this->load->view('fronts/beritas/v_detail', $data);
 				}
 				else
 						{
