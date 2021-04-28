@@ -69,8 +69,8 @@
                 <div class="row">
                     <div class="col-12 mt-4">
                         <ul class="pagination justify-content-center">
-                            
-                             <li class="page-item"><?php
+                           
+                            <li ><?php
   echo $this->pagination->create_links();
   ?></li>
                         </ul>

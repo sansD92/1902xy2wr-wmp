@@ -22,25 +22,25 @@ class Berita extends CI_Controller {
 		//menghitung total baris
 		$config['total_rows'] = $jumlah;
 		//mengatur total data yang tampil per halamannya
-		$config['per_page'] = 6;
+		$config['per_page'] = 1;
 		// tag pagination bootstrap
-		$config['full_tag_open']    = "<ul class='pagination'>";
+		$config['full_tag_open']    = "<ul class='pagination justify-content-center'>";
 		$config['full_tag_close']   = "</ul>";
-		$config['num_tag_open']     = "<li>";
+		$config['num_tag_open']     = "<li class='page-item'><a class='page-link'";
 		$config['num_tag_close']    = "</li>";
-		$config['cur_tag_open']     = "<li class='disabled'><li class='active'><a href='#'>";
+		$config['cur_tag_open']     = "<li class='disabled'><li class='page-item active'><a class='page-link' href='#'>";
 		$config['cur_tag_close']    = "<span class='sr-only'></span></a></li>";
 		$config['next_link']        = "Selanjutnya";
-		$config['next_tag_open']    = "<li>";
+		$config['next_tag_open']    = "<li class='page-item'>";
 		$config['next_tagl_close']  = "</li>";
 		$config['prev_link']        = "Sebelumnya";
-		$config['prev_tag_open']    = "<li>";
+		$config['prev_tag_open']    = "<li class='page-item'>";
 		$config['prev_tagl_close']  = "</li>";
 		$config['first_link']       = "Awal";
-		$config['first_tag_open']   = "<li>";
+		$config['first_tag_open']   = "<li class='page-item'>";
 		$config['first_tagl_close'] = "</li>";
 		$config['last_link']        = 'Terakhir';
-		$config['last_tag_open']    = "<li>";
+		$config['last_tag_open']    = "<li class='page-item'>";
 		$config['last_tagl_close']  = "</li>";
 
 		// mengambil uri segment ke-4
