@@ -4360,6 +4360,21 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	border: 1px solid #ededed;
 	padding: 15px;
 }
+
+.blog_style1 .blog_content .blog_text > h6{
+	padding-bottom: 15px;
+}
+
+.blog_style1 .blog_content .blog_text > p{
+	padding-bottom: 5px;
+}
+
+
+.blog_style1 .blog_content {
+
+	padding: 15px;
+}
+
 .blog_style4 {
 	border-radius: 10px;
 }
