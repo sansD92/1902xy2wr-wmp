@@ -23,7 +23,7 @@
                     <div class="items">
                         <div class="blog_post blog_style1">
                             <div class="blog_img">
-                                <a href="#">
+                                <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">
                                    <?php
                                                              if(empty($post_new->blogs_gambar)) {
                                                                echo "<img src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
@@ -38,7 +38,6 @@
                                     <h6 class="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><a href="#"><?php echo $judul?></a>
                                   </h6>
 
-                                    <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
