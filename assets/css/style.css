@@ -4209,8 +4209,6 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 }
 .blog_meta li a i {
     font-size: 16px;
-    vertical-align: middle;
-    line-height: normal;
     margin-right: 2px;
 }
 .blog_text p {
@@ -4363,12 +4361,13 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 }
 
 .blog_style1 .blog_content .blog_text > h6{
-	padding-bottom: 15px;
+	height: 1px;
 }
 
 .blog_style1 .blog_content .blog_text > p{
-	padding-bottom: 5px;
+	height: 75px;
 }
+
 
 
 .blog_style1 .blog_content {

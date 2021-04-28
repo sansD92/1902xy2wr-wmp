@@ -33,11 +33,11 @@
                                 </a>
                             </div>
                             <div class="blog_content bg-white">
+                                <p><i class="ion-calendar"></i> <?php echo tgl_indo($post_new->blogs_post_tanggal)?></p>
                                 <div class="blog_text">
-                                    <h6 class="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><a href="#"><?php echo $judul?></a></h6>
-                                    <ul class="list_none blog_meta">
-                                        <li><a href="#"><i class="ion-calendar"></i><?php echo tgl_indo($post_new->blogs_post_tanggal)?></a></li>
-                                    </ul>
+                                    <h6 class="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><a href="#"><?php echo $judul?></a>
+                                  </h6>
+
                                     <p><?php echo $isi?></p>
                                     <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">Selengkapnya</a>
                                 </div>
