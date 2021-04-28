@@ -304,6 +304,7 @@ class Crud_m extends CI_model{
 }
 function get_all_blogs($per_page,$dari)
   {
+    $this->db->where($status,'publish');
     $this->db->order_by('blogs_id', 'DESC');
     $query = $this->db->get('blogs',$per_page,$dari);
     return $query->result();
