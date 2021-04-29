@@ -23,6 +23,7 @@
                     <li><a href="#" data-filter=".leather">Kulit</a></li>
                     <li><a href="#" data-filter=".poultry">Produk Ayam</a></li>
                     <li><a href="#" data-filter=".comodity">Komoditas</a></li>
+                    <li><a href="#" data-filter=".konstruksi">jasa konstruksi dan energi </a></li>
                 </ul>
             </div>
         </div>
