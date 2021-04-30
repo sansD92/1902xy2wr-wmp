@@ -35,7 +35,7 @@
                             <div class="blog_content bg-white">
                                 <p><i class="ion-calendar"></i> <?php echo tgl_indo($post_new->blogs_post_tanggal)?></p>
                                 <div class="blog_text">
-                                    <h6 class="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><a href="#"><?php echo $judul?></a>
+                                    <h6 class=""><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $judul?></a>
                                   </h6>
 
                                 </div>
