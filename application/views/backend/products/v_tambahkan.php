@@ -90,54 +90,9 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="form-group">
-                        <label>Image 1</label>
+                        <label>Gambar</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label>Image 2</label>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar2" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label>Image 3</label>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar3" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label>Image 4</label>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar4" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label>Image 5</label>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar5" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="form-group">
-                        <label>Image 6</label>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar6" id="exampleInputFile">
                           <label class="custom-file-label" for="exampleInputFile">Add Image</label>
                         </div>
                       </div>

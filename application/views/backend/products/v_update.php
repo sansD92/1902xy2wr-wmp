@@ -83,7 +83,7 @@
                     <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>keyword</label>
+                        <label>Keyword</label>
                         <input type="text" class="form-control tags" id="products_keyword" name="products_keyword" value="<?php echo $rows['products_keyword'] ?>">
                       <?php   $_arrNilai = explode(',', $rows['products_keyword']);
                         foreach ($tag as $tag){
@@ -92,114 +92,24 @@
                       </div>
                     </div>
 
-                      <div class="col-sm-3">
+                      <div class="col-sm-12">
                         <div class="form-group">
-                          <label>Image 1 Preview</label>
+                          <label>Gambar saat ini</label>
                           <div class="row">
-                            <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar'] ?>" alt="Photo">
+                            <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/produk/<?php echo $rows['products_gambar'] ?>" alt="Photo">
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-12">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Image 1</label>
+                          <label>Ubah gambar</label>
                           <div class="custom-file">
                             <input type="file" class="custom-file-input" name="gambar">
                             <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar'] ?></label>
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-3">
-                          <div class="form-group">
-                            <label>Image 2 Preview</label>
-                            <div class="row">
-                              <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar2'] ?>" alt="Photo">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <!-- text input -->
-                          <div class="form-group">
-                            <label>Image 2 </label>
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" name="gambar2">
-                              <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar2'] ?></label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="form-group">
-                            <label>Image 3 Preview</label>
-                            <div class="row">
-                              <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar3'] ?>" alt="Photo">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <!-- text input -->
-                          <div class="form-group">
-                            <label>Image 3</label>
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" name="gambar3">
-                              <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar3'] ?></label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                              <label>Image 4 Preview</label>
-                              <div class="row">
-                                <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar4'] ?>" alt="Photo">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <!-- text input -->
-                            <div class="form-group">
-                              <label>Image 4 </label>
-                              <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="gambar4">
-                                <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar4'] ?></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-group">
-                              <label>Image 5 Preview</label>
-                              <div class="row">
-                                <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar5'] ?>" alt="Photo">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <!-- text input -->
-                            <div class="form-group">
-                              <label>Image 5</label>
-                              <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="gambar5">
-                                <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar5'] ?></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                              <div class="form-group">
-                                <label>Image 6 Preview</label>
-                                <div class="row">
-                                  <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/foto_products/<?php echo $rows['products_gambar6'] ?>" alt="Photo">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <!-- text input -->
-                              <div class="form-group">
-                                <label>Image 6 </label>
-                                <div class="custom-file">
-                                  <input type="file" class="custom-file-input" name="gambar6">
-                                  <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['products_gambar6'] ?></label>
-                                </div>
-                              </div>
-                            </div>
                   </div>
 
                 </div>

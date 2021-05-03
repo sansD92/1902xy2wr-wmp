@@ -25,9 +25,9 @@
             <div class="card-header">
               <h3 class="card-title">
             <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_tambahkan"><i class="fas fa-plus-circle"></i> Tambah</a>
-            <?php  if($this->session->level=='1'){ ?>
+        
               <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_cat"><i class="fas fa-plus-circle"></i> Kategori</a></h3>
-            <?php }?>
+
               <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_storage_bin"><i class="fas fa-trash"></i> File Sampah</a></h3>
             </div>
             <div class="card-body">

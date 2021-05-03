@@ -69,15 +69,6 @@
           </p>
         </a>
       </li>
-
-      <li class="nav-item">
-        <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link" >
-          <i class="nav-icon fas fa-cogs"></i>
-          <p>
-            Produk
-          </p>
-        </a>
-      </li>
         <li class="nav-item ">
           <a href="#" class="nav-link ">
             <i class="nav-icon far fas fa-fw fa-users"></i>
@@ -105,6 +96,15 @@
           </ul>
         </li>
         <?php } ?>
+
+        <li class="nav-item">
+          <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link" >
+            <i class="nav-icon fas fa-cogs"></i>
+            <p>
+              Produk
+            </p>
+          </a>
+        </li>
         <li class="nav-item">
           <a href="<?php echo base_url(); ?>aspanel/slider" class="nav-link" >
             <i class="nav-icon fas fa-cogs"></i>

@@ -1224,7 +1224,7 @@ class Aspanel extends CI_Controller {
 			$data['bisnis']   = 'active';
 			$data['produk']   = '';
 			$data['services']   = '';
-	
+
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'delete'),'bisnis_id','DESC');
 				}else{
@@ -1498,10 +1498,12 @@ class Aspanel extends CI_Controller {
 			$data['produk_category']   = 'active';
 			$data['produk']   = '';
 			$data['services']   = '';
-		cek_session_akses ('products_cat',$this->session->id_session);
+
 				if ($this->session->level=='1'){
+						cek_session_akses ('products_cat',$this->session->id_session);
 						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'publish'),'products_cat_id','DESC');
 				}else{
+						cek_session_staff ('products_cat',$this->session->id_session);
 						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'publish'),'products_cat_id','DESC');
 				}
 				$this->load->view('backend/products_cat/v_daftar', $data);
@@ -1531,17 +1533,19 @@ class Aspanel extends CI_Controller {
 			$data['produk_category']   = 'active';
 			$data['produk']   = '';
 			$data['services']   = '';
-		cek_session_akses ('products_cat',$this->session->id_session);
+
 				if ($this->session->level=='1'){
+						cek_session_akses ('products_cat',$this->session->id_session);
 						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_status'=>'delete'),'products_cat_id','DESC');
 				}else{
+						cek_session_staff ('products_cat',$this->session->id_session);
 						$data['record'] = $this->Crud_m->view_where_ordering('products_category',array('products_cat_post_oleh'=>$this->session->username,'products_cat_status'=>'delete'),'products_cat_id','DESC');
 				}
 				$this->load->view('backend/products_cat/v_daftar_hapus', $data);
 	}
 	public function products_cat_tambahkan()
 	{
-		cek_session_akses('products_cat',$this->session->id_session);
+
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'bahan/foto_products/';
@@ -1637,14 +1641,14 @@ class Aspanel extends CI_Controller {
 					$data['produk_category']   = 'active';
 					$data['produk']   = '';
 					$data['services']   = '';
-					cek_session_akses ('products_cat',$this->session->id_session);
+
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/products_cat/v_tambahkan', $data);
 				}
 	}
 	public function products_cat_update()
 	{
-		cek_session_akses('products_cat',$this->session->id_session);
+
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -1751,14 +1755,12 @@ class Aspanel extends CI_Controller {
 				$data['produk_category']   = 'active';
 				$data['produk']   = '';
 				$data['services']   = '';
-			cek_session_akses ('products_cat',$this->session->id_session);
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/products_cat/v_update', $data);
 		}
 	}
 	function products_cat_delete_temp()
 	{
-			cek_session_akses ('products_cat',$this->session->id_session);
 			$data = array('products_cat_status'=>'delete');
 			$where = array('products_cat_id' => $this->uri->segment(3));
 			$this->db->update('products_category', $data, $where);
@@ -1766,7 +1768,6 @@ class Aspanel extends CI_Controller {
 	}
 	function products_cat_restore()
 	{
-			cek_session_akses ('products_cat_cat',$this->session->id_session);
 			$data = array('products_cat_status'=>'Publish');
 			$where = array('products_cat_id' => $this->uri->segment(3));
 			$this->db->update('products_category', $data, $where);
@@ -1891,7 +1892,7 @@ class Aspanel extends CI_Controller {
 													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 													'products_desk'=>$this->input->post('products_desk'),
-													'bisnis_id'=>$this->input->post('bisnis_id'),
+													'products_cat_id'=>$this->input->post('products_cat_id'),
 													'products_post_hari'=>hari_ini(date('w')),
 													'products_post_tanggal'=>date('Y-m-d'),
 													'products_post_jam'=>date('H:i:s'),
@@ -1906,7 +1907,7 @@ class Aspanel extends CI_Controller {
 													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 													'products_desk'=>$this->input->post('products_desk'),
-													'bisnis_id'=>$this->input->post('bisnis_id'),
+													'products_cat_id'=>$this->input->post('products_cat_id'),
 													'products_post_hari'=>hari_ini(date('w')),
 													'products_post_tanggal'=>date('Y-m-d'),
 													'products_post_jam'=>date('H:i:s'),
@@ -1935,7 +1936,7 @@ class Aspanel extends CI_Controller {
 		 			$data['produk_category']   = '';
 		 			$data['produk']   = 'active';
 		 			$data['services']   = '';
-					$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
+					$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/products/v_tambahkan', $data);
 				}
@@ -1988,7 +1989,7 @@ class Aspanel extends CI_Controller {
 											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 											'products_desk'=>$this->input->post('products_desk'),
-											'bisnis_id'=>$this->input->post('bisnis_id'),
+											'products_cat_id'=>$this->input->post('products_cat_id'),
 											'products_update_hari'=>hari_ini(date('w')),
 											'products_update_tanggal'=>date('Y-m-d'),
 											'products_update_jam'=>date('H:i:s'),
@@ -2002,8 +2003,7 @@ class Aspanel extends CI_Controller {
 											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
 											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
 											'products_desk'=>$this->input->post('products_desk'),
-											'products_harga'=>$this->input->post('products_harga'),
-											'bisnis_id'=>$this->input->post('bisnis_id'),
+											'products_cat_id'=>$this->input->post('products_cat_id'),
 											'products_update_hari'=>hari_ini(date('w')),
 											'products_update_tanggal'=>date('Y-m-d'),
 											'products_update_jam'=>date('H:i:s'),
@@ -2041,7 +2041,7 @@ class Aspanel extends CI_Controller {
  			$data['produk_category']   = '';
  			$data['produk']   = 'active';
  			$data['services']   = '';
-			$data['records'] = $this->Crud_m->view_ordering('bisnis','bisnis_id','DESC');
+			$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','ASC');
 			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/products/v_update', $data);
 		}
