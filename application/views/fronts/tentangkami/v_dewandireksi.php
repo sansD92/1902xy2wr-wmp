@@ -35,18 +35,40 @@
 <!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
-<section class="small_pb overflow_hide">
+<section class="small_pt">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
-                    <div class="heading_s1 text-center">
-                    <h2>Dewan Direksi WMP</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s1 text-center">
+                    <h2>Direksi WMP</h2>
                 </div>
-                <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/direksi.jpg" alt="filosofi"/>
-                </div>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="cleafix small_divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 carousel_slide4 owl-carousel owl-theme text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s" data-margin="30" data-loop="true" data-autoplay="true">
+                <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/images/team5.jpg" alt="team5"/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+                            <h5>Bailey James</h5>
+                            <span>Software Developer</span>
+                        </div>
+                    </div>
+                </div>
+                
         </div>
     </div>
 </section>
