@@ -5888,6 +5888,9 @@ select[multiple] option {
 .form_style4 .form-group label:not(.form-check-label) {
 	left: 15px;
 }
+
+}
+
 .form_style4 .form-group .input-group input + label:not(.form-check-label) {
 	left: 50px;
 	z-index: 9;
