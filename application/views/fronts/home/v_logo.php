@@ -9,9 +9,7 @@
                     <div class="item">
                     	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/2.jpg" /></a>
                     </div>
-                    <div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/3.jpg" /></a>
-                    </div>
+                   
                     <div class="item">
                     	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/3.jpg" /></a>
                     </div>
