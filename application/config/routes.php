@@ -16,6 +16,8 @@ $route['investor-informasipemegangsaham'] = "Investor/informasipemegangsaham";
 $route['investor-kegiatan'] = "Investor/kegiatan";
 $route['investor-informasipendukung'] = "Investor/informasipendukung";
 
+$route['hubungi-kami-karir'] = "Karir/hubungi_kami";
+
 $route['tatakelola-codeofconduct'] = "Investor/tatakelola1";
 $route['tatakelola-pedomandewan'] = "Investor/tatakelola2";
 $route['tatakelola-pedomandireksi'] = "Investor/tatakelola3";
