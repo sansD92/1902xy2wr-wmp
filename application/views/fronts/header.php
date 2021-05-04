@@ -130,7 +130,7 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Ikhtisar</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Bergabung Bersama Kami</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
