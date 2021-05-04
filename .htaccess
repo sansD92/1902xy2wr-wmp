@@ -1,6 +1,53 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/system.*
-RewriteRule ^(.*)$ index.php?/$1 [L]
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?/$1 [L]
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^.*$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+<IfModule php7_module>
+#jika menggunakan php7 maka ganti php5 dengan php7
+    php_value session.cookie_httponly true
+</IfModule>
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+<IfModule mod_expires.c>
+ ExpiresActive On
+ # Images
+ ExpiresByType image/jpeg "access plus 1 year"
+ ExpiresByType image/gif "access plus 1 year"
+ ExpiresByType image/png "access plus 1 year"
+ ExpiresByType image/webp "access plus 1 year"
+ ExpiresByType image/svg+xml "access plus 1 year"
+ ExpiresByType image/x-icon "access plus 1 year"
+ # Video
+ ExpiresByType video/mp4 "access plus 1 year"
+ ExpiresByType video/mpeg "access plus 1 year"
+ # CSS, JavaScript
+ ExpiresByType text/css "access plus 1 month"
+ ExpiresByType text/javascript "access plus 1 month"
+ ExpiresByType application/javascript "access plus 1 month"
+ # Others
+ ExpiresByType application/pdf "access plus 1 month"
+ ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
+
+#Mencegah Hot Linking
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://www.%{HTTP_HOST}%{REQUEST_URI} [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+#Blok Bad Bots – Ini adalah contoh beberapa bot yang diblok. Anda bisa menambahkan bot lainnya.
+RewriteCond %{HTTP_USER_AGENT} ^WebBandit [OR]
+RewriteCond %{HTTP_USER_AGENT} ^2icommerce [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Accoona [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ActiveTouristBot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^addressendeutshland
+RewriteRule ^.* - [F,L]
+</IfModule>
