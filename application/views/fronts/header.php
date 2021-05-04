@@ -38,11 +38,11 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Visi & Misi</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">Motto WMP</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">FILOSOFI VISI & MISI</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">MILESTONE WMP</a></li>
 
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">DEWAN KOMISARIS</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
@@ -55,7 +55,7 @@ Indonesia</li>
                     <div class="dropdown-menu">
                         <ul>
                           <?php  foreach ($posts_bisnis as $post_new){ ?>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url("bisnis/$post_new->bisnis_judul_seo") ?>"><?php echo $post_new->bisnis_judul?></a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("bisnis/$post_new->bisnis_judul_seo") ?>"><?php echo $post_new->bisnis_judul?></a></li>
                           <?php } ?>
                         </ul>
                     </div>
@@ -63,13 +63,13 @@ Indonesia</li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
-                        <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
+                        <ul >
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
                         </ul>
                     </div>
                 </li>
@@ -107,8 +107,8 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib">Kesatriaan Entrepreneur Indonesia</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan_unggas">Kegiatan CSR</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib">Kesatriaan Entrepreneur Indonesia</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan_unggas">Kegiatan CSR</a></li>
                         </ul>
                     </div>
                 </li>
@@ -117,9 +117,9 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Media</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">WMP Megazine</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Youtube WMP</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">WMP Megazine</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Youtube WMP</a></li>
 
                         </ul>
                     </div>
@@ -130,11 +130,11 @@ Indonesia</li>
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Ikhtisar</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Bergabung Bersama Kami</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Hubungi Kami</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Ikhtisar</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Bergabung Bersama Kami</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
                         </ul>
                     </div>
                 </li>
