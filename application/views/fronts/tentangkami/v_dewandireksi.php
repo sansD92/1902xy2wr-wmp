@@ -99,6 +99,7 @@
                         <div class="team_title">
                             <h5>Eko Agmi Adriana</h5>
                             <span>Direktur Keuangan</span>
+														<br><br>
                         </div>
                     </div>
                 </div>
@@ -116,6 +117,7 @@
                         <div class="team_title">
                             <h5>Suyatmi</h5>
                             <span>Direktur Marketing</span>
+														<br><br>
                         </div>
                     </div>
                 </div>
@@ -133,6 +135,7 @@
                         <div class="team_title">
                             <h5>Nur Tjahjo</h5>
                             <span>Direktur HCD</span>
+														<br><br>
                         </div>
                     </div>
                 </div>

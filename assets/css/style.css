@@ -5142,8 +5142,11 @@ to {
 	transition: all 0.5s ease-in-out;
 }
 .team_title {
-    padding: 15px;
-	text-transform: capitalize;
+  padding: 0px 30px;
+}
+
+.team_title span {
+  height: 30px;
 }
 .border_social li a {
     border: 1px solid #333;

@@ -21,7 +21,6 @@
                 <div class="heading_s1 text-center">
                     <h2>Direksi WMP</h2>
                 </div>
-
             </div>
         </div>
         <div class="row">
@@ -29,8 +28,42 @@
                 <div class="cleafix small_divider"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 carousel_slide4 owl-carousel owl-theme text-center animation" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
+      <div class="row justify-content-center">
+        <div class="col-md-2"></div>
+            <div class="col-md-10 carousel_slide4 owl-carousel owl-theme text-center animation" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="false" data-autoplay="true">
+                <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/frontend/bod/FOTO-7.png" alt=""/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+													<h5>Raden Marlan</h5>
+                          <span>President Commissioner</span>
+                          <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/frontend/bod/FOTO-8.png" alt=""/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+													<h5>Warsini</h5>
+													<span>Commissioner</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="team_box light_gray_bg team_hover_style2 social_white">
                         <div class="team_img">
@@ -42,47 +75,13 @@
                             </ul>
                         </div>
                         <div class="team_title">
-                            <h5>Nama</h5>
-                            <span>Komisaris 1 Widodo Makmur Group</span>
+                            <h5>Setyo Warsisto</h5>
+                            <span>Commissioner</span>
                         </div>
                     </div>
                 </div>
-
-                 <div class="item">
-                    <div class="team_box light_gray_bg team_hover_style2 social_white">
-                        <div class="team_img">
-                            <img src="assets/frontend/bod/FOTO-7.png" alt=""/>
-                            <ul class="list_none social_icons border_social">
-                               <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
-                            </ul>
-                        </div>
-                        <div class="team_title">
-													<h5>Nama</h5>
-													<span>Komisaris 2 Widodo Makmur Group</span>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="item">
-                    <div class="team_box light_gray_bg team_hover_style2 social_white">
-                        <div class="team_img">
-                            <img src="assets/frontend/bod/FOTO-8.png" alt=""/>
-                            <ul class="list_none social_icons border_social">
-                               <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
-                            </ul>
-                        </div>
-                        <div class="team_title">
-													<h5>Nama</h5>
-													<span>Komisaris 3 Widodo Makmur Group</span>
-                        </div>
-                    </div>
-                </div>
-
-        </div>
+            </div>
+      </center>
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
