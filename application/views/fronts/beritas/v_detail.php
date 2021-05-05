@@ -14,23 +14,8 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="assets/images/about_bg.jpg">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1><?php echo $posts->blogs_judul ?></h1>
-                </div>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Berita</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?php echo $posts->blogs_judul ?></li>
-                  </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
+	
 </section>
 <!-- END SECTION BANNER -->
 

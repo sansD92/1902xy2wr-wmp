@@ -13,21 +13,8 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="assets/images/about_bg.jpg">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1></h1>
-                </div>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">BERITA</a></li>
-                  </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
+	
 </section>
 <!-- END SECTION BANNER -->
 
@@ -38,9 +25,9 @@
 
           <div class="col-lg-9">
               <div class="row">
-                
+
           <?php  foreach ($post_terbaru as $post_new){
-                                    $jdl = character_limiter($post_new->blogs_judul,30);    
+                                    $jdl = character_limiter($post_new->blogs_judul,30);
                                         ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
@@ -54,22 +41,22 @@
                                     <h6 class="blog_title"><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $jdl ?></a></h6>
                                     <ul class="list_none blog_meta">
                                         <li><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><i class="ion-calendar"></i> <?php echo  tgl_indo($post_new->blogs_post_tanggal); ?></a></li>
-                                        
+
                                     </ul>
-                                    
-                                   
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                           <?php } ?>
-                   
-                  
+
+
                 </div>
                 <div class="row">
                     <div class="col-12 mt-4">
                         <ul class="pagination justify-content-center">
-                           
+
                             <li ><?php
   echo $this->pagination->create_links();
   ?></li>
@@ -81,7 +68,7 @@
               <div class="sidebar">
                     <div class="widget">
                             <div class="newsletter_form">
-                            <form> 
+                            <form>
                                 <div class="outline_input-black">
                                     <input required="" placeholder="Search..." type="text">
                                 </div>
@@ -91,17 +78,17 @@
                             </form>
                         </div>
                         </div>
-                
+
                     <div class="widget">
                       <h5 class="widget_title">MEDIA</h5>
                         <ul class="list_none widget_categories border_bottom_dash">
                             <li><a href="#"><span class="categories_name">Berita</span></a></li>
                             <li><a href="#"><span class="categories_name">WMP Megazine</span></a></li>
                             <li><a href="#"><span class="categories_name">Youtube WMP</span></a></li>
-                            
+
                       </ul>
                     </div>
-                   
+
                     <div class="widget">
                       <h5 class="widget_title">Produk</h5>
                         <ul class="list_none widget_categories border_bottom_dash">
@@ -111,14 +98,14 @@
                              <li><a href="#"><span class="categories_name">Kulit</span></a></li>
                               <li><a href="#"><span class="categories_name">Produk Ayam</span></a></li>
                                <li><a href="#"><span class="categories_name">Komoditas</span></a></li>
-                            
+
                       </ul>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </div>
 </section>
 <!-- END SECTION PORTFOLIO -->
