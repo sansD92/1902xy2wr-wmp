@@ -19,7 +19,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s1 text-center">
-                    <h2>Direksi WMP</h2>
+                    <h2>Komisaris WMP</h2>
                 </div>
             </div>
         </div>
