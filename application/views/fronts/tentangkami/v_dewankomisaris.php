@@ -13,51 +13,75 @@
 <?php $this->load->view('fronts/header.php')?>
 <!-- END HEADER -->
 
-<!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1>Dewan Komisaris</h1>
+<!-- START SECTION ABOUT US -->
+<section class="small_pt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s1 text-center">
+                    <h2>Direksi WMP</h2>
                 </div>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Dewan Komisaris</li>
-                  </ol>
-                </nav>
+
             </div>
         </div>
-    </div>
-</section>
-<!-- END SECTION BANNER -->
+        <div class="row">
+            <div class="col-12">
+                <div class="cleafix small_divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 carousel_slide4 owl-carousel owl-theme text-center animation" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
+                <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/frontend/bod/FOTO-6.png" alt="Tumiyana"/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+                            <h5>Nama</h5>
+                            <span>Komisaris 1 Widodo Makmur Group</span>
+                        </div>
+                    </div>
+                </div>
 
-<!-- START SECTION ABOUT US -->
-<section class="small_pb overflow_hide">
-    <div class="container">
-        <div class="row align-items-center">
-        	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
-            	<div>
-            		<img src="assets/images/about_img6.jpg" alt="about_img6"/>
+                 <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/frontend/bod/FOTO-7.png" alt=""/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+													<h5>Nama</h5>
+													<span>Komisaris 2 Widodo Makmur Group</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
-                <div class="heading_s3 mb-3">
-                  <h3>Dewan Komisaris</h3>
+
+                 <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="assets/frontend/bod/FOTO-8.png" alt=""/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+													<h5>Nama</h5>
+													<span>Komisaris 3 Widodo Makmur Group</span>
+                        </div>
+                    </div>
                 </div>
-                <p>Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.</p>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Iipsum dolor sit amet, consectetur adipiscing elitllus blandit massa enim.</p>
-                <p>Advancement, promising development John Lennon, our ambitions involvement underprivileged billionaire philanthropy save the world transform. </p>
-                <ul class="list_none social_icons border_social mt-2 mt-md-0">
-                	<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                </ul>
-            </div>
+
         </div>
     </div>
 </section>
