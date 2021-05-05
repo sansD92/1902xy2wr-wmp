@@ -43,9 +43,9 @@ Indonesia</li>
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">MILESTONE WMP</a></li>
 
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">DEWAN KOMISARIS</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
+                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
+                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
+                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
 
                             </ul>
                         </div>
