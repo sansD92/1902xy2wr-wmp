@@ -4,17 +4,14 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <ul class="contact_detail list_none text-center text-md-left">
-                        <li><i class="ti-location-pin"></i>Jl. Raya Cilangkap No. 58
-Cilangkap, Cipayung
-Jakarta Timur 13870
-Indonesia</li>
+                        <li><i class="ti-location-pin"></i><?php echo $identitas->alamat?></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list_none social_icons text-center rounded_social social_white text-md-right mt-2 mt-md-0">
-                        <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="<?php echo $identitas->youtube?>"><i class="ion-social-youtube-outline"></i></a></li>
+                        <li><a href="<?php echo $identitas->facebook?>"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="<?php echo $identitas->instagram?>"><i class="ion-social-instagram-outline"></i></a></li>
                          <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                     </ul>
                 </div>
@@ -24,9 +21,9 @@ Indonesia</li>
   <div class="container " >
     <nav class="navbar navbar-expand-lg">
     	<a class="navbar-brand" href="<?php echo base_url()?>">
-			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
-            <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
-            <img class="logo_default" src="<?php echo base_url()?>assets/frontend/wmp_p.png" alt="logo" />
+			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
+            <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
+            <img class="logo_default" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">

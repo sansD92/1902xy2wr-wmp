@@ -2,15 +2,15 @@
 <!-- Meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="IT Dev & Arkansys" name="author">
+<meta content="Crudbiz" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
-<meta name="keywords" content="PT Widodo Makmur Perkasa (WMP) adalah perusahaan yang memproduksi bahan pangan dan penyediaan papan.">
+<meta name="description" content="<?php echo character_limiter($identitas->meta_deskripsi,200)?>">
+<meta name="keywords" content="<?php echo $identitas->meta_keyword?>">
 
 <!-- SITE TITLE -->
-<title>Widodo Makmur Perkasa (WMP)</title>
+<title><?php echo $identitas->nama_website?></title>
 <!-- Favicon Icon -->
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/frontend/wmp_favicon_big.png">
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->favicon?>">
 <!-- Animation CSS -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/animate.css">
 <!-- Latest Bootstrap min CSS -->

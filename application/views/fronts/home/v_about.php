@@ -3,18 +3,17 @@
         <div class="row align-items-center">
             <div class="col-md-6" data-animation="fadeInLeft" data-animation-delay="0.2s">
                 <div class="overlay_bg about_video_img mb-4 mb-lg-0">
-                    <img src="<?php echo base_url()?>assets/frontend/about23.jpeg" alt="about_img4"/>
-                    <a link="false" href="https://youtube.com/watch?v=jPSzKyY5NnY" class="video_popup video_play"><img class="bounce_img" src="<?php echo base_url()?>assets/images/play-icon.png" alt="play-icon" allow="autoplay"></a>
+                    <img src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->profil_picture?>" alt="about_img4"/>
+                    <a link="false" href="https://youtube.com/watch?v=<?php echo $identitas->youtube_video?>" class="video_popup video_play"><img class="bounce_img" src="<?php echo base_url()?>assets/images/play-icon.png" alt="play-icon" allow="autoplay"></a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
                 <div class="heading_s1">
-                  <h2>Tentang Widodo Makmur</h2>
+                  <h2>Tentang <?php echo $identitas->nama_website?></h2>
                 </div>
-                <p style="text-align:justify;" >PT Widodo Makmur Perkasa adalah perusahaan Holding yang membawahi lima lini bisnis yaitu <b>Integrated Livestock, Meat Processing, Integrated Poultry, Food & Commodity dan Construction & Energy</b>. Dimulai dengan usaha feedlot sejak tahun 1995 dan dikembangkan secara profesional pada tahun 1999.Usaha ini berkembang pesat dan menempatkan WMP sebagai salah satu perusahaan penyuplai sapi terbesar di Indonesia. Dengan aset total saat ini mencapai 2,5T dan akan terus berkembang dengan langkah pengembangan progresif kami.</p>
+                <?php echo $identitas->meta_deskripsi?>
 
-
-                <a href="#" class="btn btn-black">Selengkapnya</a>
+                <br><br><a href="<?php echo $identitas->profil_url?>" class="btn btn-black">Selengkapnya</a>
             </div>
         </div>
     </div>

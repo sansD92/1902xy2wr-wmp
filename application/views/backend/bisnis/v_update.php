@@ -50,6 +50,23 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="inputName" class="col-sm-3 col-form-label">Category</label>
+
+                      <select name='bisnis_kategori_id' class="form-control select2" style="width: 100%;">
+                        <?php foreach ($records as $row) {
+                          if ($rows['bisnis_kategori_id'] == $row['bisnis_kategori_id']){
+                            echo"<option selected='selected' value='$row[bisnis_kategori_id]'>$row[bisnis_kategori_judul]</option>";
+                          }else{
+                            echo"<option value='$row[bisnis_kategori_id]'>$row[bisnis_kategori_judul]</option>";
+                       }
+                     } ?>
+                    </select>
+
+                  </div>
+                </div></div>
+                  <div class="row">
+                    <div class="col-sm-12">
                       <div class="form-group">
                         <label>Description</label>
                         <textarea class="textarea"  name ="bisnis_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_desk'] ?></textarea>
