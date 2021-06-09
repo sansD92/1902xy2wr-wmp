@@ -428,7 +428,7 @@ class Aspanel extends CI_Controller {
 		cek_session_akses($this->session->id_session);
 		if (isset($_POST['submit'])){
 					$config['upload_path'] = 'assets/frontend/campur/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|jpeg';
 					$this->upload->initialize($config);
 					$this->upload->do_upload('logo');
 					$hasillogo=$this->upload->data();
@@ -436,8 +436,6 @@ class Aspanel extends CI_Controller {
 					$config['source_image'] = './assets/frontend/campur/'.$hasillogo['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['quality']= '100%';
-					$config['height']= 48;
 					$config['new_image']= './assets/frontend/campur/'.$hasillogo['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
@@ -449,10 +447,20 @@ class Aspanel extends CI_Controller {
 					$config['source_image'] = './assets/frontend/campur/'.$hasilfav['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['quality']= '50%';
-					$config['width']= 30;
-					$config['height']= 30;
 					$config['new_image']= './assets/frontend/campur/'.$hasilfav['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					$this->upload->initialize($config);
+					$this->upload->do_upload('profil_picture');
+					$hasilpp=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/campur/'.$hasilpp['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['width']= 800;
+					$config['height']= 533;
+					$config['new_image']= './assets/frontend/campur/'.$hasilpp['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
@@ -479,7 +487,7 @@ class Aspanel extends CI_Controller {
 						$tags2[] = $this->mylibrary->seo_title($t);
 					}
 					$tags = implode(",", $tags2);
-          if ($hasilfav['file_name']=='' && $hasillogo['file_name']==''){
+          if ($hasilfav['file_name']=='' && $hasillogo['file_name']=='' && $hasilpp['file_name']==''){
             	$data = array(
             	                	'nama_website'=>$this->db->escape_str($this->input->post('nama_website')),
                                 'email'=>$this->db->escape_str($this->input->post('email')),
@@ -497,9 +505,39 @@ class Aspanel extends CI_Controller {
 																'pixel'=>$this->input->post('pixel'),
                                 'meta_keyword'=>$tag,
                                 'maps'=>$this->input->post('maps'),
+																'profil_url'=>$this->input->post('profil_url'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+
 															);
 																$where = array('id_identitas' => $this->input->post('id_identitas'));
     														$query = $this->db->update('identitas',$data,$where);
+            }else if ($hasillogo['file_name']=='' && $hasilfav['file_name']=='' ){
+            	$data = array(
+																'nama_website'=>$this->db->escape_str($this->input->post('nama_website')),
+																'email'=>$this->db->escape_str($this->input->post('email')),
+																'url'=>$this->db->escape_str($this->input->post('url')),
+																'facebook'=>$this->input->post('facebook'),
+																'instagram'=>$this->input->post('instagram'),
+																'youtube'=>$this->input->post('youtube'),
+																'no_telp'=>$this->db->escape_str($this->input->post('no_telp')),
+																'slogan'=>$this->input->post('slogan'),
+																'alamat'=>$this->input->post('alamat'),
+																'whatsapp'=>$this->input->post('whatsapp'),
+																'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+																'seo'=>$this->input->post('seo'),
+																'analytics'=>$this->input->post('analytics'),
+																'pixel'=>$this->input->post('pixel'),
+																'meta_keyword'=>$tag,
+																'maps'=>$this->input->post('maps'),
+																'profil_url'=>$this->input->post('profil_url'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+																'profil_picture'=>$hasilpp['file_name']);
+																$where = array('id_identitas' => $this->input->post('id_identitas'));
+						    								$_image = $this->db->get_where('identitas',$where)->row();
+						    								$query = $this->db->update('identitas',$data,$where);
+						    								if($query){
+																					unlink("assets/frontend/campur/".$_image->profil_picture);
+						    					                }
             }else if ($hasillogo['file_name']==''){
             	$data = array(
 																'nama_website'=>$this->db->escape_str($this->input->post('nama_website')),
@@ -518,12 +556,72 @@ class Aspanel extends CI_Controller {
 																'pixel'=>$this->input->post('pixel'),
 																'meta_keyword'=>$tag,
 																'maps'=>$this->input->post('maps'),
+																'profil_url'=>$this->input->post('profil_url'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+																'profil_picture'=>$hasilpp['file_name'],
                                 'favicon'=>$hasilfav['file_name']);
 																$where = array('id_identitas' => $this->input->post('id_identitas'));
 						    								$_image = $this->db->get_where('identitas',$where)->row();
 						    								$query = $this->db->update('identitas',$data,$where);
 						    								if($query){
 						    					                unlink("assets/frontend/campur/".$_image->favicon);
+																					unlink("assets/frontend/campur/".$_image->profil_picture);
+						    					                }
+            }else if ($hasilpp['file_name']=='' && $hasillogo['file_name']==''){
+            	$data = array(
+																'nama_website'=>$this->db->escape_str($this->input->post('nama_website')),
+																'email'=>$this->db->escape_str($this->input->post('email')),
+																'url'=>$this->db->escape_str($this->input->post('url')),
+																'facebook'=>$this->input->post('facebook'),
+																'instagram'=>$this->input->post('instagram'),
+																'youtube'=>$this->input->post('youtube'),
+																'no_telp'=>$this->db->escape_str($this->input->post('no_telp')),
+																'slogan'=>$this->input->post('slogan'),
+																'alamat'=>$this->input->post('alamat'),
+																'whatsapp'=>$this->input->post('whatsapp'),
+																'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+																'seo'=>$this->input->post('seo'),
+																'analytics'=>$this->input->post('analytics'),
+																'pixel'=>$this->input->post('pixel'),
+																'meta_keyword'=>$tag,
+																'maps'=>$this->input->post('maps'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+																'profil_url'=>$this->input->post('profil_url'),
+                                'favicon'=>$hasilfav['file_name']);
+																$where = array('id_identitas' => $this->input->post('id_identitas'));
+						    								$_image = $this->db->get_where('identitas',$where)->row();
+						    								$query = $this->db->update('identitas',$data,$where);
+						    								if($query){
+						    					                unlink("assets/frontend/campur/".$_image->favicon);
+						    					                }
+            }else if ($hasilpp['file_name']==''){
+            	$data = array(
+																'nama_website'=>$this->db->escape_str($this->input->post('nama_website')),
+																'email'=>$this->db->escape_str($this->input->post('email')),
+																'url'=>$this->db->escape_str($this->input->post('url')),
+																'facebook'=>$this->input->post('facebook'),
+																'instagram'=>$this->input->post('instagram'),
+																'youtube'=>$this->input->post('youtube'),
+																'no_telp'=>$this->db->escape_str($this->input->post('no_telp')),
+																'slogan'=>$this->input->post('slogan'),
+																'alamat'=>$this->input->post('alamat'),
+																'whatsapp'=>$this->input->post('whatsapp'),
+																'meta_deskripsi'=>$this->input->post('meta_deskripsi'),
+																'seo'=>$this->input->post('seo'),
+																'analytics'=>$this->input->post('analytics'),
+																'pixel'=>$this->input->post('pixel'),
+																'meta_keyword'=>$tag,
+																'maps'=>$this->input->post('maps'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+																'profil_url'=>$this->input->post('profil_url'),
+																'logo'=>$hasillogo['file_name'],
+                                'favicon'=>$hasilfav['file_name']);
+																$where = array('id_identitas' => $this->input->post('id_identitas'));
+						    								$_image = $this->db->get_where('identitas',$where)->row();
+						    								$query = $this->db->update('identitas',$data,$where);
+						    								if($query){
+						    					                unlink("assets/frontend/campur/".$_image->favicon);
+																					unlink("assets/frontend/campur/".$_image->logo);
 						    					                }
             }else if ($hasilfav['file_name']==''){
             	$data = array(
@@ -543,12 +641,17 @@ class Aspanel extends CI_Controller {
 																'pixel'=>$this->input->post('pixel'),
 																'meta_keyword'=>$tag,
 																'maps'=>$this->input->post('maps'),
+																'profil_picture'=>$this->input->post('profil_picture'),
+																'youtube_video'=>$this->input->post('youtube_video'),
+																'profil_url'=>$this->input->post('profil_url'),
+																'profil_picture'=>$hasilpp['file_name'],
                                 'logo'=>$hasillogo['file_name']);
 																$where = array('id_identitas' => $this->input->post('id_identitas'));
 						    								$_image = $this->db->get_where('identitas',$where)->row();
 						    								$query = $this->db->update('identitas',$data,$where);
 						    								if($query){
 						    					                unlink("assets/frontend/campur/".$_image->logo);
+																					unlink("assets/frontend/campur/".$_image->profil_picture);
 						    					                }
             }else{
             	$data = array(
@@ -568,7 +671,10 @@ class Aspanel extends CI_Controller {
 																'pixel'=>$this->input->post('pixel'),
 																'meta_keyword'=>$tag,
 																'maps'=>$this->input->post('maps'),
+																'profil_url'=>$this->input->post('profil_url'),
 																'favicon'=>$hasilfav['file_name'],
+																'profil_picture'=>$hasilpp['file_name'],
+																'youtube_video'=>$this->input->post('youtube_video'),
                                 'logo'=>$hasillogo['file_name']);
 																$where = array('id_identitas' => $this->input->post('id_identitas'));
 						    								$_image = $this->db->get_where('identitas',$where)->row();
@@ -576,6 +682,7 @@ class Aspanel extends CI_Controller {
 						    								if($query){
 						    					                unlink("assets/frontend/campur/".$_image->favicon);
 																					unlink("assets/frontend/campur/".$_image->logo);
+																					unlink("assets/frontend/campur/".$_image->profil_picture);
 						    					                }
             }
 			redirect('aspanel/identitaswebsite');

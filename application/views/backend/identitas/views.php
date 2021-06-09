@@ -123,10 +123,25 @@
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Meta Description</label>
-                        <textarea type="text" class="form-control" name="meta_deskripsi" placeholder="Meta Description"><?php echo $record['meta_deskripsi']?></textarea>
+                        <label>Description</label>
+                        <textarea class="textarea"  name ="meta_deskripsi" style="width: 100%; height: 100px;"><?php echo $record['meta_deskripsi'] ?></textarea>
                       </div>
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Youtube Video</label>
+                        <input type="text" class="form-control" name="youtube_video" value="<?php echo $record['youtube_video']?>" placeholder="Kode Video Youtube">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>URL Selengkapnya</label>
+                        <input type="text" class="form-control" name="profil_url" value="<?php echo $record['profil_url']?>" placeholder="Link Profil">
+                      </div>
+                    </div>
+
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -174,7 +189,7 @@
                       <div class="form-group">
                         <label>Preview Logo</label>
                         <br>
-                        <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/backend/foto/<?php echo $record['logo'] ?>" alt="Photo">
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $record['logo'] ?>" alt="Photo">
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -190,7 +205,26 @@
                       <div class="form-group">
                         <label>Preview Favicon</label>
                         <br>
-                        <img class="img-fluid mb-3" src="<?php echo base_url()?>bahan/backend/foto/<?php echo $record['favicon'] ?>" alt="Photo">
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $record['favicon'] ?>" alt="Photo">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Background</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" name="profil_picture">
+                          <label class="custom-file-label" for="exampleInputFile">Image before <?php echo $record['profil_picture'] ?></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Preview Background</label>
+                        <br>
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $record['profil_picture'] ?>" alt="Photo">
                       </div>
                     </div>
                   </div>
