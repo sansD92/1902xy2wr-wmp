@@ -49,7 +49,7 @@ class Berita extends CI_Controller {
 		$data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 		 $data['status']   = 'active';
 		  $data['status_produk']   = '';
-		
+		$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 		$data['post_terbaru']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
 
 		$this->pagination->initialize($config);
