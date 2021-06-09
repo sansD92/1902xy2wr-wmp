@@ -13,6 +13,7 @@ class Tentangkami extends CI_Controller {
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -25,6 +26,7 @@ public function motto()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -36,6 +38,7 @@ public function motto()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -47,6 +50,7 @@ public function komisaris()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -59,6 +63,7 @@ public function direksi()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -70,6 +75,7 @@ public function strukturcompany()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
@@ -81,6 +87,7 @@ public function strukturorganisasi()
 {
 
 			$data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 

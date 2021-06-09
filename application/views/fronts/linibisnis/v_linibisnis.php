@@ -17,19 +17,7 @@
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;" data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1><?php echo $posts->bisnis_judul ?></h1>
-                </div>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Lini Bisnis</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?php echo $posts->bisnis_judul ?></li>
-                  </ol>
-                </nav>
-            </div>
-        </div>
+        
     </div>
 </section>
 <!-- END SECTION BANNER -->
@@ -53,7 +41,7 @@
                 <div class="heading_s3 mb-3">
                   <h3><?php echo $posts->bisnis_judul ?></h3>
                 </div>
-                <p><?php echo $posts->bisnis_desk ?></p>
+                <p><?php echo $posts->bisnis_desk ?><a href="#" class="btn btn-outline-default">Klik Disini</a></p>
             </div>
         </div>
     </div>

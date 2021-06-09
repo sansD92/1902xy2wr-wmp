@@ -41,6 +41,7 @@ class Main extends CI_Controller {
 
 			$config['per_page'] = 4;
       $config['per_page_bisnis'] = 10;
+      
 			$row = $this->Crud_m->get_by_id_post($id,'bisnis_id','bisnis','bisnis_judul_seo');
 			if ($this->uri->segment('4')==''){
 				$dari = 0;

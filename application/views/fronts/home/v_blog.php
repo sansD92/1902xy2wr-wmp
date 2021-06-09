@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
-                    <span class="sub_title">Letest News</span>
-                    <h2>Our Blog</h2>
+                    <span class="sub_title">Latest News</span>
+                    <h2>Terkini Dari WMP</h2>
                 </div>
             </div>
         </div>

@@ -14,6 +14,7 @@ class Linibisnis extends CI_Controller {
   {
     $data['status']   = '';
     $data['status_produk']   = '';
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['status_lini']   = 'active';
     $data['judul']   = 'Integrated Livestock';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
@@ -25,6 +26,7 @@ class Linibisnis extends CI_Controller {
     $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['judul']   = 'Meet Processing';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
 
@@ -34,6 +36,7 @@ class Linibisnis extends CI_Controller {
   {
     $data['status']   = '';
     $data['status_produk']   = '';
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['status_lini']   = 'active';
     $data['judul']   = 'Integrated Poultry';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
@@ -44,6 +47,7 @@ class Linibisnis extends CI_Controller {
   {
     $data['status']   = '';
     $data['status_produk']   = '';
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['status_lini']   = 'active';
     $data['judul']   = 'Commodity';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
@@ -55,6 +59,7 @@ class Linibisnis extends CI_Controller {
     $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['judul']   = 'Construction & Energy';
     $data['deskripsi']   = 'Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.';
 
