@@ -36,8 +36,7 @@
                         <div class="team_img">
                             <img src="assets/frontend/bod/FOTO-7.png" alt=""/>
                             <ul class="list_none social_icons border_social">
-                               <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                               
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -53,8 +52,7 @@
                         <div class="team_img">
                             <img src="assets/frontend/bod/FOTO-8.png" alt=""/>
                             <ul class="list_none social_icons border_social">
-                               <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                              
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -69,8 +67,7 @@
                         <div class="team_img">
                             <img src="assets/frontend/bod/FOTO-6.png" alt="Tumiyana"/>
                             <ul class="list_none social_icons border_social">
-                               <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                              
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
