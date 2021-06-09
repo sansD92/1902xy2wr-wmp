@@ -9,7 +9,7 @@
   <ul class="navbar-nav ml-auto">
     <li class="nav-item dropdown">
       <a class="nav-link" href="<?php echo base_url()?>" target="_blank">
-        <span>Pratinjau Perubahan</span>
+        <span>Preview Web</span>
       </a>
     </li>
     <!-- Notifications Dropdown Menu -->
@@ -25,15 +25,15 @@
 
           <p>
             <?php echo "$users[nama]";?>
-            <small>Bergabung sejak <?php echo tgl_indo($users['user_post_tanggal']);?>.</small>
+            <small>Join Since <?php echo tgl_indo($users['user_post_tanggal']);?>.</small>
           </p>
         </li>
         <!-- Menu Body -->
 
         <!-- Menu Footer-->
         <li class="user-footer">
-          <a href="<?php echo base_url(); ?>aspanel/profil" class="btn btn-default btn-flat">Profil</a>
-          <a href="<?php echo base_url(); ?>aspanel/logout" class="btn btn-default btn-flat float-right">Keluar</a>
+          <a href="<?php echo base_url(); ?>aspanel/profil" class="btn btn-default btn-flat">Profile</a>
+          <a href="<?php echo base_url(); ?>aspanel/logout" class="btn btn-default btn-flat float-right" title="Sign Out"><i class="fas fa-sign-out-alt"></i></a>
         </li>
       </ul>
     </li>
@@ -63,9 +63,9 @@
     <?php  if($this->session->level=='1' OR $this->session->level=='2'){ ?>
       <li class="nav-item">
         <a href="<?php echo base_url(); ?>aspanel/identitaswebsite" class="nav-link" >
-          <i class="nav-icon fas fa-cogs"></i>
+          <i class="nav-icon fas fa-exclamation-circle"></i>
           <p>
-            Data Website
+            Website Information
           </p>
         </a>
       </li>
@@ -73,7 +73,7 @@
           <a href="#" class="nav-link ">
             <i class="nav-icon far fas fa-fw fa-users"></i>
             <p>
-              Karyawan
+              Users
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
@@ -82,14 +82,14 @@
             <li class="nav-item">
               <a href="<?php echo base_url(); ?>aspanel/divisi" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Divisi / Posisi</p>
+                <p>Department</p>
               </a>
             </li>
 
             <li class="nav-item">
               <a href="<?php echo base_url(); ?>aspanel/data_karyawan" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Data Karyawan</p>
+                <p>List Of Users</p>
               </a>
             </li>
 
@@ -99,33 +99,51 @@
 
         <li class="nav-item">
           <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link" >
-            <i class="nav-icon fas fa-cogs"></i>
+            <i class="nav-icon fas fa-shapes"></i>
             <p>
-              Produk
+              Products
             </p>
           </a>
         </li>
         <li class="nav-item">
           <a href="<?php echo base_url(); ?>aspanel/slider" class="nav-link" >
-            <i class="nav-icon fas fa-cogs"></i>
+            <i class="nav-icon fab fa-schlix"></i>
             <p>
-              Slider
+              Sliders
             </p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?php echo base_url(); ?>aspanel/bisnis" class="nav-link " >
-            <i class="nav-icon fas fa-cogs"></i>
+          <a href="#" class="nav-link " >
+            <i class="nav-icon fab fa-buffer"></i>
             <p>
-              Bisnis
+              Business
+              <i class="fas fa-angle-left right"></i>
             </p>
           </a>
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/bisnis_kategori" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Category</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/bisnis" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>List Of Business</p>
+              </a>
+            </li>
+
+          </ul>
         </li>
         <li class="nav-item ">
           <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link">
             <i class="nav-icon fas fa-blog"></i>
             <p>
-              Artikel
+              Article
             </p>
           </a>
         </li>
@@ -133,7 +151,7 @@
         <a href="<?php echo base_url(); ?>aspanel/profil" class="nav-link">
           <i class="nav-icon fas fa-cogs"></i>
           <p>
-            Pengaturan
+            Setting
           </p>
         </a>
       </li>

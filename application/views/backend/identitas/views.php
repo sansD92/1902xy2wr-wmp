@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Data Website</h1>
+          <h1>Website Information</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Data Website</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/home">Home</a></li>
+            <li class="breadcrumb-item active">Website Information</li>
           </ol>
         </div>
       </div>
@@ -29,7 +29,7 @@
           <!-- general form elements -->
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Form Data Website</h3>
+              <h3 class="card-title"></h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -54,55 +54,12 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" class="form-control" name ="email" id="exampleInputEmail1" value="<?php echo $record['email']?>" placeholder="Email Perusahaan">
-                      </div>
-                    </div>
+
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
                         <label>Tag Line</label>
                         <input type="text" class="form-control" name="slogan" value="<?php echo $record['slogan']?>" placeholder="Tag Line Website">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Office Number</label>
-                        <input type="text" class="form-control" name="no_telp" value="<?php echo $record['no_telp']?>" placeholder="Office Number">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <!-- text input -->
-                      <div class="form-group">
-                        <label>WhatsApp Number</label>
-                        <input type="text" class="form-control" name="whatsapp" value="<?php echo $record['whatsapp']?>" placeholder="WhatsApp Number">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Facebook</label>
-                        <input type="text" class="form-control" name="facebook" value="<?php echo $record['facebook']?>" placeholder="Facebook">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <!-- text input -->
-                      <div class="form-group">
-                        <label>Instagram</label>
-                        <input type="text" class="form-control" name="instagram" value="<?php echo $record['instagram']?>" placeholder="Instagram">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Youtube</label>
-                        <input type="text" class="form-control" name="youtube" value="<?php echo $record['youtube']?>" placeholder="Alamat Youtube">
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -112,6 +69,51 @@
                         <input type="text" class="form-control" name="maps" value="<?php echo $record['maps']?>" placeholder="Kode Google Maps">
                       </div>
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" name ="email" id="exampleInputEmail1" value="<?php echo $record['email']?>" placeholder="Email Perusahaan">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Office Number</label>
+                        <input type="text" class="form-control" name="no_telp" value="<?php echo $record['no_telp']?>" placeholder="Office Number">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>WhatsApp Number</label>
+                        <input type="text" class="form-control" name="whatsapp" value="<?php echo $record['whatsapp']?>" placeholder="WhatsApp Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Facebook</label>
+                        <input type="text" class="form-control" name="facebook" value="<?php echo $record['facebook']?>" placeholder="Facebook">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Instagram</label>
+                        <input type="text" class="form-control" name="instagram" value="<?php echo $record['instagram']?>" placeholder="Instagram">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Youtube</label>
+                        <input type="text" class="form-control" name="youtube" value="<?php echo $record['youtube']?>" placeholder="Alamat Youtube">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+
                   </div>
                   <div class="row">
                     <div class="col-sm-6">

@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Add Business</h1>
+          <h1>Update Business Category</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/bisnis">Business</a></li>
-            <li class="breadcrumb-item active">Add Business</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/bisnis_kategori">Busines Category</a></li>
+            <li class="breadcrumb-item active">Update Business Category</li>
           </ol>
         </div>
       </div>
@@ -32,44 +32,27 @@
               <h3 class="card-title"></h3>
             </div>
             <!-- /.card-header -->
-
-
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('aspanel/bisnis_tambahkan',$attributes); ?>
+            echo form_open_multipart('aspanel/bisnis_kategori_update',$attributes); ?>
+
+
               <div class="card-body">
                 <div class="form-group">
-
+                  <input type="hidden" name="bisnis_kategori_id" value="<?php echo $rows['bisnis_kategori_id'] ?>">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Title</label>
-                        <input type="text" class="form-control" name="bisnis_judul" placeholder="Interesting Title Ideas">
+                        <input type="text" class="form-control" name="bisnis_kategori_judul" value="<?php echo $rows['bisnis_kategori_judul'] ?>">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-3 col-form-label">Category</label>
-                    
-                      <select name='bisnis_kategori_id' class="form-control select2" style="width: 100%;">
-                        <?php foreach ($records as $row) {
-                          if ($rows['bisnis_kategori_id'] == $row['bisnis_kategori_id']){
-                            echo"<option selected='selected' value='$row[bisnis_kategori_id]'>$row[bisnis_kategori_judul]</option>";
-                          }else{
-                            echo"<option value='$row[bisnis_kategori_id]'>$row[bisnis_kategori_judul]</option>";
-                       }
-                     } ?>
-                    </select>
-
-                  </div>
-                </div></div>
-                  <div class="row">
-                    <div class="col-sm-12">
                       <div class="form-group">
                         <label>Description</label>
-                        <textarea class="textarea"  name ="bisnis_desk" style="width: 100%; height: 100px;"></textarea>
+                        <textarea class="textarea"  name ="bisnis_kategori_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_kategori_desk'] ?></textarea>
                       </div>
                     </div>
                   </div>
@@ -77,39 +60,51 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Meta Description</label>
-                        <input type="text" class="form-control" name="bisnis_meta_desk" placeholder="Meta description">
+                        <input type="text" class="form-control" name="bisnis_kategori_meta_desk" value="<?php echo $rows['bisnis_kategori_meta_desk'] ?>">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Keywords</label>
-                        <input type="text" class="form-control tags" id="blogs_keyword" value="" name="bisnis_keyword"  data-role="tagsinput"/>
-                          <?php foreach ($tag as $tag){    } ?>
+                        <label>keyword</label>
+                        <input type="text" class="form-control tags" id="products_keyword" name="bisnis_kategori_keyword" value="<?php echo $rows['bisnis_kategori_keyword'] ?>">
+                      <?php   $_arrNilai = explode(',', $rows['bisnis_kategori_keyword']);
+                        foreach ($tag as $tag){
+                            $_ck = (array_search($tag['keyword_nama_seo'], $_arrNilai) === false)? '' : 'checked';
+                         } ?>
                       </div>
                     </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Image Preview</label>
+                      <div class="row">
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo $rows['bisnis_kategori_gambar'] ?>" alt="Photo">
+                      </div>
+
+                    </div>
+                  </div>
                     <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Images</label>
+                        <label>Image</label>
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
+                          <input type="file" class="custom-file-input" name="gambar">
+                          <label class="custom-file-label" for="exampleInputFile">Add Image <?php echo $rows['bisnis_kategori_gambar'] ?></label>
                         </div>
                       </div>
                     </div>
+
+
                   </div>
 
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Add Products"><i class="fas fa-file-upload"></i> Add</button>
-                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>aspanel/bisnis"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
+                <button type="submit" name ="submit" class="btn btn-success" title="Update Blog"><i class="fas fa-file-upload"></i> Update</button>
+                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/bisnis_kategori"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
 
               </div>
-                <?php echo form_close(); ?>
-
-
+            <?php echo form_close(); ?>
           </div>
 
 
