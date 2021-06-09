@@ -28,8 +28,12 @@
                     <div class="heading_s3 mb-lg-4">
                       <h2><?php echo $judul; ?></h2>
                     </div>
-                    <p><?php echo $deskripsi; ?></p>
+
+                    <p><?php echo $deskripsi; ?><a href="#" class="btn btn-outline-default">Klik Disini</a></p>
+
                   </div>
+
+
             </div>
             <div class="col-lg-6 p-0 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
             	<div class="h-100 background_bg md-height-300" data-img-src="assets/images/about_img8.jpg"></div>

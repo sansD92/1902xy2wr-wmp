@@ -16,8 +16,9 @@ class Kontrib extends CI_Controller {
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
     $data['judul']   = 'Kesatriaan Entrepreneur Indonesia';
-    $data['deskripsi']   = '<p style="text-align:justify;">Kesatriaan Entrepreneur Indonesia (KEI)  yang berpusat di Joglo Tumiyono, Desa Ngerangan, Kabupaten Klaten ini merupakan wadah komunitas bagi petani dan peternak milenial untuk meningkatkan pengetahuan dan wawasannya melalui pengadaan workshop secara berkesinambungan dan membantu mendapatkan pendanaan dari perbankan dan lembaga keuangan.  Widodo Makmur Perkasa bertindak sebagai off taker dari produk yang dihasilkan.</p>
-    <p style="text-align:justify;">Kesatriaan Entreprenenur Indonesia konsen dalam membangun sumberdaya manusia yang memiliki jiwa kepemimpinan di masa depan. Mencetak entrepreneur muda untuk menopang kemandirian perekonomian nasional . Desa harus menjadi titik tolak dalam membangun dan menciptakan kemakmuran bangsa. </p>';
+    $data['deskripsi']   = '<p style="text-align:justify;">Kesatriaan Entrepreneur Indonesia (KEI) yang berpusat di  Joglo Tumiyono, Desa Ngerangan, Bayat, Kabupaten Klaten ini merupakan wadah komunitas bagi para petani dan peternak milenial untuk meningkatkan pengetahuan dan wawasannya di bidang pertanian dan peternakan, pengadaan workshop secara berkesinambungan dan membantu mendapatkan pendanaan dari perbankan dan lembaga keuangan dengan menjadikan Widodo Makmur sebagai off taker dari produk yang dihasilkan. Untuk keterangan lebih lanjut.</p>
+
+   ';
     $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
     $this->load->view('fronts/kontrib/v_kontrib',$data);
   }
