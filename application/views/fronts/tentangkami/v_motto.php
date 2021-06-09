@@ -17,7 +17,7 @@
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 text-center">
+        	<!-- <div class="col-md-12 text-center">
             	<div class="page-title">
             		<h1>Motto WMP</h1>
                 </div>
@@ -28,7 +28,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Motto WMP</li>
                   </ol>
                 </nav>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

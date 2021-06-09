@@ -75,7 +75,7 @@
                             </ul>
                         </div>
                         <div class="team_title">
-                            <h5>Setyo Warsisto</h5>
+                            <h5>Drs.Setyo Wasisto SH</h5>
                             <span>Commissioner</span>
                         </div>
                     </div>

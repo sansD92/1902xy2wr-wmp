@@ -30,9 +30,11 @@
 <?php $this->load->view('fronts/home/v_linibisnis')?>
 <!-- END SECTION FEATURE -->
 
-<!-- START SECTION PORTFOLIO -->
-<?php $this->load->view('fronts/home/v_portfolio')?>
-<!-- END SECTION PORTFOLIO -->
+
+
+<!-- START SECTION PRODUK -->
+<?php $this->load->view('fronts/home/v_produk')?>
+<!-- END SECTION PRODUK -->
 
 <!-- START SECTION FEATURE -->
 <?php $this->load->view('fronts/home/v_counter')?>
