@@ -46,7 +46,7 @@ class Berita extends CI_Controller {
 		// mengambil uri segment ke-4
 		$dari = $this->uri->segment('4');
 		/* memanggil model untuk ditampilkan pada masing2 modul*/
-		$data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+		$data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
 		 $data['status']   = 'active';
 		  $data['status_produk']   = '';
 		$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
@@ -71,7 +71,7 @@ class Berita extends CI_Controller {
 			}
 			if ($row)
 				{
-          $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+          $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
           $data['status']   = 'active';
           $data['status_produk']   = '';
 					$data['posts']            = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');

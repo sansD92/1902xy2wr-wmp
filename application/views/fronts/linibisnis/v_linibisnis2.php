@@ -17,7 +17,7 @@
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;" data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
 	<div class="container">
     	<div class="row">
-        
+
     </div>
 </section>
 <!-- END SECTION BANNER -->
@@ -30,28 +30,29 @@
                             $sql = "select * from bisnis where bisnis_id = " . $r['bisnis_id'];
                             $a = $this->db->query($sql)->result();
                             $b = $a[0];
-                           
-                          
-                          
-                          
-
                           echo "
         <div class='row align-items-center'>
           <div class='col-md-6 col-sm-12 mb-4 mb-lg-0 animation' data-animation='fadeInLeft' data-animation-delay='0.2s'>
-              <div>
-              
+              <div>";?>
+								<img <?php
+                    if(empty($r['bisnis_gambar'])) {
+                      echo "<img src='".base_url()."assets/frontend/linibisnis/no-image.JPG'>";
+                    }else {
+                      echo " <img src='".base_url()."assets/frontend/linibisnis/".$r['bisnis_gambar']."'> ";}
+                    ?>
+
 
                 </div>
             </div>
-            <div class='col-md-6 col-sm-12 animation' data-animation='fadeInRight' data-animation-delay='0.4s'>
-                <div class='heading_s3 mb-3'>
-                  <h3>$r[bisnis_judul]</h3>
+            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
+                <div class="heading_s3 mb-3">
+                  <h3><?php echo $r['bisnis_judul']?></h3>
                 </div>
-                <p>$r[bisnis_desk]<a href='#' class='btn btn-outline-default'>Klik Disini</a></p>
+                <p><?php echo $r['bisnis_desk']?><a href="<?php echo base_url("bisnis/$r[bisnis_judul_seo]") ?>" class="btn btn-outline-default">Klik Disini</a></p>
             </div>
         </div>
-          ";
-                            }
+
+                            <?php }
                         ?>
     </div>
 </section>

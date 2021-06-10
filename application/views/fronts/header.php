@@ -52,7 +52,7 @@
                     <div class="dropdown-menu">
                         <ul>
                           <?php  foreach ($posts_bisnis as $post_new){ ?>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("bisnis/$post_new->bisnis_judul_seo") ?>"><?php echo $post_new->bisnis_judul?></a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>"><?php echo $post_new->bisnis_kategori_judul?></a></li>
                           <?php } ?>
                         </ul>
                     </div>

@@ -17,7 +17,7 @@
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;" data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
 	<div class="container">
     	<div class="row">
-        
+
     </div>
 </section>
 <!-- END SECTION BANNER -->
@@ -30,7 +30,7 @@
             	<div>
 								<img <?php
                     if(empty($posts->bisnis_gambar)) {
-                      echo "";
+                      echo "<img src='".base_url()."assets/frontend/linibisnis/no-image.JPG'>";
                     }else {
                       echo " <img src='".base_url()."assets/frontend/linibisnis/".$posts->bisnis_gambar."'> ";}
                     ?>
@@ -41,7 +41,7 @@
                 <div class="heading_s3 mb-3">
                   <h3><?php echo $posts->bisnis_judul ?></h3>
                 </div>
-                <p><?php echo $posts->bisnis_desk ?><a href="#" class="btn btn-outline-default">Klik Disini</a></p>
+                <p><?php echo $posts->bisnis_desk ?></p>
             </div>
         </div>
     </div>
