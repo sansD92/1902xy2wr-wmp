@@ -43,7 +43,7 @@
                     <h2>Filosofi</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/maknalogo2.png" alt="filosofi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MAKNA-LOGO.png" alt="filosofi"/>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                     <h2>Vision, Mission & Values</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/vmv.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/VS1.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
