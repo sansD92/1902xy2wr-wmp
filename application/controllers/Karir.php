@@ -15,7 +15,7 @@ class Karir extends CI_Controller {
 			  $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
-    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
 
@@ -28,7 +28,7 @@ public function ikhtisar_hc()
         $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
-    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
 
@@ -41,7 +41,7 @@ public function penerimaan_pegawai()
         $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
-    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis','bisnis_status','bisnis_id','ASC');
+    $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
 
