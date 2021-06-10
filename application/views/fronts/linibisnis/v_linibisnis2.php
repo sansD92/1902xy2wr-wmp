@@ -38,7 +38,7 @@
                     if(empty($r['bisnis_gambar'])) {
                       echo "<img src='".base_url()."assets/frontend/linibisnis/no-image.JPG'>";
                     }else {
-                      echo " <img src='".base_url()."assets/frontend/linibisnis/".$r['bisnis_gambar']."'> ";}
+                      echo " <img src='".base_url()."assets/frontend/linibisnis/".$r['bisnis_gambar']."' width='450px' height='300px'> ";}
                     ?>
 
 
@@ -59,7 +59,7 @@
 
 								</p>
             </div>
-        </div>
+        </div><br>
 
                             <?php }  ?>
     </div>
