@@ -58,7 +58,7 @@
                             <img src="assets/frontend/bod/Tumiyana.png" alt="Tumiyana"/>
                             <ul class="list_none social_icons border_social">
                                <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <h6 style="color: #fff"></h6></li>
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -75,7 +75,7 @@
                             <img src="assets/frontend/bod/teddy.png" alt="Teddy M Subekti"/>
                             <ul class="list_none social_icons border_social">
                                <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <h6 style="color: #fff"></h6></li>
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -92,7 +92,7 @@
                             <img src="assets/frontend/bod/eko.png" alt="Eko Agmi Adriana"/>
                             <ul class="list_none social_icons border_social">
                                <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <h6 style="color: #fff"></h6></li>
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -110,7 +110,7 @@
                            <img src="assets/frontend/bod/suyatmi.png" alt="Suyatmi"/>
                             <ul class="list_none social_icons border_social">
                                <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <h6 style="color: #fff"></h6></li>
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
@@ -128,7 +128,7 @@
                             <img src="assets/frontend/bod/nur.png" alt="Nur Tjahjo"/>
                             <ul class="list_none social_icons border_social">
                                <li>
-                                    <h6 style="color: #fff">Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet </h6></li>
+                                    <h6 style="color: #fff"></h6></li>
                                     <a href="#" class="btn btn-outline-white">Lebih Detail</a>
                             </ul>
                         </div>
