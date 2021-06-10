@@ -93,7 +93,7 @@ class Linibisnis extends CI_Controller {
       $config['last_tagl_close']  = "</li>";
       $config['base_url'] = base_url().'linibisnis/kategori/'.$this->uri->segment(3);
       $config['total_rows'] = $jumlah;
-      $config['per_page'] = 7;
+      $config['per_page'] = 20;
 
       if ($this->uri->segment('4')==''){
         $dari = 0;
