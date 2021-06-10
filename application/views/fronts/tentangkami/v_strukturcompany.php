@@ -43,7 +43,7 @@
                     <h2>Struktur Company</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/STRUKTUR2.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/STRUKTUR-PERUSAHAAN-PT WMP-company.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
