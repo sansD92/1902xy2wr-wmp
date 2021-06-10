@@ -76,6 +76,14 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
+                        <label>URL</label>
+                        <input type="text" class="form-control" name="bisnis_url" value="<?php echo $rows['bisnis_url'] ?>">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
                         <label>Meta Description</label>
                         <input type="text" class="form-control" name="bisnis_meta_desk" value="<?php echo $rows['bisnis_meta_desk'] ?>">
                       </div>

@@ -48,12 +48,20 @@
                 <div class="heading_s3 mb-3">
                   <h3><?php echo $r['bisnis_judul']?></h3>
                 </div>
-                <p><?php echo $r['bisnis_desk']?><a href="<?php echo base_url("bisnis/$r[bisnis_judul_seo]") ?>" class="btn btn-outline-default">Klik Disini</a></p>
+                <p><?php echo $r['bisnis_desk']?>
+									<?php
+	                    if(empty($r['bisnis_url'])) {
+	                      echo "";
+	                    }else {
+	                      echo "
+												<a href='$r[bisnis_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
+	                    ?>
+
+								</p>
             </div>
         </div>
 
-                            <?php }
-                        ?>
+                            <?php }  ?>
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
