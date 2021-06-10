@@ -36,7 +36,7 @@
 
             </div>
             <div class="col-lg-6 p-0 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
-            	<div class="h-100 background_bg md-height-300" data-img-src="assets/images/about_img8.jpg"></div>
+            	<div class="h-100 background_bg md-height-300" data-img-src="<?php echo base_url()?>assets/frontend/joglo222.jpg"></div>
             </div>
         </div>
     </div>
