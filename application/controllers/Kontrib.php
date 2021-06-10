@@ -17,6 +17,7 @@ class Kontrib extends CI_Controller {
     $data['status_lini']   = 'active';
     $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
     $data['judul']   = 'Kesatriaan Entrepreneur Indonesia';
+    $data['foto'] = 'joglo222.JPG'
     $data['deskripsi']   = '<p style="text-align:justify;">Kesatriaan Entrepreneur Indonesia (KEI) yang berpusat di  Joglo Tumiyono, Desa Ngerangan, Bayat, Kabupaten Klaten ini merupakan wadah komunitas bagi para petani dan peternak milenial untuk meningkatkan pengetahuan dan wawasannya di bidang pertanian dan peternakan, pengadaan workshop secara berkesinambungan dan membantu mendapatkan pendanaan dari perbankan dan lembaga keuangan dengan menjadikan Widodo Makmur sebagai off taker dari produk yang dihasilkan.</p>
 
    ';
@@ -42,6 +43,7 @@ class Kontrib extends CI_Controller {
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
     $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+    $data['foto'] = ''
     $data['judul']   = 'Kemitraan Unggas';
     $data['deskripsi']   = '<h3>PT Widodo Makmur Unggas Komitmen Dukung Penguatan 10.000 UMKM</h3>
     <p style="text-align:justify;">Perusahaan peternakan ayam terintegrasi, PT Widodo Makmur Unggas (WMU) menjalin kerja sama dengan Mitra Usaha Kecil Mikro dan Menengah (Mitra UMKM) Daerah guna mendukung penguatan 10.000 UMKM di Indonesia. Kerja sama ini merupakan bagian dari komitmen WMU untuk maju dan tumbuh bersama dalam menyediakan produk pangan hewani berkualitas bagi seluruh masyarakat Indonesia.</p>
