@@ -17,11 +17,11 @@ public function produk1()
   $data['produk_pt']   = 'PT. Pasir Tengah';
   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
   $data['produk_deskripsi']   = 'Kemitraan Sapi Potong PT Pasir Tengah dilaksanakan untuk membantu peternak rakyat yang sering mengalami permasalahan dalam usahanya. Kendala yang sering dialami oleh peternak rakyat pada saat melakukan usaha pemeliharaan sapi potong diantaranya. kesulitan akses modal di lembaga keuangan dan bunga yang tinggi, tidak ada transfer teknologi, resiko kegagalan perkawinan, resiko kematian, harga panen yang bergantung pada tengkulak, sapi yang tidak dibayarkan, dll.';
-  $data['produk_foto1']   = 'livestock1.jpg';
+  $data['produk_foto1']   = '350.jpg';
   $data['produk_foto2']   = 'livestock2.jpg';
-  $data['produk_foto3']   = 'livestock3.jpg';
-  $data['produk_foto4']   = 'livestock4.jpg';
-  $data['produk_foto5']   = 'live5.jpg';
+  $data['produk_foto3']   = 'lv3.jpg';
+  $data['produk_foto4']   = 'lv4.jpg';
+  $data['produk_foto5']   = 'lv5.jpg';
   $data['produk_foto6']   = 'live6.jpg';
   $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
   $this->load->view('fronts/produk/v_produk',$data);

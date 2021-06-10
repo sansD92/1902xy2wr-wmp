@@ -115,8 +115,7 @@
                     <div class="dropdown-menu">
                         <ul>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">WMP Megazine</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Youtube WMP</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg" target="_blank">Youtube WMP</a></li>
 
                         </ul>
                     </div>
