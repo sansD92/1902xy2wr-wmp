@@ -39,8 +39,12 @@
     <div class="container">
         <div class="row align-items-center">
         	<div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                    <div class="heading_s1 text-center">
+                    <h2>Struktur Organisasi</h2>
+                </div>
             	<div>
-            		<img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/stonew.png" alt="struktur_organisasi"/>
+            		<img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/SO1.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
