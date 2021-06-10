@@ -4,7 +4,7 @@
             <div class="col-sm-12" >
                 <div class="heading_s4 text-center">
                     <span class="sub_title">Produk Terbaik</span>
-                    <h2>Produk Kami</h2>
+                    <h2>Produk Terbaik</h2>
                 </div>
                 <p><center>Dengan bangga memperkenalkan produk-produk kami</center></p>
             </div>
@@ -40,16 +40,16 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk1"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk1">SAPI</a></h5>
-                                    <p>Kalimat Produk Sapi.</p>
+
                               </div>
                         </div>
                     </li>
                     <!-- END PORTFOLIO ITEM -->
-                   
+
 
                      <!-- START PORTFOLIO ITEM -->
                     <li class="portfolio-item meat">
@@ -59,11 +59,11 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk2"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk2">DAGING SAPI</a></h5>
-                                    <p>Kalimat Daging Sapi</p>
+
                               </div>
                         </div>
                     </li>
@@ -77,11 +77,11 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk3"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk3">PRODUK OLAHAN</a></h5>
-                                    <p>Kalimat PRODUK OLAHAN</p>
+
                               </div>
                         </div>
                     </li>
@@ -95,11 +95,11 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk4"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk4">LEATHER</a></h5>
-                                    <p>Kalimat Leather</p>
+
                               </div>
                         </div>
                     </li>
@@ -113,11 +113,11 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk5"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk5">POULTRY</a></h5>
-                                    <p>Kalimat Poultry</p>
+
                               </div>
                         </div>
                     </li>
@@ -131,17 +131,17 @@
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
-                                        
+
                                         <a href="<?php echo base_url()?>produk6"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="<?php echo base_url()?>produk6">KOMODITAS</a></h5>
-                                    <p>Kalimat Komoditas</p>
+                                    
                               </div>
                         </div>
                     </li>
                     <!-- END PORTFOLIO ITEM -->
 
-                   
+
                 </ul>
             </div>
         </div>
