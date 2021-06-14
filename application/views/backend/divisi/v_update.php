@@ -10,13 +10,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Perbarui Divisi</h1>
+          <h1>Update Department</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/home">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/divisi">Daftar Divisi</a></li>
-            <li class="breadcrumb-item active">Perbarui Divisi</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/divisi">List Of Departments</a></li>
+            <li class="breadcrumb-item active">Update Department</li>
           </ol>
         </div>
       </div>
@@ -43,7 +43,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Kode</label>
+                        <label>Code</label>
                         <input type="text" class="form-control" name="divisi_meta_desk" value="<?php echo $rows['divisi_meta_desk'] ?>">
                       </div>
                     </div>
@@ -51,7 +51,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Title</label>
+                        <label>Department Name</label>
                         <input type="text" class="form-control" name="divisi_judul" value="<?php echo $rows['divisi_judul'] ?>">
                       </div>
                     </div>
@@ -67,8 +67,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Perbarui"><i class="fas fa-file-upload"></i> Perbarui</button>
-                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/divisi"><i class="fab fa-creative-commons-sa"></i> Batal</a>
+                <button type="submit" name ="submit" class="btn btn-success" title="Perbarui"><i class="fas fa-file-upload"></i> Update</button>
+                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/divisi"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
 
               </div>
             <?php echo form_close(); ?>

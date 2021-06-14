@@ -22,23 +22,43 @@
 <!-- START SECTION FEATURE -->
 <section class="p-md-0 pt-3 overflow_hide">
     <div class="container-fluid">
+      <?php
+                       foreach ($post_terbaru->result_array() as $r) {
+                           $sql = "select * from kontribs where kontribs_id = " . $r['kontribs_id'];
+                           $a = $this->db->query($sql)->result();
+                           $b = $a[0];
+                        ?>
         <div class="row">
             <div class="col-lg-6 col-sm-12 p-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
             	<div class="medium_padding">
                     <div class="heading_s3 mb-lg-4">
-                      <h2><?php echo $judul; ?></h2>
+                      <h2><?php echo $r['kontribs_judul']?></h2>
                     </div>
 
-                    <p><?php echo $deskripsi; ?><a href="#" class="btn btn-outline-default">Klik Disini</a></p>
+                    <p><?php echo $r['kontribs_desk'] ?>
+                      <?php
+    	                    if(empty($r['kontribs_url'])) {
+    	                      echo "";
+    	                    }else {
+    	                      echo "
+    												<a href='$r[kontribs_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
+    	                    ?>
+                    </p>
 
                   </div>
 
 
             </div>
             <div class="col-lg-6 p-0 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
-            	<div class="h-100 background_bg md-height-300" data-img-src="<?php echo base_url()?>assets/frontend/<?php echo $foto; ?>"></div>
+              <?php
+                  if(empty($r['kontribs_gambar'])) {
+                    echo "<div class='h-100 background_bg md-height-300' data-img-src='".base_url()."assets/frontend/linibisnis/no-image.JPG'></div>";
+                  }else {
+                    echo "<div class='h-100 background_bg md-height-300' data-img-src='".base_url()."assets/frontend/kontribs/".$r['kontribs_gambar']."'></div> ";}
+                  ?>
             </div>
         </div>
+      <?php } ?>
     </div>
 </section>
 <!-- END SECTION FEATURE -->

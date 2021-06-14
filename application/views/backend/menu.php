@@ -140,6 +140,29 @@
           </ul>
         </li>
         <li class="nav-item ">
+          <a href="" class="nav-link">
+            <i class="nav-icon fas fa-hand-holding-heart"></i>
+            <p>
+              Social Contribution
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/kei" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>KEI</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?php echo base_url(); ?>aspanel/csr" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>CSR</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item ">
           <a href="<?php echo base_url(); ?>aspanel/blogs" class="nav-link">
             <i class="nav-icon fas fa-blog"></i>
             <p>

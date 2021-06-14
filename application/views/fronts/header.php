@@ -104,8 +104,8 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib">Kesatriaan Entrepreneur Indonesia</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kemitraan_unggas">Kegiatan CSR</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib/kategori/kesatriaan-enterpreneur-indonesia">Kesatriaan Entrepreneur Indonesia</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib/kategori/kegiatan-csr">Kegiatan CSR</a></li>
                         </ul>
                     </div>
                 </li>

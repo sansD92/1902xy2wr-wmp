@@ -25,7 +25,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -43,7 +43,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 			$data['produk_menu_open']   = '';
@@ -61,7 +61,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 			$data['produk_menu_open']   = '';
@@ -257,7 +257,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -376,7 +376,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 					$data['post'] = $this->As_m->view_ordering('user_detail','id_user','ASC');
@@ -400,7 +400,7 @@ class Aspanel extends CI_Controller {
 				$data['products_stat']   = '';
 				$data['cat_products_stat']   = '';
 				$data['slider_stat']   = '';
-				$data['blogs_stat']   = '';
+				$data['kontribs_stat']   = '';
 				$data['message_stat']   = '';
 				$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -699,7 +699,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['produk_menu_open']   = '';
@@ -953,7 +953,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = 'active';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -995,7 +995,7 @@ class Aspanel extends CI_Controller {
 				$data['products_stat']   = '';
 				$data['cat_products_stat']   = '';
 				$data['slider_stat']   = 'active';
-				$data['blogs_stat']   = '';
+				$data['kontribs_stat']   = '';
 				$data['message_stat']   = '';
 				$data['gallery_stat']   = '';
 				$data['kehadiran_menu_open']   = '';
@@ -1089,7 +1089,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = 'active';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
 					$data['kehadiran_menu_open']   = '';
@@ -1200,7 +1200,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = 'active';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['kehadiran_menu_open']   = '';
@@ -1261,7 +1261,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = 'active';
 		cek_session_akses ('products',$this->session->id_session);
 				if ($this->session->level=='1'){
@@ -1284,7 +1284,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -1317,7 +1317,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -1420,7 +1420,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
 					$data['kehadiran_menu_open']   = '';
@@ -1532,7 +1532,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['kehadiran_menu_open']   = 'menu-open';
@@ -1591,7 +1591,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -1624,7 +1624,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -1731,7 +1731,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
 					$data['kehadiran_menu_open']   = '';
@@ -1847,7 +1847,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['kehadiran_menu_open']   = 'menu-open';
@@ -1907,7 +1907,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -1942,7 +1942,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -2050,7 +2050,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
 					$data['kehadiran_menu_open']   = '';
@@ -2164,7 +2164,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['kehadiran_menu_open']   = 'menu-open';
@@ -2221,7 +2221,7 @@ class Aspanel extends CI_Controller {
  		$data['products_stat']   = '';
  		$data['cat_products_stat']   = '';
  		$data['slider_stat']   = '';
- 		$data['blogs_stat']   = '';
+ 		$data['kontribs_stat']   = '';
  		$data['message_stat']   = '';
  		$data['gallery_stat']   = '';
  		$data['kehadiran_menu_open']   = '';
@@ -2253,7 +2253,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 		$data['produk_menu_open']   = 'menu-open';
@@ -2352,7 +2352,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2457,7 +2457,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2510,7 +2510,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2538,7 +2538,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2632,7 +2632,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = 'active';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2832,7 +2832,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
@@ -2895,7 +2895,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -2927,7 +2927,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = '';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = '';
 		$data['gallery_stat']   = '';
 		$data['kehadiran_menu_open']   = '';
@@ -3033,7 +3033,7 @@ class Aspanel extends CI_Controller {
 					$data['products_stat']   = '';
 					$data['cat_products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['message_stat']   = '';
 					$data['gallery_stat']   = '';
 					$data['kehadiran_menu_open']   = '';
@@ -3148,7 +3148,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = '';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = '';
 			$data['gallery_stat']   = '';
 			$data['kehadiran_menu_open']   = '';
@@ -3208,7 +3208,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = 'active';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 		$data['produk_menu_open']   = '';
@@ -3232,7 +3232,7 @@ class Aspanel extends CI_Controller {
 		$data['products_stat']   = '';
 		$data['cat_products_stat']   = 'active';
 		$data['slider_stat']   = '';
-		$data['blogs_stat']   = '';
+		$data['kontribs_stat']   = '';
 		$data['message_stat']   = 'active';
 		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 		$data['produk_menu_open']   = '';
@@ -3274,7 +3274,7 @@ class Aspanel extends CI_Controller {
 					$data['sliders_stat']   = '';
 					$data['products_stat']   = '';
 					$data['slider_stat']   = '';
-					$data['blogs_stat']   = '';
+					$data['kontribs_stat']   = '';
 					$data['cat_products_stat']   = 'active';
 					$data['message_stat']   = 'active';
 					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
@@ -3320,7 +3320,7 @@ class Aspanel extends CI_Controller {
 			$data['products_stat']   = '';
 			$data['cat_products_stat']   = 'active';
 			$data['slider_stat']   = '';
-			$data['blogs_stat']   = '';
+			$data['kontribs_stat']   = '';
 			$data['message_stat']   = 'active';
 			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 			$data['produk_menu_open']   = '';
@@ -3360,6 +3360,394 @@ class Aspanel extends CI_Controller {
 		redirect('aspanel/divisi_storage_bin');
 	}
 	/*	Bagian untuk Divisi - Penutup	*/
+
+	/*	Bagian untuk kontribs - Pembuka	*/
+	public function kei()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = 'active';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+		$data['jamkerja_stat']   = '';
+		$data['absen_stat']   = '';
+		$data['dataabsen_stat']   = '';
+		$data['cuti_stat']   = '';
+		$data['gaji_stat']   = '';
+		$data['pengumuman_stat']   = '';
+		$data['konfig_stat']   = '';
+		$data['produk_menu_open']   = '';
+		$data['produk_category']   = '';
+		$data['produk']   = '';
+		$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish','kontribs_kategori_id'=>'23'),'kontribs_id','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish','kontribs_kategori_id'=>'23'),'kontribs_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish','kontribs_kategori_id'=>'23'),'kontribs_id','DESC');
+				}
+				$this->load->view('backend/kontribs/v_daftar', $data);
+	}
+	public function csr()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = 'active';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+		$data['jamkerja_stat']   = '';
+		$data['absen_stat']   = '';
+		$data['dataabsen_stat']   = '';
+		$data['cuti_stat']   = '';
+		$data['gaji_stat']   = '';
+		$data['pengumuman_stat']   = '';
+		$data['konfig_stat']   = '';
+		$data['produk_menu_open']   = '';
+		$data['produk_category']   = '';
+		$data['produk']   = '';
+		$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish','kontribs_kategori_id'=>'22'),'kontribs_id','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish','kontribs_kategori_id'=>'22'),'kontribs_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish','kontribs_kategori_id'=>'22'),'kontribs_id','DESC');
+				}
+				$this->load->view('backend/kontribs/v_daftar', $data);
+	}
+	public function kontribs()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = 'active';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+		$data['jamkerja_stat']   = '';
+		$data['absen_stat']   = '';
+		$data['dataabsen_stat']   = '';
+		$data['cuti_stat']   = '';
+		$data['gaji_stat']   = '';
+		$data['pengumuman_stat']   = '';
+		$data['konfig_stat']   = '';
+		$data['produk_menu_open']   = '';
+		$data['produk_category']   = '';
+		$data['produk']   = '';
+		$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish'),'kontribs_id','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'publish'),'kontribs_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish'),'kontribs_id','DESC');
+				}
+				$this->load->view('backend/kontribs/v_daftar', $data);
+	}
+	public function kontribs_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = 'active';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+		$data['jamkerja_stat']   = '';
+		$data['absen_stat']   = '';
+		$data['dataabsen_stat']   = '';
+		$data['cuti_stat']   = '';
+		$data['gaji_stat']   = '';
+		$data['pengumuman_stat']   = '';
+		$data['konfig_stat']   = '';
+		$data['produk_menu_open']   = '';
+		$data['produk_category']   = '';
+		$data['produk']   = '';
+		$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_status'=>'delete'),'kontribs_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'delete'),'kontribs_id','DESC');
+				}
+				$this->load->view('backend/kontribs/v_daftar_hapus', $data);
+	}
+	public function kontribs_tambahkan()
+	{
+
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/kontribs/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|jpeg';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/kontribs/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['width']= 700;
+					$config['height']= 475;
+					$config['new_image']= './assets/frontend/kontribs/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					if ($this->input->post('kontribs_keyword')!=''){
+								$tag_seo = $this->input->post('kontribs_keyword');
+								$tag=implode(',',$tag_seo);
+						}else{
+								$tag = '';
+						}
+					$tag = $this->input->post('kontribs_keyword');
+					$tags = explode(",", $tag);
+					$tags2 = array();
+					foreach($tags as $t)
+					{
+						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+						$a = $this->db->query($sql)->result_array();
+						if(count($a) == 0){
+							$data = array('keyword_nama'=>$this->db->escape_str($t),
+									'keyword_username'=>$this->session->username,
+									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+									'count'=>'0');
+							$this->As_m->insert('keyword',$data);
+						}
+						$tags2[] = $this->mylibrary->seo_title($t);
+					}
+					$tags = implode(",", $tags2);
+					if ($hasil22['file_name']==''){
+									$data = array(
+													'kontribs_post_oleh'=>$this->session->username,
+													'kontribs_judul'=>$this->db->escape_str($this->input->post('kontribs_judul')),
+													'kontribs_judul_seo'=>$this->mylibrary->seo_title($this->input->post('kontribs_judul')),
+													'kontribs_desk'=>$this->input->post('kontribs_desk'),
+													'kontribs_kategori_id'=>$this->input->post('kontribs_kategori_id'),
+													'kontribs_post_hari'=>hari_ini(date('w')),
+													'kontribs_post_tanggal'=>date('Y-m-d'),
+													'kontribs_post_jam'=>date('H:i:s'),
+													'kontribs_dibaca'=>'0',
+													'kontribs_status'=>'publish',
+													'kontribs_meta_desk'=>$this->input->post('kontribs_meta_desk'),
+													'kontribs_keyword'=>$tag);
+											}else{
+												$data = array(
+													'kontribs_post_oleh'=>$this->session->username,
+													'kontribs_judul'=>$this->db->escape_str($this->input->post('kontribs_judul')),
+													'kontribs_judul_seo'=>$this->mylibrary->seo_title($this->input->post('kontribs_judul')),
+													'kontribs_desk'=>$this->input->post('kontribs_desk'),
+													'kontribs_kategori_id'=>$this->input->post('kontribs_kategori_id'),
+													'kontribs_post_hari'=>hari_ini(date('w')),
+													'kontribs_post_tanggal'=>date('Y-m-d'),
+													'kontribs_post_jam'=>date('H:i:s'),
+													'kontribs_dibaca'=>'0',
+													'kontribs_status'=>'publish',
+													'kontribs_gambar'=>$hasil22['file_name'],
+													'kontribs_meta_desk'=>$this->input->post('kontribs_meta_desk'),
+													'kontribs_keyword'=>$tag);
+												}
+								$this->As_m->insert('kontribs',$data);
+								redirect('aspanel/kontribs');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['kontribs_stat']   = 'active';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = '';
+					$data['produk_category']   = '';
+					$data['produk']   = '';
+					$data['services']   = '';
+					$data['records'] = $this->Crud_m->view_ordering('kontribs_kategori','kontribs_kategori_id','DESC');
+					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+					$this->load->view('backend/kontribs/v_tambahkan', $data);
+				}
+	}
+	public function kontribs_update()
+	{
+
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/kontribs/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|jpeg';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/kontribs/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['width']= 700;
+			$config['height']= 475;
+			$config['new_image']= './assets/frontend/kontribs/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+			if ($this->input->post('kontribs_keyword')!=''){
+						$tag_seo = $this->input->post('kontribs_keyword');
+						$tag=implode(',',$tag_seo);
+				}else{
+						$tag = '';
+				}
+			$tag = $this->input->post('kontribs_keyword');
+			$tags = explode(",", $tag);
+			$tags2 = array();
+			foreach($tags as $t)
+			{
+				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+				$a = $this->db->query($sql)->result_array();
+				if(count($a) == 0){
+					$data = array('keyword_nama'=>$this->db->escape_str($t),
+							'keyword_username'=>$this->session->username,
+							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+							'count'=>'0');
+					$this->As_m->insert('keyword',$data);
+				}
+				$tags2[] = $this->mylibrary->seo_title($t);
+			}
+			$tags = implode(",", $tags2);
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'kontribs_update_oleh'=>$this->session->username,
+											'kontribs_judul'=>$this->db->escape_str($this->input->post('kontribs_judul')),
+											'kontribs_judul_seo'=>$this->mylibrary->seo_title($this->input->post('kontribs_judul')),
+											'kontribs_desk'=>$this->input->post('kontribs_desk'),
+											'kontribs_kategori_id'=>$this->input->post('kontribs_kategori_id'),
+											'kontribs_update_hari'=>hari_ini(date('w')),
+											'kontribs_update_tanggal'=>date('Y-m-d'),
+											'kontribs_update_jam'=>date('H:i:s'),
+											'kontribs_meta_desk'=>$this->input->post('kontribs_meta_desk'),
+											'kontribs_keyword'=>$tag);
+											$where = array('kontribs_id' => $this->input->post('kontribs_id'));
+											$this->db->update('kontribs', $data, $where);
+						}else{
+										$data = array(
+											'kontribs_update_oleh'=>$this->session->username,
+											'kontribs_judul'=>$this->db->escape_str($this->input->post('kontribs_judul')),
+											'kontribs_judul_seo'=>$this->mylibrary->seo_title($this->input->post('kontribs_judul')),
+											'kontribs_desk'=>$this->input->post('kontribs_desk'),
+											'kontribs_kategori_id'=>$this->input->post('kontribs_kategori_id'),
+											'kontribs_update_hari'=>hari_ini(date('w')),
+											'kontribs_update_tanggal'=>date('Y-m-d'),
+											'kontribs_update_jam'=>date('H:i:s'),
+											'kontribs_gambar'=>$hasil22['file_name'],
+											'kontribs_meta_desk'=>$this->input->post('kontribs_meta_desk'),
+											'kontribs_keyword'=>$tag);
+											$where = array('kontribs_id' => $this->input->post('kontribs_id'));
+											$_image = $this->db->get_where('kontribs',$where)->row();
+											$query = $this->db->update('kontribs',$data,$where);
+											if($query){
+												unlink("assets/frontend/kontribs/".$_image->kontribs_gambar);
+											}
+
+						}
+						redirect('aspanel/kontribs');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('kontribs', array('kontribs_id' => $id))->row_array();
+			}elseif($this->session->level=='2'){
+				$proses = $this->As_m->edit('kontribs', array('kontribs_id' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('kontribs', array('kontribs_id' => $id, 'kontribs_post_oleh' => $this->session->username))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = '';
+			$data['slider_stat']   = '';
+			$data['kontribs_stat']   = 'active';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = '';
+			$data['produk_category']   = '';
+			$data['produk']   = '';
+			$data['services']   = '';
+			$data['records'] = $this->Crud_m->view_ordering('kontribs_kategori','kontribs_kategori_id','DESC');
+			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+			$this->load->view('backend/kontribs/v_update', $data);
+		}
+	}
+	function kontribs_delete_temp()
+	{
+
+			$data = array('kontribs_status'=>'delete');
+			$where = array('kontribs_id' => $this->uri->segment(3));
+			$this->db->update('kontribs', $data, $where);
+			redirect('aspanel/kontribs');
+	}
+	function kontribs_restore()
+	{
+			$data = array('kontribs_status'=>'Publish');
+			$where = array('kontribs_id' => $this->uri->segment(3));
+			$this->db->update('kontribs', $data, $where);
+			redirect('aspanel/kontribs_storage_bin');
+	}
+	public function kontribs_delete()
+	{
+			cek_session_akses ('kontribs',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('kontribs',['kontribs_id' => $id])->row();
+			 $query = $this->db->delete('kontribs',['kontribs_id'=>$id]);
+			if($query){
+							 unlink("./assets/frontend/kontribs/".$_id->kontribs_gambar);
+		 }
+		redirect('aspanel/kontribs_storage_bin');
+	}
+	/*	Bagian untuk kontribs - Penutup	*/
 
 	/*	Bagian untuk Blogs - Pembuka	*/
 	public function blogs()
@@ -3674,6 +4062,9 @@ class Aspanel extends CI_Controller {
 		redirect('aspanel/blogs_storage_bin');
 	}
 	/*	Bagian untuk Blogs - Penutup	*/
+
+
+
 
 
 
