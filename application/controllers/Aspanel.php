@@ -1608,9 +1608,10 @@ class Aspanel extends CI_Controller {
 			$data['services']   = '';
 
 				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
+						$data['record'] = $this->Crud_m->view_join_where_ordering('bisnis','bisnis_kategori','bisnis_kategori_id',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
 				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_post_oleh'=>$this->session->username,'bisnis_status'=>'publish'),'bisnis_id','DESC');
+					$data['record'] = $this->Crud_m->view_join_where_ordering('bisnis','bisnis_kategori','bisnis_kategori_id',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
+
 				}
 				$this->load->view('backend/bisnis/v_daftar', $data);
 	}

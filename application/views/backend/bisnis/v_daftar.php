@@ -45,7 +45,7 @@
 
                 <tr>
                   <td><?=$tgl_posting?></td>
-                  <td><?=$row['bisnis_kategori_id']?></td>
+                  <td><?=$row['bisnis_kategori_judul']?></td>
                   <td><?=$row['bisnis_judul']?></td>
                   <td>
                     <?php
