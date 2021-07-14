@@ -25,10 +25,10 @@
 														<div class="blog_img">
 																<a href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>">
 																	<?php
-								                             if(empty($post_new->bisnis_kategori_gambar)) {
+								                             if(empty($post_new->bisnis_gambar)) {
 								                               echo "<img src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
 								                             }else {
-								                               echo " <img src='".base_url()."assets/frontend/linibisnis/".$post_new->bisnis_kategori_gambar."'> ";}
+								                               echo " <img src='".base_url()."assets/frontend/linibisnis/".$post_new->bisnis_gambar."'> ";}
 								                             ?>
 
 																</a>
