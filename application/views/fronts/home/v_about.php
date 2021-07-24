@@ -13,7 +13,7 @@
                 </div>
                 <?php echo $identitas->meta_deskripsi?>
 
-                <br><br><a href="<?php echo $identitas->profil_url?>" class="btn btn-black">Selengkapnya</a>
+                <br><br><a href="<?php echo base_url()?>tentangkami" class="btn btn-black">Selengkapnya</a>
             </div>
         </div>
     </div>

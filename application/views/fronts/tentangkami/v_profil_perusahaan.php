@@ -1,81 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- START SECTION HEAD -->
 <?php $this->load->view('fronts/head.php')?>
 <!-- END SECTION HEAD -->
+
 <body>
 
-<!-- LOADER -->
-<!-- END LOADER -->
+
 
 <!-- START HEADER -->
-
-<!-- START SECTION HEADER -->
 <?php $this->load->view('fronts/header.php')?>
-<!-- END SECTION HEADER -->
-<!-- START HEADER -->
+<!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<?php $this->load->view('fronts/home/v_slider')?>
-<!-- END SECTION BANNER -->
-
-
-
-<!-- START SECTION ABOUT US -->
-<?php $this->load->view('fronts/home/v_about')?>
-<!-- END SECTION ABOUT US -->
-
-<!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_linibisnis')?>
-<!-- END SECTION FEATURE -->
-
-
-
-<!-- START SECTION PRODUK -->
-<?php $this->load->view('fronts/home/v_produk')?>
-<!-- END SECTION PRODUK -->
-
-<!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_counter')?>
-<!-- END SECTION FEATURE -->
-
-<!-- START SECTION COUNTER -->
-<!-- END SECTION COUNTER -->
-
-<!-- START SECTION SERVICE -->
-<!-- END SECTION SERVICE -->
-
-<!-- START SECTION TEAM -->
-<!-- END SECTION TEAM -->
-
-<!-- START SECTION CALL TO ACTION -->
-<!-- <section class="cta_section_small bg_blue px-0">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
 	<div class="container">
-    	<div class="row align-items-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-        	<div class="col-md-8 text_white">
-                <h2 class="">Untuk Informasi Lebih Lanjut</h2>
-
-            </div>
-            <div class="col-md-4 text-md-right">
-            	<a href="#" class="btn btn-outline-white">Hubungi Kami</a>
-            </div>
+    	<div class="row">
+        	<!-- <div class="col-md-12 text-center">
+            	<div class="page-title">
+            		<h1>Motto WMP</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Motto WMP</li>
+                  </ol>
+                </nav>
+            </div> -->
         </div>
     </div>
-</section> -->
-<!-- END SECTION CALL TO ACTION -->
+</section>
+<!-- END SECTION BANNER -->
 
-<!-- START SECTION TESTIMONIAL -->
-<!-- <?php $this->load->view('fronts/home/v_testi')?>
- --><!-- END SECTION TESTIMONIAL -->
+<!-- START SECTION ABOUT US -->
+<section class="small_pb overflow_hide">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                    <div class="heading_s1 text-center">
+                    <h2>Profil Perusahaan</h2>
+                </div>
+               <!--  <div>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MOTTO.png" alt="struktur_organisasi"/>
+                </div> -->
+            </div>
 
-<!-- START SECTION BLOG -->
-<?php $this->load->view('fronts/home/v_blog')?>
-<!-- END SECTION BLOG -->
+        </div>
+    </div>
+</section>
+<!-- END SECTION ABOUT US -->
 
-<!-- START SECTION CLIENT LOGO -->
-<?php $this->load->view('fronts/home/v_logo')?>
-<!-- START SECTION CLIENT LOGO -->
+
 
 <!-- START SECTION SUBCRIBE -->
 <?php $this->load->view('fronts/home/v_subcribe')?>

@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Main';
 $route['login'] = "Aspanel/login";
 $route['produk'] = "Main/produk";
+$route['tentangkami'] = "Tentangkami/profil_perusahaan";
 $route['visimisi'] = "Tentangkami/visimisi";
 $route['milestone'] = "Tentangkami/milestone";
 $route['motto'] = "Tentangkami/motto";
