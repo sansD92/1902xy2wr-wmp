@@ -32,7 +32,7 @@
                             $b = $a[0];
                           echo "
         <div class='row align-items-center'>
-          <div class='col-md-6 col-sm-12 mb-4 mb-lg-0 animation' data-animation='fadeInLeft' data-animation-delay='0.2s'>
+          <div class='col-md-6 col-sm-12 mb-4 mb-lg-0 ' data-animation='fadeInLeft' data-animation-delay='0.2s'>
               <div>";?>
 								<img <?php
                     if(empty($r['bisnis_gambar'])) {

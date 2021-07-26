@@ -48,6 +48,59 @@
                             </ul>
                         </div>
                 </li>
+
+
+                 <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">INVESTOR</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">INVESTOR</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">LAPORAN TAHUNAN</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">LAPORAN BERKELANJUTAN</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">LAPORAN KEUANGAN</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">KINERJA & RASIO KEUANGAN</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA PERUSAHAAN</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                           <li><a class="dropdown-item nav-link nav_item" href="#">SEKILAS GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">PENERAPAN GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">PENGENDALIAN GRATIFIKASI</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">ETIKA BISNIS</a></li>
+
+
+                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">SISTEM MANAGEMENT</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                           <li><a class="dropdown-item nav-link nav_item" href="#">SISTEM MANAJEMEN ASSET</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN MUTU</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN TERINTEGRASI</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN LAINNYA</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">PEDOMAN KERJA DIREKSI & KOMISARIS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                           <li><a class="dropdown-item nav-link nav_item" href="#">KOMITE PERUSAHAAN</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">UNIT INTERNAL AUDIT</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM PELAPORAN PELANGGARAN</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">KEBIJAKAN MANAJEMEN RISIKO</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
                     <div class="dropdown-menu">
@@ -71,7 +124,7 @@
                         </ul>
                     </div>
                 </li>
-              <!--   <li class="dropdown">
+                <!--  <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Investor</a>
                     <div class="dropdown-menu">
                         <ul>
@@ -101,6 +154,9 @@
                         </ul>
                     </div>
                 </li> -->
+
+
+
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
@@ -129,7 +185,7 @@
                         <ul>
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
+                           <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
                         </ul>

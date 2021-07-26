@@ -26,7 +26,7 @@
 <section class="small_pb overflow_hide">
     <div class="container">
         <div class="row align-items-center">
-        	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
+        	<div class="col-md-6 col-sm-12 mb-4 mb-lg-0 ">
             	<div>
 								<img <?php
                     if(empty($posts->bisnis_gambar)) {
@@ -37,7 +37,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
+            <div class="col-md-6 col-sm-12 ">
                 <div class="heading_s3 mb-3">
                   <h3><?php echo $posts->bisnis_judul ?></h3>
                 </div>
