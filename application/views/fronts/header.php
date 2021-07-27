@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <ul class="contact_detail list_none text-center text-md-left">
-                        <li><i class="ti-location-pin"></i><?php echo $identitas->alamat?></li>
+                        <!-- <li><i class="ti-location-pin"></i><?php echo $identitas->alamat?></li> -->
                     </ul>
                 </div>
                 <div class="col-md-4">
