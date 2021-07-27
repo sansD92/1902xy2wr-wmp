@@ -1,33 +1,77 @@
-<section class="small_pb light_gray_bg">
-	<div class="container">
-    	<div class="row">
-        	<div class="col-md-12 " >
-                <div class="heading_s4 text-center">
-                	<span class="sub_title">LINI BISNIS</span>
-                    <h2>Lini Bisnis</h2>
-            	</div>
+<section style="background-color: #BD2132" class="counter_wrap background_bg fixed_bg overlay_bg2" >
+    <div class="container">
+        <div class="row justify-content-center">
+        	<div class="col-md-6 text-center " >
+            	<div class="text_white">
+                    <div class="heading_s3 mb-md-3 heading_light text-center">
+                        <h2>LINI BISNIS</h2>
+                    </div>
+                    <p></p>
+                </div>
             </div>
         </div>
-      
- <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-            <div class="col-lg-4 col-md-6">
-                <div class="event_box box_shadow4">
-                    <div class="event_img">
-                        <a href="#"><img src="demo-education/images/event_img1.jpg" alt="event_img">
-                        <div class="event_date">
-                            <h6><span>24</span> Apr</h6>
-                        </div>
-                        </a>
+        <div class="row " >
+        	<div class="col-lg-4 col-sm-6 text-center">
+            	<div class="icon_box icon_box_style_8 text_white">
+                    <div class="box_icon mb-3">	
+                        <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/LIVESTOCK.png" alt="icon1"/>
                     </div>
-                    <div class="event_info">	
-                        <h6 class="event_title"><a href="#">I will lecture on diversity and different languages.</a></h6>
-                        <ul class="list_none event_meta">
-                            <li><i class="ti-location-pin"></i>New York City</li>
-                            <li><i class="ti-time"></i>9:00 - 4:00</li>
-                        </ul>
+                    <div class="icon_box_content">
+                        <h5>Integrated Livestock</h5>
+                        <p></p>
+                        <a href="<?php echo base_url("linibisnis/kategori/integrated-livestock") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
                 </div>
             </div>
-
+            <div class="col-lg-4 col-sm-6 text-center">
+                <div class="icon_box icon_box_style_8 text_white">
+                    <div class="box_icon mb-3"> 
+                        <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/MEAT-PROCESSING.png" alt="icon1"/>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5>Meat Processing</h5>
+                        <p></p>
+                        <a href="<?php echo base_url("linibisnis/kategori/meat-processing") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <div class="icon_box icon_box_style_8 text_white">
+                    <div class="box_icon mb-3"> 
+                        <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/POULTRY.png" alt="icon1"/>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5>Integrated Poultry</h5>
+                        <p></p>
+                        <a href="<?php echo base_url("linibisnis/kategori/integrated-poultry") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        	<div class="col-lg-4 col-sm-6 text-center">
+                <div class="icon_box icon_box_style_8 text_white">
+                    <div class="box_icon mb-3"> 
+                        <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/COMMODITY.png" alt="icon1"/>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5>Commodity</h5>
+                        <p></p>
+                        <a href="<?php echo base_url("linibisnis/kategori/commodity") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+           <div class="col-lg-4 col-sm-6 text-center">
+                <div class="icon_box icon_box_style_8 text_white">
+                    <div class="box_icon mb-3"> 
+                        <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/CONSTRUCTION.png" alt="icon1"/>
+                    </div>
+                    <div class="icon_box_content">
+                        <h5>Construction Dan Energy</h5>
+                        <p></p>
+                        <a href="<?php echo base_url("linibisnis/kategori/construction-dan-energy") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </section>

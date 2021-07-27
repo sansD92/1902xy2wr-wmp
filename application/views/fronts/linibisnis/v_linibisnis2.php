@@ -44,7 +44,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 animation" data-animation="fadeInRight" data-animation-delay="0.4s">
+            <div class="col-md-6 col-sm-12 " >
                 <div class="heading_s3 mb-3">
                   <h3><?php echo $r['bisnis_judul']?></h3>
                 </div>

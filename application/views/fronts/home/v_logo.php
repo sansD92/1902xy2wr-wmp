@@ -1,7 +1,7 @@
 <section>
 	<div class="container">
     	<div class="row">
-        	<div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+        	<div class="col-md-12">
             	<div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
                 	<div class="item">
                     	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo1_paste.jpg" /></a>

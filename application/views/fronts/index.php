@@ -27,7 +27,7 @@
 <!-- END SECTION ABOUT US -->
 
 <!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_linibisnis')?>
+<?php $this->load->view('fronts/home/v_linibisnis2')?>
 <!-- END SECTION FEATURE -->
 
 
