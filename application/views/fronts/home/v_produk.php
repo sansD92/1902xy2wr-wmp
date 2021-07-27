@@ -14,7 +14,7 @@
                 <div class="cleafix small_divider"></div>
             </div>
         </div>
-        <div class="row mb-3 mb-sm-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+        <div class="row mb-3 mb-sm-5 ">
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
                     <li><a href="#" class="current" data-filter="*">all</a></li>
@@ -30,7 +30,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style5 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style5 " >
                     <li class="grid-sizer"></li>
                     <!-- START PORTFOLIO ITEM -->
                     <li class="portfolio-item livestock">
