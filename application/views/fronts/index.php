@@ -30,9 +30,7 @@
 <?php $this->load->view('fronts/home/v_linibisnis')?>
 <!-- END SECTION FEATURE -->
 
-<!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_linibisnis2')?>
-<!-- END SECTION FEATURE -->
+
 
 <!-- START SECTION PRODUK -->
 <?php $this->load->view('fronts/home/v_produk')?>
