@@ -85,13 +85,13 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .widget_links_style4 li a:hover,
 .event_info li i,
 .author_info span {
-	color: #E1282F;
+	color: #BD2132;
 }
 
 .btn-default.btn-aylen:hover,
 .blog_heading *:hover,
 .blog_postmeta a:hover {
-	color: #E1282F !important;
+	color: #BD2132 !important;
 }
 
 .btn-default,
@@ -176,7 +176,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .room_services i:hover,
 .widget_reservation h5,
  .widget_search_box .btn, .widget_search_box button{
-	background-color: #E1282F;
+	background-color: #BD2132;
 }
 
 .btn-default:hover,
@@ -226,7 +226,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .dw_event_schedule a:hover,
 .pagination_style8 .page-item.active .page-link,
 .pagination_style8 .page-item .page-link:hover {
-	border-color: #E1282F;
+	border-color: #BD2132;
 }
 
 .btn-default:hover {
@@ -240,7 +240,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .portfolio_style5 .portfolio_content,
 .instafeed li a::before,
 .bg_blue_transparent {
-	background-color: #E1282F;
+	background-color: #BD2132;
 }
 
 .post_date::before,
@@ -264,7 +264,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 }
 
 .custome_select::before {
-	border-top-color: #E1282F;
+	border-top-color: #BD2132;
 }
 
 .classis_box:hover:before {
@@ -274,20 +274,20 @@ header.light_skin.nav-fixed .social_icons li a:hover,
     background: -o-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E1282F',GradientType=0 ); /* ie6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#BD2132',GradientType=0 ); /* ie6-9 */
 }
 
 .filter_tab li a.active {
-	box-shadow: 0 0 10px #E1282F;
+	box-shadow: 0 0 10px #BD2132;
 }
 
 .btn_box_shadow:hover,
 .btn_box_shadow:focus,
 .btn_box_shadow.active:focus,
 .btn_box_shadow:active:focus {
-	box-shadow: 0 0 15px #E1282F !important;
+	box-shadow: 0 0 15px #BD2132 !important;
 }
 
 .tab-style7 li a.active::before {
-	border-color: #E1282F transparent transparent transparent
+	border-color: #BD2132 transparent transparent transparent
 }

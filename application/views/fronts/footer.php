@@ -1,4 +1,4 @@
-<footer style="background-color: #E1282F" class="footer_dark background_bg" data-img-src="<?php echo base_url()?>assets/frontend/footer2.jpg">
+<footer style="background-color: #BD2132" class="footer_dark background_bg">
     <div class="top_footer">
         <div class="container">
             <div class="row">
