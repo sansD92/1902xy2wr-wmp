@@ -16,6 +16,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function home()
 	{
+		cek_session_akses('home',$this->session->id_session);
 		if ($this->session->level=='1'){
 			$data['karyawan_menu_open']   = '';
 			$data['home_stat']   = 'active';
@@ -178,7 +179,7 @@ class Aspanel extends CI_Controller {
     }
 	public function profil()
 	{
-		cek_session_akses($this->session->id_session);
+		cek_session_akses('profil',$this->session->id_session);
 		if (isset($_POST['submit'])){
 			$config['upload_path'] = 'assets/frontend/user/';
 			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
@@ -425,7 +426,7 @@ class Aspanel extends CI_Controller {
 
 	function identitaswebsite()
 	{
-		cek_session_akses($this->session->id_session);
+		cek_session_akses('identitaswebsite',$this->session->id_session);
 		if (isset($_POST['submit'])){
 					$config['upload_path'] = 'assets/frontend/campur/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|jpeg';
@@ -975,6 +976,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('slider',array('slider_post_oleh'=>$this->session->username,'slider_status'=>'publish'),'slider_id','DESC');
 				}
+				cek_session_akses('slider',$this->session->id_session);
 				$this->load->view('backend/slider/v_daftar', $data);
 	}
 	public function slider_storage_bin()
@@ -1010,11 +1012,12 @@ class Aspanel extends CI_Controller {
 				$data['produk_category']   = '';
 				$data['produk']   = '';
 				$data['services']   = '';
-
+				cek_session_akses('slider',$this->session->id_session);
 				$this->load->view('backend/slider/v_daftar_hapus', $data);
 	}
 	public function slider_tambahkan()
 	{
+		cek_session_akses('slider',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/slider/';
@@ -1111,6 +1114,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function slider_update()
 	{
+		cek_session_akses('slider',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -1222,8 +1226,7 @@ class Aspanel extends CI_Controller {
 	}
 	function slider_delete_temp()
 	{
-
-
+			cek_session_akses('slider',$this->session->id_session);
 			$data = array('slider_status'=>'delete');
 			$where = array('slider_id' => $this->uri->segment(3));
 			$this->db->update('slider', $data, $where);
@@ -1231,7 +1234,7 @@ class Aspanel extends CI_Controller {
 	}
 	function slider_restore()
 	{
-
+			cek_session_akses('slider',$this->session->id_session);
 			$data = array('slider_status'=>'Publish');
 			$where = array('slider_id' => $this->uri->segment(3));
 			$this->db->update('slider', $data, $where);
@@ -1239,7 +1242,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function slider_delete()
 	{
-
+			cek_session_akses('slider',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('slider',['slider_id' => $id])->row();
 			 $query = $this->db->delete('slider',['slider_id'=>$id]);
@@ -1305,6 +1308,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis_kategori',array('bisnis_kategori_post_oleh'=>$this->session->username,'bisnis_kategori_status'=>'publish'),'bisnis_kategori_id','DESC');
 				}
+				cek_session_akses('bisnis_kategori',$this->session->id_session);
 				$this->load->view('backend/bisnis_kategori/v_daftar', $data);
 	}
 	public function bisnis_kategori_storage_bin()
@@ -1338,10 +1342,12 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis_kategori',array('bisnis_kategori_post_oleh'=>$this->session->username,'bisnis_kategori_status'=>'delete'),'bisnis_kategori_id','DESC');
 				}
+				cek_session_akses('bisnis_kategori',$this->session->id_session);
 				$this->load->view('backend/bisnis_kategori/v_daftar_hapus', $data);
 	}
 	public function bisnis_kategori_tambahkan()
 	{
+		cek_session_akses('bisnis_kategori',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/linibisnis/';
@@ -1442,7 +1448,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function bisnis_kategori_update()
 	{
-
+		cek_session_akses('bisnis_kategori',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -1553,7 +1559,7 @@ class Aspanel extends CI_Controller {
 	}
 	function bisnis_kategori_delete_temp()
 	{
-
+			cek_session_akses('bisnis_kategori',$this->session->id_session);
 			$data = array('bisnis_kategori_status'=>'delete');
 			$where = array('bisnis_kategori_id' => $this->uri->segment(3));
 			$this->db->update('bisnis_kategori', $data, $where);
@@ -1561,7 +1567,7 @@ class Aspanel extends CI_Controller {
 	}
 	function bisnis_kategori_restore()
 	{
-
+			cek_session_akses('bisnis_kategori',$this->session->id_session);
 			$data = array('bisnis_kategori_status'=>'Publish');
 			$where = array('bisnis_kategori_id' => $this->uri->segment(3));
 			$this->db->update('bisnis_kategori', $data, $where);
@@ -1569,7 +1575,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function bisnis_kategori_delete()
 	{
-
+			cek_session_akses('bisnis_kategori',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('bisnis_kategori',['bisnis_kategori_id' => $id])->row();
 			 $query = $this->db->delete('bisnis_kategori',['bisnis_kategori_id'=>$id]);
@@ -1613,6 +1619,7 @@ class Aspanel extends CI_Controller {
 					$data['record'] = $this->Crud_m->view_join_where_ordering('bisnis','bisnis_kategori','bisnis_kategori_id',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
 
 				}
+				cek_session_akses('bisnis',$this->session->id_session);
 				$this->load->view('backend/bisnis/v_daftar', $data);
 	}
 	public function bisnis_storage_bin()
@@ -1646,10 +1653,12 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_post_oleh'=>$this->session->username,'bisnis_status'=>'delete'),'bisnis_id','DESC');
 				}
+				cek_session_akses('bisnis',$this->session->id_session);
 				$this->load->view('backend/bisnis/v_daftar_hapus', $data);
 	}
 	public function bisnis_tambahkan()
 	{
+		cek_session_akses('bisnis',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/linibisnis/';
@@ -1754,7 +1763,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function bisnis_update()
 	{
-
+		cek_session_akses('bisnis',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -1870,7 +1879,7 @@ class Aspanel extends CI_Controller {
 	}
 	function bisnis_delete_temp()
 	{
-
+			cek_session_akses('bisnis',$this->session->id_session);
 			$data = array('bisnis_status'=>'delete');
 			$where = array('bisnis_id' => $this->uri->segment(3));
 			$this->db->update('bisnis', $data, $where);
@@ -1878,7 +1887,7 @@ class Aspanel extends CI_Controller {
 	}
 	function bisnis_restore()
 	{
-
+			cek_session_akses('bisnis',$this->session->id_session);
 			$data = array('bisnis_status'=>'Publish');
 			$where = array('bisnis_id' => $this->uri->segment(3));
 			$this->db->update('bisnis', $data, $where);
@@ -1886,7 +1895,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function bisnis_delete()
 	{
-
+			cek_session_akses('bisnis',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('bisnis',['bisnis_id' => $id])->row();
 			 $query = $this->db->delete('bisnis',['bisnis_id'=>$id]);
@@ -2242,6 +2251,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_post_oleh'=>$this->session->username,'products_status'=>'publish'),'products_id','DESC');
 				}
+				cek_session_akses('products',$this->session->id_session);
 				$this->load->view('backend/products/v_daftar', $data);
 	}
 	public function products_storage_bin()
@@ -2267,10 +2277,12 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_post_oleh'=>$this->session->username,'products_status'=>'delete'),'products_id','DESC');
 				}
+				cek_session_akses('products',$this->session->id_session);
 				$this->load->view('backend/products/v_daftar_hapus', $data);
 	}
 	public function products_tambahkan()
 	{
+		cek_session_akses('products',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/produk/';
@@ -2368,6 +2380,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function products_update()
 	{
+		cek_session_akses('products',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -2473,6 +2486,7 @@ class Aspanel extends CI_Controller {
 	}
 	function products_delete_temp()
 	{
+			cek_session_akses('products',$this->session->id_session);
 			$data = array('products_status'=>'delete');
       $where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('products', $data, $where);
@@ -2480,6 +2494,7 @@ class Aspanel extends CI_Controller {
 	}
 	function products_restore()
 	{
+			cek_session_akses('products',$this->session->id_session);
 			$data = array('products_status'=>'Publish');
       $where = array('products_id' => $this->uri->segment(3));
 			$this->db->update('products', $data, $where);
@@ -2487,6 +2502,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function products_delete()
 	{
+			cek_session_akses('products',$this->session->id_session);
 			cek_session_akses ('products',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('products',['products_id' => $id])->row();
@@ -2527,6 +2543,7 @@ class Aspanel extends CI_Controller {
 				}else{
 					redirect('aspanel/home');
 				}
+				cek_session_akses('data_karyawan',$this->session->id_session);
 				$this->load->view('backend/data_karyawan/v_daftar', $data);
 	}
 	public function data_karyawan_storage_bin()
@@ -2555,11 +2572,12 @@ class Aspanel extends CI_Controller {
 				}else{
 					redirect('aspanel/home');
 				}
+				cek_session_akses('data_karyawan',$this->session->id_session);
 			$this->load->view('backend/data_karyawan/v_daftar_hapus', $data);
 	}
 	public function data_karyawan_tambahkan()
 	{
-
+		cek_session_akses('data_karyawan',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'bahan/foto_karyawan/';
@@ -2665,7 +2683,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function data_karyawan_update()
 	{
-
+		cek_session_akses('data_karyawan',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -2852,7 +2870,7 @@ class Aspanel extends CI_Controller {
 	}
 	function data_karyawan_delete_temp()
 	{
-
+			cek_session_akses('data_karyawan',$this->session->id_session);
 			$data = array('user_stat'=>'delete');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
@@ -2860,7 +2878,7 @@ class Aspanel extends CI_Controller {
 	}
 	function data_karyawan_restore()
 	{
-
+			cek_session_akses('data_karyawan',$this->session->id_session);
 			$data = array('user_stat'=>'Publish');
 			$where = array('id_user' => $this->uri->segment(3));
 			$this->db->update('user', $data, $where);
@@ -2868,7 +2886,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function data_karyawan_delete()
 	{
-
+			cek_session_akses('data_karyawan',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('user',['id_user' => $id])->row();
 			$query = $this->db->delete('user',['id_user'=> $id]);
@@ -3221,6 +3239,7 @@ class Aspanel extends CI_Controller {
 				}else{
 					redirect('aspanel/home');
 				}
+				cek_session_akses('divisi',$this->session->id_session);
 				$this->load->view('backend/divisi/v_daftar', $data);
 	}
 	public function divisi_storage_bin()
@@ -3246,6 +3265,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_post_oleh'=>$this->session->username,'divisi_status'=>'delete'),'divisi_id','DESC');
 				}
+				cek_session_akses('divisi',$this->session->id_session);
 				$this->load->view('backend/divisi/v_daftar_hapus', $data);
 	}
 	public function divisi_tambahkan()
@@ -3396,6 +3416,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish','kontribs_kategori_id'=>'23'),'kontribs_id','DESC');
 				}
+				cek_session_akses('kei',$this->session->id_session);
 				$this->load->view('backend/kontribs/v_daftar', $data);
 	}
 	public function csr()
@@ -3431,6 +3452,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish','kontribs_kategori_id'=>'22'),'kontribs_id','DESC');
 				}
+				cek_session_akses('csr',$this->session->id_session);
 				$this->load->view('backend/kontribs/v_daftar', $data);
 	}
 	public function kontribs()
@@ -3466,6 +3488,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'publish'),'kontribs_id','DESC');
 				}
+				cek_session_akses('kontribs',$this->session->id_session);
 				$this->load->view('backend/kontribs/v_daftar', $data);
 	}
 	public function kontribs_storage_bin()
@@ -3499,11 +3522,12 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('kontribs',array('kontribs_post_oleh'=>$this->session->username,'kontribs_status'=>'delete'),'kontribs_id','DESC');
 				}
+				cek_session_akses('kontribs',$this->session->id_session);
 				$this->load->view('backend/kontribs/v_daftar_hapus', $data);
 	}
 	public function kontribs_tambahkan()
 	{
-
+		cek_session_akses('kontribs',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/kontribs/';
@@ -3607,7 +3631,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function kontribs_update()
 	{
-
+		cek_session_akses('kontribs',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -3784,6 +3808,7 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('blogs',array('blogs_post_oleh'=>$this->session->username,'blogs_status'=>'publish'),'blogs_id','DESC');
 				}
+				cek_session_akses('blogs',$this->session->id_session);
 				$this->load->view('backend/blogs/v_daftar', $data);
 	}
 	public function blogs_storage_bin()
@@ -3817,11 +3842,12 @@ class Aspanel extends CI_Controller {
 				}else{
 						$data['record'] = $this->Crud_m->view_where_ordering('blogs',array('blogs_post_oleh'=>$this->session->username,'blogs_status'=>'delete'),'blogs_id','DESC');
 				}
+				cek_session_akses('blogs',$this->session->id_session);
 				$this->load->view('backend/blogs/v_daftar_hapus', $data);
 	}
 	public function blogs_tambahkan()
 	{
-
+		cek_session_akses('blogs',$this->session->id_session);
 		if (isset($_POST['submit'])){
 
 					$config['upload_path'] = 'assets/frontend/blogs/';
@@ -3923,7 +3949,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function blogs_update()
 	{
-
+		cek_session_akses('blogs',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
@@ -4038,7 +4064,7 @@ class Aspanel extends CI_Controller {
 	}
 	function blogs_delete_temp()
 	{
-
+			cek_session_akses('blogs',$this->session->id_session);
 			$data = array('blogs_status'=>'delete');
 			$where = array('blogs_id' => $this->uri->segment(3));
 			$this->db->update('blogs', $data, $where);
@@ -4046,6 +4072,7 @@ class Aspanel extends CI_Controller {
 	}
 	function blogs_restore()
 	{
+			cek_session_akses('blogs',$this->session->id_session);
 			$data = array('blogs_status'=>'Publish');
 			$where = array('blogs_id' => $this->uri->segment(3));
 			$this->db->update('blogs', $data, $where);
