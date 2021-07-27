@@ -8,7 +8,7 @@
                     <div class="newsletter_form newslattter_small">
                         <form>
                             <input class="form-control" type="text" required="" placeholder="Alamat Email">
-                            <button type="submit" title="Subscribe" class="btn btn-default" name="submit" style="background-color: #000" value="Submit">
+                            <button type="submit" title="Subscribe" class="btn btn-default" name="submit" style="background-color: #088282" value="Submit">
                             	Berlangganan
                             </button>
                         </form>

@@ -8,7 +8,7 @@
                 <h3>Bergabunglah Bersama Widodo Makmur Perkasa</h3>
                 <a href="#" class="btn btn-outline-white">Gabung</a>
             </div>
-        	<div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 col-11 " d>
+        	<div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 col-11 ">
             	<div class="row overflow_hide">
                 	<div class="col-6 couter_border">
                         <div class="box_counter text-center">
