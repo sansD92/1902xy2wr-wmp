@@ -1,7 +1,7 @@
 <section class="gray_bg">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+            <div class="col-md-12 " >
                 <div class="heading_s4 text-center">
                     <span class="sub_title">Latest News</span>
                     <h2>Terkini Dari WMP</h2>
@@ -13,7 +13,7 @@
                 <div class="clearfix small_divider"></div>
             </div>
         </div>
-        <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+        <div class="row " >
             <div class="col-md-12">
                 <div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
                     <?php  foreach ($posts as $post_new){
