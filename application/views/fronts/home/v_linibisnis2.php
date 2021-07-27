@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="row " >
+        <div class="row " style="justify-content:center;">
         	<div class="col-lg-4 col-sm-6 text-center">
             	<div class="icon_box icon_box_style_8 text_white">
                     <div class="box_icon mb-3">	
