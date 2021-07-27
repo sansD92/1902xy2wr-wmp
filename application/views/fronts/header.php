@@ -156,8 +156,25 @@
                 </li> -->
 
 
-
                 <li class="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">PROGRAM CSR</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">JOGLO TUMIYONO</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">YAYASAN KEI</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                </li>
+            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">ANGGARAN & REALISASI</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kontribusi Sosial</a>
                     <div class="dropdown-menu">
                         <ul>
@@ -165,14 +182,19 @@
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>kontrib/kategori/kegiatan-csr">Kegiatan CSR</a></li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Media</a>
+                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Berita & Informasi</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Berita</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg" target="_blank">Youtube WMP</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">MEDIA & RILIS</a></li>
+                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">COVID-19</a></li>
+                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">E-ANNOUNCEMENT</a></li>
+                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">GALLERY</a></li>
+                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">FAQ</a></li>
+
+                           <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg" target="_blank">Youtube WMP</a></li> -->
 
                         </ul>
                     </div>
