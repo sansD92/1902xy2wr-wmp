@@ -1,4 +1,4 @@
-<section style="background-color: #000"class="small_pt small_pb bg_blue">
+<section style="background-color: #088282"class="small_pt small_pb bg_blue">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 text_white text-center">
