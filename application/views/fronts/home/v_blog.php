@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-md-12 " >
                 <div class="heading_s4 text-center">
-                    <span class="sub_title">Latest News</span>
                     <h2>Terkini Dari WMP</h2>
                 </div>
             </div>

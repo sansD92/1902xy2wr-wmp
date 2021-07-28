@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-sm-12" >
                 <div class="heading_s4 text-center">
-                    <span class="sub_title">Produk Terbaik</span>
                     <h2>Produk Terbaik</h2>
                 </div>
                 <p><center>Dengan bangga memperkenalkan produk-produk kami</center></p>

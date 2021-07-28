@@ -12,7 +12,7 @@
                         <li><a href="<?php echo $identitas->youtube?>"><i class="ion-social-youtube-outline"></i></a></li>
                         <li><a href="<?php echo $identitas->facebook?>"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="<?php echo $identitas->instagram?>"><i class="ion-social-instagram-outline"></i></a></li>
-                         <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/pt-widodo-makmur-perkasa-118b5a12b/"><i class="ion-social-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
