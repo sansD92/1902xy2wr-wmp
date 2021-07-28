@@ -44,7 +44,7 @@
                     <h2>Struktur Organisasi</h2>
                 </div>
             	<div>
-            		<img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/SO1.png" alt="struktur_organisasi"/>
+            		<img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/stowmp.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
