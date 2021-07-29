@@ -14,21 +14,21 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
-	<div class="container">
-    	<div class="row">
-        	<!-- <div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1>Struktur Company</h1>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Struktur Company</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
+                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Struktur Company</li>
                   </ol>
                 </nav>
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
@@ -40,7 +40,7 @@
         <div class="row align-items-center">
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="heading_s1 text-center">
-                    <h2>Struktur Company</h2>
+                    <h2>Struktur Company WMP</h2>
                 </div>
                 <div>
                     <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/STRUKTUR-PERUSAHAAN-PT WMP-company.png" alt="struktur_organisasi"/>

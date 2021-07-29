@@ -14,21 +14,21 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/campur/headersubmenu.jpg">
-	<div class="container">
-    	<div class="row">
-        	<!-- <div class="col-md-12 text-center">
-            	<div class="page-title">
-            		<h1>Filosofi Visi & Misi</h1>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Filosifi Visi & Misi</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Filosofi Visi & Misi</li>
+                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Filosifi Visi & Misi</li>
                   </ol>
                 </nav>
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
