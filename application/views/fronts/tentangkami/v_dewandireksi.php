@@ -96,7 +96,8 @@
                             <ul class="list_none social_icons border_social">
                                <li>
                                     <h6 style="color: #fff"></h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-2">Lebih Detail</button>
                             </ul>
                         </div>
                         <div class="team_title">
@@ -113,7 +114,8 @@
                             <ul class="list_none social_icons border_social">
                                <li>
                                     <h6 style="color: #fff"></h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-3">Lebih Detail</button>
                             </ul>
                         </div>
                         <div class="team_title">
@@ -191,6 +193,114 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal modal-member fade show" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="assets/frontend/bod/teddy.png" alt="Teddy M Subekti" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3>Teddy M Subekti</h3>
+                                    <p class="member-title">Direktur Business Development</p>
+                                    <p class="text-dark text-justify">Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia  2018 – 2020).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal modal-member fade show" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="assets/frontend/bod/eko.png" alt="Eko Agmi Adriana" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3>Eko Agmi Adriana</h3>
+                                    <p class="member-title">Direktur Keuangan</p>
+                                    <p class="text-dark text-justify">Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia  2018 – 2020).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="modal modal-member fade show" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="assets/frontend/bod/suyatmi.png" alt="Suyatmi" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3>Suyatmi</h3>
+                                    <p class="member-title">Direktur Marketing</p>
+                                    <p class="text-dark text-justify">Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia  2018 – 2020).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div class="modal modal-member fade show" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="assets/frontend/bod/nur.png" alt="Nur Tjahjo" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3>Nur Tjahjo</h3>
+                                    <p class="member-title">Direktur HCD</p>
+                                    <p class="text-dark text-justify">Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia  2018 – 2020).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
