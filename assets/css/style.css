@@ -8060,3 +8060,20 @@ select[multiple] option {
 	border-radius: 3px;
 	margin-top: 10px;
 }
+
+/*Add by Bayu*/
+.modal-member .modal-dialog {
+    max-width: 700px;
+}
+.modal-dialog .close {
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+    transition: all .5s ease-in-out cubic-bezier(.65, 0, .076, 1) .45s;
+}
+.modal-header {
+	border-bottom: unset;
+}
+.modal-member .modal-dialog .modal-content {
+    border-radius: .5rem .5rem 6rem .5rem;
+}
