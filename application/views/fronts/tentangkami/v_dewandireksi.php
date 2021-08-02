@@ -133,7 +133,8 @@
                             <ul class="list_none social_icons border_social">
                                <li>
                                     <h6 style="color: #fff"></h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-4">Lebih Detail</button>
                             </ul>
                         </div>
                         <div class="team_title">
@@ -151,7 +152,8 @@
                             <ul class="list_none social_icons border_social">
                                <li>
                                     <h6 style="color: #fff"></h6></li>
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-5">Lebih Detail</button>
                             </ul>
                         </div>
                         <div class="team_title">
