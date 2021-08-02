@@ -12,6 +12,7 @@ class Linibisnis extends CI_Controller {
 
   public function lini1()
   {
+
     $data['status']   = '';
     $data['status_produk']   = '';
     $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
@@ -101,11 +102,12 @@ class Linibisnis extends CI_Controller {
       }else{
         $dari = $this->uri->segment('4');
       }
-
+      $data['title'] = " $row[bisnis_kategori_judul]";
       $data['rows'] = $row;
       $page1 = 'Y';
 
       if (is_numeric($dari)) {
+        $data['judul'] = "Portal Berita CI";
 
        $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC',$dari,'10');
         $data['status']   = 'active';
