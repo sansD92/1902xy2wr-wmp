@@ -8077,3 +8077,9 @@ select[multiple] option {
 .modal-member .modal-dialog .modal-content {
     border-radius: .5rem .5rem 6rem .5rem;
 }
+.modal-content {
+	padding: 0 15px 15px 15px;
+}
+.heading{
+	margin-right: 10px;
+}

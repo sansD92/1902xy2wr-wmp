@@ -116,7 +116,7 @@
                             <div class="col-lg-4">
                                 <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_direksi; ?>" alt="<?php echo $post_new->nama_direksi ?>" class="img-fluid border-rad-bottom-right-sm">
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-8">
                                 <div class="heading">
                                     <h3><?php echo $post_new->nama_direksi ?></h3>
                                     <p class="member-title"><?php echo $post_new->jabatan_direksi ?></p>
