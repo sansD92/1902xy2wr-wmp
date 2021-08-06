@@ -317,4 +317,10 @@ function get_all_blogs($per_page,$dari)
     $query = $this->db->get('blogs',$per_page,$dari);
     return $query->result();
   }
+  function get_all_direksi()
+  {
+    $this->db->limit(5);
+    $this->db->order_by('id_direksi');
+    return $this->db->get('direksi')->result();
+  }
 }
