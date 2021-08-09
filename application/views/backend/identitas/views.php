@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Website Information</h1>
+          <h1>Identitas Website</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/home">Home</a></li>
-            <li class="breadcrumb-item active">Website Information</li>
+            <li class="breadcrumb-item active">Identitas Website</li>
           </ol>
         </div>
       </div>
@@ -41,7 +41,7 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Website Name</label>
+                        <label>Nama Website</label>
                         <input type="text" class="form-control" name="nama_website" value="<?php echo $record['nama_website']?>" placeholder="Website Name">
                       </div>
                     </div>
@@ -73,20 +73,20 @@
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="form-group">
-                        <label>Email address</label>
+                        <label>Alamat Email</label>
                         <input type="email" class="form-control" name ="email" id="exampleInputEmail1" value="<?php echo $record['email']?>" placeholder="Email Perusahaan">
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="form-group">
-                        <label>Office Number</label>
+                        <label>Nomer Kantor</label>
                         <input type="text" class="form-control" name="no_telp" value="<?php echo $record['no_telp']?>" placeholder="Office Number">
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>WhatsApp Number</label>
+                        <label>Nomer Whatsapp</label>
                         <input type="text" class="form-control" name="whatsapp" value="<?php echo $record['whatsapp']?>" placeholder="WhatsApp Number">
                       </div>
                     </div>
@@ -118,14 +118,14 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Address</label>
+                        <label>Alamat</label>
                         <textarea type="text" class="form-control" name="alamat"  placeholder="Address"><?php echo $record['alamat']?></textarea>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Description</label>
+                        <label>Deskripsi</label>
                         <textarea class="textarea"  name ="meta_deskripsi" style="width: 100%; height: 100px;"><?php echo $record['meta_deskripsi'] ?></textarea>
                       </div>
                     </div>
@@ -180,7 +180,7 @@
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="form-group">
-                        <label>Your Logo</label>
+                        <label>Logo</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="logo">
                           <label class="custom-file-label" for="exampleInputFile">Image before <?php echo $record['logo'] ?></label>
@@ -234,7 +234,7 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Save Identitas"><i class="fas fa-file-upload"></i> Save</button>
+                <button type="submit" name ="submit" class="btn btn-success" title="Save Identitas"><i class="fas fa-file-upload"></i> Simpan</button>
               </div>
             <?php echo form_close(); ?>
           </div>

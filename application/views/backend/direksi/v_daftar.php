@@ -6,12 +6,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Daftar Departments</h1>
+          <h1>Daftar Direksi</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Daftar Departments</li>
+            <li class="breadcrumb-item active">Daftar Direksi</li>
           </ol>
         </div>
       </div>
@@ -23,15 +23,15 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/divisi_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/divisi_storage_bin"><i class="fas fa-trash"></i> Storage Bin</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/direksi_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Kode</th>
-                  <th>Nama Departemen</th>
+                  <th>Nomer</th>
+                  <th>Nama</th>
+                  <th>Jabatan</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -39,16 +39,17 @@
                 <?php
                 $no = 1;
                 foreach ($record as $row){
-                  $tgl_posting = $this->mylibrary->tgl_indo($row['divisi_post_tanggal']);
+
                   ?>
 
                 <tr>
-                  <td><?=$row['divisi_meta_desk']?></td>
-                  <td><?=$row['divisi_judul']?></td>
+                  <td><?=$no++?></td>
+                  <td><?=$row['nama_direksi']?></td>
+                  <td><?=$row['jabatan_direksi']?></td>
                   <td>
                     <?php
-                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/divisi_update/$row[divisi_id]'><i class='fas fa-edit'></i></a>
-                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/divisi_delete_temp/$row[divisi_id]' onclick=\"return confirm('Yakin ingin menghapus data ini?')\"><i class='fas fa-trash-alt'></i></a>";
+                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/direksi_update/$row[id_direksi]'><i class='fas fa-edit'></i></a>
+                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/direksi_delete/$row[id_direksi]' onclick=\"return confirm('Yakin ingin menghapus ini secara permanen?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>
@@ -57,8 +58,9 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Kode</th>
-                  <th>Nama Departemen</th>
+                  <th>Nomer</th>
+                  <th>Nama</th>
+                  <th>Jabatan</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
