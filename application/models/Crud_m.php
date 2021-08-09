@@ -323,4 +323,10 @@ function get_all_blogs($per_page,$dari)
     $this->db->order_by('id_direksi');
     return $this->db->get('direksi')->result();
   }
+  function get_all_komisaris()
+  {
+    $this->db->limit(5);
+    $this->db->order_by('id_komisaris');
+    return $this->db->get('komisaris')->result();
+  }
 }

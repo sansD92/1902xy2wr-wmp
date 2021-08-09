@@ -13,6 +13,25 @@
 <?php $this->load->view('fronts/header.php')?>
 <!-- END HEADER -->
 
+<!-- START SECTION BANNER -->
+<!-- <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" style="height:500px;"data-img-src="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Dewan Direksi</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tentang Kami</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dewan Direksi</li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
     <div class="container">
@@ -32,8 +51,10 @@
         </div>
     </div>
 </section>
+<!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
+
 <section class="small_pt">
     <div class="container">
         <div class="row justify-content-center">
@@ -41,6 +62,7 @@
                 <div class="heading_s1 text-center">
                     <h2>Komisaris WMP</h2>
                 </div>
+
             </div>
         </div>
         <div class="row">
@@ -48,57 +70,69 @@
                 <div class="cleafix small_divider"></div>
             </div>
         </div>
-      <div class="row justify-content-center">
-        <div class="col-md-2"></div>
-            <div class="col-md-10 carousel_slide4 owl-carousel owl-theme text-center animation" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="false" data-autoplay="true">
+        <div class="row">
+             <?php  foreach ($posts_komisaris as $post_new){ ?>
+            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
                 <div class="item">
                     <div class="team_box light_gray_bg team_hover_style2 social_white">
                         <div class="team_img">
-                            <img src="assets/frontend/bod/FOTO-7.png" alt=""/>
+                            <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_komisaris; ?>" alt="<?php echo $post_new->nama_komisaris ?>"/>
                             <ul class="list_none social_icons border_social">
-                               
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
+                               <li>
+                                    <h6 style="color: #fff"></h6></li>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-<?php echo $post_new->id_komisaris ?>">Lebih Detail</button>
                             </ul>
                         </div>
                         <div class="team_title">
-													<h5>Raden Marlan</h5>
-                          <span>President Commissioner</span>
-                          <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="team_box light_gray_bg team_hover_style2 social_white">
-                        <div class="team_img">
-                            <img src="assets/frontend/bod/FOTO-8.png" alt=""/>
-                            <ul class="list_none social_icons border_social">
-                              
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
-                            </ul>
-                        </div>
-                        <div class="team_title">
-													<h5>Warsini</h5>
-													<span>Commissioner</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="team_box light_gray_bg team_hover_style2 social_white">
-                        <div class="team_img">
-                            <img src="assets/frontend/bod/FOTO-6.png" alt="Tumiyana"/>
-                            <ul class="list_none social_icons border_social">
-                              
-                                    <a href="#" class="btn btn-outline-white">Lebih Detail</a>
-                            </ul>
-                        </div>
-                        <div class="team_title">
-                            <h5>Drs.Setyo Wasisto SH</h5>
-                            <span>Commissioner</span>
+                            <h5><?php echo $post_new->nama_komisaris ?></h5>
+                            <span><?php echo $post_new->jabatan_komisaris ?></span> 
                         </div>
                     </div>
                 </div>
             </div>
-      </center>
+
+             <?php } ?>
+
+                       
+
+        </div>
+
+
+        <!-- Modal 1 -->
+          <?php  foreach ($posts_komisaris as $post_new){ ?>
+                    <div class="modal-body">
+        <div class="modal modal-member fade show" id="modal-<?php echo $post_new->id_komisaris ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                   
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_komisaris; ?>" alt="<?php echo $post_new->nama_komisaris ?>" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3><?php echo $post_new->nama_komisaris ?></h3>
+                                    <p class="member-title"><?php echo $post_new->jabatan_komisaris ?></p>
+                                    <p class="text-dark text-justify"><?php echo $post_new->deskripsi_jabatan ?></p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <?php } ?>
+
+
+      
+
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
