@@ -1427,9 +1427,9 @@ select option {
 }
 .navbar-expand-lg .navbar-nav > li > .nav-link {
 	font-size: 16px;
-	font-weight: 600;
-	padding: 25px 10px;
-	text-transform: uppercase;
+	font-weight: 500;
+	padding: 25px 25px;
+	text-transform: inherit;
 }
 .main_menu_capitalize .navbar-expand-lg .navbar-nav > li > .nav-link {
 	text-transform: capitalize;
@@ -1644,7 +1644,7 @@ select option {
 	box-shadow: none;
 }
 .nav-fixed .navbar-expand-lg .navbar-nav > li > .nav-link {
-	padding: 20px 10px;
+	padding: 25px 25px;
 }
 .nav-fixed .navbar-expand-lg .attr-nav li .nav-link,
 .hover_menu_style2.nav-fixed  .navbar-expand-lg .navbar-nav.attr-nav > li > .nav-link {

@@ -67,15 +67,39 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tentang Kami</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tentangkami">PROFIL PERUSAHAAN</a></li>
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">FILOSOFI VISI & MISI</a></li>
+                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Profil Perusahaan</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tentangkami">Profil</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Misi</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
+                                               
+                                        </ul>
+                                    </div>
+                                </li>
+                              
+                               
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">MILESTONE WMP</a></li>
+                                
 
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">DEWAN KOMISARIS</a></li>
-                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li>
-                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company WMP</a></li>
-                                <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris & Direksi</a></li>
+                               <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company & Organisasi</a></li>
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Produk</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
+                                               
+                                        </ul>
+                                    </div>
+                                </li>
+                              <!--   <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li> -->
 
                             </ul>
                         </div>
@@ -93,7 +117,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="dropdown">
+             <!--    <li class="dropdown">
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul >
@@ -105,7 +129,7 @@
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
                         </ul>
                     </div>
-                </li>
+                </li> -->
                 <!--  <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Investor</a>
                     <div class="dropdown-menu">
@@ -137,7 +161,7 @@
                     </div>
                 </li> -->
  <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">HUBUNGAN INVESTOR</a>
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Hubungan Investor</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">LAPORAN-LAPORAN</a>
@@ -151,7 +175,7 @@
                                     </div>
                                 </li>
 
-                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA PERUSAHAAN</a>
+                               <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA PERUSAHAAN</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                            <li><a class="dropdown-item nav-link nav_item" href="#">SEKILAS GCG</a></li>
@@ -183,14 +207,14 @@
                                 </li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                         </ul>
                     </div>
                 </li>
 
 
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">TATA KELOLA</a>
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tata Kelola</a>
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA</a>
