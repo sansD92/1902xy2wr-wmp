@@ -38,13 +38,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Dewan Komisaris</h1>
+                    <h1>Dewan Komisaris & Direksi</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Dewan Komisaris</li>
+                    <li class="breadcrumb-item active" aria-current="page">Dewan Komisaris & Direksi</li>
                   </ol>
                 </nav>
             </div>
@@ -136,7 +136,87 @@
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
+<section class="small_pt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 ">
+                <div class="heading_s1 text-center">
+                    <h2>Direksi WMP</h2>
+                </div>
 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="cleafix small_divider"></div>
+            </div>
+        </div>
+        <div class="row">
+             <?php  foreach ($posts_direksi as $post_new){ ?>
+            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
+                <div class="item">
+                    <div class="team_box light_gray_bg team_hover_style2 social_white">
+                        <div class="team_img">
+                            <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_direksi; ?>" alt="<?php echo $post_new->nama_direksi ?>"/>
+                            <ul class="list_none social_icons border_social">
+                               <li>
+                                    <h6 style="color: #fff"></h6></li>
+                                    <!-- <a href="#" class="btn btn-outline-white">Lebih Detail</a> -->
+                                    <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modals-<?php echo $post_new->id_direksi ?>">Lebih Detail</button>
+                            </ul>
+                        </div>
+                        <div class="team_title">
+                            <h5><?php echo $post_new->nama_direksi ?></h5>
+                            <span><?php echo $post_new->jabatan_direksi ?></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <?php } ?>
+
+                       
+
+        </div>
+
+
+        <!-- Modal 1 -->
+          <?php  foreach ($posts_direksi as $post_new){ ?>
+                    <div class="modal-body">
+        <div class="modal modal-member fade show" id="modals-<?php echo $post_new->id_direksi ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                   
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_direksi; ?>" alt="<?php echo $post_new->nama_direksi ?>" class="img-fluid border-rad-bottom-right-sm">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="heading">
+                                    <h3><?php echo $post_new->nama_direksi ?></h3>
+                                    <p class="member-title"><?php echo $post_new->jabatan_direksi ?></p>
+                                    <p class="text-dark text-justify"><?php echo $post_new->deskripsi_jabatan ?></p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <?php } ?>
+
+
+        
+
+    </div>
+</section>
+<!-- END SECTION ABOUT US -->
 
 
 <!-- START SECTION SUBCRIBE -->

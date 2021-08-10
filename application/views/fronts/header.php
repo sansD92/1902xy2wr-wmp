@@ -82,7 +82,7 @@
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
                                 
 
-                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris">Dewan Komisaris & Direksi</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris-direksi">Dewan Komisaris & Direksi</a></li>
                                <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company & Organisasi</a></li>
 

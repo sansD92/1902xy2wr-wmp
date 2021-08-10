@@ -25,7 +25,7 @@
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Struktur Company</li>
+                    <li class="breadcrumb-item active" aria-current="page">Struktur Company & Organisasi</li>
                   </ol>
                 </nav>
             </div>
@@ -52,7 +52,22 @@
 </section>
 <!-- END SECTION ABOUT US -->
 
+<section class="small_pb overflow_hide">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+                    <div class="heading_s1 text-center">
+                    <h2>Struktur Organisasi WMP</h2>
+                </div>
+                <div>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/stowmp.png" alt="struktur_organisasi"/>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</section>
 
 <!-- START SECTION SUBCRIBE -->
 <?php $this->load->view('fronts/home/v_subcribe')?>
