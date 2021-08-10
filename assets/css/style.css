@@ -1426,7 +1426,7 @@ select option {
 	top: 10px;
 }
 .navbar-expand-lg .navbar-nav > li > .nav-link {
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
 	padding: 25px 10px;
 	text-transform: uppercase;
@@ -1510,7 +1510,7 @@ select option {
 	color: #fff;
 }
 .navbar-expand-lg .navbar-nav > li {
-	margin-left: -10px;
+	margin-left: 12px;
 }
 .hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav li a.active,
 .hover_menu_style1 .navbar-expand-lg .navbar-nav.attr-nav > li:hover > a {
