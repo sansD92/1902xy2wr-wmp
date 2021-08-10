@@ -29,15 +29,15 @@
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
-              <?php $jmlproducts1 = $this->As_m->view('products')->num_rows(); ?>
+              <?php $jmlproducts1 = $this->As_m->view('bisnis')->num_rows(); ?>
               <div class="inner">
                 <h3><?php echo $jmlproducts1; ?></h3>
-                <p>All Products</p>
+                <p>Semua Bisnis</p>
               </div>
               <div class="icon">
                 <i class="fas fa-shapes"></i>
               </div>
-            <a href="<?php echo base_url('aspanel/products') ?>" class="small-box-footer">More Details <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="<?php echo base_url('aspanel/bisnis') ?>" class="small-box-footer">Selengkapnya <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <?php } ?>

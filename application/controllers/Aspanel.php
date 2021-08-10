@@ -1906,6 +1906,474 @@ class Aspanel extends CI_Controller {
 	}
 	/*	Bagian untuk Bisnis - Penutup	*/
 
+	/*	Bagian untuk Komisaris - Pembuka	*/
+	public function komisaris()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('komisaris','id_komisaris','DESC');
+				}else{
+					$data['record'] = $this->Crud_m->view_ordering('komisaris','id_komisaris','DESC');
+
+				}
+				cek_session_akses('komisaris',$this->session->id_session);
+				$this->load->view('backend/komisaris/v_daftar', $data);
+	}
+	public function komisaris_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('komisaris','id_komisaris','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_ordering('komisaris','id_komisaris','DESC');
+				}
+				cek_session_akses('komisaris',$this->session->id_session);
+				$this->load->view('backend/komisaris/v_daftar_hapus', $data);
+	}
+	public function komisaris_tambahkan()
+	{
+		cek_session_akses('komisaris',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/bod/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/bod/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '80%';
+					$config['new_image']= './assets/frontend/bod/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+
+					if ($hasil22['file_name']==''){
+									$data = array(
+										'nama_komisaris'=>$this->input->post('nama_komisaris'),
+										'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
+										'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
+											}else{
+												$data = array(
+													'nama_komisaris'=>$this->input->post('nama_komisaris'),
+													'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
+													'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
+													'foto_komisaris'=>$hasil22['file_name']);
+												}
+								$this->As_m->insert('komisaris',$data);
+								redirect('aspanel/komisaris');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['kontribs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = 'menu-open';
+					$data['bisnis']   = 'active';
+					$data['produk']   = '';
+					$data['services']   = '';
+					$this->load->view('backend/komisaris/v_tambahkan', $data);
+				}
+	}
+	public function komisaris_update()
+	{
+		cek_session_akses('komisaris',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/bod/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/bod/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '80%';
+			$config['new_image']= './assets/frontend/bod/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'nama_komisaris'=>$this->input->post('nama_komisaris'),
+											'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
+											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
+											$where = array('id_komisaris' => $this->input->post('id_komisaris'));
+											$this->db->update('komisaris', $data, $where);
+						}else{
+										$data = array(
+											'nama_komisaris'=>$this->input->post('nama_komisaris'),
+											'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
+											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
+											'foto_komisaris'=>$hasil22['file_name']);
+											$where = array('id_komisaris' => $this->input->post('id_komisaris'));
+											$_image = $this->db->get_where('komisaris',$where)->row();
+											$query = $this->db->update('komisaris',$data,$where);
+											if($query){
+												unlink("assets/frontend/bod/".$_image->foto_komisaris);
+											}
+
+						}
+						redirect('aspanel/komisaris');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('komisaris', array('id_komisaris' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('komisaris', array('id_komisaris' => $id))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = '';
+			$data['slider_stat']   = '';
+			$data['kontribs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = 'menu-open';
+				$data['jamkerja_stat']   = '';
+				$data['absen_stat']   = '';
+				$data['dataabsen_stat']   = '';
+				$data['cuti_stat']   = '';
+				$data['gaji_stat']   = '';
+				$data['pengumuman_stat']   = '';
+				$data['konfig_stat']   = '';
+				$data['produk_menu_open']   = 'menu-open';
+				$data['bisnis']   = '';
+				$data['produk']   = '';
+				$data['services']   = '';
+				$this->load->view('backend/komisaris/v_update', $data);
+		}
+	}
+	function komisaris_delete_temp()
+	{
+			cek_session_akses('komisaris',$this->session->id_session);
+			$where = array('id_komisaris' => $this->uri->segment(3));
+			$this->db->update('komisaris',$where);
+			redirect('aspanel/komisaris');
+	}
+	function komisaris_restore()
+	{
+			cek_session_akses('komisaris',$this->session->id_session);
+
+			$where = array('id_komisaris' => $this->uri->segment(3));
+			$this->db->update('komisaris', $where);
+			redirect('aspanel/komisaris_storage_bin');
+	}
+	public function komisaris_delete()
+	{
+			cek_session_akses('komisaris',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('komisaris',['id_komisaris' => $id])->row();
+			 $query = $this->db->delete('komisaris',['id_komisaris'=>$id]);
+			if($query){
+							 unlink("./assets/frontend/bod/".$_id->foto_komisaris);
+		 }
+		redirect('aspanel/komisaris');
+	}
+	/*	Bagian untuk Komisaris - Penutup	*/
+
+	/*	Bagian untuk Direksi - Pembuka	*/
+	public function direksi()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('direksi','id_direksi','DESC');
+				}else{
+					$data['record'] = $this->Crud_m->view_ordering('direksi','id_direksi','DESC');
+
+				}
+				cek_session_akses('direksi',$this->session->id_session);
+				$this->load->view('backend/direksi/v_daftar', $data);
+	}
+	public function direksi_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = 'menu-open';
+			$data['bisnis']   = 'active';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('direksi','id_direksi','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_ordering('direksi','id_direksi','DESC');
+				}
+				cek_session_akses('direksi',$this->session->id_session);
+				$this->load->view('backend/direksi/v_daftar_hapus', $data);
+	}
+	public function direksi_tambahkan()
+	{
+		cek_session_akses('direksi',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/bod/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/bod/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '80%';
+					$config['new_image']= './assets/frontend/bod/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+
+					if ($hasil22['file_name']==''){
+									$data = array(
+										'nama_direksi'=>$this->input->post('nama_direksi'),
+										'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
+										'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
+											}else{
+												$data = array(
+													'nama_direksi'=>$this->input->post('nama_direksi'),
+													'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
+													'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
+													'foto_direksi'=>$hasil22['file_name']);
+												}
+								$this->As_m->insert('direksi',$data);
+								redirect('aspanel/direksi');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['kontribs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = 'menu-open';
+					$data['bisnis']   = 'active';
+					$data['produk']   = '';
+					$data['services']   = '';
+					$this->load->view('backend/direksi/v_tambahkan', $data);
+				}
+	}
+	public function direksi_update()
+	{
+		cek_session_akses('direksi',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/bod/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/bod/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '80%';
+			$config['new_image']= './assets/frontend/bod/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'nama_direksi'=>$this->input->post('nama_direksi'),
+											'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
+											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
+											$where = array('id_direksi' => $this->input->post('id_direksi'));
+											$this->db->update('direksi', $data, $where);
+						}else{
+										$data = array(
+											'nama_direksi'=>$this->input->post('nama_direksi'),
+											'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
+											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
+											'foto_direksi'=>$hasil22['file_name']);
+											$where = array('id_direksi' => $this->input->post('id_direksi'));
+											$_image = $this->db->get_where('direksi',$where)->row();
+											$query = $this->db->update('direksi',$data,$where);
+											if($query){
+												unlink("assets/frontend/bod/".$_image->foto_direksi);
+											}
+
+						}
+						redirect('aspanel/direksi');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('direksi', array('id_direksi' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('direksi', array('id_direksi' => $id))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = '';
+			$data['slider_stat']   = '';
+			$data['kontribs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = 'menu-open';
+				$data['jamkerja_stat']   = '';
+				$data['absen_stat']   = '';
+				$data['dataabsen_stat']   = '';
+				$data['cuti_stat']   = '';
+				$data['gaji_stat']   = '';
+				$data['pengumuman_stat']   = '';
+				$data['konfig_stat']   = '';
+				$data['produk_menu_open']   = 'menu-open';
+				$data['bisnis']   = '';
+				$data['produk']   = '';
+				$data['services']   = '';
+				$this->load->view('backend/direksi/v_update', $data);
+		}
+	}
+	function direksi_delete_temp()
+	{
+			cek_session_akses('komisaris',$this->session->id_session);
+			$where = array('id_komisaris' => $this->uri->segment(3));
+			$this->db->update('komisaris',$where);
+			redirect('aspanel/komisaris');
+	}
+	function direksi_restore()
+	{
+			cek_session_akses('komisaris',$this->session->id_session);
+
+			$where = array('id_komisaris' => $this->uri->segment(3));
+			$this->db->update('komisaris', $where);
+			redirect('aspanel/komisaris_storage_bin');
+	}
+	public function direksi_delete()
+	{
+			cek_session_akses('direksi',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('direksi',['id_direksi' => $id])->row();
+			 $query = $this->db->delete('direksi',['id_direksi'=>$id]);
+			if($query){
+							 unlink("./assets/frontend/bod/".$_id->foto_direksi);
+		 }
+		redirect('aspanel/direksi');
+	}
+	/*	Bagian untuk Direksi - Penutup	*/
+
 	/*	Bagian untuk products cat - Pembuka	*/
 	public function products_cat()
 	{
