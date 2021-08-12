@@ -32,13 +32,9 @@
 
 
 
-<!-- START SECTION PRODUK -->
-<?php $this->load->view('fronts/home/v_produk')?>
-<!-- END SECTION PRODUK -->
 
-<!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_counter')?>
-<!-- END SECTION FEATURE -->
+
+
 
 <!-- START SECTION COUNTER -->
 <!-- END SECTION COUNTER -->
@@ -72,7 +68,9 @@
 <!-- START SECTION BLOG -->
 <?php $this->load->view('fronts/home/v_blog')?>
 <!-- END SECTION BLOG -->
-
+<!-- START SECTION FEATURE -->
+<?php $this->load->view('fronts/home/v_counter')?>
+<!-- END SECTION FEATURE -->
 <!-- START SECTION CLIENT LOGO -->
 <?php $this->load->view('fronts/home/v_logo')?>
 <!-- START SECTION CLIENT LOGO -->

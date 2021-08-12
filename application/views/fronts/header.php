@@ -85,8 +85,9 @@
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris-direksi">Dewan Komisaris & Direksi</a></li>
                                <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company & Organisasi</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">Produk</a></li>
 
-                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Produk</a>
+                                <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Produk</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
@@ -98,7 +99,7 @@
                                                
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                               <!--   <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturorganisasi">Struktur Organisasi</a></li> -->
 
                             </ul>

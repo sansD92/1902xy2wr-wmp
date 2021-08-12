@@ -29,6 +29,7 @@ $route['tatakelola-komiteaudit'] = "Investor/tatakelola5";
 $route['tatakelola-sekretarisperusahaan'] = "Investor/tatakelola6";
 $route['tatakelola-internalaudit'] = "Investor/tatakelola7";
 
+$route['produk'] = "Produk/index";
 $route['produk1'] = "Produk/produk1";
 $route['produk2'] = "Produk/produk2";
 $route['produk3'] = "Produk/produk3";

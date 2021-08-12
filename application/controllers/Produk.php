@@ -9,7 +9,18 @@ class Produk extends CI_Controller {
     $this->load->model(array('Crud_m'));
     /* memanggil function dari masing2 model yang akan digunakan */
   }
+public function index()
+{
 
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/produk/v_index',$data);
+}
 public function produk1()
 {
   $data['status']   = '';
