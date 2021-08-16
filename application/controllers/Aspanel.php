@@ -943,6 +943,324 @@ class Aspanel extends CI_Controller {
 	/* konsumen - tutup */
 
 
+	/*	Bagian untuk logo - Pembuka	*/
+	public function logo()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = 'active';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = '';
+		$data['kehadiran_menu_open']   = '';
+		$data['jamkerja_stat']   = '';
+		$data['absen_stat']   = '';
+		$data['dataabsen_stat']   = '';
+		$data['cuti_stat']   = '';
+		$data['gaji_stat']   = '';
+		$data['pengumuman_stat']   = '';
+		$data['konfig_stat']   = '';
+		$data['produk_menu_open']   = '';
+		$data['produk_category']   = '';
+		$data['produk']   = '';
+		$data['services']   = '';
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_status'=>'publish'),'logo_urutan','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_status'=>'publish'),'logo_urutan','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_post_oleh'=>$this->session->username,'logo_status'=>'publish'),'logo_urutan','DESC');
+				}
+				cek_session_akses('logo',$this->session->id_session);
+				$this->load->view('backend/logo/v_daftar', $data);
+	}
+	public function logo_storage_bin()
+	{
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_status'=>'delete'),'logo_id','DESC');
+				}elseif ($this->session->level=='2'){
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_status'=>'delete'),'logo_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('logo',array('logo_post_oleh'=>$this->session->username,'logo_status'=>'delete'),'logo_id','DESC');
+				}
+
+				$data['karyawan_menu_open']   = '';
+				$data['home_stat']   = '';
+				$data['identitas_stat']   = '';
+				$data['profil_stat']   = '';
+				$data['sliders_stat']   = '';
+				$data['products_stat']   = '';
+				$data['cat_products_stat']   = '';
+				$data['slider_stat']   = 'active';
+				$data['kontribs_stat']   = '';
+				$data['message_stat']   = '';
+				$data['gallery_stat']   = '';
+				$data['kehadiran_menu_open']   = '';
+				$data['jamkerja_stat']   = '';
+				$data['absen_stat']   = '';
+				$data['dataabsen_stat']   = '';
+				$data['cuti_stat']   = '';
+				$data['gaji_stat']   = '';
+				$data['pengumuman_stat']   = '';
+				$data['konfig_stat']   = '';
+				$data['produk_menu_open']   = '';
+				$data['produk_category']   = '';
+				$data['produk']   = '';
+				$data['services']   = '';
+				cek_session_akses('logo',$this->session->id_session);
+				$this->load->view('backend/logo/v_daftar_hapus', $data);
+	}
+	public function logo_tambahkan()
+	{
+		cek_session_akses('logo',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/logo/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/logo/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '100%';
+					$config['new_image']= './assets/frontend/logo/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					if ($this->input->post('logo_keyword')!=''){
+								$tag_seo = $this->input->post('logo_keyword');
+								$tag=implode(',',$tag_seo);
+						}else{
+								$tag = '';
+						}
+					$tag = $this->input->post('logo_keyword');
+					$tags = explode(",", $tag);
+					$tags2 = array();
+					foreach($tags as $t)
+					{
+						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+						$a = $this->db->query($sql)->result_array();
+						if(count($a) == 0){
+							$data = array('keyword_nama'=>$this->db->escape_str($t),
+									'keyword_username'=>$this->session->username,
+									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+									'count'=>'0');
+							$this->As_m->insert('keyword',$data);
+						}
+						$tags2[] = $this->mylibrary->seo_title($t);
+					}
+					$tags = implode(",", $tags2);
+					if ($hasil22['file_name']==''){
+									$data = array(
+										'logo_post_oleh'=>$this->session->username,
+										'logo_judul'=>$this->db->escape_str($this->input->post('logo_judul')),
+										'logo_judul_seo'=>$this->mylibrary->seo_title($this->input->post('logo_judul')),
+										'logo_url'=>$this->input->post('logo_url'),
+										'logo_urutan'=>$this->input->post('logo_urutan'),
+										'logo_post_hari'=>hari_ini(date('w')),
+										'logo_post_tanggal'=>date('Y-m-d'),
+										'logo_post_jam'=>date('H:i:s'),
+										'logo_dibaca'=>'0',
+										'logo_status'=>'publish',
+										'logo_meta_desk'=>'non');
+											}else{
+												$data = array(
+													'logo_post_oleh'=>$this->session->username,
+													'logo_judul'=>$this->db->escape_str($this->input->post('logo_judul')),
+													'logo_judul_seo'=>$this->mylibrary->seo_title($this->input->post('logo_judul')),
+													'logo_post_hari'=>hari_ini(date('w')),
+													'logo_url'=>$this->input->post('logo_url'),
+													'logo_urutan'=>$this->input->post('logo_urutan'),
+													'logo_post_tanggal'=>date('Y-m-d'),
+													'logo_post_jam'=>date('H:i:s'),
+													'logo_dibaca'=>'0',
+													'logo_status'=>'publish',
+													'logo_gambar'=>$hasil22['file_name'],
+													'logo_meta_desk'=>'non');
+												}
+								$this->As_m->insert('logo',$data);
+								redirect('aspanel/logo');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = 'active';
+					$data['kontribs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = '';
+					$data['kehadiran_menu_open']   = '';
+					$data['jamkerja_stat']   = '';
+					$data['absen_stat']   = '';
+					$data['dataabsen_stat']   = '';
+					$data['cuti_stat']   = '';
+					$data['gaji_stat']   = '';
+					$data['pengumuman_stat']   = '';
+					$data['konfig_stat']   = '';
+					$data['produk_menu_open']   = '';
+					$data['produk_category']   = '';
+					$data['produk']   = '';
+					$data['services']   = '';
+
+					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+					$this->load->view('backend/logo/v_tambahkan', $data);
+				}
+	}
+	public function logo_update()
+	{
+		cek_session_akses('logo',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/logo/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/logo/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '100%';
+			$config['new_image']= './assets/frontend/logo/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+			if ($this->input->post('logo_keyword')!=''){
+						$tag_seo = $this->input->post('logo_keyword');
+						$tag=implode(',',$tag_seo);
+				}else{
+						$tag = '';
+				}
+			$tag = $this->input->post('logo_keyword');
+			$tags = explode(",", $tag);
+			$tags2 = array();
+			foreach($tags as $t)
+			{
+				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
+				$a = $this->db->query($sql)->result_array();
+				if(count($a) == 0){
+					$data = array('keyword_nama'=>$this->db->escape_str($t),
+							'keyword_username'=>$this->session->username,
+							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
+							'count'=>'0');
+					$this->As_m->insert('keyword',$data);
+				}
+				$tags2[] = $this->mylibrary->seo_title($t);
+			}
+			$tags = implode(",", $tags2);
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'logo_post_oleh'=>$this->session->username,
+											'logo_judul'=>$this->db->escape_str($this->input->post('logo_judul')),
+											'logo_judul_seo'=>$this->mylibrary->seo_title($this->input->post('logo_judul')),
+											'logo_desk'=>$this->input->post('logo_desk'),
+											'logo_url'=>$this->input->post('logo_url'),
+											'logo_urutan'=>$this->input->post('logo_urutan'),
+											'logo_post_hari'=>hari_ini(date('w')),
+											'logo_post_tanggal'=>date('Y-m-d'),
+											'logo_post_jam'=>date('H:i:s'),
+											'logo_meta_desk'=>$this->input->post('logo_meta_desk'),
+											'logo_keyword'=>$tag);
+											$where = array('logo_id' => $this->input->post('logo_id'));
+											$this->db->update('logo', $data, $where);
+						}else{
+										$data = array(
+											'logo_post_oleh'=>$this->session->username,
+											'logo_judul'=>$this->db->escape_str($this->input->post('logo_judul')),
+											'logo_judul_seo'=>$this->mylibrary->seo_title($this->input->post('logo_judul')),
+											'logo_desk'=>$this->input->post('logo_desk'),
+											'logo_url'=>$this->input->post('logo_url'),
+											'logo_urutan'=>$this->input->post('logo_urutan'),
+											'logo_post_hari'=>hari_ini(date('w')),
+											'logo_post_tanggal'=>date('Y-m-d'),
+											'logo_post_jam'=>date('H:i:s'),
+											'logo_gambar'=>$hasil22['file_name'],
+											'logo_meta_desk'=>$this->input->post('logo_meta_desk'),
+											'logo_keyword'=>$tag);
+											$where = array('logo_id' => $this->input->post('logo_id'));
+											$_image = $this->db->get_where('logo',$where)->row();
+											$query = $this->db->update('logo',$data,$where);
+											if($query){
+												unlink("assets/frontend/logo/".$_image->logo_gambar);
+											}
+
+						}
+						redirect('aspanel/logo');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('logo', array('logo_id' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('logo', array('logo_id' => $id, 'logo_post_oleh' => $this->session->username))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = '';
+			$data['slider_stat']   = 'active';
+			$data['kontribs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = '';
+			$data['kehadiran_menu_open']   = '';
+			$data['jamkerja_stat']   = '';
+			$data['absen_stat']   = '';
+			$data['dataabsen_stat']   = '';
+			$data['cuti_stat']   = '';
+			$data['gaji_stat']   = '';
+			$data['pengumuman_stat']   = '';
+			$data['konfig_stat']   = '';
+			$data['produk_menu_open']   = '';
+			$data['produk_category']   = '';
+			$data['produk']   = '';
+			$data['services']   = '';
+
+			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+			$this->load->view('backend/logo/v_update', $data);
+		}
+	}
+	public function logo_delete_temp()
+	{
+			cek_session_akses('logo',$this->session->id_session);
+			$data = array('logo_status'=>'delete');
+			$where = array('logo_id' => $this->uri->segment(3));
+			$this->db->update('logo', $data, $where);
+			redirect('aspanel/logo');
+	}
+	public function logo_restore()
+	{
+			cek_session_akses('logo',$this->session->id_session);
+			$data = array('logo_status'=>'Publish');
+			$where = array('logo_id' => $this->uri->segment(3));
+			$this->db->update('logo', $data, $where);
+			redirect('aspanel/logo_storage_bin');
+	}
+	public function logo_delete()
+	{
+			cek_session_akses('logo',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('logo',['logo_id' => $id])->row();
+			 $query = $this->db->delete('logo',['logo_id'=>$id]);
+			if($query){
+							 unlink("./asset/frontend/logo/".$_id->logo_gambar);
+		 }
+		redirect('aspanel/logo_storage_bin');
+	}
+	/*	Bagian untuk logo - Penutup	*/
+
 	/*	Bagian untuk slider - Pembuka	*/
 	public function slider()
 	{
@@ -1247,7 +1565,7 @@ class Aspanel extends CI_Controller {
 			$_id = $this->db->get_where('slider',['slider_id' => $id])->row();
 			 $query = $this->db->delete('slider',['slider_id'=>$id]);
 			if($query){
-							 unlink("./bahan/foto_slider/".$_id->sliders_gambar);
+							 unlink("./assets/frontend/slider/".$_id->sliders_gambar);
 		 }
 		redirect('aspanel/slider_storage_bin');
 	}

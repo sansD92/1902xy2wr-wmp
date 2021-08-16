@@ -3,36 +3,27 @@
     	<div class="row">
         	<div class="col-md-12">
             	<div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
-                	<div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo1_paste.jpg" /></a>
-                    </div>
-                    <div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo2_cam.jpg" /></a>
-                    </div>
-                   
-                    <div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo3_pwm.jpg" /></a>
-                    </div>
-                    <div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo4_gmp.jpg" /></a>
-                    </div>
-                    <div class="item">
-                    	<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo5_wmu.jpg"/></a>
-                    </div>
-                      <div class="item">
-                        <a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo6_wms.jpg" /></a>
-                    </div>
-                      <div class="item">
-                        <a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo7_pmp.jpg" /></a>
-                    </div>
-										<div class="item">
-											<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo8_lmp.jpg" /></a>
-									</div>
+								<?php  foreach ($posts_logo as $post_new){
+																		$isi = character_limiter($post_new->logo_desk,230);
+																		$judul = character_limiter($post_new->logo_judul,100);
+																		?>
+
 									<div class="item">
-										<a href="#"><img src="<?php echo base_url()?>assets/frontend/perusahaangrub/logo9_kei.jpg" /></a>
-								</div>
-								
-					
+										<?php
+																							if(empty($post_new->logo_gambar)) {
+																								echo "<img src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
+																							}else {
+																								echo "<a href='".$post_new->logo_url."'><img src='".base_url()."assets/frontend/logo/".$post_new->logo_gambar."'></a>
+
+
+																								";}
+																							?>
+
+                    </div>
+
+
+
+								   <?php } ?>
                 </div>
             </div>
         </div>
