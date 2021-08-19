@@ -8,16 +8,16 @@
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list_none header_list list_menu justify-content-center justify-content-sm-end text_uppercase">
+                    <ul class="list_none header_list list_menu justify-content-center justify-content-sm-end ">
                         <li class="dropdown">
                     <a class="dropdown-toggle " href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
                         <ul>
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
-                            <li><a style="text-transform: uppercase;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
+                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
-                            <li><a style="text-transform: uppercase; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
-                            <li><a style="text-transform: uppercase; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
 
                         </ul>
 
