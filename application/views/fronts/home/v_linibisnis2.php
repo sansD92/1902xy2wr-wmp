@@ -4,7 +4,7 @@
         	<div class="col-md-6 text-center " >
             	<div class="text_white">
                     <div class="heading_s3 mb-md-3 heading_light text-center">
-                        <h2>LINI BISNIS</h2>
+                        <h2>Lini Bisnis</h2>
                     </div>
                     <p></p>
                 </div>

@@ -290,7 +290,7 @@
                         <ul>
                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Media & Rilis</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Covid-19</a></li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">E-ANNOUNCEMENT</a></li>
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">E-Announcement</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">FAQ</a></li>
 

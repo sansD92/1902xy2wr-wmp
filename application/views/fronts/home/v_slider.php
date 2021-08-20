@@ -12,12 +12,11 @@
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-sm-12 text-center">
-                            <!-- <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
-                                <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">faster And Easy</h2>
-                                <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                <a class="btn btn-default animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Get Started</a>
-                            	<a class="btn btn-outline-white animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Learn More</a>
-                            </div> -->
+                            <div style="background-color: rgb(0 0 0 / 15%)"class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
+                                <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><?php echo $post_new->slider_judul ?></h2>
+                                <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><?php echo $post_new->slider_desk ?></p>
+                               
+                            </div>
                         </div>
                     </div>
                 </div><!-- END CONTAINER-->

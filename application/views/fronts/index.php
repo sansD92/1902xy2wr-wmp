@@ -26,10 +26,10 @@
 <?php $this->load->view('fronts/home/v_about')?>
 <!-- END SECTION ABOUT US -->
 
-<!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_linibisnis2')?>
-<!-- END SECTION FEATURE -->
 
+<!-- START SECTION FEATURE -->
+<?php $this->load->view('fronts/home/v_counter')?>
+<!-- END SECTION FEATURE -->
 
 
 
@@ -68,8 +68,9 @@
 <!-- START SECTION BLOG -->
 <?php $this->load->view('fronts/home/v_blog')?>
 <!-- END SECTION BLOG -->
+
 <!-- START SECTION FEATURE -->
-<?php $this->load->view('fronts/home/v_counter')?>
+<?php $this->load->view('fronts/home/v_linibisnis2')?>
 <!-- END SECTION FEATURE -->
 <!-- START SECTION CLIENT LOGO -->
 <?php $this->load->view('fronts/home/v_logo')?>
