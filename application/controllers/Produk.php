@@ -14,8 +14,7 @@ public function index()
 
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-      
-      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
 
 
 
