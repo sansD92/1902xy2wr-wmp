@@ -15,11 +15,31 @@ public function index()
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+       $data['posts_produk'] = $this->Crud_m->get_all_produk();
 
 
 
   $this->load->view('fronts/produk/v_index',$data);
 }
+
+  public function detail($id){
+
+      
+      $query = $this->Crud_m->view_join_oness('produk','produk_detail','id_produk',array('produk_seo' => $this->uri->segment(3)),'produk.id_produk','ASC',0,1);
+      if ($query->num_rows()<=0){
+        redirect('main');
+      }else{
+
+        $row = $query->row_array();
+            $data['rows'] = $row;
+        $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['produk_detail']            = $this->Crud_m->get_by_produk($id);
+        
+
+        $this->load->view('fronts/produk/v_produk', $data);
+      }
+    }
 public function produk1()
 {
   $data['status']   = '';

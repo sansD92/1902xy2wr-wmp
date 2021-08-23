@@ -218,6 +218,15 @@ class Crud_m extends CI_model{
          $this->db->limit($dari, $baris);
          return $this->db->get()->result();
   }
+   public function view_join_oness($table1,$table2,$field,$where,$order,$ordering,$baris,$dari){
+        $this->db->select('*');
+        $this->db->from($table1);
+        $this->db->join($table2, $table1.'.'.$field.'='.$table2.'.'.$field);
+        $this->db->where($where);
+        $this->db->order_by($order,$ordering);
+        $this->db->limit($dari, $baris);
+        return $this->db->get();
+    }
   function update_counter_products($products_id)
   {
        //return current article views
@@ -241,6 +250,7 @@ class Crud_m extends CI_model{
         $this->db->set('blogs_dibaca', ($count->blogs_dibaca + 1));
         $this->db->update('blogs');
     }
+
     function update_counter_bisnis($id)
      {
           //return current article views
@@ -329,4 +339,17 @@ function get_all_blogs($per_page,$dari)
     $this->db->order_by('id_komisaris');
     return $this->db->get('komisaris')->result();
   }
+  function get_all_produk()
+  {
+    $this->db->limit(6);
+    $this->db->order_by('id_produk');
+    return $this->db->get('produk')->result();
+  }
+   function get_by_produk($id)
+  {
+    $this->db->where('produk_detail.id_produk', $id);
+    $this->db->or_where('produk_detail.id_produk', $id);
+    $this->db->join('produk', 'produk.id_produk = produk_detail.id_produk','inner');
+    return $this->db->get('produk_detail')->result_array();
+}
 }

@@ -22,7 +22,7 @@
 <?php $this->load->view('fronts/produk/produkdetail')?>
 <!-- END SECTION PRODUK DETAIL -->
 <!-- START SECTION PRODUK DETAIL -->
-<?php $this->load->view('fronts/produk/fotoslider')?>
+<?php $this->load->view('fronts/produk/v_produk_detail')?>
 <!-- END SECTION PRODUK DETAIL -->
 
 

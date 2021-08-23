@@ -74,12 +74,12 @@
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
                     <li><a href="#" class="current" data-filter="*">all</a></li>
-                    <li><a href="#"  data-filter=".livestock">Sapi</a></li>
-                    <li><a href="#" data-filter=".meat">Daging Sapi</a></li>
-                    <li><a href="#" data-filter=".meatp">Produk Olahan</a></li>
-                    <li><a href="#" data-filter=".leather">Kulit</a></li>
-                    <li><a href="#" data-filter=".poultry">Produk Ayam</a></li>
-                    <li><a href="#" data-filter=".comodity">Komoditas</a></li>
+                   <li><a href="#"  data-filter=".pasir-tengah">Sapi</a></li>
+                    <li><a href="#" data-filter=".cianjur-arta-makmur">Daging Sapi</a></li>
+                    <li><a href="#" data-filter=".prima-widodo-makmur">Produk Olahan</a></li>
+                    <li><a href="#" data-filter=".garut-makmur-perkasa">Kulit</a></li>
+                    <li><a href="#" data-filter=".widodo-makmur-unggas">Produk Ayam</a></li>
+                    <li><a href="#" data-filter=".widodo-makmur-sejatra">Komoditas</a></li>
                     <li><a href="#" data-filter=".konstruksi">jasa konstruksi dan energi </a></li>
                 </ul>
             </div>
@@ -89,113 +89,27 @@
                 <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style5 " >
                     <li class="grid-sizer"></li>
                     <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item livestock">
+                    <?php  foreach ($posts_produk as $post_new){ ?>
+                    <li class="portfolio-item <?php echo $post_new->produk_seo ?>">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/350.jpg" alt="image">
+                                <img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $post_new->foto_produk; ?>" alt="image">
                             </a>
                                 <div class="portfolio_content">
                                     <div class="link_container">
 
-                                        <a href="<?php echo base_url()?>produk1"><i class="ion-plus"></i></a>
+                                        <a href="<?php echo base_url("produk/detail/$post_new->produk_seo ") ?>"><i class="ion-plus"></i></a>
                                     </div>
-                                    <h5><a href="<?php echo base_url()?>produk1">SAPI</a></h5>
+                                    <h5><a href="#"><?php echo $post_new->bidang_produk ?></a></h5>
 
                               </div>
                         </div>
                     </li>
+                    <?php } ?>
                     <!-- END PORTFOLIO ITEM -->
 
 
-                     <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item meat">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/meat1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-
-                                        <a href="<?php echo base_url()?>produk2"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="<?php echo base_url()?>produk2">DAGING SAPI</a></h5>
-
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-
-                     <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item meatp">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/meatpros1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-
-                                        <a href="<?php echo base_url()?>produk3"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="<?php echo base_url()?>produk3">PRODUK OLAHAN</a></h5>
-
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-
-                      <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item leather">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/leather1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-
-                                        <a href="<?php echo base_url()?>produk4"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="<?php echo base_url()?>produk4">LEATHER</a></h5>
-
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-
-                      <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item poultry">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/poultry1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-
-                                        <a href="<?php echo base_url()?>produk5"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="<?php echo base_url()?>produk5">POULTRY</a></h5>
-
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-
-                     <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item comodity">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="<?php echo base_url()?>assets/frontend/produk/comodity1.jpg" alt="image">
-                            </a>
-                                <div class="portfolio_content">
-                                    <div class="link_container">
-
-                                        <a href="<?php echo base_url()?>produk6"><i class="ion-plus"></i></a>
-                                    </div>
-                                    <h5><a href="<?php echo base_url()?>produk6">KOMODITAS</a></h5>
-                                    
-                              </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
+              
 
 
                 </ul>
