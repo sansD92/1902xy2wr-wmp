@@ -98,7 +98,7 @@
                                 <div class="portfolio_content">
                                     <div class="link_container">
 
-                                        <a href="<?php echo base_url("produk/detail/$post_new->produk_seo ") ?>"><i class="ion-plus"></i></a>
+                                        <a href="<?php echo base_url("produk/details/$post_new->produk_seo ") ?>"><i class="ion-plus"></i></a>
                                     </div>
                                     <h5><a href="#"><?php echo $post_new->bidang_produk ?></a></h5>
 

@@ -7,6 +7,7 @@ class Produk extends CI_Controller {
     parent::__construct();
     /* memanggil model untuk ditampilkan pada masing2 modul */
     $this->load->model(array('Crud_m'));
+    $this->load->model(array('M_produk'));
     /* memanggil function dari masing2 model yang akan digunakan */
   }
 public function index()
@@ -22,10 +23,10 @@ public function index()
   $this->load->view('fronts/produk/v_index',$data);
 }
 
-  public function detail($id){
+  public function detail(){
 
       
-      $query = $this->Crud_m->view_join_oness('produk','produk_detail','id_produk',array('produk_seo' => $this->uri->segment(3)),'produk.id_produk','ASC',0,1);
+      $query = $this->M_produk->view_join_oness('produk','produk_detail','id_produk',array('produk_seo' => $this->uri->segment(3)),'produk.id_produk','ASC',0,1);
       if ($query->num_rows()<=0){
         redirect('main');
       }else{
@@ -34,12 +35,27 @@ public function index()
             $data['rows'] = $row;
         $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-      $data['produk_detail']            = $this->Crud_m->get_by_produk($id);
+      $data['produk_detail']            = $this->M_produk->get_by_id3($id);
         
 
         $this->load->view('fronts/produk/v_produk', $data);
       }
     }
+
+     function details($ids){
+
+      $row = $this->M_produk->get_by_id2($ids);
+      /* melakukan pengecekan data, apabila ada maka akan ditampilkan */
+      if ($row){
+      /* memanggil function dari masing2 model yang akan digunakan */
+      $produk = $this->M_produk->get_by_id2($ids);
+      $data['produk']            = $produk;
+       $data['produk_detail']            = $this->M_produk->get_by_id3($ids);
+       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $this->load->view('fronts/produk/v_produk', $data);
+      }
+  }
 public function produk1()
 {
   $data['status']   = '';
