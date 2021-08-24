@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 02 Agu 2021 pada 13.53
--- Versi server: 10.3.29-MariaDB-cll-lve
+-- Waktu pembuatan: 24 Agu 2021 pada 16.34
+-- Versi server: 10.3.30-MariaDB-cll-lve
 -- Versi PHP: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -164,9 +164,34 @@ INSERT INTO `blogs` (`blogs_id`, `blogs_judul`, `blogs_judul_seo`, `blogs_desk`,
 (23, 'PT Widodo Makmur Unggas Memberikan Bantuan Telur Ke Beberapa Wilayah Di DIY ', 'pt-widodo-makmur-unggas-memberikan-bantuan-telur-ke-beberapa-wilayah-di-diy-', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">PT Widodo Makmur Unggas (WMU) ikut peduli terhadap wabah Covid-19. Sebagai bentuk kepedulian, pada tanggal 31 Agustus sampai 4 September 2020 WMU memberikan bantuan telur sejumlah 65.000 ribu butir telur ke beberapa instansi &amp; lembaga di beberapa wilayah di DIY.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Program bantuan CSR telur ini bertujuan untuk mengikuti memberikan Extra Fooding kepada warga yang dianggap membutuhkan, petugas medis dan seluruh pihak yang membantu dalam penanganan terhadap pasien Covid-19.</p>', 'bantuan telur,CSR', '', 'Berita_11.jpg', 'panji', 'Rabu', '2021-04-28', '11:17:34', '', '', '0000-00-00', '00:00:00', 2, 'publish'),
 (24, 'PT Widodo Makmur Unggas Komitmen Dukung Penguatan 10.000 UMKM', 'pt-widodo-makmur-unggas-komitmen-dukung-penguatan-10000-umkm', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Perusahaan peternakan ayam terintegrasi, PT Widodo Makmur Unggas (WMU) menjalin kerja sama dengan Mitra Usaha Kecil Mikro dan Menengah (Mitra UMKM) Daerah guna mendukung penguatan 10.000 UMKM di Indonesia. Kerja sama ini merupakan bagian dari komitmen WMU untuk maju dan tumbuh bersama dalam menyediakan produk pangan hewani berkualitas bagi seluruh masyarakat Indonesia.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Melalui kerja sama ini, WMU akan menjamin pengadaan bahan baku yang halal dan berkualitas. Tidak hanya itu, WMU akan memberikan benefit bagi UMKM seperti adanya potongan harga dan kemudahan dalam skema pembayaran.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Seremonial penandatanganan MoU kerja sama ini dilakukan secara virtual bersama 3 mitra pengelola UMKM, yaitu Holistika Institute, The Local Enablers dan Lokalkarya. Mitra UMKM ini mayoritas bergerak di industri makanan olahan. Dengan memastikan kualitas bahan baku serta pendampingan dalam peningkatan kualitas produk yang diberikan oleh WMU bisa menjadi salah satu solusi bangkitnya UMKM di tengah era adaptasi normal baru.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Tri Mahawijaya Herlambang selaku Direktur Pemasaran WMU menyampaikan, melalui unit usaha Commercial Broiler Farm dan Rumah Potong Ayam (RPA) yang dikelola dengan menerapkan sistem pemotongan modern, sertifikasi halal dan NKV (Nomor Kontrol Veteriner), proses penyediaan bahan baku daging ayam dapat terjamin kualitasnya. Ditambah WMU juga memastikan bahwa pasokan bahan baku daging ayam tersebut dapat mencapai ke pelosok Indonesia dan dengan harga terjangkau.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">“Melalui berbagai kerja sama yang dijalin dengan berbagai pihak ketiga dan Mitra UMKM, WMU akan menyediakan bahan baku berkualitas yang terjangkau guna mendukung UMKM untuk naik kelas. 10.000 UMKM ini juga akan terus berkembang jumlahnya, karena sekarang ini kita memasuki eranya kolaborasi sehingga kita harus tumbuh bersama untuk mencapai tujuan Indonesia Maju,” urai Tri dikutip dari keterangan tertulis yang diterima redaksi, Rabu (9/9/2020).</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Tingginya pelaku UMKM di Indonesia, membuat WMU juga berencana untuk memberikan literasi dan edukasi terkait peningkatan kualitas produk. Target yang dimiliki oleh WMU yaitu untuk konsisten berkontribusi terhadap negeri khususnya untuk keberlangsungan dari UMKM.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">“UMKM kini menjadi salah satu kunci pertumbuhan dan garda pertahanan dalam menjaga ekonomi nasional. Namun, Kami para pelaku UMKM juga membutuhkan booster dan pendampingan yang tepat untuk dapat naik kelas. Holistika Institute berharap dengan adanya kerjasama dengan PT Widodo Makmur Unggas dapat menjadi booster untuk mitra UMKM. Kami percaya PT WMU, sebagai perusahan yang dimiliki oleh anak bangsa, dapat merawat kunci pertumbuhan dan garda pertahanan ekonomi nasional, yaitu UMKM,” ujar Cecep selaku Ketua Holistika Institute.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Sementara Bambang Bayu selaku Ketua The Local Enablers berharap melalui kerja sama dengan PT Widodo Makmur Unggas dapat membantu memecahkan berbagai masalah yang dihadapi dan menjadi jembatan akselerasi bagi kemajuan UMKM.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Harapan lain juga disampaikan oleh Erik Dwiharta, Ketua Lokalkarya, menurutnya melalui kerja sama dan dukungan dari WMU, UMKM Indonesia khususnya yang ada di ujung timur Pulau Jawa ini menjadi lebih semangat memajukan usaha dan produksi yang berkualitas.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Sebagai catatan, PT Widodo Makmur Unggas (WMU) merupakan anak perusahaan PT Widodo Makmur Perkasa (WMP) yang berbasis di Jakarta, WMU memiliki unit-unit bisnis meliputi breeding farm, hatchery, commercial broiler farm, commercial layer farm, slaughterhouse, dan feedmill di beberapa lokasi fasilitas yang tersebar di Pulau Jawa.</p>', 'event,human resources', '', 'Berita_12.jpg', 'panji', 'Rabu', '2021-04-28', '11:20:12', '', '', '0000-00-00', '00:00:00', 2, 'publish'),
 (25, 'PT Widodo Makmur Perkasa Tidak Mengadakan Rekrutmen Bersifat Berbayar. Alias FREE. Please, Be Careful !!!', 'pt-widodo-makmur-perkasa-tidak-mengadakan-rekrutmen-bersifat-berbayar-alias-free-please-be-careful-', '<p><span style=\"font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Dengan beredarnya informasi mengenai lowongan pekerjaan yang mengatasnamakan PT Widodo Makmur Perkasa, Kami menyatakan bahwa setiap lowongan pekerjaan selalu diinfokan melalui website resmi perusahaan dan tidak dipungut biaya apapun.</span><br></p>', 'human resources', '', 'rrtrtrwwww.jpeg', 'panji', 'Rabu', '2021-04-28', '11:21:48', 'jiung', 'Rabu', '2021-04-28', '18:50:37', 3, 'Publish'),
-(26, 'Job Vacancy Accounting Manager', 'job-vacancy-accounting-manager', '<div class=\"entry-content\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\"><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Hi Young People!</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">PT Widodo Makmur Perkasa gives the opportunity to young generations in Indonesia to be the part of us. We are hiring for some positions below:</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">1. Accounting Manager</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Sent your requirements (CV, application letter, and other supported documents) to recruitment@wmp-group.co.id.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">For more information, kindly contact us:<br>Devy (HC Officer): 082122302535<br>Retno (HC Officer): 085960312846</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Notes:<br>This recruitment process is free. Please be careful from any deception on behalf of PT Widodo Makmur Perkasa. Only the best candidate will be contacted and processed to the next step.</p></div><footer class=\"entry-meta\" style=\"border-top: 1px solid rgb(244, 244, 244); border-bottom: 1px solid rgb(244, 244, 244); padding: 28px 0px 22px;\"><div class=\"row\" style=\"border: 0px none; margin: 0px -15px; outline: none 0px; padding: 0px;\"><div class=\"col-md-6 col-sm-12 col-xs-12\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px 15px; min-height: 1px; float: left; width: 438.75px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"></div><div class=\"col-md-6 col-sm-12 col-xs-12\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px 15px; min-height: 1px; float: left; width: 438.75px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"></div></div></footer>', 'hiring', '', 'Berita_14.jpg', 'panji', 'Rabu', '2021-04-28', '13:03:45', '', '', '0000-00-00', '00:00:00', 2, 'publish'),
-(27, 'Job Vacancy Meat Fresh Sales Manager', 'job-vacancy-meat-fresh-sales-manager', '<div class=\"entry-content\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Meat Fresh Sales Manager</strong></p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Kualifikasi :</strong></p><ul style=\"margin-bottom: 10px;\"><li>Lulusan S1 Manajemen Pemasaran</li><li>Usia maksimal 45 tahun</li><li>Jujur</li><li>Komunikatif</li><li>Bertanggung jawab</li><li>Memiliki kemampuan komunikasi yang baik</li><li>Kreatif & inovatif</li><li>Energik</li><li>Memiliki kemauan belajar yang tinggi</li><li>Pekerja keras</li><li>Dapat bekerja secara tim</li><li>Memiliki kemampuan membuat perencanaan dan pengaturan kerja</li><li>Memiliki SIM A & SIM C</li><li>Diutamakan memiliki pengalaman di posisi yang sama setidaknya 5 tahun</li><li>Diutamakan memiliki pengetahuan tentang daging dan olahan daging</li></ul><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Uraian Tugas :</strong></p><ul style=\"margin-bottom: 10px;\"><li>Menyusun rencana / target penjualan mingguan, bulanan, & tahunan</li><li>Bersama Tim Marketing Menyusun rencana kerja / program promosi untuk mendukung penjualan</li><li>Menyusun budget expense dan pelatihan skill</li><li>Melakukan analisa market dan penjualan</li><li>Menyusun program pengembangan produk dan branding perusahaan</li><li>Menyusun program pengembangan customer dan market</li><li>Memonitor pelaksanaan program penjualan agar sesuai target</li><li>Memastikan tercapainya revenue sesuai target</li></ul></div><footer class=\"entry-meta\" style=\"border-top: 1px solid rgb(244, 244, 244); border-bottom: 1px solid rgb(244, 244, 244); padding: 28px 0px 22px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><div class=\"row\" style=\"border: 0px none; margin: 0px -15px; outline: none 0px; padding: 0px;\"></div></footer>', 'hiring', '', 'rtrtrtrtrty.jpeg', 'panji', 'Rabu', '2021-04-28', '13:05:05', 'jiung', 'Rabu', '2021-04-28', '18:49:35', 2, 'publish'),
-(28, 'Pengumuman Tender Pengadaan Lembaga Atau Profesi Penunjang Untuk Pelaksanaan IPO PT WIDODO MAKMUR PERKASA', 'pengumuman-tender-pengadaan-lembaga-atau-profesi-penunjang-untuk-pelaksanaan-ipo-pt-widodo-makmur-perkasa', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: center;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PENGUMUMAN TENDER</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PENGADAAN LEMBAGA/PROFESI PENUNJANG</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">DALAM RANGKA</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PELAKSANAAN INITIAL PUBLIC OFFERING (IPO)</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PT WIDODO MAKMUR PERKASA</strong></p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Dalam rangka persiapan pelaksanaan Initial Public Offering (IPO) PT Widodo Makmur Perkasa bermaksud<br>melakukan Pengadaan untuk Lembaga dan/atau Profesi Penunjang yang terdiri dari :<br>1. Penjaminan Pelaksana Emisi<br>2. Konsultan Hukum<br>3. Notaris<br>4. KJPP<br>5. Biro Administrasi Efek<br>6. Public Relation<br>7. Percetakan</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Persyaratan umum bagi peserta Pengadaan adalah sebagai berikut :<br>1.Terdaftar sebagai lembaga dan/atau profesi penunjang di Otoritas Jasa Keuangan (OJK)<br>2.Memiliki pengalaman dalam menangani Initial Public Offering/Right Issue/Penambahan Modal dengan<br>HMETD dan transaksi pasar modal lainnya.<br>3.Didukung oleh Tenaga Profesional yang cakap pada bidangnya.<br>4.Bersedia menandatangani pernyataan integritas dan kerahasiaan informasi.<br>Persyaratan khusus untuk PPE bersedia melakukan penjaminan emisi dengan komitmen penuh (full<br>commitment).<br>Lembaga dan/atau Profesi Penunjang yang berminat mengikuti Pengadaan ini harus menyerahkan Surat<br>Pernyataan Minat yang ditandatangani oleh Pimpinan Lembaga dan/atau Profesi Penunjang pada saat<br>Rapat Penjelasan/Aanwijzing yang akan dilaksanakan pada :</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif;\">Hari / Tanggal : Senin, 26 April 2021<br>Tempat :<br>Graha Widodo Makmur, Jl.<br>Raya Cilangkap No. 58<br>Cilangkap, Cipayung Jakarta<br>Timur 13870, Indonesia<br>Waktu :<br>Penjamin Pelaksana Emisi : 09.30 WIB – 11.00 WIB<br>Konsultan Hukum : 11.00 WIB – 12.00 WIB<br>Notaris : 13.00 WIB – 14.00 WIB<br>Biro Administrasi Efek : 14.00 WIB – 15.00 WIB<br>KJPP : 15..00 WIB – 16.00 WIB<br>Public Relations : 16.00 WIB – 17.00 WIB<br>Percetakan : 17.00 WIB – 18.00 WIB</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Untuk informasi lebih lanjut dapat menghubungi.<br>email :</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">– ekoagmi.andriana@wmp-group.co.id<br>– corporate.secretary@wmp-group.co.id<br>Apabila terdapat perubahan agenda, jadwal, maupun pemberitahuan tambahan lainnya. Akan<br>diinformasikan lebih lanjut.</p>', 'hiring', '', 'rrtrtrtrtrt.jpeg', 'panji', 'Rabu', '2021-04-28', '13:06:36', 'jiung', 'Rabu', '2021-04-28', '18:48:15', 4, 'Publish');
+(26, 'Job Vacancy Accounting Manager', 'job-vacancy-accounting-manager', '<div class=\"entry-content\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\"><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Hi Young People!</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">PT Widodo Makmur Perkasa gives the opportunity to young generations in Indonesia to be the part of us. We are hiring for some positions below:</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">1. Accounting Manager</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Sent your requirements (CV, application letter, and other supported documents) to recruitment@wmp-group.co.id.</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">For more information, kindly contact us:<br>Devy (HC Officer): 082122302535<br>Retno (HC Officer): 085960312846</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\">Notes:<br>This recruitment process is free. Please be careful from any deception on behalf of PT Widodo Makmur Perkasa. Only the best candidate will be contacted and processed to the next step.</p></div><footer class=\"entry-meta\" style=\"border-top: 1px solid rgb(244, 244, 244); border-bottom: 1px solid rgb(244, 244, 244); padding: 28px 0px 22px;\"><div class=\"row\" style=\"border: 0px none; margin: 0px -15px; outline: none 0px; padding: 0px;\"><div class=\"col-md-6 col-sm-12 col-xs-12\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px 15px; min-height: 1px; float: left; width: 438.75px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"></div><div class=\"col-md-6 col-sm-12 col-xs-12\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px 15px; min-height: 1px; float: left; width: 438.75px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"></div></div></footer>', 'hiring', '', 'Berita_14.jpg', 'panji', 'Rabu', '2021-04-28', '13:03:45', '', '', '0000-00-00', '00:00:00', 5, 'publish'),
+(27, 'Job Vacancy Meat Fresh Sales Manager', 'job-vacancy-meat-fresh-sales-manager', '<div class=\"entry-content\" style=\"border: 0px none; margin: 0px; outline: none 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Meat Fresh Sales Manager</strong></p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Kualifikasi :</strong></p><ul style=\"margin-bottom: 10px;\"><li>Lulusan S1 Manajemen Pemasaran</li><li>Usia maksimal 45 tahun</li><li>Jujur</li><li>Komunikatif</li><li>Bertanggung jawab</li><li>Memiliki kemampuan komunikasi yang baik</li><li>Kreatif & inovatif</li><li>Energik</li><li>Memiliki kemauan belajar yang tinggi</li><li>Pekerja keras</li><li>Dapat bekerja secara tim</li><li>Memiliki kemampuan membuat perencanaan dan pengaturan kerja</li><li>Memiliki SIM A & SIM C</li><li>Diutamakan memiliki pengalaman di posisi yang sama setidaknya 5 tahun</li><li>Diutamakan memiliki pengetahuan tentang daging dan olahan daging</li></ul><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">Uraian Tugas :</strong></p><ul style=\"margin-bottom: 10px;\"><li>Menyusun rencana / target penjualan mingguan, bulanan, & tahunan</li><li>Bersama Tim Marketing Menyusun rencana kerja / program promosi untuk mendukung penjualan</li><li>Menyusun budget expense dan pelatihan skill</li><li>Melakukan analisa market dan penjualan</li><li>Menyusun program pengembangan produk dan branding perusahaan</li><li>Menyusun program pengembangan customer dan market</li><li>Memonitor pelaksanaan program penjualan agar sesuai target</li><li>Memastikan tercapainya revenue sesuai target</li></ul></div><footer class=\"entry-meta\" style=\"border-top: 1px solid rgb(244, 244, 244); border-bottom: 1px solid rgb(244, 244, 244); padding: 28px 0px 22px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"><div class=\"row\" style=\"border: 0px none; margin: 0px -15px; outline: none 0px; padding: 0px;\"></div></footer>', 'hiring', '', 'rtrtrtrtrty.jpeg', 'panji', 'Rabu', '2021-04-28', '13:05:05', 'jiung', 'Rabu', '2021-04-28', '18:49:35', 3, 'publish'),
+(28, 'Pengumuman Tender Pengadaan Lembaga Atau Profesi Penunjang Untuk Pelaksanaan IPO PT WIDODO MAKMUR PERKASA', 'pengumuman-tender-pengadaan-lembaga-atau-profesi-penunjang-untuk-pelaksanaan-ipo-pt-widodo-makmur-perkasa', '<p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: center;\"><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PENGUMUMAN TENDER</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PENGADAAN LEMBAGA/PROFESI PENUNJANG</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">DALAM RANGKA</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PELAKSANAAN INITIAL PUBLIC OFFERING (IPO)</strong><br><strong style=\"font-weight: bold; border: 0px none; margin: 0px; outline: none 0px; padding: 0px;\">PT WIDODO MAKMUR PERKASA</strong></p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Dalam rangka persiapan pelaksanaan Initial Public Offering (IPO) PT Widodo Makmur Perkasa bermaksud<br>melakukan Pengadaan untuk Lembaga dan/atau Profesi Penunjang yang terdiri dari :<br>1. Penjaminan Pelaksana Emisi<br>2. Konsultan Hukum<br>3. Notaris<br>4. KJPP<br>5. Biro Administrasi Efek<br>6. Public Relation<br>7. Percetakan</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Persyaratan umum bagi peserta Pengadaan adalah sebagai berikut :<br>1.Terdaftar sebagai lembaga dan/atau profesi penunjang di Otoritas Jasa Keuangan (OJK)<br>2.Memiliki pengalaman dalam menangani Initial Public Offering/Right Issue/Penambahan Modal dengan<br>HMETD dan transaksi pasar modal lainnya.<br>3.Didukung oleh Tenaga Profesional yang cakap pada bidangnya.<br>4.Bersedia menandatangani pernyataan integritas dan kerahasiaan informasi.<br>Persyaratan khusus untuk PPE bersedia melakukan penjaminan emisi dengan komitmen penuh (full<br>commitment).<br>Lembaga dan/atau Profesi Penunjang yang berminat mengikuti Pengadaan ini harus menyerahkan Surat<br>Pernyataan Minat yang ditandatangani oleh Pimpinan Lembaga dan/atau Profesi Penunjang pada saat<br>Rapat Penjelasan/Aanwijzing yang akan dilaksanakan pada :</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif;\">Hari / Tanggal : Senin, 26 April 2021<br>Tempat :<br>Graha Widodo Makmur, Jl.<br>Raya Cilangkap No. 58<br>Cilangkap, Cipayung Jakarta<br>Timur 13870, Indonesia<br>Waktu :<br>Penjamin Pelaksana Emisi : 09.30 WIB – 11.00 WIB<br>Konsultan Hukum : 11.00 WIB – 12.00 WIB<br>Notaris : 13.00 WIB – 14.00 WIB<br>Biro Administrasi Efek : 14.00 WIB – 15.00 WIB<br>KJPP : 15..00 WIB – 16.00 WIB<br>Public Relations : 16.00 WIB – 17.00 WIB<br>Percetakan : 17.00 WIB – 18.00 WIB</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\"> </p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">Untuk informasi lebih lanjut dapat menghubungi.<br>email :</p><p style=\"margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-family: Arial, Helvetica, sans-serif; text-align: justify;\">– ekoagmi.andriana@wmp-group.co.id<br>– corporate.secretary@wmp-group.co.id<br>Apabila terdapat perubahan agenda, jadwal, maupun pemberitahuan tambahan lainnya. Akan<br>diinformasikan lebih lanjut.</p>', 'hiring', '', 'rrtrtrtrtrt.jpeg', 'panji', 'Rabu', '2021-04-28', '13:06:36', 'jiung', 'Rabu', '2021-04-28', '18:48:15', 5, 'Publish');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `direksi`
+--
+
+CREATE TABLE `direksi` (
+  `id_direksi` int(10) NOT NULL,
+  `nama_direksi` varchar(50) NOT NULL,
+  `jabatan_direksi` varchar(50) NOT NULL,
+  `deskripsi_jabatan` text NOT NULL,
+  `foto_direksi` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `direksi`
+--
+
+INSERT INTO `direksi` (`id_direksi`, `nama_direksi`, `jabatan_direksi`, `deskripsi_jabatan`, `foto_direksi`) VALUES
+(1, 'Tumiyana', 'Chairman & CEO Widodo Makmur Group', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'Tumiyana.png'),
+(2, 'Teddy M Subekti', 'Direktur Business Development', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'teddy.png'),
+(3, 'Eko Agmi Adriana', 'Direktur Keuangan', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'eko.png'),
+(4, 'Suyatmi', 'Direktur Marketing', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'suyatmi.png'),
+(5, 'Nur Tjahjo', 'Direktur HCD', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'nur.png');
 
 -- --------------------------------------------------------
 
@@ -414,6 +439,29 @@ INSERT INTO `keyword` (`keyword_id`, `keyword_nama`, `keyword_nama_seo`, `keywor
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `komisaris`
+--
+
+CREATE TABLE `komisaris` (
+  `id_komisaris` int(11) NOT NULL,
+  `nama_komisaris` varchar(50) NOT NULL,
+  `jabatan_komisaris` varchar(50) NOT NULL,
+  `deskripsi_jabatan` text NOT NULL,
+  `foto_komisaris` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `komisaris`
+--
+
+INSERT INTO `komisaris` (`id_komisaris`, `nama_komisaris`, `jabatan_komisaris`, `deskripsi_jabatan`, `foto_komisaris`) VALUES
+(1, 'Raden Marlan', 'President Commissioner', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'FOTO-7.png'),
+(2, 'Warsini', 'Commissioner', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'FOTO-8.png'),
+(3, 'Drs.Setyo Wasisto SH', 'Commissioner', 'Tumiyono is an eminent figure in Indonesia’s construction industry. He studied civil engineering at Borobudur University and earned a Masters degree in Business Administration at JIMS. He started his professional career at PT PP Persero and owing to his incisive talent, he became the youngest project manager in the company. He was Finance Director of PT PP (Persero) from 2008 to 2016 and President Director of the same company from 2016 to 2018) and was then President Director of PT Wika Persero (2018 – 2020). In the same period he was also President Commissioner of PT Kereta Cepat China Indonesia 2018 – 2020).', 'FOTO-6.png');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `kontribs`
 --
 
@@ -484,6 +532,49 @@ INSERT INTO `kontribs_kategori` (`kontribs_kategori_id`, `kontribs_kategori_judu
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `logo`
+--
+
+CREATE TABLE `logo` (
+  `logo_id` int(11) NOT NULL,
+  `logo_judul` varchar(220) NOT NULL,
+  `logo_judul_seo` varchar(220) NOT NULL,
+  `logo_desk` text NOT NULL,
+  `logo_url` text NOT NULL,
+  `logo_urutan` int(11) NOT NULL,
+  `logo_keyword` varchar(220) NOT NULL,
+  `logo_meta_desk` varchar(200) NOT NULL,
+  `logo_gambar` text NOT NULL,
+  `logo_post_oleh` varchar(200) NOT NULL,
+  `logo_post_hari` varchar(20) NOT NULL,
+  `logo_post_tanggal` date NOT NULL,
+  `logo_post_jam` time NOT NULL,
+  `logo_update_oleh` varchar(200) NOT NULL,
+  `logo_update_hari` varchar(20) NOT NULL,
+  `logo_update_tanggal` date NOT NULL,
+  `logo_update_jam` time NOT NULL,
+  `logo_dibaca` int(50) NOT NULL,
+  `logo_status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `logo`
+--
+
+INSERT INTO `logo` (`logo_id`, `logo_judul`, `logo_judul_seo`, `logo_desk`, `logo_url`, `logo_urutan`, `logo_keyword`, `logo_meta_desk`, `logo_gambar`, `logo_post_oleh`, `logo_post_hari`, `logo_post_tanggal`, `logo_post_jam`, `logo_update_oleh`, `logo_update_hari`, `logo_update_tanggal`, `logo_update_jam`, `logo_dibaca`, `logo_status`) VALUES
+(82, 'CAM', 'cam', '', 'www.cam.com', 2, '', '', '6.png', 'jiung', 'Senin', '2021-08-16', '16:27:18', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(83, 'PWM', 'pwm', '', 'www.pwm.com', 3, '', '', '13.png', 'jiung', 'Senin', '2021-08-16', '16:28:43', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(84, 'GMP', 'gmp', '', 'www.gmp.com', 4, '', '', '4.png', 'jiung', 'Senin', '2021-08-16', '16:28:58', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(85, 'WMU', 'wmu', '', 'www.wmu.com', 5, '', '', '5.png', 'jiung', 'Senin', '2021-08-16', '16:29:13', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(86, 'WMS', 'wms', '', 'www.widodofood.com', 6, '', '', '3.png', 'jiung', 'Senin', '2021-08-16', '16:29:36', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(87, 'PMP', 'pmp', '', 'www.pmp.com', 7, '', '', '2.png', 'jiung', 'Senin', '2021-08-16', '16:29:50', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(88, 'LMP', 'lmp', '', 'www.lmp.com', 8, '', '', '12.png', 'jiung', 'Senin', '2021-08-16', '16:30:12', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(89, 'KEI', 'kei', '', 'www.kei.com', 9, '', '', '1.png', 'jiung', 'Senin', '2021-08-16', '16:30:29', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(90, 'Pasir Tengah', 'pasir-tengah', '', 'www.pasirtengah.com', 1, '', '', '7.png', 'jiung', 'Senin', '2021-08-16', '16:26:43', '', '', '0000-00-00', '00:00:00', 0, 'publish');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `products`
 --
 
@@ -534,12 +625,95 @@ CREATE TABLE `products_category` (
   `products_cat_status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data untuk tabel `products_category`
+-- Struktur dari tabel `produk`
 --
 
-INSERT INTO `products_category` (`products_cat_id`, `products_cat_judul`, `products_cat_judul_seo`, `products_cat_desk`, `products_cat_keyword`, `products_cat_meta_desk`, `products_cat_gambar`, `products_cat_post_oleh`, `products_cat_post_hari`, `products_cat_post_tanggal`, `products_cat_post_jam`, `products_cat_update_oleh`, `products_cat_update_hari`, `products_cat_update_tanggal`, `products_cat_update_jam`, `products_cat_dibaca`, `products_cat_status`) VALUES
-(17, 'Engagement Event', 'engagement-event', '<p>Engagement Event<br></p>', 'Engagement Event', 'Engagement Event', '', 'dhawy', 'Rabu', '2021-01-27', '08:07:46', '', '', '0000-00-00', '00:00:00', 0, 'delete');
+CREATE TABLE `produk` (
+  `id_produk` int(11) NOT NULL,
+  `nama_produk` varchar(50) NOT NULL,
+  `produk_seo` varchar(50) NOT NULL,
+  `deskripsi_produk` text NOT NULL,
+  `bidang_produk` text NOT NULL,
+  `foto_produk` varchar(200) NOT NULL,
+  `website` varchar(50) NOT NULL,
+  `facebook` varchar(50) NOT NULL,
+  `instagram` varchar(50) NOT NULL,
+  `whatsapp` int(13) NOT NULL,
+  `shopee` varchar(50) NOT NULL,
+  `tokopedia` varchar(50) NOT NULL,
+  `bukalapak` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `produk`
+--
+
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `produk_seo`, `deskripsi_produk`, `bidang_produk`, `foto_produk`, `website`, `facebook`, `instagram`, `whatsapp`, `shopee`, `tokopedia`, `bukalapak`) VALUES
+(1, 'PT. Pasir Tengah', 'pasir-tengah', 'Kemitraan Sapi Potong PT Pasir Tengah dilaksanakan untuk membantu peternak rakyat yang sering mengalami permasalahan dalam usahanya. Kendala yang sering dialami oleh peternak rakyat pada saat melakukan usaha pemeliharaan sapi potong diantaranya. kesulitan akses modal di lembaga keuangan dan bunga yang tinggi, tidak ada transfer teknologi, resiko kegagalan perkawinan, resiko kematian, harga panen yang bergantung pada tengkulak, sapi yang tidak dibayarkan, dll.', 'Sapi', '350.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', ''),
+(2, 'PT. Cianjur Arta Makmur', 'cianjur-arta-makmur', 'Cianjur Arta Makmur merupakan unit bisnis dari Widodo Makmur Perkasa yang bergerak di bidang perdagangan poduk daging sapi, beroperasi sejak tahun 2008 yang berbasis ‘Integrated System‘. Sapi-sapi bakalan yang didatangkan dari Australia dipelihara di Cianjur Farm PT. Pasir Tengah dan kemudian diproses oleh Cianjur Arta Makmur menjadi produk daging sapi segar berkualitas prima (premium and high quality chilled beef), beku (frozen beef) dan produk-produk sampingan.', 'Daging-Sapi', 'meat1.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', ''),
+(3, 'PT. Prima Widodo Makmur', 'prima-widodo-makmur', 'PT Prima Widodo Makmur (PWM) bergerak di bidang produksi pangan olahan yang bersumber dari daging sapi dan ayam meliputi bakso, sosis, naget ayam dalam berbagai varian terutama untuk memenuhi kebutuhan hotel, restoran, retail dan distributor. Rumah Potong Hewan (RPH) kami berstandar Internasional dan terbesar di Indonesia yang menerapkan standar higienitas tinggi untuk menjamin kualitas produknya.', 'Produk Olahan', 'meatpros1.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', ''),
+(4, 'PT. Garut Makmur Perkasa', 'garut-makmur-perkasa', 'PT Garut Makmur Perkasa (GMP) merupakan perusahaan yang memproduksi kulit sebagai bahan baku industri fashion, upholstery dan automotive. Berdiri pada tahun 2015 dan resmi menjadi anak perusahaan dari lini bisnis MEAT di bawah manajemen PT Cianjur Arta Makmur (CAM) yang merupakan salah satu lini bisnis di bawah manajemen PT Widodo Makmur Perkasa (WMP).', 'Leather', 'leather1.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', ''),
+(5, 'PT. Widodo Makmur Unggas', 'widodo-makmur-unggas', 'Widodo Makmur Unggas adalah bisnis unggas yang terintegrasi secara vertikal yang mengendalikan pabrik pakan skala besar, peternakan pembibitan, pabrik pembenihan, peternakan komersial, peternakan layer, rumah potong hewan dan operasi kemitraan terkait. Di bawah dukungan penuh semangat dari tim kami yang cakap, sistem manajemen inovatif, pengetahuan pertanian yang mendalam, kolaborasi komunitas penuh, dan fasilitas serta teknologi yang patut dicontoh; kami berhasil memastikan pengiriman yang andal dari produk berkualitas tinggi kami ke seluruh Indonesia.', 'Poultry', 'poultry1.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', ''),
+(6, 'PT. Widodofood Makmur Sejahtera', 'widodo-makmur-sejatra', 'PT WidodoFood Mkamur Sejahtera (WMS) adalah anak perusahaan yang bergerak dalam bisnis Food. WMS bergerak di bidang produksi beras kemasan. Komitmen WMP yang tercantum dalam visi, menjadi jembatan kesejahteraan petani dan peternak diwujudkan dengan menjadikan para petani lokal sebagai mitra pemasok bahan baku beras yang dibutuhkan. Sumber bahan baku diperoleh dari sentra lumbung-lumbung padi di Pulau Jawa.', 'Komoditas', 'comodity1.jpg', 'widodomakmurperkasa.co.id', 'https://www.facebook.com/widodomakmurofficial/', 'https://www.instagram.com/widodomakmurperkasa/?hl=', 0, '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `produk_detail`
+--
+
+CREATE TABLE `produk_detail` (
+  `id_produk_detail` int(11) NOT NULL,
+  `id_produk` int(10) NOT NULL,
+  `nama_produk_detail` varchar(50) NOT NULL,
+  `deskripsi_produk_detail` text NOT NULL,
+  `foto_produk_detail` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `produk_detail`
+--
+
+INSERT INTO `produk_detail` (`id_produk_detail`, `id_produk`, `nama_produk_detail`, `deskripsi_produk_detail`, `foto_produk_detail`) VALUES
+(1, 1, 'sapi 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', '350.jpg'),
+(2, 1, 'sapi 2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'livestock2.jpg'),
+(3, 2, 'meat 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat1.jpg'),
+(4, 1, 'sapi 3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'lv3.jpg'),
+(5, 1, 'sapi 4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'lv4.jpg'),
+(6, 1, 'sapi 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'lv5.jpg'),
+(7, 1, 'sapi 6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'live6.jpg'),
+(8, 2, 'meat 2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat2.jpg'),
+(9, 2, 'meat 3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat3.jpg'),
+(10, 2, 'meat 4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat4.jpg'),
+(11, 2, 'meat 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat5.jpg'),
+(12, 2, 'meat 6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meat6.jpg'),
+(13, 3, 'produk olahan 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros1.jpg'),
+(14, 3, 'produk olahan 2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros2.jpg'),
+(15, 3, 'produk olahan 3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros3.jpg'),
+(16, 3, 'produk olahan 4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros4.jpg'),
+(17, 3, 'produk olahan 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros5.jpg'),
+(18, 3, 'produk olahan 6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'meatpros6.jpg'),
+(19, 4, 'Leather 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather1.jpg'),
+(20, 4, 'Leather  2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather2.jpg'),
+(21, 4, 'Leather  3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather3.jpg'),
+(22, 4, 'Leather  4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather4.jpg'),
+(23, 4, 'Leather 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather5.jpg'),
+(24, 4, 'Leather  6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'leather6.jpg'),
+(25, 5, 'Ayam 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry1.jpg'),
+(26, 5, 'Ayam 2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry2.jpg'),
+(27, 5, 'Ayam 3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry3.jpg'),
+(28, 5, 'Ayam 4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry4.jpg'),
+(29, 5, 'Ayam 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry5.jpg'),
+(30, 5, 'Ayam 6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'poultry6.jpg'),
+(31, 6, 'Komoditas 1', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity1.jpg'),
+(32, 6, 'Komoditas 2', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity2.jpg'),
+(33, 6, 'Komoditas 3', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity3.jpg'),
+(34, 6, 'Komoditas 4', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity4.jpg'),
+(35, 6, 'Komoditas 5', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity5.jpg'),
+(36, 6, 'Komoditas 6', 'sapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi\r\nsapi sapi sapi sapi sapi sapi sapi sapi', 'comodity6.jpg');
 
 -- --------------------------------------------------------
 
@@ -572,9 +746,9 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slider_id`, `slider_judul`, `slider_judul_seo`, `slider_desk`, `slider_keyword`, `slider_meta_desk`, `slider_gambar`, `slider_post_oleh`, `slider_post_hari`, `slider_post_tanggal`, `slider_post_jam`, `slider_update_oleh`, `slider_update_hari`, `slider_update_tanggal`, `slider_update_jam`, `slider_dibaca`, `slider_status`) VALUES
-(79, 'Slider sapi', 'slider-sapi', '', '', 'turunan', 'RPHd.png', 'jiung', 'Kamis', '2021-07-29', '12:26:29', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
-(80, 'slider2', 'slider2', '', '', 'active', 'CIANJUR.png', 'jiung', 'Kamis', '2021-07-29', '12:25:31', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
-(81, 'slider Ayam', 'slider-ayam', '', '', 'turunan', 'DOxc.png', 'jiung', 'Kamis', '2021-07-29', '12:26:06', '', '', '0000-00-00', '00:00:00', 0, 'publish');
+(79, 'Meat Processing', 'meat-processing', 'PT Cianjur Arta Makmur memiliki Rumah Potong Hewan (RPH) modern dan terbesar di Indonesia ini telah memiliki sertifikasi NKV dari Dinas Peternakan serta sertifikasi halal MUI.', '', 'turunan', 'RPHd.png', 'jiung', 'Kamis', '2021-07-29', '12:26:29', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(80, 'Livestock', 'livestock', 'PT Pasir Tengah memenuhi kurang lebih 15% dari total kebutuhan pasar sapi potong nasional. Secara kontinu pemenuhan tersebut disuplai dari 4 fasilitas farm yang tersebar di beberapa lokasi strategis di daerah Cianjur, Cariu, Cileungsi (ketiganya berada di wilayah Jawa Barat) dan Bayat (Klaten, Jawa Tengah) dengan total kapasitas hingga 135 ribu ekor per tahun.', '', 'active', 'CIANJUR.png', 'jiung', 'Kamis', '2021-07-29', '12:25:31', '', '', '0000-00-00', '00:00:00', 0, 'publish'),
+(81, 'Poultry', 'pultry', 'PT Widodo Makmur Unggas Tbk adalah bisnis unggas yang terintegrasi secara vertikal yang mengendalikan pabrik pakan skala besar, peternakan pembibitan, pabrik penetasan, peternakan komersial, peternakan layer, rumah potong hewan dan operasi kemitraan terkait.', '', 'turunan', 'DOxc.png', 'jiung', 'Kamis', '2021-07-29', '12:26:06', '', '', '0000-00-00', '00:00:00', 0, 'publish');
 
 -- --------------------------------------------------------
 
@@ -609,8 +783,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `nama`, `email`, `password`, `level`, `id_session`, `user_post_hari`, `user_post_tanggal`, `user_post_jam`, `user_update_hari`, `user_update_tanggal`, `user_update_jam`, `user_gambar`, `user_status`, `user_login_tanggal`, `user_login_jam`, `user_login_status`, `user_stat`) VALUES
-(6, 'dhawy', 'dhawy arkan', 'dhawy@gmail.com', '21d564edcc5b55c0af9b3684ef7df4d38b36c224', '1', '1d3ee28b20064eb055ea2315493770bf-20210422105518', 'Kamis', '2020-06-25', '15:14:48', 'Kamis', '2021-04-22', '21:11:05', 'user-profile-avatar-job-social-businessman-profession-user-profile-png-512_512.png', '1', '2021-06-22', '10:48:44', 'online', 'Publish'),
-(30, 'jiung', 'jiung', 'adjiesans@gmail.com', '24c05ce1409afb5dad4c5bddeb924a4bc3ea00f5', '1', '1d00fc6c047a79e4473a253bbb47d62e-20210608140714', 'Kamis', '2021-04-22', '10:52:42', 'Selasa', '2021-06-08', '14:07:14', 'luffy.jpg', '1', '2021-07-29', '12:24:26', 'online', 'publish'),
+(6, 'dhawy', 'dhawy arkan', 'dhawy@gmail.com', '21d564edcc5b55c0af9b3684ef7df4d38b36c224', '1', '1d3ee28b20064eb055ea2315493770bf-20210422105518', 'Kamis', '2020-06-25', '15:14:48', 'Kamis', '2021-04-22', '21:11:05', 'user-profile-avatar-job-social-businessman-profession-user-profile-png-512_512.png', '1', '2021-08-09', '12:03:33', 'online', 'Publish'),
+(30, 'jiung', 'jiung', 'adjiesans@gmail.com', '24c05ce1409afb5dad4c5bddeb924a4bc3ea00f5', '1', '1d00fc6c047a79e4473a253bbb47d62e-20210608140714', 'Kamis', '2021-04-22', '10:52:42', 'Selasa', '2021-06-08', '14:07:14', 'luffy.jpg', '1', '2021-08-24', '16:22:51', 'online', 'publish'),
 (31, 'panji', 'Panji', 'panji@gmail.com', '847e04007f984790744ed34d7c5ed34fc178242c', '3', '73845d4bc9599b7e24578f97e79634dc-20210426102014', 'Kamis', '2021-04-22', '11:23:01', 'Senin', '2021-04-26', '10:20:14', '', '1', '2021-05-19', '08:32:04', 'online', 'publish'),
 (33, 'shita', 'shita', '', '9f07348a2c5f6f34562739558fcb1f0105fcb719', '2', 'd41d8cd98f00b204e9800998ecf8427e-20210609223640', 'Selasa', '2021-06-08', '14:18:08', 'Rabu', '2021-06-09', '22:36:40', '', '1', '2021-06-09', '22:36:55', 'online', 'publish');
 
@@ -816,6 +990,12 @@ ALTER TABLE `blogs`
   ADD PRIMARY KEY (`blogs_id`);
 
 --
+-- Indeks untuk tabel `direksi`
+--
+ALTER TABLE `direksi`
+  ADD PRIMARY KEY (`id_direksi`);
+
+--
 -- Indeks untuk tabel `divisi`
 --
 ALTER TABLE `divisi`
@@ -834,6 +1014,12 @@ ALTER TABLE `keyword`
   ADD PRIMARY KEY (`keyword_id`);
 
 --
+-- Indeks untuk tabel `komisaris`
+--
+ALTER TABLE `komisaris`
+  ADD PRIMARY KEY (`id_komisaris`);
+
+--
 -- Indeks untuk tabel `kontribs`
 --
 ALTER TABLE `kontribs`
@@ -846,6 +1032,12 @@ ALTER TABLE `kontribs_kategori`
   ADD PRIMARY KEY (`kontribs_kategori_id`);
 
 --
+-- Indeks untuk tabel `logo`
+--
+ALTER TABLE `logo`
+  ADD PRIMARY KEY (`logo_id`);
+
+--
 -- Indeks untuk tabel `products`
 --
 ALTER TABLE `products`
@@ -856,6 +1048,18 @@ ALTER TABLE `products`
 --
 ALTER TABLE `products_category`
   ADD PRIMARY KEY (`products_cat_id`);
+
+--
+-- Indeks untuk tabel `produk`
+--
+ALTER TABLE `produk`
+  ADD PRIMARY KEY (`id_produk`);
+
+--
+-- Indeks untuk tabel `produk_detail`
+--
+ALTER TABLE `produk_detail`
+  ADD PRIMARY KEY (`id_produk_detail`);
 
 --
 -- Indeks untuk tabel `slider`
@@ -941,6 +1145,12 @@ ALTER TABLE `blogs`
   MODIFY `blogs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
+-- AUTO_INCREMENT untuk tabel `direksi`
+--
+ALTER TABLE `direksi`
+  MODIFY `id_direksi` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT untuk tabel `divisi`
 --
 ALTER TABLE `divisi`
@@ -971,6 +1181,12 @@ ALTER TABLE `kontribs_kategori`
   MODIFY `kontribs_kategori_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
+-- AUTO_INCREMENT untuk tabel `logo`
+--
+ALTER TABLE `logo`
+  MODIFY `logo_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+
+--
 -- AUTO_INCREMENT untuk tabel `products`
 --
 ALTER TABLE `products`
@@ -981,6 +1197,18 @@ ALTER TABLE `products`
 --
 ALTER TABLE `products_category`
   MODIFY `products_cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT untuk tabel `produk`
+--
+ALTER TABLE `produk`
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT untuk tabel `produk_detail`
+--
+ALTER TABLE `produk_detail`
+  MODIFY `id_produk_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT untuk tabel `slider`
