@@ -47,6 +47,12 @@
                         <input type="text" class="form-control" name="slider_judul" placeholder="">
                       </div>
                     </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Deskripsi</label>
+                        <textarea class="textarea"  name ="slider_desk" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">

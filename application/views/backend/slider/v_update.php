@@ -62,6 +62,12 @@
                         </select>
                       </div>
                     </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Deskripsi</label>
+                        <textarea class="textarea"  name ="slider_desk" style="width: 100%; height: 100px;"><?php echo $rows['slider_desk'] ?></textarea>
+                      </div>
+                    </div>
                   <div class="col-sm-12">
                     <div class="form-group">
                       <label>Gambar Sebelumnya</label>
@@ -78,7 +84,7 @@
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar">
                           <label class="custom-file-label" for="exampleInputFile">File gambar sebelumnya <?php echo $rows['slider_gambar'] ?></label>
-                        
+
                         </div>
                       </div>
                     </div>
