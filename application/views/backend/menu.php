@@ -122,6 +122,22 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="<?php echo base_url(); ?>aspanel/products" class="nav-link" >
+            <i class="nav-icon fab fa-schlix"></i>
+            <p>
+              Produk
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?php echo base_url(); ?>aspanel/logo" class="nav-link" >
+            <i class="nav-icon fab fa-schlix"></i>
+            <p>
+              Logo Bisnis
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="#" class="nav-link " >
             <i class="nav-icon fab fa-buffer"></i>
             <p>
@@ -144,13 +160,6 @@
                 <p>Daftar Bisnis</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="<?php echo base_url(); ?>aspanel/logo" class="nav-link ">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Logo Bisnis</p>
-              </a>
-            </li>
-
           </ul>
         </li>
         <li class="nav-item ">

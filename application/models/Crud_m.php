@@ -26,6 +26,13 @@ class Crud_m extends CI_model{
       $this->db->where($this->id_identitas, $id);
       return $this->db->get($this->table_identitas)->row();
   }
+
+  function get_by_id_produk($id,$table_ids,$table_nama)
+  {
+
+      $this->db->where($table_ids, $id);
+      return $this->db->get($table_nama)->row();
+  }
   function get_by_id_products($products_id)
   {
       $this->db->where($this->products_id, $products_id);

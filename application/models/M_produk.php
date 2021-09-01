@@ -5,7 +5,7 @@ class M_produk extends CI_Model{
   public $order = 'DESC';
 
 
-
+  
 
  function get_by_id2($ids)
   {
