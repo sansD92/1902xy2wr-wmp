@@ -6,13 +6,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>List Of Department Storage Bin</h1>
+          <h1>Daftar Hapus Department </h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Home</a></li>
-            <li class="breadcrumb-item active"><a href="<?php echo base_url()?>aspanel/divisi">List Of Department</a></li>
-            <li class="breadcrumb-item active">List Of Department Storage Bin</li>
+            <li class="breadcrumb-item active"><a href="<?php echo base_url()?>aspanel/divisi">Daftar Department</a></li>
+            <li class="breadcrumb-item active">Daftar Hapus Department</li>
           </ol>
         </div>
       </div>
@@ -24,15 +24,15 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/divisi">Back To List Of Department</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Kembali" href="<?php echo base_url()?>aspanel/divisi">Kembali</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Code</th>
+                  <th>Kode Departement</th>
                   <th>Department</th>
-                  <th>Action</th>
+                  <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -57,9 +57,9 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Code</th>
+                  <th>Kode Departement</th>
                   <th>Department</th>
-                  <th>Action</th>
+                  <th>Aksi</th>
                 </tr>
                 </tfoot>
               </table>

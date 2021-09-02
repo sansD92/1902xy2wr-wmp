@@ -6,12 +6,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>List Of Business Categories</h1>
+          <h1>Daftar Kategori Bisnis</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">List Of Business Categories</li>
+            <li class="breadcrumb-item active">Daftar Kategori Bisnis</li>
           </ol>
         </div>
       </div>
@@ -23,16 +23,16 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/bisnis_kategori_tambahkan"><i class="fas fa-plus-circle"></i> Add</a></h3>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/bisnis_kategori_storage_bin"><i class="fas fa-trash"></i> Storage Bin</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Tambah" href="<?php echo base_url()?>aspanel/bisnis_kategori_tambahkan"><i class="fas fa-plus-circle"></i> Tambah</a></h3>
+              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Sampah" href="<?php echo base_url()?>aspanel/bisnis_kategori_storage_bin"><i class="fas fa-trash"></i> Sampah</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Date</th>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Tanggal</th>
+                  <th>Judul</th>
+                  <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -57,9 +57,9 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Date</th>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Tanggal</th>
+                  <th>Judul</th>
+                  <th>Aksi</th>
                 </tr>
                 </tfoot>
               </table>

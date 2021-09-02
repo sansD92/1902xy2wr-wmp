@@ -24,14 +24,14 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
-            <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_tambahkan"><i class="fas fa-plus-circle"></i> Tambah</a></h3>
+            <a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/products_tambahkan"><i class="fas fa-plus-circle"></i> Produk</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Nama Produk</th>
+                  <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -42,7 +42,7 @@
                   ?>
 
                 <tr>
-                  <td><a href="<?php echo base_url()?>aspanel/products_disc/<?=$row['id_produk']?>"></a> <?=$row['nama_produk']?></td>
+                  <td><img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/produk/<?php echo $row['foto_produk'] ?>" alt="Gambar"><div class="row"><?=$row['nama_produk']?></div></td>
                   <td>
                     <?php
                     echo"
@@ -57,8 +57,8 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Nama Produk</th>
+                  <th>Aksi</th>
                 </tr>
                 </tfoot>
               </table>

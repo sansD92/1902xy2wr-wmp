@@ -3083,66 +3083,42 @@ class Aspanel extends CI_Controller {
 					$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
+					$config['quality']= '100%';
 					$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
-					if ($this->input->post('products_keyword')!=''){
-								$tag_seo = $this->input->post('products_keyword');
-								$tag=implode(',',$tag_seo);
-						}else{
-								$tag = '';
-						}
-					$tag = $this->input->post('products_keyword');
-					$tags = explode(",", $tag);
-					$tags2 = array();
-					foreach($tags as $t)
-					{
-						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-						$a = $this->db->query($sql)->result_array();
-						if(count($a) == 0){
-							$data = array('keyword_nama'=>$this->db->escape_str($t),
-									'keyword_username'=>$this->session->username,
-									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-									'count'=>'0');
-							$this->As_m->insert('keyword',$data);
-						}
-						$tags2[] = $this->mylibrary->seo_title($t);
-					}
-					$tags = implode(",", $tags2);
+
 					if ($hasil22['file_name']=='' ){
 									$data = array(
-													'products_post_oleh'=>$this->session->username,
-													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
-													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
-													'products_desk'=>$this->input->post('products_desk'),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
-													'products_post_hari'=>hari_ini(date('w')),
-													'products_post_tanggal'=>date('Y-m-d'),
-													'products_post_jam'=>date('H:i:s'),
-													'products_dibaca'=>'0',
-													'products_status'=>'publish',
-													'products_meta_desk'=>$this->input->post('products_meta_desk'),
-													'products_keyword'=>$tag);
+													'nama_produk'=>$this->input->post('nama_produk'),
+													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'website'=>$this->input->post('website'),
+													'facebook'=>$this->input->post('facebook'),
+													'instagram'=>$this->input->post('instagram'),
+													'whatsapp'=>$this->input->post('whatsapp'),
+													'shopee'=>$this->input->post('shopee'),
+													'tokopedia'=>$this->input->post('tokopedia'),
+													'bukalapak'=>$this->input->post('bukalapak'));
 
 												}else {
 												$data = array(
-													'products_post_oleh'=>$this->session->username,
-													'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
-													'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
-													'products_desk'=>$this->input->post('products_desk'),
-													'products_cat_id'=>$this->input->post('products_cat_id'),
-													'products_post_hari'=>hari_ini(date('w')),
-													'products_post_tanggal'=>date('Y-m-d'),
-													'products_post_jam'=>date('H:i:s'),
-													'products_dibaca'=>'0',
-													'products_status'=>'publish',
-													'products_gambar'=>$hasil22['file_name'],
-													'products_meta_desk'=>$this->input->post('products_meta_desk'),
-													'products_keyword'=>$tag);
+													'nama_produk'=>$this->input->post('nama_produk'),
+													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'website'=>$this->input->post('website'),
+													'facebook'=>$this->input->post('facebook'),
+													'instagram'=>$this->input->post('instagram'),
+													'whatsapp'=>$this->input->post('whatsapp'),
+													'shopee'=>$this->input->post('shopee'),
+													'tokopedia'=>$this->input->post('tokopedia'),
+													'bukalapak'=>$this->input->post('bukalapak'),
+													'foto_produk'=>$hasil22['file_name']);
 												}
-								$this->As_m->insert('products',$data);
+								$this->As_m->insert('produk',$data);
 								redirect('aspanel/products');
 				}else{
 					$data['karyawan_menu_open']   = '';
@@ -3161,8 +3137,6 @@ class Aspanel extends CI_Controller {
 		 			$data['produk_category']   = '';
 		 			$data['produk']   = 'active';
 		 			$data['services']   = '';
-					$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','DESC');
-					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/products/v_tambahkan', $data);
 				}
 	}
@@ -3186,69 +3160,48 @@ class Aspanel extends CI_Controller {
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
-			if ($this->input->post('products_keyword')!=''){
-						$tag_seo = $this->input->post('products_keyword');
-						$tag=implode(',',$tag_seo);
-				}else{
-						$tag = '';
-				}
-			$tag = $this->input->post('products_keyword');
-			$tags = explode(",", $tag);
-			$tags2 = array();
-			foreach($tags as $t)
-			{
-				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-				$a = $this->db->query($sql)->result_array();
-				if(count($a) == 0){
-					$data = array('keyword_nama'=>$this->db->escape_str($t),
-							'keyword_username'=>$this->session->username,
-							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-							'count'=>'0');
-					$this->As_m->insert('keyword',$data);
-				}
-				$tags2[] = $this->mylibrary->seo_title($t);
-			}
-			$tags = implode(",", $tags2);
 						if ($hasil22['file_name']==''){
 										$data = array(
-											'products_update_oleh'=>$this->session->username,
-											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
-											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
-											'products_desk'=>$this->input->post('products_desk'),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
-											'products_update_hari'=>hari_ini(date('w')),
-											'products_update_tanggal'=>date('Y-m-d'),
-											'products_update_jam'=>date('H:i:s'),
-											'products_meta_desk'=>$this->input->post('products_meta_desk'),
-											'products_keyword'=>$tag);
-											$where = array('products_id' => $this->input->post('products_id'));
-							 				$this->db->update('products', $data, $where);
+											'nama_produk'=>$this->input->post('nama_produk'),
+											'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'website'=>$this->input->post('website'),
+											'facebook'=>$this->input->post('facebook'),
+											'instagram'=>$this->input->post('instagram'),
+											'whatsapp'=>$this->input->post('whatsapp'),
+											'shopee'=>$this->input->post('shopee'),
+											'tokopedia'=>$this->input->post('tokopedia'),
+											'bukalapak'=>$this->input->post('bukalapak'));
+											$where = array('id_produk' => $this->input->post('id_produk'));
+							 				$this->db->update('produk', $data, $where);
 						}else{
 										$data = array(
-											'products_update_oleh'=>$this->session->username,
-											'products_judul'=>$this->db->escape_str($this->input->post('products_judul')),
-											'products_judul_seo'=>$this->mylibrary->seo_title($this->input->post('products_judul')),
-											'products_desk'=>$this->input->post('products_desk'),
-											'products_cat_id'=>$this->input->post('products_cat_id'),
-											'products_update_hari'=>hari_ini(date('w')),
-											'products_update_tanggal'=>date('Y-m-d'),
-											'products_update_jam'=>date('H:i:s'),
-											'products_gambar'=>$hasil22['file_name'],
-											'products_meta_desk'=>$this->input->post('products_meta_desk'),
-											'products_keyword'=>$tag);
-											$where = array('products_id' => $this->input->post('products_id'));
-											$_image = $this->db->get_where('products',$where)->row();
-											$query = $this->db->update('products',$data,$where);
+											'nama_produk'=>$this->input->post('nama_produk'),
+											'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'website'=>$this->input->post('website'),
+											'facebook'=>$this->input->post('facebook'),
+											'instagram'=>$this->input->post('instagram'),
+											'whatsapp'=>$this->input->post('whatsapp'),
+											'shopee'=>$this->input->post('shopee'),
+											'tokopedia'=>$this->input->post('tokopedia'),
+											'bukalapak'=>$this->input->post('bukalapak'),
+											'foto_produk'=>$hasil22['file_name']);
+											$where = array('id_produk' => $this->input->post('id_produk'));
+											$_image = $this->db->get_where('produk',$where)->row();
+											$query = $this->db->update('produk',$data,$where);
 											if($query){
-												unlink("assets/frontend/produk/".$_image->products_gambar);
+												unlink("assets/frontend/produk/".$_image->foto_produk);
 											}
 						}
 						redirect('aspanel/products');
 		}else{
 			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('products', array('products_judul_seo' => $id))->row_array();
+					 $proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
 			}else{
-					$proses = $this->As_m->edit('products', array('products_judul_seo' => $id, 'products_post_oleh' => $this->session->username))->row_array();
+					$proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
 			}
 			$data = array('rows' => $proses);
 			$data['karyawan_menu_open']   = '';
@@ -3267,26 +3220,8 @@ class Aspanel extends CI_Controller {
  			$data['produk_category']   = '';
  			$data['produk']   = 'active';
  			$data['services']   = '';
-			$data['records'] = $this->Crud_m->view_ordering('products_category','products_cat_id','ASC');
-			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 			$this->load->view('backend/products/v_update', $data);
 		}
-	}
-	function products_delete_temp()
-	{
-			cek_session_akses('products',$this->session->id_session);
-			$data = array('products_status'=>'delete');
-      $where = array('products_id' => $this->uri->segment(3));
-			$this->db->update('products', $data, $where);
-			redirect('aspanel/products');
-	}
-	function products_restore()
-	{
-			cek_session_akses('products',$this->session->id_session);
-			$data = array('products_status'=>'Publish');
-      $where = array('products_id' => $this->uri->segment(3));
-			$this->db->update('products', $data, $where);
-			redirect('aspanel/products_storage_bin');
 	}
 	public function products_delete()
 	{

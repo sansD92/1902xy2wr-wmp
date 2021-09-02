@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Add Department</h1>
+          <h1>Tambah Department</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/divisi">Department</a></li>
-            <li class="breadcrumb-item active">Add Department</li>
+            <li class="breadcrumb-item active">Tambah Department</li>
           </ol>
         </div>
       </div>
@@ -42,7 +42,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Department Code</label>
+                        <label>Kode Department</label>
                         <input type="text" class="form-control" name="products_cat_meta_desk" placeholder="Kode divisi">
                       </div>
                     </div>
@@ -50,7 +50,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Department Name</label>
+                        <label>Nama Department</label>
                         <input type="text" class="form-control" name="products_cat_judul" placeholder="Nama Divisi">
                       </div>
                     </div>
@@ -58,7 +58,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Description</label>
+                        <label>Deskripsi</label>
                         <textarea class="textarea"  name ="products_cat_desk" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
@@ -68,8 +68,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Add Products"><i class="fas fa-file-upload"></i> Add</button>
-                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>aspanel/divisi"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
+                <button type="submit" name ="submit" class="btn btn-success" title="Simpan"><i class="fas fa-file-upload"></i> Simpan</button>
+                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/divisi"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
                 <?php echo form_close(); ?>

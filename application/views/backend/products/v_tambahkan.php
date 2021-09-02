@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Add Products</h1>
+          <h1>Tambah Produk</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Products</a></li>
-            <li class="breadcrumb-item active">Add Products</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Daftar Produk</a></li>
+            <li class="breadcrumb-item active">Tambah Produk</li>
           </ol>
         </div>
       </div>
@@ -43,57 +43,75 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Title</label>
-                        <input type="text" class="form-control" name="products_judul" placeholder="Interesting Title Ideas">
+                        <label>Nama Perusahaan</label>
+                        <input type="text" class="form-control" name="nama_produk" placeholder="Nama Produk">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Bidang</label>
+                        <input type="text" class="form-control" name="bidang_produk" placeholder="Bidang">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Website</label>
+                        <input type="text" class="form-control" name="website" placeholder="Alamat Website">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Facebook</label>
+                        <input type="text" class="form-control" name="facebook" placeholder="Alamat Facebook">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Instagram</label>
+                        <input type="text" class="form-control" name="instagram" placeholder="Alamat Instagram">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Whatsapp</label>
+                        <input type="text" class="form-control" name="whatsapp" placeholder="Alamat Whatsapp">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Shopee</label>
+                        <input type="text" class="form-control" name="shopee" placeholder="Alamat Shopee">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Tokopedia</label>
+                        <input type="text" class="form-control" name="tokopedia" placeholder="Alamat Tokopedia">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label>Bukalapak</label>
+                        <input type="text" class="form-control" name="bukalapak" placeholder="Alamat Bukalapak">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Deskripsi</label>
+                        <textarea class="textarea"  name ="deskripsi_produk" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
-                  <div class="form-group">
-                    <label for="inputName" class="col-sm-3 col-form-label">Category</label>
-                    <div class="col-sm-12">
-                      <select name='products_cat_id' class="form-control select2" style="width: 100%;">
-                        <?php foreach ($records as $row) {
-                          if ($rows['products_cat_id'] == $row['products_cat_id']){
-                            echo"<option selected='selected' value='$row[products_cat_id]'>$row[products_cat_judul]</option>";
-                          }else{
-                            echo"<option value='$row[products_cat_id]'>$row[products_cat_judul]</option>";
-                       }
-                     } ?>
-                    </select>
-                    </div>
-                  </div>
-                </div></div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="textarea"  name ="products_desk" style="width: 100%; height: 100px;"></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Meta Description</label>
-                        <input type="text" class="form-control" name="products_meta_desk" placeholder="Meta description">
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <!-- text input -->
-                      <div class="form-group">
-                        <label>Keywords</label>
-                        <input type="text" class="form-control tags" id="blogs_keyword" value="" name="products_keyword"  data-role="tagsinput"/>
-                          <?php foreach ($tag as $tag){    } ?>
-                      </div>
-                    </div>
                     <div class="col-sm-4">
                       <div class="form-group">
                         <label>Gambar</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
+                          <label class="custom-file-label" for="exampleInputFile">Tambah Gambar</label>
                         </div>
                       </div>
                     </div>
@@ -102,8 +120,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Add Products"><i class="fas fa-file-upload"></i> Add</button>
-                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
+                <button type="submit" name ="submit" class="btn btn-success" title="Simpan"><i class="fas fa-file-upload"></i> Simpan</button>
+                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
                 <?php echo form_close(); ?>

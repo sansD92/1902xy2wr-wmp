@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Tambahkan Produk</h1>
+          <h1>Tambah Produk Perusahaan</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Products</a></li>
-            <li class="breadcrumb-item active">Add Products <?php echo $produk->id_produk ?></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Daftar Produk</a></li>
+            <li class="breadcrumb-item active">Tambah Produk Perusahaan</li>
           </ol>
         </div>
       </div>
@@ -43,7 +43,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Nama Produk</label>
+                        <label>Nama Produk Perusahaan</label>
                         <input type="text" class="form-control" name="nama_produk_detail" placeholder="Nama Produk">
                       </div>
                     </div>
@@ -62,7 +62,7 @@
                         <label>Gambar</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Add Image</label>
+                          <label class="custom-file-label" for="exampleInputFile">Tambah gambar</label>
                         </div>
                       </div>
                     </div>
@@ -71,8 +71,8 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button type="submit" name ="submit" class="btn btn-success" title="Add Products"><i class="fas fa-file-upload"></i> Add</button>
-                <a class="btn btn-outline-info" title="Cancel" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Cancel</a>
+                <button type="submit" name ="submit" class="btn btn-success" title="Simpan"><i class="fas fa-file-upload"></i> Simpan</button>
+                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
                 <?php echo form_close(); ?>

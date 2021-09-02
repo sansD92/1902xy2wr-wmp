@@ -6,13 +6,13 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>List Social Contribution Storage Bin</h1>
+          <h1>Daftar Sampah Kontribusi Sosial</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item active"><a href="<?php echo base_url()?>aspanel/kontribs">List Of Social Contribution</a></li>
-            <li class="breadcrumb-item active">List Social Contribution Storage Bin</li>
+            <li class="breadcrumb-item active"><a href="<?php echo base_url()?>aspanel/kontribs">Daftar Kontribusi Sosial</a></li>
+            <li class="breadcrumb-item active">Daftar Sampah Kontribusi Sosial</li>
           </ol>
         </div>
       </div>
@@ -24,15 +24,15 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/kontribs">Back List Of Business</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Kembali" href="<?php echo base_url()?>aspanel/kontribs">Kembali</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Date</th>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Tanggal</th>
+                  <th>Judul</th>
+                  <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -47,7 +47,7 @@
                   <td><?=$row['kontribs_judul']?></td>
                   <td>
                     <?php
-                    echo"<a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/kontribs_restore/$row[kontribs_id]'>Restore</a>
+                    echo"<a class='btn btn-primary btn-sm' title='Kembalikan' href='".base_url()."aspanel/kontribs_restore/$row[kontribs_id]'>Kembalikan</a>
                     <a class='btn btn-danger btn-sm' title='Permanently Delete' href='".base_url()."aspanel/kontribs_delete/$row[kontribs_id]' onclick=\"return confirm('Are you sure want to permanently delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
@@ -57,9 +57,9 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Date</th>
-                  <th>Title</th>
-                  <th>Action</th>
+                  <th>Tanggal</th>
+                  <th>Judul</th>
+                  <th>Aksi</th>
                 </tr>
                 </tfoot>
               </table>

@@ -26,14 +26,25 @@
             <div class="card-header">
             <h3 class="card-title">
             <h1><?php echo $produk->nama_produk ?></h1>
+            <p><img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/produk/<?php echo $produk->foto_produk ?>" alt="Gambar"><div class="row"></p>
             <div class="row">
               <div class="col-12">
                 <p>Bidang : <?php echo $produk->bidang_produk ?></p>
                 <p>Website : <?php echo $produk->website ?> </p>
               </div>
+              <div class="col-6">
+                <p>Whatsapp : <?php echo $produk->whatsapp ?> </p>
+                <p>Instagram : <?php echo $produk->instagram ?> </p>
+                <p>Facebook : <?php echo $produk->facebook ?> </p>
+              </div>
+              <div class="col-6">
+                <p>Shopee : <?php echo $produk->shopee ?> </p>
+                <p>Tokopedia : <?php echo $produk->tokopedia ?> </p>
+                <p>Bukalapak : <?php echo $produk->bukalapak ?> </p>
+              </div>
             </div>
             <p style="text-align:justify"><?php echo $produk->deskripsi_produk ?></p>
-            <a class="btn btn-success btn-sm" title="Tambah" href="<?php echo base_url()?>aspanel/products_detail_tambahkan/<?php echo $produk->id_produk ?>"><i class="fas fa-plus-circle"></i> Tambah Produk</a></h3>
+            <a class="btn btn-success btn-sm" title="Tambah" href="<?php echo base_url()?>aspanel/products_detail_tambahkan/<?php echo $produk->id_produk ?>"><i class="fas fa-plus-circle"></i> Produk Perusahaan</a></h3>
             <a class="btn btn-outline-info btn-sm" title="Kembali" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Kembali</a>
             </div>
             <div class="card-body">

@@ -6,12 +6,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Daftar Departments</h1>
+          <h1>Daftar Department</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Daftar Departments</li>
+            <li class="breadcrumb-item active">Daftar Department</li>
           </ol>
         </div>
       </div>
@@ -23,15 +23,15 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/divisi_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
-              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Edit Data" href="<?php echo base_url()?>aspanel/divisi_storage_bin"><i class="fas fa-trash"></i> Storage Bin</a></h3>
+              <h3 class="card-title"><a class="btn btn-success btn-sm" title="Tambah" href="<?php echo base_url()?>aspanel/divisi_tambahkan"><i class="fas fa-plus-circle"></i> Tambahkan</a></h3>
+              <h3 class="text-right"><a class="btn btn-danger btn-sm" title="Sampah" href="<?php echo base_url()?>aspanel/divisi_storage_bin"><i class="fas fa-trash"></i> Sampah</a></h3>
             </div>
             <div class="card-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>Kode</th>
-                  <th>Nama Departemen</th>
+                  <th>Nama Department</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -58,7 +58,7 @@
                 <tfoot>
                 <tr>
                   <th>Kode</th>
-                  <th>Nama Departemen</th>
+                  <th>Nama Departmen</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>
