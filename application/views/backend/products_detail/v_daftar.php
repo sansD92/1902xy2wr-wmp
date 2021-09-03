@@ -63,7 +63,7 @@
                   ?>
 
                 <tr>
-                  <td><a href="<?php echo base_url()?>aspanel/products_disc/<?=$row['id_produk']?>"></a> <?=$row['nama_produk_detail']?></td>
+                  <td><img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/produk/<?php echo $row['foto_produk_detail'] ?>" alt="Gambar"><div class="row"><?=$row['nama_produk_detail']?></td>
                   <td>
                     <?php
                     echo"
