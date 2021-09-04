@@ -166,6 +166,7 @@
                     <div class="dropdown-menu">
                         <ul> <li><a class="dropdown-item nav-link nav_item" href="#">Rasio Keuangan</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="#">Investor Update</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Pemegang Saham</a></li>
                              <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Berkelanjutan</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Keuangan</a></li>
