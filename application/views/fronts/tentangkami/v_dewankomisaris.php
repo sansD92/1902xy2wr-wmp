@@ -58,7 +58,7 @@
 <section class="small_pt">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+            <div class="col-md-6 animation" >
                 <div class="heading_s1 text-center">
                     <h2>Komisaris WMP</h2>
                 </div>
@@ -72,7 +72,7 @@
         </div>
         <div class="row">
              <?php  foreach ($posts_komisaris as $post_new){ ?>
-            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
+            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center"  data-margin="30" data-loop="true" data-autoplay="true">
                 <div class="item">
                     <div class="team_box light_gray_bg team_hover_style2 social_white">
                         <div class="team_img">
@@ -153,7 +153,7 @@
         </div>
         <div class="row">
              <?php  foreach ($posts_direksi as $post_new){ ?>
-            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center" data-animation="fadeInUp" data-animation-delay="0.5s" data-margin="30" data-loop="true" data-autoplay="true">
+            <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center"  data-margin="30" data-loop="true" data-autoplay="true">
                 <div class="item">
                     <div class="team_box light_gray_bg team_hover_style2 social_white">
                         <div class="team_img">

@@ -9,13 +9,12 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list_none header_list list_menu justify-content-center justify-content-sm-end ">
-                        <li class="dropdown">
+                       <!--  <li class="dropdown">
                     <a class="dropdown-toggle " href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
                         <ul>
-                           <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
+                          
                             <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
-                           <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
 
@@ -23,7 +22,7 @@
 
                     </div>
 
-                </li>
+                </li> -->
                         <li><a href="<?php echo $identitas->youtube?>" target="_blank"><i class="ion-social-youtube-outline"></i></a></li>
                         <li><a href="<?php echo $identitas->facebook?>" target="_blank"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="<?php echo $identitas->instagram?>" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
@@ -299,7 +298,18 @@
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Informasi</a>
                     <div class="dropdown-menu">
                         <ul>
-                           
+                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Karir</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                             <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
+                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
+                           <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
+                                          
+                                        </ul>
+                                    </div>
+                                </li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Covid-19</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">E-Announcement</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>

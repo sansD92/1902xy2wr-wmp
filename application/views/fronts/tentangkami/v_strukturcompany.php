@@ -43,7 +43,7 @@
                     <h2>Struktur Company WMP</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/STRUKTUR-PERUSAHAAN-PT WMP-company.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/Struktur-WMP.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@
                     <h2>Struktur Organisasi WMP</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/stowmp.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/Struktur-Organisasi.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 

@@ -17,7 +17,7 @@
                         <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/LIVESTOCK.png" alt="icon1"/>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Integrated Livestock</h5>
+                        <h5>Livestock</h5>
                         <p></p>
                         <a href="<?php echo base_url("linibisnis/kategori/integrated-livestock") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
@@ -41,7 +41,7 @@
                         <img style="width: 150px;"src="<?php echo base_url()?>assets/frontend/linibisnis/home/POULTRY.png" alt="icon1"/>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Integrated Poultry</h5>
+                        <h5>Poultry</h5>
                         <p></p>
                         <a href="<?php echo base_url("linibisnis/kategori/integrated-poultry") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
