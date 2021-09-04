@@ -164,8 +164,16 @@
  <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Hubungan Investor</a>
                     <div class="dropdown-menu">
-                        <ul>
-                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Laporan-Laporan</a>
+                        <ul> <li><a class="dropdown-item nav-link nav_item" href="#">Rasio Keuangan</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="#">Investor Update</a></li>
+                             <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Berkelanjutan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Keuangan</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Kinerja & Rasio Keuangan</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Keterbukaan Informasi</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Sell A Copyright</a></li>
+                                               <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Media & Rilis</a></li>
+                           <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Laporan-Laporan</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
@@ -174,7 +182,7 @@
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Kinerja & Rasio Keuangan</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
 
                                <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA PERUSAHAAN</a>
                                     <div class="dropdown-menu">
@@ -229,8 +237,9 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Kerja Direksi</a></li>
 
-                               <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
+                             <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                            <li><a class="dropdown-item nav-link nav_item" href="#">Sistem Manajemen Assets</a></li>
@@ -239,9 +248,9 @@
                                                   <li><a class="dropdown-item nav-link nav_item" href="#">Sistem Manajemen Lainya</a></li>
                                         </ul>
                                     </div>
-                                </li> 
+                                </li>  -->
 
-                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Pedoman Kerja Direksi & Komisaris</a>
+                               <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Pedoman Kerja Direksi & Komisaris</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
@@ -250,26 +259,27 @@
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Kinerja & Rasio Keuangan</a></li>
                                         </ul>
                                     </div>
-                                </li> 
+                                </li>  -->
                         </ul>
                     </div>
 
                 </li>
 
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">CSR</a>
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ESG</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
+                             <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Yayasan KEI</a></li>
+                           <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Yayasan KEI</a></li>
+                                           
                                            
                                         </ul>
                                     </div>
-                                </li>
-            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Anggaran & Realisasi</a></li>
+                                </li> -->
+           <!--  <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Anggaran & Realisasi</a></li> -->
                         </ul>
                     </div>
                 </li>
@@ -288,7 +298,7 @@
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Informasi</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Media & Rilis</a></li>
+                           
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Covid-19</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">E-Announcement</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>

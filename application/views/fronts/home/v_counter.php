@@ -20,21 +20,21 @@
                     <div class="col-6 couter_border">
                         <div class="box_counter text-center">
                             <img src="<?php echo base_url()?>assets/frontend/campur/icon3.png">
-                            <h3 class="counter_text"><span class="counter">25</span></h3>
+                            <h3 class="counter_text"><span class="counter">26</span></h3>
                             <h3>Tahun Beroperasi</h3>
                         </div>
                     </div>
                     <div class="col-6 couter_border">
                         <div class="box_counter text-center">
                             <img src="<?php echo base_url()?>assets/frontend/campur/icon4.png">
-                            <h3 class="counter_text"><span class="counter">1558</span>+</h3>
+                            <h3 class="counter_text"><span class="counter">1456</span>+</h3>
                             <h3>SDM di Wilayah Indonesia</h3>
                         </div>
                     </div>
                     <div class="col-6 couter_border">
                         <div class="box_counter text-center">
                             <img src="<?php echo base_url()?>assets/frontend/campur/icon5.png">
-                            <h3 class="counter_text"><span class="counter">505</span></h3>
+                            <h3 class="counter_text"><span class="counter">550</span></h3>
                             <h3>Item Produk</h3>
                         </div>
                     </div>
