@@ -158,7 +158,7 @@
                         <div class="filter_price">
 
                              <div class="d-flex align-items-center justify-content-between">
-                                 <span><strong>Adjie Dwi Sandy</strong><br> Head of Investor Relations <p>adjiedws@widodomakmurperkasa.co.id</p></span>
+                                 <span><strong>Nama Kontak</strong><br> Head of Investor Relations <p>nama@widodomakmurperkasa.co.id</p></span>
                              </div>
                          </div>
                     </div>

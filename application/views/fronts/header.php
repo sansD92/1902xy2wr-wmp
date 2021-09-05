@@ -160,67 +160,8 @@
                         </ul>
                     </div>
                 </li> -->
- <li class="dropdown">
-
-                    <a class="dropdown-toggle nav-link" href="<?php echo base_url()?>hubungan-investor" data-toggle="dropdown">Hubungan Investor</a>
-                    <div class="dropdown-menu">
-                        <ul> <li><a class="dropdown-item nav-link nav_item" href="#">Rasio Keuangan</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Investor Update</a></li>
-                            <li><a class="dropdown-item nav-link nav_item" href="#">Struktur Pemegang Saham</a></li>
-                             <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Berkelanjutan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Keuangan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Kinerja & Rasio Keuangan</a></li>
-                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Keterbukaan Informasi</a></li>
-                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Sell A Copyright</a></li>
-                                               <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>berita">Media & Rilis</a></li>
-                           <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Laporan-Laporan</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Laporan Tahunan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Berkelanjutan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Laporan Keuangan</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">Kinerja & Rasio Keuangan</a></li>
-                                        </ul>
-                                    </div>
-                                </li> -->
-
-                               <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">TATA KELOLA PERUSAHAAN</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                           <li><a class="dropdown-item nav-link nav_item" href="#">SEKILAS GCG</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">PENERAPAN GCG</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">PENGENDALIAN GRATIFIKASI</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">ETIKA BISNIS</a></li>
-
-
-                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">SISTEM MANAGEMENT</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                           <li><a class="dropdown-item nav-link nav_item" href="#">SISTEM MANAJEMEN ASSET</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN MUTU</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN TERINTEGRASI</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM MANAJEMEN LAINNYA</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">PEDOMAN KERJA DIREKSI & KOMISARIS</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                           <li><a class="dropdown-item nav-link nav_item" href="#">KOMITE PERUSAHAAN</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">UNIT INTERNAL AUDIT</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">SISTEM PELAPORAN PELANGGARAN</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>">KEBIJAKAN MANAJEMEN RISIKO</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                        </ul>
-                                    </div>
-                                </li> -->
-                        </ul>
-                    </div>
-                </li>
+                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungan-investor">Hubungan Investor</a></li>
+ 
 
 
                 <li class="dropdown">
@@ -311,8 +252,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Covid-19</a></li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">E-Announcement</a></li>
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Kegiatan Perusahaan</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">FAQ</a></li>
 
