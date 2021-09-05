@@ -36,4 +36,7 @@
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/responsive.css">
 <link rel="stylesheet" id="layoutstyle" href="<?php echo base_url()?>assets/color/theme.css">
 
+<link rel="stylesheet" href="<?php echo base_url()?>assets/fullcalendar/packages/core/main.css" />
+<link rel="stylesheet"  href="<?php echo base_url()?>assets/fullcalendar/packages/daygrid/main.css" />
+
 </head>

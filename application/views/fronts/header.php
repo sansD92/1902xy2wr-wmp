@@ -13,7 +13,7 @@
                     <a class="dropdown-toggle " href="#" data-toggle="dropdown">Karir</a>
                     <div class="dropdown-menu">
                         <ul>
-                          
+
                             <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
@@ -28,12 +28,12 @@
                         <li><a href="<?php echo $identitas->instagram?>" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
                          <li><a href="https://www.linkedin.com/in/pt-widodo-makmur-perkasa-118b5a12b/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                        <div class="col-md-3 col-sm-4 col-3">
-                   
+
                     <div class="lng_dropdown lng_dropdown_white float-right mr-sm-3">
                         <select name="countries" id="lng_select">
                             <option value='en' data-image="<?php echo base_url()?>assets/frontend/eng.png" data-title="English">EN</option>
                             <option value='fn' data-image="demo-medical/images/fn.png" data-title="France">IND</option>
-                         
+
                         </select>
                     </div>
                 </div>
@@ -72,14 +72,14 @@
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tentangkami">Profil</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Filosofi Misi</a></li>
                                               <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
-                                               
+
                                         </ul>
                                     </div>
                                 </li>
-                              
-                               
+
+
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
-                                
+
 
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris-direksi">Dewan Komisaris & Direksi</a></li>
                                <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
@@ -95,7 +95,7 @@
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
-                                               
+
                                         </ul>
                                     </div>
                                 </li> -->
@@ -106,7 +106,7 @@
                 </li>
 
 
-                
+
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
                     <div class="dropdown-menu">
@@ -161,7 +161,8 @@
                     </div>
                 </li> -->
  <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Hubungan Investor</a>
+
+                    <a class="dropdown-toggle nav-link" href="<?php echo base_url()?>hubungan-investor" data-toggle="dropdown">Hubungan Investor</a>
                     <div class="dropdown-menu">
                         <ul> <li><a class="dropdown-item nav-link nav_item" href="#">Rasio Keuangan</a></li>
                             <li><a class="dropdown-item nav-link nav_item" href="#">Investor Update</a></li>
@@ -233,7 +234,7 @@
                                               <li><a class="dropdown-item nav-link nav_item" href="#">Penerapan GCG</a></li>
                                                 <li><a class="dropdown-item nav-link nav_item" href="#">Pengendalian Gratifikasi</a></li>
                                                   <li><a class="dropdown-item nav-link nav_item" href="#">Etika Bisnis</a></li>
-                                          
+
                                         </ul>
                                     </div>
                                 </li>
@@ -274,8 +275,8 @@
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                           
-                                           
+
+
                                         </ul>
                                     </div>
                                 </li> -->
@@ -306,7 +307,7 @@
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
-                                          
+
                                         </ul>
                                     </div>
                                 </li>
@@ -328,7 +329,7 @@
                         <ul>
                            < <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
-                         <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> 
+                         <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Program Kami</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Hubungi Kami</a></li>
                         </ul>
