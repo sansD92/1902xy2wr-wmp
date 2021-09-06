@@ -301,6 +301,51 @@ PAGE JS
 			});
 		});
 
+		$('.carousel_slide9').each( function() {
+			var $carousel = $(this);
+			$carousel.owlCarousel({
+				dots : $carousel.data("dots"),
+				loop : $carousel.data("loop"),
+				margin: $carousel.data("margin"),
+				autoHeight: true,
+				center: $carousel.data("center"),
+				rewind: $carousel.data("rewind"),
+				autoplay : $carousel.data("autoplay"),
+				nav: $carousel.data("nav"),
+				navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+				autoplayTimeout : $carousel.data("autoplay-timeout"),
+				responsive: {
+					 0: {
+						 items: 1,
+					 },
+					 380: {
+						 items: 1,
+					 },
+					 576: {
+						 items: 3,
+					 },
+					 1000: {
+						 items: 4,
+					 },
+					 1000: {
+						 items: 5,
+					 },
+					 1000: {
+						 items: 6,
+					 },
+					 1000: {
+						 items: 7,
+					 },
+					 1000: {
+						 items: 8,
+					 },
+					 1199: {
+						 items: 9
+					 }
+				}
+			});
+		});
+
 		$('.cl_logo_slider').each( function() {
 			var $carousel = $(this);
 			$carousel.owlCarousel({
