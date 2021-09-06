@@ -2,7 +2,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-						<ul class="list_none carousel_slide9 owl-carousel owl-theme" data-margin="15" data-dots="false" data-autoplay="false" data-nav="true" data-loop="true">
+						<ul class="list_none carousel_slide9 owl-carousel owl-theme" data-margin="15" data-dots="false" data-autoplay="false" data-nav="true" data-loop="false">
 							<?php  foreach ($posts_logo as $post_new){
 																	$isi = character_limiter($post_new->logo_desk,230);
 																	$judul = character_limiter($post_new->logo_judul,100);
