@@ -48,7 +48,7 @@
                         <h2 class="font-weight-light mb-3"> <span class="font-weight-bold"><?php echo "$title"; ?></span> </h2>
                        
                         <p><?php echo "$deskripsi"; ?></p>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                       
                         
                     </div>
                 </div>
