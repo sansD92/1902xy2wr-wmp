@@ -17,7 +17,7 @@
     	<div class="row">
         	<div class="col-sm-12 text-center">
             	<div class="page-title">
-            		<h1>INVESTOR RELATION</h1>
+            		<h1>Hubungan Investor</h1>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
             <div class="col-lg-3 col-md-4">
             	<div class="sidebar">
                     <div class="widget">
-                        <h5 class="widget_title">Investor Relation Contact</h5>
+                        <h5 class="widget_title">Investor Relasi Kontak</h5>
                         <div class="filter_price">
 
                              <div class="d-flex align-items-center justify-content-between">
@@ -163,7 +163,7 @@
                          </div>
                     </div>
                     <div class="widget">
-                    	<h5 class="widget_title">Investor Calendar</h5>
+                    	<h5 class="widget_title">Investor Kalender</h5>
                         <div class="filter_price">
                             <div id='calendar'></div>
                              </div>
