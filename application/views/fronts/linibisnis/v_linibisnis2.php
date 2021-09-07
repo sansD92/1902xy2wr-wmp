@@ -55,9 +55,8 @@
             </div>
             <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
                 <ul class="list_none portfolio_info_box">
-                    <li><span class="text-uppercase"></span>Sebagai sebuah perusahaan peternakan sapi terintegrasi terbesar di Indonesia, PT Pasir Tengah (PST) kini tercatat memenuhi kurang lebih 17% dari total kebutuhan pasar sapi potong nasional. Secara kontinu pemenuhan tersebut disuplai dari 4 fasilitas farm yang tersebar di beberapa lokasi strategis di daerah Cianjur, Cariu, Cileungsi (ketiganya berada di wilayah Jawa Barat) dan Bayat (Klaten, Jawa Tengah) dengan total kapasitas hingga 172.000 ribu ekor per tahun. Kualitas produk adalah label utama PT Pasir Tengah dalam memasuki pasar dan bertahan di tengah persaingan. Inovasi adalah kunci untuk menjaga eksistensi dan reputasi. Visi kerja berbasis Research and Development telah menjadi salah satu kultur kami. Dengan mempertahankan kualitasnya, PT Pasir Tengah berhasil menjadi salah satu dari tiga pemain besar di bidang pasokan sapi potong di Indonesia.
-
-</li>
+                    <li><span class="text-uppercase"></span>Integrated Poultry bergerak di bidang peternakan ayam terintegrasi meliputi  Divisi Pembibitan  Grand Parent Stock  (Breeding GPS) dan Pembibitan  Parent Stock (Breeding PS), Divisi Penetasan (Hatchery), Budidaya ayam broiler (Commercial Broiler Farm). Budidaya Ayam Petelur Premium Germanium ( Layer ), Rumah Pemotongan Ayam RPA (Slaughtered House) modern terbesar di Indonesia dan memproduksi produk ayam olahan.  PT Widodo Makmur Unggas (WMU) berkomitmen menyediakan produk pangan hewani untuk seluruh masyarakat dunia dengan memaksimalkan kualitas produk dan pelayanan yang terjangkau bagi konsumen. WMU juga berkomitmen pada integritas, profesionalitas, loyalitas, sinergi dan kolaborasi demi menjadi yang terbaik dalam bisnis perunggasan. Untuk keterangan lebih lanjut</li>
+                    <li></li>
                     
                 </ul>
             </div>
