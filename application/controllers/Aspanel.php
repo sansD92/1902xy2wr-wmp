@@ -1679,10 +1679,35 @@ class Aspanel extends CI_Controller {
 					$config['source_image'] = './assets/frontend/linibisnis/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['quality']= '80%';
+					$config['quality']= '95%';
 					$config['new_image']= './assets/frontend/linibisnis/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
+
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar2');
+					$hasilpp=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/linibisnis/'.$hasilpp['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '95%';
+					$config['new_image']= './assets/frontend/linibisnis/'.$hasilpp['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar3');
+					$hasil33=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/linibisnis/'.$hasil33['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '95%';
+					$config['new_image']= './assets/frontend/linibisnis/'.$hasil33['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
 
 					if ($this->input->post('bisnis_kategori_keyword')!=''){
 								$tag_seo = $this->input->post('bisnis_kategori_keyword');
@@ -1707,7 +1732,7 @@ class Aspanel extends CI_Controller {
 						$tags2[] = $this->mylibrary->seo_title($t);
 					}
 					$tags = implode(",", $tags2);
-					if ($hasil22['file_name']==''){
+					if ($hasil22['file_name']=='' && $hasilpp['file_name']=='' && $hasil33['file_name']=='' ){
 									$data = array(
 													'bisnis_kategori_post_oleh'=>$this->session->username,
 													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
@@ -1720,7 +1745,21 @@ class Aspanel extends CI_Controller {
 													'bisnis_kategori_status'=>'publish',
 													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 													'bisnis_kategori_keyword'=>$tag);
-											}else{
+											}else if ($hasil22['file_name']=='' && $hasil33['file_name']=='' ){
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else if ($hasil33['file_name']=='' && $hasilpp['file_name']==''){
 												$data = array(
 													'bisnis_kategori_post_oleh'=>$this->session->username,
 													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
@@ -1732,6 +1771,81 @@ class Aspanel extends CI_Controller {
 													'bisnis_kategori_dibaca'=>'0',
 													'bisnis_kategori_status'=>'publish',
 													'bisnis_kategori_gambar'=>$hasil22['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else if ($hasilpp['file_name']=='' && $hasil22['file_name']==''){
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else if ($hasil33['file_name']==''){
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar'=>$hasil22['file_name'],
+													'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else if ($hasilpp['file_name']==''){
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar'=>$hasil22['file_name'],
+													'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else if ($hasil22['file_name']==''){
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+													'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+													'bisnis_kategori_keyword'=>$tag);
+					            }else{
+												$data = array(
+													'bisnis_kategori_post_oleh'=>$this->session->username,
+													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
+													'bisnis_kategori_post_tanggal'=>date('Y-m-d'),
+													'bisnis_kategori_post_jam'=>date('H:i:s'),
+													'bisnis_kategori_dibaca'=>'0',
+													'bisnis_kategori_status'=>'publish',
+													'bisnis_kategori_gambar'=>$hasil22['file_name'],
+													'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+													'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
 													'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 													'bisnis_kategori_keyword'=>$tag);
 												}
@@ -1786,6 +1900,30 @@ class Aspanel extends CI_Controller {
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
+								$this->upload->initialize($config);
+								$this->upload->do_upload('gambar2');
+								$hasilpp=$this->upload->data();
+								$config['image_library']='gd2';
+								$config['source_image'] = './assets/frontend/linibisnis/'.$hasilpp['file_name'];
+								$config['create_thumb']= FALSE;
+								$config['maintain_ratio']= FALSE;
+								$config['quality']= '95%';
+								$config['new_image']= './assets/frontend/linibisnis/'.$hasilpp['file_name'];
+								$this->load->library('image_lib', $config);
+								$this->image_lib->resize();
+
+								$this->upload->initialize($config);
+								$this->upload->do_upload('gambar3');
+								$hasil33=$this->upload->data();
+								$config['image_library']='gd2';
+								$config['source_image'] = './assets/frontend/linibisnis/'.$hasil33['file_name'];
+								$config['create_thumb']= FALSE;
+								$config['maintain_ratio']= FALSE;
+								$config['quality']= '95%';
+								$config['new_image']= './assets/frontend/linibisnis/'.$hasil33['file_name'];
+								$this->load->library('image_lib', $config);
+								$this->image_lib->resize();
+
 			if ($this->input->post('bisnis_kategori_keyword')!=''){
 						$tag_seo = $this->input->post('bisnis_kategori_keyword');
 						$tag=implode(',',$tag_seo);
@@ -1809,7 +1947,7 @@ class Aspanel extends CI_Controller {
 				$tags2[] = $this->mylibrary->seo_title($t);
 			}
 			$tags = implode(",", $tags2);
-						if ($hasil22['file_name']==''){
+						if ($hasil22['file_name']=='' && $hasilpp['file_name']=='' && $hasil33['file_name']=='' ){
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
@@ -1822,7 +1960,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_keyword'=>$tag);
 											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$this->db->update('bisnis_kategori', $data, $where);
-						}else{
+						}else if ($hasil33['file_name']=='' && $hasilpp['file_name']==''){
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
@@ -1839,6 +1977,130 @@ class Aspanel extends CI_Controller {
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
 												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar);
+											}
+
+						}else if ($hasil33['file_name']=='' && $hasil22['file_name']==''){
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_sub);
+											}
+
+						}else if ($hasilpp['file_name']=='' && $hasil22['file_name']==''){
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_icon);
+											}
+
+						}else if ($hasil33['file_name']==''){
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar'=>$hasil22['file_name'],
+											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar);
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_sub);
+											}
+
+						}else if ($hasilpp['file_name']==''){
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar'=>$hasil22['file_name'],
+											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar);
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_icon);
+											}
+
+						}else if ($hasil22['file_name']==''){
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_sub);
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_icon);
+											}
+
+						}else{
+										$data = array(
+											'bisnis_kategori_update_oleh'=>$this->session->username,
+											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
+											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
+											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
+											'bisnis_kategori_update_jam'=>date('H:i:s'),
+											'bisnis_kategori_gambar'=>$hasil22['file_name'],
+											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
+											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
+											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
+											'bisnis_kategori_keyword'=>$tag);
+											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
+											$query = $this->db->update('bisnis_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar);
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_sub);
+												unlink("assets/frontend/linibisnis/".$_image->bisnis_kategori_gambar_icon);
 											}
 
 						}
