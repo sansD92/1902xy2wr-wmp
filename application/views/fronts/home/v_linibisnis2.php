@@ -19,7 +19,7 @@
                     <div class="icon_box_content">
                         <h5>Livestock</h5>
                         <p></p>
-                        <a href="<?php echo base_url("linibisnis/kategori/integrated-livestock") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                        <a href="<?php echo base_url("linibisnis/kategori/livestock") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <div class="icon_box_content">
                         <h5>Poultry</h5>
                         <p></p>
-                        <a href="<?php echo base_url("linibisnis/kategori/integrated-poultry") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                        <a href="<?php echo base_url("linibisnis/kategori/poultry") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
                 </div>
             </div>
