@@ -1972,7 +1972,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar'=>$hasil22['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -1991,7 +1991,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -2010,7 +2010,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -2030,7 +2030,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_sub'=>$hasilpp['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -2051,7 +2051,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -2072,7 +2072,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
@@ -2094,7 +2094,7 @@ class Aspanel extends CI_Controller {
 											'bisnis_kategori_gambar_icon'=>$hasil33['file_name'],
 											'bisnis_kategori_meta_desk'=>$this->input->post('bisnis_kategori_meta_desk'),
 											'bisnis_kategori_keyword'=>$tag);
-											$where = array('bisnis_id' => $this->input->post('bisnis_id'));
+											$where = array('bisnis_kategori_id' => $this->input->post('bisnis_kategori_id'));
 											$_image = $this->db->get_where('bisnis_kategori',$where)->row();
 											$query = $this->db->update('bisnis_kategori',$data,$where);
 											if($query){
