@@ -212,7 +212,7 @@
                     <div class="dropdown-menu">
                         <ul>
                              <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Yayasan KEI</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Yayasan KEI</a></li>
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">
                                         <ul>
