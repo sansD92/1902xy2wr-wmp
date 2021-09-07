@@ -54,10 +54,9 @@
                                     <p class='member-title'>Deskripsi</p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
                                     <ul class='list_none social_icons border_social rounded_social'>
-                            	<li><a href='#'><i class='ion-social-facebook'></i></a></li>
-                            	<li><a href='#'><i class='ion-social-twitter'></i></a></li>
+                            	<li><a href='#'><i class='ion-social-whatsapp'></i></a></li>
+                            	<li><a href='#'><i class='ion-social-whatsapp'></i></a></li>
                             	<li><a href='#'><i class='ion-social-instagram-outline'></i></a></li>
-                                <li><a href='#'><i class='ion-social-youtube'></i></a></li>
                         	</ul>
                                   </div>
                             </div>

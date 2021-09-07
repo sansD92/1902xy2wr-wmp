@@ -240,7 +240,10 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .portfolio_style5 .portfolio_content,
 .instafeed li a::before,
 .bg_blue_transparent {
-	background-color: #088282d9;
+	background-color: #08828240;
+	height: 100px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .post_date::before,
