@@ -161,7 +161,7 @@
                     </div>
                 </li> -->
                  <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungan-investor">Hubungan Investor</a></li>
- 
+
 
 
                 <li class="dropdown">
@@ -241,7 +241,7 @@
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Karir</a>
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu dropdown-reverse">
                                         <ul>
                                              <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
                             <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Bergabung Bersama Kami</a></li>
