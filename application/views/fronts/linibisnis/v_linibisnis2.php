@@ -14,7 +14,7 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar_sub"; ?>">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -37,27 +37,24 @@
 <section class="small_pb">
     <div class="container">
         <div class="row">
-           
+
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                 <ul class="list_none carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-margin="15" data-dots="false" data-nav="true" data-loop="true" data-autoplay-timeout="3000">
                     <li>
-                        <img src="assets/images/portfolio_item1.jpg" alt="image">
-                    </li>
-                    <li>
-                        <img src="assets/images/portfolio_item2.jpg" alt="image">
-                    </li>
-                    <li>
-                        <img src="assets/images/portfolio_item3.jpg" alt="image">
+                        <img src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar"; ?>">
                     </li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
                 <ul class="list_none portfolio_info_box">
-                    <li><span class="text-uppercase"></span>Integrated Poultry bergerak di bidang peternakan ayam terintegrasi meliputi  Divisi Pembibitan  Grand Parent Stock  (Breeding GPS) dan Pembibitan  Parent Stock (Breeding PS), Divisi Penetasan (Hatchery), Budidaya ayam broiler (Commercial Broiler Farm). Budidaya Ayam Petelur Premium Germanium ( Layer ), Rumah Pemotongan Ayam RPA (Slaughtered House) modern terbesar di Indonesia dan memproduksi produk ayam olahan.  PT Widodo Makmur Unggas (WMU) berkomitmen menyediakan produk pangan hewani untuk seluruh masyarakat dunia dengan memaksimalkan kualitas produk dan pelayanan yang terjangkau bagi konsumen. WMU juga berkomitmen pada integritas, profesionalitas, loyalitas, sinergi dan kolaborasi demi menjadi yang terbaik dalam bisnis perunggasan. Untuk keterangan lebih lanjut</li>
+                    <li>
+                      <span class="text-uppercase"></span>
+                      <?php echo "$deskripsi"; ?>
+                    </li>
                     <li></li>
-                    
+
                 </ul>
             </div>
         </div>

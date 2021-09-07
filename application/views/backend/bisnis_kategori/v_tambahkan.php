@@ -81,6 +81,26 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-sm-12">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Gambar Sub</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" name="gambar2" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Tambah Gambar</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Gambar Icon ( Home )</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" name="gambar3" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Tambah Gambar</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                 </div>

@@ -76,9 +76,9 @@
                     </div>
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <label>Gambar Saat Ini</label>
+                      <label>Hasil Gambar</label>
                       <div class="row">
-                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo $rows['bisnis_kategori_gambar'] ?>" alt="Photo">
+                        <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo $rows['bisnis_kategori_gambar'] ?>" alt="Gambar">
                       </div>
 
                     </div>
@@ -94,6 +94,45 @@
                       </div>
                     </div>
 
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Hasil Gambar Sub</label>
+                        <div class="row">
+                          <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo $rows['bisnis_kategori_gambar_sub'] ?>" alt="Gambar Sub">
+                        </div>
+
+                      </div>
+                    </div>
+                      <div class="col-sm-12">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Gambar Sub</label>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" name="gambar2">
+                            <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['bisnis_kategori_gambar_sub'] ?></label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label>Hasil Gambar Icon</label>
+                          <div class="row">
+                            <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo $rows['bisnis_kategori_gambar_icon'] ?>" alt="Gambar Icon">
+                          </div>
+
+                        </div>
+                      </div>
+                        <div class="col-sm-12">
+                          <!-- text input -->
+                          <div class="form-group">
+                            <label>Gambar Icon</label>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" name="gambar3">
+                              <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['bisnis_kategori_gambar_icon'] ?></label>
+                            </div>
+                          </div>
+                        </div>
 
                   </div>
 
