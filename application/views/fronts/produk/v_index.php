@@ -33,7 +33,7 @@
     </div>
 </section> -->
 
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Subproduk.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -109,7 +109,7 @@
                     <!-- END PORTFOLIO ITEM -->
 
 
-              
+
 
 
                 </ul>
