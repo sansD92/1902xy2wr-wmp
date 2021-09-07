@@ -34,6 +34,37 @@
 </section>
 <!-- END SECTION BANNER -->
 
+<section class="small_pb">
+    <div class="container">
+        <div class="row">
+           
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                <ul class="list_none carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-margin="15" data-dots="false" data-nav="true" data-loop="true" data-autoplay-timeout="3000">
+                    <li>
+                        <img src="assets/images/portfolio_item1.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="assets/images/portfolio_item2.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="assets/images/portfolio_item3.jpg" alt="image">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
+                <ul class="list_none portfolio_info_box">
+                    <li><span class="text-uppercase"></span>Sebagai sebuah perusahaan peternakan sapi terintegrasi terbesar di Indonesia, PT Pasir Tengah (PST) kini tercatat memenuhi kurang lebih 17% dari total kebutuhan pasar sapi potong nasional. Secara kontinu pemenuhan tersebut disuplai dari 4 fasilitas farm yang tersebar di beberapa lokasi strategis di daerah Cianjur, Cariu, Cileungsi (ketiganya berada di wilayah Jawa Barat) dan Bayat (Klaten, Jawa Tengah) dengan total kapasitas hingga 172.000 ribu ekor per tahun. Kualitas produk adalah label utama PT Pasir Tengah dalam memasuki pasar dan bertahan di tengah persaingan. Inovasi adalah kunci untuk menjaga eksistensi dan reputasi. Visi kerja berbasis Research and Development telah menjadi salah satu kultur kami. Dengan mempertahankan kualitasnya, PT Pasir Tengah berhasil menjadi salah satu dari tiga pemain besar di bidang pasokan sapi potong di Indonesia.
+
+</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- START SECTION ABOUT US -->
 <section class='small_pb overflow_hide'>
     <div class='container'>
