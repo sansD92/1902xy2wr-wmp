@@ -29,14 +29,26 @@
                 </div>
                 <ul class="shop_container gutter_medium work_col3 grid" style="position: relative; height: 2598px;">
                 	<li class="grid-sizer"></li>
+                  <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                      <div class="product text-center">
+                        <div class="product_img">
+                              <a href="#">
+                                  <img src="<?php echo base_url()?>assets/frontend/campur/struktur-pemegang-saham.jpg" alt="image">
+                              </a>
+                              <a href="#">
+                                  <img src="<?php echo base_url()?>assets/frontend/campur/struktur-pemegang-saham.jpg" alt="image">
+                              </a>
+                          </div>
+                      </div>
+                  </li>
                     <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/rasio-keuangan.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/Ikhtisar-keuangan.jpg" alt="image">
                                 </a>
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/rasio-keuangan.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/Ikhtisar-keuangan.jpg" alt="image">
                                 </a>
                             </div>
                         </div>
@@ -45,46 +57,10 @@
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/investor-update.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-dan-presentasi.jpg" alt="image">
                                 </a>
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/investor-update.jpg" alt="image">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
-                        <div class="product text-center">
-                        	<div class="product_img">
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/struktur-pemegang-saham.jpg" alt="image">
-                                </a>
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/struktur-pemegang-saham.jpg" alt="image">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
-                        <div class="product text-center">
-                        	<div class="product_img">
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-tahunan.jpg" alt="image">
-                                </a>
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-tahunan.jpg" alt="image">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
-                        <div class="product text-center">
-                        	<div class="product_img">
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-berkelanjutan.jpg" alt="image">
-                                </a>
-                                <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-berkelanjutan.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/laporan-dan-presentasi.jpg" alt="image">
                                 </a>
                             </div>
                         </div>
@@ -105,10 +81,10 @@
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/kinerja-dan-rasio-keuangan.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/informasi-saham.jpg" alt="image">
                                 </a>
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/kinerja-dan-rasio-keuangan.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/informasi-saham.jpg" alt="image">
                                 </a>
                             </div>
                         </div>
@@ -121,6 +97,42 @@
                                 </a>
                                 <a href="#">
                                     <img src="<?php echo base_url()?>assets/frontend/campur/keterbukaan-informasi.jpg" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                        <div class="product text-center">
+                        	<div class="product_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/corporate-governance.jpg" alt="image">
+                                </a>
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/corporate-governance.jpg" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                        <div class="product text-center">
+                        	<div class="product_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/tata-kelola-perusahaan.jpg" alt="image">
+                                </a>
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/tata-kelola-perusahaan.jpg" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                        <div class="product text-center">
+                        	<div class="product_img">
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/informasi-umum.jpg" alt="image">
+                                </a>
+                                <a href="#">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/informasi-umum.jpg" alt="image">
                                 </a>
                             </div>
                         </div>

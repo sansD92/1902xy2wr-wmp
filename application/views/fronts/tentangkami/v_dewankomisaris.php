@@ -33,7 +33,7 @@
     </div>
 </section> -->
 
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
+<!-- <section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/images/service_bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
@@ -85,8 +85,9 @@
                             </ul>
                         </div>
                         <div class="team_title">
+                          <br>
                             <h5><?php echo $post_new->nama_komisaris ?></h5>
-                            <span><?php echo $post_new->jabatan_komisaris ?></span> 
+                            <span><?php echo $post_new->jabatan_komisaris ?></span>
                         </div>
                     </div>
                 </div>
@@ -94,7 +95,7 @@
 
              <?php } ?>
 
-                       
+
 
         </div>
 
@@ -111,7 +112,6 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                   
                         <div class="row">
                             <div class="col-lg-4">
                                 <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_komisaris; ?>" alt="<?php echo $post_new->nama_komisaris ?>" class="img-fluid border-rad-bottom-right-sm">
@@ -131,7 +131,7 @@
           <?php } ?>
 
 
-      
+
 
     </div>
 </section>
@@ -166,8 +166,9 @@
                             </ul>
                         </div>
                         <div class="team_title">
+                          <br>
                             <h5><?php echo $post_new->nama_direksi ?></h5>
-                            <span><?php echo $post_new->jabatan_direksi ?></span> 
+                            <span><?php echo $post_new->jabatan_direksi ?></span>
                         </div>
                     </div>
                 </div>
@@ -175,7 +176,7 @@
 
              <?php } ?>
 
-                       
+
 
         </div>
 
@@ -192,7 +193,7 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                   
+
                         <div class="row">
                             <div class="col-lg-4">
                                 <img src="<?php echo base_url()?>assets/frontend/bod/<?php echo $post_new->foto_direksi; ?>" alt="<?php echo $post_new->nama_direksi ?>" class="img-fluid border-rad-bottom-right-sm">
@@ -212,7 +213,7 @@
           <?php } ?>
 
 
-        
+
 
     </div>
 </section>
