@@ -20,3 +20,4 @@ class Informasi extends CI_Controller {
 
   $this->load->view('fronts/informasi/v_faq',$data);
 }
+}
