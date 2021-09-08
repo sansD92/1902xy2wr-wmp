@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12" >
                     <h2>BERHUBUNGAN DENGAN KAMI</h2>
-                    <p>Sebagai Perusahaan Penyedia Pangan Bangsa.</p>
+                    <p>Sebagai Perusahaan Penyedia Pangan Bangsa</p>
                     <ul class="list_none footer_social">
 
                         <li><a href="<?php echo $identitas->youtube?>"><i class="ion-social-youtube-outline" ></i></a></li>

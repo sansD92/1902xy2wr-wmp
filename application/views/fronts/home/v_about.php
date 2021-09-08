@@ -11,7 +11,7 @@
                 <div class="heading_s1">
                   <h2>Tentang <?php echo $identitas->nama_website?></h2>
                 </div>
-                <?php echo $identitas->meta_deskripsi?>
+                <p style="text-align: justify;"><?php echo $identitas->meta_deskripsi?></p>
 
                 <br><br><a href="<?php echo base_url()?>tentangkami" class="btn btn-black">Selengkapnya</a>
             </div>
