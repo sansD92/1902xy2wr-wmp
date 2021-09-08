@@ -171,10 +171,18 @@
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Sekilas GCG</a></li>
-                                              <li><a class="dropdown-item nav-link nav_item" href="#">Penerapan GCG</a></li>
-                                                <li><a class="dropdown-item nav-link nav_item" href="#">Pengendalian Gratifikasi</a></li>
-                                                  <li><a class="dropdown-item nav-link nav_item" href="#">Etika Bisnis</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/sekilas-GCG/Kode Etik WMP.pdf" download>Sekilas GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/penerapan-GCG/Kebijakan Manajemen Risiko WMP.pdf" download>Penerapan GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/pengendalian-gratifikasi/Kebijakan Anti-Korupsi dan Anti-Fraud WMP.pdf" download>Pengendalian Gratifikasi</a></li>
+                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" download>Etika Bisnis</a>
+                                              <div class="dropdown-menu dropdown-reverse">
+                                                  <ul>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kode Etik Pemasok WMP.pdf">Kode Etik Pemasok WMP</a></li>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kebijakan Kreditur dan Kebijakan Seleksi Pemasok atau Vendor WMP.pdf">Kebijakan Kreditur dan Seleksi Vendor WMP</a></li>
+
+                                                  </ul>
+                                              </div>
+                                            </li>
 
                                         </ul>
                                     </div>
@@ -211,7 +219,7 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ESG</a>
                     <div class="dropdown-menu">
                         <ul>
-                             <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
+                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/joglo-tumiyono">Joglo Tumiyono</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Yayasan KEI</a></li>
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">

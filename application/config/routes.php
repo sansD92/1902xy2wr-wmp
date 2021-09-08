@@ -6,6 +6,7 @@ $route['produk'] = "Main/produk";
 $route['tentangkami'] = "Tentangkami/profil_perusahaan";
 $route['visimisi'] = "Tentangkami/visimisi";
 $route['milestone'] = "Tentangkami/milestone";
+$route['esg/joglo-tumiyono'] = "Esg/joglo";
 $route['motto'] = "Tentangkami/motto";
 $route['komisaris-direksi'] = "Tentangkami/komisaris";
 $route['direksi'] = "Tentangkami/direksi";
