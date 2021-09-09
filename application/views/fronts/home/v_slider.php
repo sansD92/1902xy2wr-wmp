@@ -4,7 +4,7 @@
         <?php  foreach ($posts_slider as $post_new){ ?>
         <?php
           if(empty($post_new->slider_gambar)) {
-            echo "<div class='carousel-item background_bg' data-img-src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
+            echo "<div class='carousel-item background_bg overlay_bg2' data-img-src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
             }else {
             echo " <div class='carousel-item ".$post_new->slider_meta_desk." background_bg' data-img-src='".base_url()."assets/frontend/slider/".$post_new->slider_gambar."'> ";}
          ?>
@@ -12,10 +12,10 @@
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-sm-12 text-center">
-                            <div style="background-color: rgb(0 0 0 / 15%)"class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
+                            <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
                                 <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><?php echo $post_new->slider_judul ?></h2>
                                 <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><?php echo $post_new->slider_desk ?></p>
-                               
+
                             </div>
                         </div>
                     </div>
