@@ -14,7 +14,7 @@
                         <div class="col-lg-9 col-sm-12 text-center">
                             <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
                                 <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><?php echo $post_new->slider_judul ?></h2>
-                                <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><?php echo $post_new->slider_desk ?></p>
+                                <p style="font-size: 12px;" class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><?php echo $post_new->slider_desk ?></p>
 
                             </div>
                         </div>
