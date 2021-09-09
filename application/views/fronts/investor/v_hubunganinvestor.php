@@ -170,7 +170,7 @@
                         <div class="filter_price">
 
                              <div class="d-flex align-items-center justify-content-between">
-                                 <span><strong>Nama Kontak</strong><br> Head of Investor Relations <p>nama@widodomakmurperkasa.co.id</p></span>
+                                 <span><strong>Nama Kontak</strong><br>Investor Relations <p>bramantyo.adi@wmp-group.co.id</p></span>
                              </div>
                          </div>
                     </div>
