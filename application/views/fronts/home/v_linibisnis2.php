@@ -67,7 +67,7 @@
                     <div class="icon_box_content">
                         <h5>Construction Dan Energy</h5>
                         <p></p>
-                        <a href="<?php echo base_url("linibisnis/kategori/construction-dan-energy") ?>" class="btn btn-outline-white">Selengkapnya</a>
+                        <a href="<?php echo base_url("linibisnis/kategori/construction--energy") ?>" class="btn btn-outline-white">Selengkapnya</a>
                     </div>
                 </div>
             </div>
