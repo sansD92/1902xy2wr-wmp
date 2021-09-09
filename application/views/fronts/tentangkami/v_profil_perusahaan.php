@@ -43,6 +43,15 @@
                     <div class="heading_s1 text-center">
                     <h2>Profil Perusahaan</h2>
                 </div>
+                <p style="text-align: justify;">
+                  PT Widodo Makmur Perkasa dikelola dan didukung oleh para tenaga muda dan ahli, sehingga layak menjadi mitra berorkestrasi dalam industri agrikultur dan consumer goods. Widodo Makkmur Perkasa memiliki lima bisnis line yang saling berintergrasi, yaitu :
+                </p>
+                <h6>1. Livestock</h6>
+                <h6>2. Meat Processing</h6>
+                <h6>3. Poultry</h6>
+                <h6>4. Commodity</h6>
+                <h6>5. Contruction & Energy</h6>
+
                <!--  <div>
                     <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MOTTO.png" alt="struktur_organisasi"/>
                 </div> -->
