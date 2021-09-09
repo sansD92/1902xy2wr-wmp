@@ -6,7 +6,7 @@
           if(empty($post_new->slider_gambar)) {
             echo "<div class='carousel-item background_bg overlay_bg2' data-img-src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
             }else {
-            echo " <div class='carousel-item ".$post_new->slider_meta_desk." background_bg' data-img-src='".base_url()."assets/frontend/slider/".$post_new->slider_gambar."'> ";}
+            echo " <div class='carousel-item ".$post_new->slider_meta_desk." background_bg overlay_bg2' data-img-src='".base_url()."assets/frontend/slider/".$post_new->slider_gambar."'> ";}
          ?>
             <div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
