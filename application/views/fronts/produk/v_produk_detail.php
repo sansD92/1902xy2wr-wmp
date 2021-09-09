@@ -13,7 +13,7 @@
 										</a>
 												<div class='portfolio_content'>
 														<div class='link_container'>
-																
+
 																<button type='button' class='btn btn-outline-white' data-toggle='modal' data-target='#modal-$row[id_produk_detail]'>Detail</i></button>
 														</div>
 														<h5><a href='#'>$row[nama_produk_detail]</a></h5>
@@ -32,7 +32,7 @@
                     foreach ($produk_detail as $row){
 
                     echo "
-          
+
                     <div class='modal-body'>
         <div class='modal modal-member fade show' id='modal-$row[id_produk_detail]' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div class='modal-dialog' role='document'>
@@ -43,7 +43,7 @@
                         <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>
-                   
+
                         <div class='row'>
                             <div class='col-lg-4'>
                                 <img src='".base_url()."assets/frontend/produk/$row[foto_produk_detail]' class='img-fluid border-rad-bottom-right-sm'>
@@ -53,10 +53,13 @@
                                     <h3>$row[nama_produk_detail]</h3>
                                     <p class='member-title'>Deskripsi</p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
-                                    <ul class='list_none social_icons border_social rounded_social'>
-                            	<li><a href='#'><i class='ion-social-whatsapp'></i></a></li>
-                            	<li><a href='#'><i class='ion-social-whatsapp'></i></a></li>
-                            	<li><a href='#'><i class='ion-social-instagram-outline'></i></a></li>
+                                    <ul class='list_none social_icons'>
+			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-tk.png'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-bl.png'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-sp.png'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-ig.png'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-fb.png'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-wa.png'></a></li>
                         	</ul>
                                   </div>
                             </div>
