@@ -2302,7 +2302,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	top: 0;
 }
 .overlay_bg2::before {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.5);
 	bottom: 0;
 	content: "";
 	left: 0;
@@ -5165,7 +5165,7 @@ to {
 .team_hover_style1.team_box,
 .team_hover_style2.team_box {
 	padding-bottom: 50px;
-	
+
 }
 .team_hover_style1 .social_icons {
     position: absolute;

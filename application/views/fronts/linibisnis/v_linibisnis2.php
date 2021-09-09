@@ -14,7 +14,7 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg1 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar_sub"; ?>">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar_sub"; ?>">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
