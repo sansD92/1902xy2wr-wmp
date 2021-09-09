@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <center><div class="heading_s3">
-                    <h4><a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kode Etik Pemasok WMP.pdf" type="application/pdf">Kode Etik Pemasok WMP</a></h4>
+                    <h4><a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kode Etik Pemasok WMP.pdf" target="_blank" type="application/pdf">Kode Etik Pemasok WMP</a></h4>
                 </div></center>
 
 
