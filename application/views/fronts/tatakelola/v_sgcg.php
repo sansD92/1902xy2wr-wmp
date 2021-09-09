@@ -27,7 +27,7 @@
                 <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <center><div class="heading_s3">
                     <h4>                        
-                      <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/Kode Etik WMP.pdf" type="application/pdf">Sekilas GCG</a></h4>
+                      <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/Kode Etik WMP.pdf" target="_blank" type="application/pdf">Sekilas GCG</a></h4>
                 </div></center>
 
 
