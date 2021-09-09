@@ -171,14 +171,14 @@
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/sekilas-GCG/Kode Etik WMP.pdf" download>Sekilas GCG</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/penerapan-GCG/Kebijakan Manajemen Risiko WMP.pdf" download>Penerapan GCG</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/pengendalian-gratifikasi/Kebijakan Anti-Korupsi dan Anti-Fraud WMP.pdf" download>Pengendalian Gratifikasi</a></li>
-                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" download>Etika Bisnis</a>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/sekilas_gcg">Sekilas GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/penerapan_gcg" >Penerapan GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pengendalian_gratifikasi">Pengendalian Gratifikasi</a></li>
+                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" >Etika Bisnis</a>
                                               <div class="dropdown-menu dropdown-reverse">
                                                   <ul>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kode Etik Pemasok WMP.pdf">Kode Etik Pemasok WMP</a></li>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>assets/frontend/etika-bisnis/Kebijakan Kreditur dan Kebijakan Seleksi Pemasok atau Vendor WMP.pdf">Kebijakan Kreditur dan Seleksi Vendor WMP</a></li>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/etikabisnis_pemasok">Kode Etik Pemasok WMP</a></li>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/kebijakan_kreditur">Kebijakan Kreditur dan Seleksi Vendor WMP</a></li>
 
                                                   </ul>
                                               </div>
@@ -262,7 +262,7 @@
                                 </li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Kegiatan Perusahaan</a></li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li>
+                             <!-- <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li> -->
 
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg" target="_blank">Youtube WMP</a></li> -->
 
