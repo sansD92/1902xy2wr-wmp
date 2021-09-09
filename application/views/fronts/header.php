@@ -261,7 +261,7 @@
                                     </div>
                                 </li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Kegiatan Perusahaan</a></li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Galeri</a></li>
+                             
                              <!-- <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li> -->
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/gallery">Galeri</a></li>
                             <!--  <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li> -->
