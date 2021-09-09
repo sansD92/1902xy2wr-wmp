@@ -24,7 +24,7 @@ class Main extends CI_Controller {
 			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 			$data['posts']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
       $data['posts_logo']= $this->Crud_m->view_one_limit('logo','logo_status','logo_urutan','ASC',$dari,'20');
-      $data['posts_slider'] = $this->Crud_m->view_one_limit('slider','slider_status','slider_id','DESC',$dari,$config['per_page_slider']);
+      $data['posts_slider'] = $this->Crud_m->view_one_limit('slider','slider_status','slider_id','ASC',$dari,$config['per_page_slider']);
       $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC',$dari,'10');
 		}else{
 			redirect('main');
