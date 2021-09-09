@@ -1,4 +1,4 @@
-<section style="background-color: #BD2132" class="counter_wrap background_bg fixed_bg " >
+<section style="background-color: #8C1824" class="counter_wrap background_bg fixed_bg " >
     <div class="container">
         <div class="row justify-content-center">
         	<div class="col-md-6 text-center " >

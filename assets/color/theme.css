@@ -91,7 +91,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .btn-default.btn-aylen:hover,
 .blog_heading *:hover,
 .blog_postmeta a:hover {
-	color: #BD2132 !important;
+	color: #8C1824 !important;
 }
 
 .btn-default,
@@ -176,7 +176,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .room_services i:hover,
 .widget_reservation h5,
  .widget_search_box .btn, .widget_search_box button{
-	background-color: #BD2132;
+	background-color: #8C1824;
 }
 
 .btn-default:hover,
@@ -226,7 +226,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 .dw_event_schedule a:hover,
 .pagination_style8 .page-item.active .page-link,
 .pagination_style8 .page-item .page-link:hover {
-	border-color: #BD2132;
+	border-color: #8C1824;
 }
 
 .btn-default:hover {
@@ -267,7 +267,7 @@ header.light_skin.nav-fixed .social_icons li a:hover,
 }
 
 .custome_select::before {
-	border-top-color: #BD2132;
+	border-top-color: #8C1824;
 }
 
 .classis_box:hover:before {
@@ -277,20 +277,20 @@ header.light_skin.nav-fixed .social_icons li a:hover,
     background: -o-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(14,147,216,1) 0%, rgba(255,255,255,0.06) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#BD2132',GradientType=0 ); /* ie6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#8C1824',GradientType=0 ); /* ie6-9 */
 }
 
 .filter_tab li a.active {
-	box-shadow: 0 0 10px #BD2132;
+	box-shadow: 0 0 10px #8C1824;
 }
 
 .btn_box_shadow:hover,
 .btn_box_shadow:focus,
 .btn_box_shadow.active:focus,
 .btn_box_shadow:active:focus {
-	box-shadow: 0 0 15px #BD2132 !important;
+	box-shadow: 0 0 15px #8C1824 !important;
 }
 
 .tab-style7 li a.active::before {
-	border-color: #BD2132 transparent transparent transparent
+	border-color: #8C1824 transparent transparent transparent
 }
