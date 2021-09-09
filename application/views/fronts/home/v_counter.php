@@ -1,4 +1,4 @@
-<section style="background-color: #BD2132" class="counter_wrap background_bg fixed_bg overlay_bg2" >
+<section style="background-color: #BD2132" class="counter_wrap background_bg fixed_bg " >
     <div class="container">
         <div class="row align-items-center justify-content-center">
         	<div class="col-md-5 text_white text-center text-md-left mb-4 mb-md-0 " >
