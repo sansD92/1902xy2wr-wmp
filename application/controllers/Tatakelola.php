@@ -70,4 +70,67 @@ public function kebijakan_kreditur()
 
   $this->load->view('fronts/tatakelola/v_etikab_2',$data);
 }
+
+// English Version
+  public function sekilas_gcg_eng()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/tatakelola/v_sgcg_eng',$data);
+}
+ public function penerapan_gcg_eng()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/tatakelola/v_pgcg_eng',$data);
+}
+public function pengendalian_gratifikasi_eng()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/tatakelola/v_pg_eng',$data);
+}
+public function etikabisnis_pemasok_eng()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/tatakelola/v_etikab_1_eng',$data);
+}
+
+public function kebijakan_kreditur_eng()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/tatakelola/v_etikab_2_eng',$data);
+}
 }

@@ -99,5 +99,45 @@ class Main extends CI_Controller {
 		}
 		$this->load->view('fronts/index_eng',$data);
 	}
+	
+  public function bisnis_eng($id)
+	{
+
+			$config['per_page'] = 4;
+
+
+			$row = $this->Crud_m->get_by_id_post($id,'bisnis_id','bisnis','bisnis_judul_seo');
+			if ($this->uri->segment('4')==''){
+				$dari = 0;
+				}else{
+					$dari = $this->uri->segment('4');
+			}
+			if ($row)
+				{
+          $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC',$dari,'10');
+          $data['status']   = 'active';
+          $data['status_produk']   = '';
+					$data['posts']            = $this->Crud_m->get_by_id_post($id,'bisnis_id','bisnis','bisnis_judul_seo');
+					$this->add_count_bisnis($id);
+					$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+          $this->load->view('fronts/linibisnis/v_linibisnis_eng', $data);
+				}
+				else
+						{
+							$this->session->set_flashdata('message', '<div class="alert alert-dismissible alert-danger">
+								<button type="button" class="close" data-dismiss="alert">&times;</button>Bisnis tidak ditemukan</b></div>');
+							redirect(base_url());
+						}
+	}
+	function add_count_bisnis_eng($id)
+	{
+			$check_visitor = $this->input->cookie(urldecode($id), FALSE);
+			$ip = $this->input->ip_address();
+			if ($check_visitor == false) {
+					$cookie = array("name" => urldecode($id), "value" => "$ip", "expire" => time() + 10, "secure" => false);
+					$this->input->set_cookie($cookie);
+					$this->Crud_m->update_counter_bisnis(urldecode($id));
+			}
+	}
 
 }

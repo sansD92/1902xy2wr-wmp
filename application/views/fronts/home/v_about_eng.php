@@ -13,7 +13,8 @@
                 </div>
                 <p style="text-align: justify;"><?php echo $identitas->meta_deskripsi?></p>
 
-                <br><br><a href="<?php echo base_url()?>tentangkami" class="btn btn-black">More</a>
+                <!-- <br><br><a href="<?php echo base_url()?>eng/tentangkami" class="btn btn-black">More</a> -->
+                <br><br><a href="#" class="btn btn-black">More</a>
             </div>
         </div>
     </div>

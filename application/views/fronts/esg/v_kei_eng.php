@@ -10,7 +10,7 @@
 
 
 <!-- START HEADER -->
-<?php $this->load->view('fronts/header.php')?>
+<?php $this->load->view('fronts/header_eng.php')?>
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Yayasan KEI</h1>
+                    <h1>KEI Foundation</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Profil Perusahaan</li>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a>About Us</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Company Profile</li>
                   </ol>
                 </nav>
             </div>
@@ -45,22 +45,22 @@
                 </div>
               <div class="row">
             <div class="col-md-12 mb-2 mb-md-4 animation" >
-                <h5>Profil Kesatriaan Entrepreneur Indonesia</h5>
+                <h5>Kesatriaan Entrepreneur Indonesia Profile</h5>
                 <p style="text-align: justify;">
-                  Kesatriaan Entrepreneur Indonesia merupakan sebuah badan yang berada di bawah naungan PT. Widodo Makmur Perkasa. Berdiri dengan akta notaris ……dan diresmikan berdirinya pada ……. Berpusat di Joglo Tumiyono, desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten,  Ksatriaan Entrepreneur Indonesia bertekad untuk menciptakan 1.000.000 entrepreneur muda.
+                  Kesatriaan Entrepreneur Indonesia is an agency under the auspices of PT. Widodo Prosperous Mighty. Standing by notarial deed ……and inaugurated its establishment on ……. Headquartered in Joglo Tumiyono, Ngerangan village, Bayat district, Klaten district, Ksatriaan Entrepreneur Indonesia is determined to create 1,000,000 young entrepreneurs.
                 </p>
-                <h5>Kegiatan di Ksatriaan Entrepreneur Indonesia (KEI) meliputi :</h5>
-                <h6>1.	Pendidikan dan Pelatihan</h6>
+                <h5>Activities at the Kesatriaan Entrepreneur Indonesia (KEI) include:</h5>
+                <h6>1.	Education & Training</h6>
                 <p style="text-align: justify;">
-                Joglo Tumiyono menyelenggarakan pendidikan entrepreneur di bidang peternakan (sapi dan unggas) serta pertanian bagi generasi muda yang potensial, berpendidikan, cerdas, berkomitmen terhadap bidang usaha yang digelutinya, memiliki kemauan kuat untuk belajar dan berusaha agar mampu menciptakan usaha-usaha baru yang ditangani secara cerdas. Juga berkomitmen terhadap pendidikan dan pengembangan Sumber Daya Manusia, Joglo Tumiyono juga menyelenggarakan berbagai program pendidikan dan pelatihan untuk menambah keahlian SDM, terutama dari kalangan internal WMP Group dan masyarakat sekitar.
+                Joglo Tumiyono organizes entrepreneurial education in the fields of livestock (cattle and poultry) and agriculture for the young generation who are potential, educated, intelligent, committed to the business they are engaged in, have a strong will to learn and strive to be able to create new businesses that are handled intelligently. . Also committed to the education and development of Human Resources, Joglo Tumiyono also organizes various education and training programs to increase HR skills, especially from the internal WMP Group and the surrounding community.
                 </p>
-                <h6>2.	Membangun Kemitraan</h6>
+                <h6>2.	Building Partnership</h6>
                 <p style="text-align: justify;">
-                Membangun kemitraan yang saling menguntungkan, untuk meningkatkan kesejahteraan petani, peternak dan UMKM. Ada kurang lebih 4 juta usia muda yang potensial dididik untuk menjadi petani, peternak dan pelaku UMKM yang akan mengolah produknya dengan system pertanian yang telah disempurnakan metodenya agar menghasilkan panen yang maksimal dan mengurangi potensi kegagalan panen atau kerugian. Ke depan pengembangan kemitraan akan berjalan berdampingan dengan pertumbuhan perusahaan. Saat ini kegiatan kemitraan yang sudah berjalan didukung oleh dua anak perusahaan WMP yaitu PT. Pasir Tengah (PST) yang melaksankan Kemitraan Sapi dan PT. Widodo Makmur Unggas (WMU) yang melaksanakan kemitraan ayam.
+                Building mutually beneficial partnerships, to improve the welfare of farmers, breeders and MSMEs. There are approximately 4 million young people who have the potential to be educated to become farmers, breeders and MSME actors who will process their products with an improved agricultural system in order to produce maximum harvests and reduce potential crop failures or losses. In the future, partnership development will go hand in hand with the company's growth. Currently, the ongoing partnership activities are supported by two WMP subsidiaries, namely PT. Pasir Tengah (PST) which implements the Cattle Partnership and PT. Widodo Makmur Unggas (WMU) who implemented the chicken partnership.
                 </p>
-                <h6>3.	Inkubator Bisnis</h6>
+                <h6>3.	Business Incubator</h6>
                 <p style="text-align: justify;">
-                  Kesatriaan Entrepreneur Indonesia juga memberikan pelayanan konsultasi dan pendampingan bisnis bagi entrepreneur muda yang memulai membangun usaha salah satunya dengan menghubungkan pada lembaga bank atau lembaga keuangan lainnya untuk mendapatkan fasilitas pembiayaan. Juga pihak-pihak terkait lainnya seperti supplier atau lembaga  swadaya lainnya untuk mengadakan kerjasama usaha.
+                  Kesatriaan Entrepreneur Indonesia also provides consulting services and business assistance for young entrepreneurs who are starting to build a business, one of which is by connecting to banks or other financial institutions to obtain financing facilities. Also other related parties such as suppliers or other non-governmental organizations to conduct business cooperation.
                 </p>
             </div>
         </div>
@@ -76,11 +76,11 @@
 
 
 <!-- START SECTION SUBCRIBE -->
-<?php $this->load->view('fronts/home/v_subcribe')?>
+<?php $this->load->view('fronts/home/v_subcribe_eng')?>
 <!-- END SECTION SUBCRIBE -->
 
 <!-- START FOOTER SECTION -->
-<?php $this->load->view('fronts/footer')?>
+<?php $this->load->view('fronts/footer_eng')?>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>

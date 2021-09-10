@@ -35,4 +35,31 @@ public function joglo()
 
 $this->load->view('fronts/esg/v_joglo',$data);
 }
+
+  // English Version 
+   public function kei_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/esg/v_kei_eng',$data);
+}
+
+public function joglo_eng()
+{
+
+   $data['status']   = 'active';
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+   $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+$this->load->view('fronts/esg/v_joglo_eng',$data);
+}
 }

@@ -10,7 +10,7 @@
 
 
 <!-- START HEADER -->
-<?php $this->load->view('fronts/header.php')?>
+<?php $this->load->view('fronts/header_eng.php')?>
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
@@ -23,8 +23,8 @@
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url()?>eng/home">Home</a></li>
+                    <li class="breadcrumb-item"><a>About Us</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Milestone</li>
                   </ol>
                 </nav>
@@ -56,11 +56,11 @@
 
 
 <!-- START SECTION SUBCRIBE -->
-<?php $this->load->view('fronts/home/v_subcribe')?>
+<?php $this->load->view('fronts/home/v_subcribe_eng')?>
 <!-- END SECTION SUBCRIBE -->
 
 <!-- START FOOTER SECTION -->
-<?php $this->load->view('fronts/footer')?>
+<?php $this->load->view('fronts/footer_eng')?>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
