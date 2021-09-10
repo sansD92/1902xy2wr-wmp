@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="icon_box_content">
                                     <h5 class="text-uppercase py-md-2">Email</h5>
-                                    <p>widodomakmurperkasa@wmp-group.co.id</p>
+                                    <p>info@wmp-group.co.id</p>
                                 </div>
                              </div>
                         </div>
