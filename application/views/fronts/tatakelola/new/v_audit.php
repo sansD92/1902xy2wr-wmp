@@ -27,7 +27,7 @@
                 <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <center><div class="heading_s3">
                     <h4>                        
-                      <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/PIAGAM-INTERNAL AUDIT CHARTER.pdf" target="_blank" type="application/pdf">Piagam Internal Komisaris</a></h4>
+                      <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/PIAGAM-INTERNAL AUDIT CHARTER.pdf" target="_blank" type="application/pdf">Piagam Internal Audit</a></h4>
                 </div></center>
 
 
