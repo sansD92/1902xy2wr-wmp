@@ -194,6 +194,7 @@
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_bod">Piagam BOD</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_komisaris" >Piagam Dewan Komisaris</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedoman_komite" >Pedoman Komite Nominasi & Remunerasi</a></li>
                                            
 
                                         </ul>
