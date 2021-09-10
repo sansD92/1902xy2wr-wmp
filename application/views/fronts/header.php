@@ -169,7 +169,7 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tata Kelola</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
+                           <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/sekilas_gcg">Sekilas GCG</a></li>
@@ -184,6 +184,17 @@
                                                   </ul>
                                               </div>
                                             </li>
+
+                                        </ul>
+                                    </div>
+                                </li> -->
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">SEKILAS GCG</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_bod">Piagam BOD</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_komisaris" >Piagam Dewan Komisaris</a></li>
+                                           
 
                                         </ul>
                                     </div>
