@@ -187,7 +187,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Pedoman Kerja Direksi</a></li>
+                               
 
                              <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
                                     <div class="dropdown-menu">
