@@ -54,7 +54,7 @@
                 <P></P>
 
                 <p style="text-align: justify; color: #000;">
-                  Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Agricultural Commodity terbesar di region.
+                  Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Komoditas Pertanian terbesar di regional.
                 </p>
 
                <!--  <div>
