@@ -152,10 +152,10 @@
                     <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
-                                <a href="#">
+                                <a href="<?php echo base_url()?>informasi/mediarilis">
                                     <img src="<?php echo base_url()?>assets/frontend/campur/media-dan-rilis.jpg" alt="image">
                                 </a>
-                                <a href="#">
+                                <a href="<?php echo base_url()?>informasi/mediarilis">
                                     <img src="<?php echo base_url()?>assets/frontend/campur/media-dan-rilis.jpg" alt="image">
                                 </a>
                             </div>
