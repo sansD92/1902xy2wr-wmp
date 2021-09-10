@@ -42,7 +42,7 @@
 
   <div class="container " >
     <nav class="navbar navbar-expand-lg">
-    	<a class="navbar-brand" href="<?php echo base_url()?>">
+    	<a class="navbar-brand" href="<?php echo base_url()?>eng/home">
 			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
             <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
             <img class="logo_default" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
@@ -51,7 +51,7 @@
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="<?php echo base_url()?>"><span style="font-weight: 800;" class="ti-home"></span></a>
+                    <a class="nav-link " href="<?php echo base_url()?>eng/home"><span style="font-weight: 800;" class="ti-home"></span></a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">About Us</a>
