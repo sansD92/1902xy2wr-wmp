@@ -359,4 +359,13 @@ function get_all_blogs($per_page,$dari)
     $this->db->join('produk', 'produk.id_produk = produk_detail.id_produk','inner');
     return $this->db->get('produk_detail')->result_array();
 }
+
+ function get_all_kegiatan($kegiatan)
+  {
+    $this->db->limit(9);
+    $this->db->where('blogs.blogs_kategori_id',$kegiatan);
+    $this->db->order_by('blogs_id', 'DESC');
+    $this->db->join('blogs_kategori', 'blogs_kategori.blogs_kategori_id = blogs.blogs_kategori_id','inner');
+    return $this->db->get('blogs')->result();
+  }
 }
