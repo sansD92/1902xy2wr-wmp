@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                    <!-- <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
@@ -124,7 +124,7 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
