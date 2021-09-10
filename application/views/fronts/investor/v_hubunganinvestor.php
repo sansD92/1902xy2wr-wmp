@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                    <!-- <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
+                    <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
@@ -141,10 +141,10 @@
                         <div class="product text-center">
                         	<div class="product_img">
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/sell-a-copyright.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/sell-side-coverage.jpg" alt="image">
                                 </a>
                                 <a href="#">
-                                    <img src="<?php echo base_url()?>assets/frontend/campur/sell-a-copyright.jpg" alt="image">
+                                    <img src="<?php echo base_url()?>assets/frontend/campur/sell-side-coverage.jpg" alt="image">
                                 </a>
                             </div>
                         </div>
