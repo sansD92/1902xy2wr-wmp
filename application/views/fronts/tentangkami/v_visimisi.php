@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Filosifi Visi & Misi</h1>
+                    <h1>Visi & Misi</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Filosifi Visi & Misi</li>
+                    <li class="breadcrumb-item active" aria-current="page">Visi & Misi</li>
                   </ol>
                 </nav>
             </div>
@@ -35,7 +35,7 @@
 <!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
-<section class="small_pb overflow_hide">
+<!-- <section class="small_pb overflow_hide">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
@@ -49,7 +49,7 @@
 
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="small_pb overflow_hide">
     <div class="container">
