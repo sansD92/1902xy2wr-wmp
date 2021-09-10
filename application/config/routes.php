@@ -59,3 +59,60 @@ $route['(:any)'] = "berita/detail/$1";
 $route['404_override'] = 'Notfound';
 $route['translate_uri_dashes'] = FALSE;
 $route['petacrawl\.xml'] = "petacrawl";
+
+
+// English Version 
+$route['eng/home'] = 'main/main_eng';
+// $route['eng/product'] = "Main/produk";
+$route['eng/about-us'] = "Tentangkami/profil_perusahaan";
+$route['eng/visimisi'] = "Tentangkami/visimisi";
+$route['eng/milestone'] = "Tentangkami/milestone";
+$route['eng/esg/joglo-tumiyono'] = "Esg/joglo";
+$route['eng/motto'] = "Tentangkami/motto";
+$route['eng/commissioners-directors'] = "Tentangkami/komisaris";
+$route['eng/directors'] = "Tentangkami/direksi";
+$route['eng/companystructure'] = "Tentangkami/strukturcompany";
+$route['eng/organizationalstructure'] = "Tentangkami/strukturorganisasi";
+
+
+$route['eng/investor-shareholderinformation'] = "Investor/informasipemegangsaham";
+$route['eng/investor-activity'] = "Investor/kegiatan";
+$route['eng/investor-supportinginformation '] = "Investor/informasipendukung";
+
+$route['eng/contact-us-career'] = "Karir/hubungi_kami";
+$route['eng/overview-hc'] = "Karir/ikhtisar_hc";
+$route['eng/recruitment'] = "Karir/penerimaan_pegawai";
+$route['eng/investor-relationship'] = "Investor/hubunganinvestor";
+
+$route['eng/governance-codeofconduct'] = "Investor/tatakelola1";
+$route['eng/governance-boardguidelines'] = "Investor/tatakelola2";
+$route['eng/governance-directorsguidelines '] = "Investor/tatakelola3";
+$route['eng/governance-nominationcommittee'] = "Investor/tatakelola4";
+$route['eng/governance-auditcommittee'] = "Investor/tatakelola5";
+$route['eng/governance-companysecretary'] = "Investor/tatakelola6";
+$route['eng/governance-internalaudit'] = "Investor/tatakelola7";
+
+$route['eng/product'] = "Produk/index";
+$route['eng/product1'] = "Produk/produk1";
+$route['eng/product2'] = "Produk/produk2";
+$route['eng/product3'] = "Produk/produk3";
+$route['eng/product4'] = "Produk/produk4";
+$route['eng/product5'] = "Produk/produk5";
+$route['eng/product6'] = "Produk/produk6";
+
+$route['eng/businessline1'] = "Linibisnis/lini1";
+$route['eng/businessline2'] = "Linibisnis/lini2";
+$route['eng/businessline3'] = "Linibisnis/lini3";
+$route['eng/businessline4'] = "Linibisnis/lini4";
+$route['eng/businessline5'] = "Linibisnis/lini5";
+
+
+$route['eng/news'] = "Berita/index_eng";
+
+$route['eng/contribution'] = "Kontrib/index_eng";
+$route['eng/partnership'] = "Kontrib/kemitraan_eng";
+$route['eng/poultrypartnership'] = "Kontrib/kemitraan_unggas_eng";
+$route['eng/report'] = "Kontrib/laporan_eng";
+
+$route['eng/bisnis/(:any)'] = "main/bisnis_eng/$1";
+$route['eng/(:any)'] = "berita/detail_eng/$1";
