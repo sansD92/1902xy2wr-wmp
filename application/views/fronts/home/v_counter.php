@@ -6,7 +6,7 @@
                 	<h2>Highlight</h2>
                 </div>
                 <h3>Bergabunglah Bersama Widodo Makmur Perkasa</h3>
-                <a href="#" class="btn btn-outline-white">Gabung</a>
+                <a href="https://www.jobstreet.co.id/en/companies/775340-pt-widodo-makmur-perkasa" target="_blank" class="btn btn-outline-white">Gabung</a>
             </div>
         	<div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 col-11 ">
             	<div class="row overflow_hide">
