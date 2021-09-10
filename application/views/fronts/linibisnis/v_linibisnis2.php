@@ -25,7 +25,7 @@
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li><p><?php echo "$deskripsi"; ?></p></li>
+                    <p><?php echo "$deskripsi"; ?></p>
                     <!-- <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?php echo "$title"; ?></li> -->
