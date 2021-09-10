@@ -99,7 +99,7 @@
 
 
                 <li class="dropdown">
-                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Lini Bisnis</a>
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Business Line</a>
                     <div class="dropdown-menu">
                         <ul>
                           <?php  foreach ($posts_bisnis as $post_new){ ?>
