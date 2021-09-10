@@ -45,27 +45,27 @@
                 </div>
               <div class="row">
             <div class="col-md-12 mb-2 mb-md-4 animation" >
-                <h5>Profil Joglo Tumiyono</h5>
+                <h5>Joglo Tumiyono's Profile</h5>
 
                 <p style="text-align: justify;">
-                  Joglo Tumiyono adalah sebuah mahakarya yang dipersembahkan PT Widodo Makmur Perkasa, Tbk sebagai bagian dari proses pelestarian  budaya adiluhung Jawa khususnya terkait dengan seni bangunan dan pahat. Didedikasikan bagi generasi muda agar memiliki wawasan budaya dan menumbuhkan rasa memiliki terhadap budaya bangsa.
+                  Joglo Tumiyono is a masterpiece presented by PT Widodo Makmur Perkasa, Tbk as part of the process of preserving the noble culture of Java, especially related to the art of building and sculpture. Dedicated to the younger generation to have cultural insight and foster a sense of belonging to the nation's culture.
                 </p>
                 <p style="text-align: justify;">
-                  Joglo Tumiyono didirikan sebagai monument dan pelestari budaya Jawa yang sarat nilai-nilai kehidupan. Joglo Tumiyono didedikasikan bagi pengembangan masyarakat dan tempat pendidikan dan pelatihan generasi muda sebagai bentuk pengabdian pada bangsa. Menempati luas lahan 2,2 hektar di Desa Ngerangan, Kecamatan Bayat, kabupaten Klaten Propinsi Jawa Tengah.
+                  Joglo Tumiyono was established as a monument and preserver of Javanese culture which is full of life values. Joglo Tumiyono is dedicated to community development and a place for education and training for the younger generation as a form of service to the nation. Occupying a land area of 2.2 hectares in Ngerangan Village, Bayat District, Klaten Regency, Central Java Province.
                 </p>
                 <p style="text-align: justify;">
-                  Joglo Tumiyono akan menjadi pusat pelatihan dan pembelajaran para entrepreneur muda yang terdidik dan terampil agar siap menjadi pelaku ekonomi berdasarkan minat mereka di bidang peternakan, pertanian atau pengolahan bahan makanan. Para entrepreneur muda ini akan dididik agar mampu mengelola bisnisnya dengan baik serta sustainability, yang merupakan sebuah kondisi dimana usaha dapat terus bertahan dan berkembang seiring waktu.
+                  Joglo Tumiyono will become a training and learning center for young entrepreneurs who are educated and skilled so that they are ready to become economic actors based on their interests in animal husbandry, agriculture or food processing. These young entrepreneurs will be educated to be able to manage their business well and sustainability, which is a condition where businesses can continue to survive and develop over time.
                 </p>
                 <p style="text-align: justify;">
-                  Joglo Tumiyono aktif mendukung masyarakat dan menyediakan tempat untuk pengembangan kualitas sumber daya manusia, di antaranya melalui kegiatan.
+                  Joglo Tumiyono actively supports the community and provides a place for the development of the quality of human resources, including through activities.
 
                 </p>
-                <h6>1. Pengembangan Ekonomi, Seni dan Budaya</h6>
-                <h6>2. Pesantren Entrepreneur</h6>
+                <h6>1. Economic Development, Arts and Culture</h6>
+                <h6>2. Entrepreneur Islamic Boarding School</h6>
 
                 <h6>Gallery</h6>
                 <p style="text-align: justify;">
-                  Kumpulan foto-foto berbagai kegiatan yang dilaksanakan di Joglo Tumiyono (Kesatriaan Entrepreneur Indonesia)
+                  A collection of photos of various activities carried out at Joglo Tumiyono (Kesatriaan Entrepreneur Indonesia)
                 </p>
 
 

@@ -111,4 +111,107 @@ public function strukturorganisasi()
 
   $this->load->view('fronts/tentangkami/v_strukturorganisasi',$data);
 }
+
+  // English Version
+   public function profil_perusahaan_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_profil_perusahaan_eng',$data);
+}
+  public function visimisi_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_visimisi_eng',$data);
+}
+
+public function motto_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_motto_eng',$data);
+}
+ public function milestone_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_milestone_eng',$data);
+}
+public function komisaris_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+       $data['posts_komisaris'] = $this->Crud_m->get_all_komisaris();
+       $data['posts_direksi'] = $this->Crud_m->get_all_direksi();
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_dewankomisaris_eng',$data);
+}
+
+public function direksi_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['posts_direksi'] = $this->Crud_m->get_all_direksi();
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_dewandireksi_eng',$data);
+}
+public function strukturcompany_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_strukturcompany_eng',$data);
+}
+public function strukturorganisasi_eng()
+{
+
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+  $this->load->view('fronts/tentangkami/v_strukturorganisasi_eng',$data);
+}
 }

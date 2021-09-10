@@ -10,7 +10,7 @@
 
 
 <!-- START HEADER -->
-<?php $this->load->view('fronts/header.php')?>
+<?php $this->load->view('fronts/header_eng.php')?>
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Profil Perusahaan</h1>
+                    <h1>Company Profile</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Profil Perusahaan</li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url()?>eng/home">Home</a></li>
+                    <li class="breadcrumb-item"><a>About Us</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Company Profile</li>
                   </ol>
                 </nav>
             </div>
@@ -41,10 +41,10 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>Profil Perusahaan</h2>
+                    <h2>Company Profile</h2>
                 </div>
                 <p style="text-align: justify; color: #000;">
-                  PT Widodo Makmur Perkasa, Tbk perusahaan yang bergerak di sektor consumer goods dan komoditas agrikultur. Telah tumbuh dan berkembang selama 26 tahun, dikelola dan didukung oleh para tenaga muda dan ahli, sehingga layak menjadi mitra berorkestrasi dalam industri agrikultur dan consumer goods. PT Widodo Makmur Perkasa, Tbk memiliki lima bisnis line yang saling berintergrasi, yaitu :
+                  PT Widodo Makmur Perkasa, Tbk is a company engaged in the consumer goods and agricultural commodities sector. It has grown and developed for 26 years, managed and supported by young workers and experts, so it deserves to be an orchestrating partner in the agriculture and consumer goods industry. PT Widodo Makmur Perkasa, Tbk has five integrated business lines, namely:
                 </p>
                 <h6>1. <i>Cattle Livestock as Integrated Cattle Farm</i></h6>
                 <h6>2. <i>Meat Processing as Meat Based Food Producers</i></h6>
@@ -54,7 +54,7 @@
                 <P></P>
 
                 <p style="text-align: justify; color: #000;">
-                  Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Agricultural Commodity terbesar di region.
+                  Upholding the vision of Provide Food For the Nation so that efficiency and orchestration occur in five business lines, making PT Widodo Makmur Perkasa, Tbk the largest force in the Consumer Goods and Agricultural Commodity Industry in the region.
                 </p>
 
                <!--  <div>
@@ -70,11 +70,11 @@
 
 
 <!-- START SECTION SUBCRIBE -->
-<?php $this->load->view('fronts/home/v_subcribe')?>
+<?php $this->load->view('fronts/home/v_subcribe_eng')?>
 <!-- END SECTION SUBCRIBE -->
 
 <!-- START FOOTER SECTION -->
-<?php $this->load->view('fronts/footer')?>
+<?php $this->load->view('fronts/footer_eng')?>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
