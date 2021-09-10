@@ -54,9 +54,9 @@
                                     <p class='member-title'>Deskripsi</p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
                                     <ul class='social_icons'>
-			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/instagram.gif'></a></li>
+			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Instagram.gif'></a></li>
 																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/tokopedia.gif'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/shopee.gif'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Shopee.gif'></a></li>
                         	</ul>
                                   </div>
                             </div>
