@@ -27,7 +27,7 @@ Indonesia
                         </li>
                         <li>
                             <span class="ti-email"></span>
-                            <a href="mailto:info@sitename.com">widodomakmurperkasa@wmp-group.co.id
+                            <a href="mailto:info@sitename.com">info@wmp-group.co.id
 </a>
                         </li>
                         <li>
