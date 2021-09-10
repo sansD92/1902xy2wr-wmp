@@ -5205,7 +5205,7 @@ to {
 }
 .social_icons li a:hover,
 .social_icons.hover_style1 li a {
-    background-color: #000;
+    background-color: #fff;
     color: #fff;
 }
 .social_icons.hover_style1 li a:hover {

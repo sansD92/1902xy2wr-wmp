@@ -76,11 +76,13 @@
                     <li><a href="#" class="current" data-filter="*">all</a></li>
                    <li><a href="#"  data-filter=".pasir-tengah">Sapi</a></li>
                     <li><a href="#" data-filter=".cianjur-arta-makmur">Daging Sapi</a></li>
+                    <li><a href="#" data-filter=".widodo-makmur-unggas">Daging Ayam</a></li>
                     <li><a href="#" data-filter=".prima-widodo-makmur">Produk Olahan</a></li>
-                    <li><a href="#" data-filter=".garut-makmur-perkasa">Kulit</a></li>
-                    <li><a href="#" data-filter=".widodo-makmur-unggas">Produk Ayam</a></li>
-                    <li><a href="#" data-filter=".widodo-makmur-sejatra">Komoditas</a></li>
-                    <li><a href="#" data-filter=".konstruksi">jasa konstruksi dan energi </a></li>
+                     <li><a href="#" data-filter=".widodo-makmur-sejatra">Komoditas</a></li>
+                    <li><a href="#" data-filter=".garut-makmur-perkasa">Leather</a></li>
+                    
+                   
+                    
                 </ul>
             </div>
         </div>

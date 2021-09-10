@@ -44,16 +44,17 @@
                     <h2>Profil Perusahaan</h2>
                 </div>
                 <p style="text-align: justify; color: #000;">
-                  PT Widodo Makmur Perkasa dikelola dan didukung oleh para tenaga muda dan ahli, sehingga layak menjadi mitra berorkestrasi dalam industri agrikultur dan consumer goods. Widodo Makkmur Perkasa memiliki lima bisnis line yang saling berintergrasi, yaitu :
+                  PT Widodo Makmur Perkasa, Tbk perusahaan yang bergerak di sektor consumer goods dan komoditas agrikultur. Telah tumbuh dan berkembang selama 26 tahun, dikelola dan didukung oleh para tenaga muda dan ahli, sehingga layak menjadi mitra berorkestrasi dalam industri agrikultur dan consumer goods. PT Widodo Makmur Perkasa, Tbk memiliki lima bisnis line yang saling berintergrasi, yaitu :
                 </p>
-                <h6>1. Livestock</h6>
-                <h6>2. Meat Processing</h6>
-                <h6>3. Poultry</h6>
-                <h6>4. Commodity</h6>
-                <h6>5. Contruction & Energy</h6>
+                <h6>1. <i>Cattle Livestock as Integrated Cattle Farm</i></h6>
+                <h6>2. <i>Meat Processing as Meat Based Food Producers</i></h6>
+                <h6>3. <i>Poultry as Integrated Poultry Farm</i></h6>
+                <h6>4. <i>Commodity as Agriculture (Commodities Trading & Plantation)</i></h6>
+                <h6>5. <i>Contruction & Energy as Group Support of (Construction and Renewable Energy)</i></h6>
+                <P></P>
 
                 <p style="text-align: justify; color: #000;">
-                  Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan Widodo Makmur Perkasa sebagai kekuatan di Industri Consumer Goods dan Commodity terbesar di region.
+                  Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Agricultural Commodity terbesar di region.
                 </p>
 
                <!--  <div>

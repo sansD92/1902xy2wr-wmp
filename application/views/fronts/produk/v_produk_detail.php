@@ -53,13 +53,10 @@
                                     <h3>$row[nama_produk_detail]</h3>
                                     <p class='member-title'>Deskripsi</p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
-                                    <ul class='list_none social_icons'>
-			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-tk.png'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-bl.png'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-sp.png'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-ig.png'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-fb.png'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/icon-wa.png'></a></li>
+                                    <ul class='social_icons'>
+			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Instagram.gif'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/tokopedia.gif'></a></li>
+																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Shopee.gif'></a></li>
                         	</ul>
                                   </div>
                             </div>
