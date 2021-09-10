@@ -25,7 +25,7 @@ public function pemegangsaham()
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-    $this->load->view('fronts/informasi/v_faq',$data);
+    $this->load->view('fronts/investor/v_pemegangsaham2',$data);
   }
 public function kegiatan()
 {
