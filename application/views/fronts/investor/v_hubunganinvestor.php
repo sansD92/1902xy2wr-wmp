@@ -166,11 +166,11 @@
             <div class="col-lg-3 col-md-4">
             	<div class="sidebar">
                     <div class="widget">
-                        <h5 class="widget_title">Investor Relasi Kontak</h5>
+                        <h5 class="widget_title">Investor Relations Kontak</h5>
                         <div class="filter_price">
 
                              <div class="d-flex align-items-center justify-content-between">
-                                 <span><strong>Nama Kontak</strong><br>Investor Relations <p>bramantyo.adi@wmp-group.co.id</p></span>
+                                 <span><strong>Nama Kontak</strong><br>Investor Relations <p>investor.relation@wmp-group.co.id</p></span>
                              </div>
                          </div>
                     </div>
