@@ -51,6 +51,7 @@
                 <h6>3. <i>Poultry as Integrated Poultry Farm</i></h6>
                 <h6>4. <i>Commodity as Agriculture (Commodities Trading & Plantation)</i></h6>
                 <h6>5. <i>Contruction & Energy as Group Support of (Construction and Renewable Energy)</i></h6>
+                <P></P>
 
                 <p style="text-align: justify; color: #000;">
                   Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Agricultural Commodity terbesar di region.
