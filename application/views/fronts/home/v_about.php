@@ -4,7 +4,7 @@
             <div class="col-md-6">
                 <div class="overlay_bg about_video_img mb-4 mb-lg-0">
                     <img src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->profil_picture?>" alt="about_img4"/>
-                    <a link="false" href="https://youtube.com/watch?v=<?php echo $identitas->youtube_video?>" class="video_popup video_play"><img class="bounce_img" src="<?php echo base_url()?>assets/images/play-icon.png" alt="play-icon" allow="autoplay"></a>
+                    <a link="false" href="https://www.youtube.com/watch?v=Rq4qk6htD08" class="video_popup video_play"><img class="bounce_img" src="<?php echo base_url()?>assets/images/play-icon.png" alt="play-icon" allow="autoplay"></a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12" >
