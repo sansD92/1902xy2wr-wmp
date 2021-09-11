@@ -74,12 +74,12 @@
             <div class="col-md-12 text-center">
                 <ul class="list_none portfolio_filter filter_tab4">
                     <li><a href="#" class="current" data-filter="*">all</a></li>
-                   <li><a href="#"  data-filter=".pasir-tengah">Sapi</a></li>
-                    <li><a href="#" data-filter=".cianjur-arta-makmur">Daging Sapi</a></li>
-                    <li><a href="#" data-filter=".widodo-makmur-unggas">Daging Ayam</a></li>
-                    <li><a href="#" data-filter=".prima-widodo-makmur">Produk Olahan</a></li>
-                     <li><a href="#" data-filter=".widodo-makmur-sejatra">Komoditas</a></li>
-                    <li><a href="#" data-filter=".garut-makmur-perkasa">Leather</a></li>
+                   <li><a href="#"  data-filter=".pt-pasir-tengah">Sapi</a></li>
+                    <li><a href="#" data-filter=".pt-cianjur-arta-makmur">Daging Sapi</a></li>
+                    <li><a href="#" data-filter=".pt-widodo-makmur-unggas">Daging Ayam</a></li>
+                    <li><a href="#" data-filter=".pt-prima-widodo-makmur">Produk Olahan</a></li>
+                     <li><a href="#" data-filter=".pt-widodo-makmur-sejatra">Komoditas</a></li>
+                    <li><a href="#" data-filter=".pt-garut-makmur-perkasa">Leather</a></li>
                     
                    
                     
@@ -94,7 +94,7 @@
                     <?php  foreach ($posts_produk as $post_new){ ?>
                     <li class="portfolio-item <?php echo $post_new->produk_seo ?>">
                         <div class="portfolio_item">
-                            <a href="#" class="image_link">
+                            <a href="<?php echo base_url("produk/details/$post_new->produk_seo ") ?>" class="image_link">
                                 <img src="<?php echo base_url()?>assets/frontend/produk/<?php echo $post_new->foto_produk; ?>" alt="image">
                             </a>
                                 <div class="portfolio_content">

@@ -189,7 +189,7 @@
                                     </div>
                                 </li> -->
 
-                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">SEKILAS GCG</a>
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sekilas GCG</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_bod">Piagam BOD</a></li>
