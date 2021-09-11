@@ -77,6 +77,11 @@
 																					}else{
 					                            			echo"<li><a href='$rows[shopee]'><img src ='".base_url()."assets/frontend/campur/Shopee.gif'></a></li>";
 																					}
+																					if(empty($rows['bukalapak'])){
+																						echo"";
+																					}else{
+																						echo"<li><a href='$rows[bukalapak]'><img src ='".base_url()."assets/frontend/campur/bukalapak.gif'></a></li>";
+																					}
 																				}
 																		?>
 													<?php echo "</ul>
