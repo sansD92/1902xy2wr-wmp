@@ -59,7 +59,7 @@
                     <h2>Struktur Pemegang Saham</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/sph.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/STRUKTURPEMEGANGSAHAMs.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
