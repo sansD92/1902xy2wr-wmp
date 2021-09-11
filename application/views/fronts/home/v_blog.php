@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12 " >
                 <div class="heading_s4 text-center">
-                    <h2>Terkini Dari WMP</h2>
+                    <h2>Terkini Dari PT Widodo Makmur Perkasa, Tbk</h2>
                 </div>
             </div>
         </div>
