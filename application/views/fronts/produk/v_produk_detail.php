@@ -56,6 +56,12 @@
                                     <ul class='social_icons'>"; ?>
 																		<?php
 																			foreach ($produk as $rows){
+																				if(empty($rows['facebook'])){
+																					echo"";
+																				}else{
+																					echo"<li><a href='$rows[facebook]'><img src ='".base_url()."assets/frontend/campur/facebook2.gif'></a></li>";
+																				}
+
 																					if(empty($rows['instagram'])){
 																						echo"";
 																					}else{
