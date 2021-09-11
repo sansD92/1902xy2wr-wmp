@@ -26,7 +26,7 @@
 																	if(empty($row['facebook'])){
 																		echo"";
 																	}else{
-																		echo"<li><a href='$row[facebook]'><img src ='".base_url()."assets/frontend/campur/facebook.gif'></a></li>";
+																		echo"<li><a href='$row[facebook]'><img src ='".base_url()."assets/frontend/campur/facebook2.gif'></a></li>";
 																	}
 																	if(empty($row['instagram'])){
 																		echo"";
