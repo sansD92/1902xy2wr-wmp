@@ -19,7 +19,7 @@
             	<div class='gray_bg p-3 p-md-4'>
                     <ul class='list_none portfolio_info_box'>
                         <li><span class='text-uppercase'>Bidang</span>$row[bidang_produk]</li>
-                        <li><span class='text-uppercase'>Website</span>$row[website]</li>
+                        
                         <li><span class='text-uppercase'>Temukan Kami</span>"; ?>
                         	<ul class="social_icons">
 														<?php

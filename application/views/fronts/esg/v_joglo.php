@@ -67,6 +67,25 @@
                 <p style="text-align: justify;">
                   Kumpulan foto-foto berbagai kegiatan yang dilaksanakan di Joglo Tumiyono (Kesatriaan Entrepreneur Indonesia)
                 </p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="portfolio_container work_col2 gutter_small image_gallery">
+                            <li class="grid-sizer"></li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small1_548X364.jpg" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/images/portfolio_item2.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small2_548X364.jpg" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/images/portfolio_item3.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small3_548X364.jpg" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/images/portfolio_item4.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small4_548X364.jpg" alt="image"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
 
             </div>

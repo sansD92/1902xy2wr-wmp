@@ -21,7 +21,7 @@
     	<div class="row">
         	<div class="col-md-12">
             	<div class="heading_s3">
-            		<h5>Gallery 2 Columns:</h5>
+            		<h5></h5>
                 </div>
             </div>
         </div>
