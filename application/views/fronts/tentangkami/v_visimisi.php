@@ -59,7 +59,7 @@
                     <h2>Vision, Mission & Values</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/Visi-Misi.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/VISIMISI.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
