@@ -44,7 +44,7 @@
                     <h2>Milestone</h2>
                 </div> -->
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MILESTONE-01.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/milestone-website.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 

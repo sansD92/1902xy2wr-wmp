@@ -69,7 +69,7 @@
 																					if(empty($rows['shopee'])){
 																						echo"";
 																					}else{
-					                            			echo"<li><a href='$rows[shopee]'><img src ='".base_url()."assets/frontend/campur/shopee.gif'></a></li>";
+					                            			echo"<li><a href='$rows[shopee]'><img src ='".base_url()."assets/frontend/campur/Shopee.gif'></a></li>";
 																					}
 																				}
 																		?>
