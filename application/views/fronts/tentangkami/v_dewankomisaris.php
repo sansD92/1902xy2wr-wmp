@@ -60,7 +60,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 animation" >
                 <div class="heading_s1 text-center">
-                    <h2>Komisaris WMP</h2>
+                    <h2>Komisaris</h2>
                 </div>
 
             </div>
@@ -141,7 +141,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 ">
                 <div class="heading_s1 text-center">
-                    <h2>Direksi WMP</h2>
+                    <h2>Direksi</h2>
                 </div>
 
             </div>
