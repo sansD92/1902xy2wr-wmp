@@ -151,7 +151,7 @@
                 <div class="cleafix small_divider"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="justify-content:center;">
              <?php  foreach ($posts_direksi as $post_new){ ?>
             <div class="col-lg-4 col-sm-6 mb-lg-5 mb-sm-4 pb-sm-1 pb-3 text-center"  data-margin="30" data-loop="true" data-autoplay="true">
                 <div class="item">
