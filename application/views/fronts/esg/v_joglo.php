@@ -72,16 +72,19 @@
                         <ul class="portfolio_container work_col2 gutter_small image_gallery">
                             <li class="grid-sizer"></li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/images/portfolio_item1.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small1_548X364.jpg" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/1.Dronejoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.Dronejoglo.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/images/portfolio_item2.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small2_548X364.jpg" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/images/portfolio_item3.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small3_548X364.jpg" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/3.AktivitasJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.AktivitasJoglo.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/images/portfolio_item4.jpg"><img src="<?php echo base_url()?>assets/images/portfolio_item_small4_548X364.jpg" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/4.png"><img src="<?php echo base_url()?>assets/frontend/campur/4.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/5.BangunanJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/5.BangunanJoglo.png" alt="image"></a>
                             </li>
                         </ul>
                     </div>
