@@ -47,7 +47,7 @@
             <div class="col-md-12 mb-2 mb-md-4 animation" >
                 <h5>Profil Kesatriaan Entrepreneur Indonesia</h5>
                 <p style="text-align: justify;">
-                  Kesatriaan Entrepreneur Indonesia merupakan sebuah badan yang berada di bawah naungan PT. Widodo Makmur Perkasa. Berpusat di Joglo Tumiyono, desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten,  Ksatriaan Entrepreneur Indonesia bertekad untuk menciptakan 1.000.000 entrepreneur muda.
+                  Kesatriaan Entrepreneur Indonesia merupakan sebuah badan yang berada di bawah naungan PT. Widodo Makmur Perkasa. Berpusat di Joglo Tumiyono, di Desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten, Provinsi Jawa Tengah,  Ksatriaan Entrepreneur Indonesia bertekad untuk menciptakan 1.000.000 entrepreneur muda.
                 </p>
                 <h5>Kegiatan di Ksatriaan Entrepreneur Indonesia (KEI) meliputi :</h5>
                 <h6>1.	Pendidikan dan Pelatihan</h6>
