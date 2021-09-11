@@ -78,7 +78,7 @@
                     <li><a href="#" data-filter=".pt-cianjur-arta-makmur">Daging Sapi</a></li>
                     <li><a href="#" data-filter=".pt-widodo-makmur-unggas">Daging Ayam</a></li>
                     <li><a href="#" data-filter=".pt-prima-widodo-makmur">Produk Olahan</a></li>
-                     <li><a href="#" data-filter=".pt-widodo-makmur-sejatra">Komoditas</a></li>
+                     <li><a href="#" data-filter=".pt-widodofood-makmur-sejahtera">Komoditas</a></li>
                     <li><a href="#" data-filter=".pt-garut-makmur-perkasa">Leather</a></li>
                     
                    
