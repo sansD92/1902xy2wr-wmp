@@ -27,7 +27,8 @@
                         <li><a href="<?php echo $identitas->instagram?>" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
                         <li><a href="<?php echo $identitas->facebook?>" target="_blank"><i class="ion-social-facebook"></i></a></li>
                          <li><a href="https://www.linkedin.com/in/pt-widodo-makmur-perkasa-118b5a12b/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                      <li><a href="#"><img height="13px" src="<?php echo base_url()?>assets/frontend/uk_flag.png" title="English"></a></li>
+                         <li><a href="#">ENG</a></li>
+                         <li><a href="#">IND</a></li>
                        <!-- <div class="col-md-3 col-sm-4 col-3">
 
                     <div class="lng_dropdown lng_dropdown_white float-right mr-sm-3">
