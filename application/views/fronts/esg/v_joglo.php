@@ -86,6 +86,9 @@
                             <li class="portfolio-item">
                                 <a href="<?php echo base_url()?>assets/frontend/campur/5.BangunanJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/5.BangunanJoglo.png" alt="image"></a>
                             </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/6.FotoJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/6.FotoJoglo.png" alt="image"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
