@@ -3,7 +3,7 @@
     	<div class="row">
         	<div class="col-md-12 text_white text-center">
             	<div class="">
-                    <h2 class="">Dapatkan Informasi Terbaru Widodo Makmur Perkasa</h2>
+                    <h2 class="">Dapatkan Informasi Terbaru PT Widodo Makmur Perkasa, Tbk</h2>
                     <p>Untuk Anda yang berlangganan, kami kirimkan informasi terbaru melalui Email</p>
                     <div class="newsletter_form newslattter_small">
                         <form>
