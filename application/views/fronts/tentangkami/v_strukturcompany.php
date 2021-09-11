@@ -43,7 +43,7 @@ END SECTION BANNER -->
                     <h2>Struktur Company</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/STRUKTUR-REVISI.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/STRUKTURPERUSAHAAN.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@ END SECTION BANNER -->
                     <h2>Struktur Organisasi</h2>
                 </div>
                 <div>
-                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/Struktur-organisasi-Revisi.png" alt="struktur_organisasi"/>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/STRUKTURORGANISASIv2.png" alt="struktur_organisasi"/>
                 </div>
             </div>
 
