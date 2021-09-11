@@ -41,7 +41,7 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>Joglo Tumiyono (Kesatriaan Entrepreneuship Indonesia) </h2>
+                    <h2>Joglo Tumiyono (Kesatriaan Entrepreneurship Indonesia) </h2>
                 </div>
               <div class="row">
             <div class="col-md-12 mb-2 mb-md-4 animation" >
@@ -51,7 +51,7 @@
                   Joglo Tumiyono adalah sebuah mahakarya yang dipersembahkan PT Widodo Makmur Perkasa, Tbk sebagai bagian dari proses pelestarian  budaya adiluhung Jawa khususnya terkait dengan seni bangunan dan pahat. Didedikasikan bagi generasi muda agar memiliki wawasan budaya dan menumbuhkan rasa memiliki terhadap budaya bangsa.
                 </p>
                 <p style="text-align: justify;">
-                  Joglo Tumiyono didirikan sebagai monument dan pelestari budaya Jawa yang sarat nilai-nilai kehidupan. Joglo Tumiyono didedikasikan bagi pengembangan masyarakat dan tempat pendidikan dan pelatihan generasi muda sebagai bentuk pengabdian pada bangsa. Menempati luas lahan 2,2 hektar di Desa Ngerangan, Kecamatan Bayat, kabupaten Klaten Propinsi Jawa Tengah.
+                  Joglo Tumiyono didirikan sebagai monument dan pelestari budaya Jawa yang sarat nilai-nilai kehidupan. Joglo Tumiyono didedikasikan bagi pengembangan masyarakat dan tempat pendidikan dan pelatihan generasi muda sebagai bentuk pengabdian pada bangsa. Menempati luas lahan 2,2 hektar di Desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten, Provinsi Jawa Tengah.
                 </p>
                 <p style="text-align: justify;">
                   Joglo Tumiyono akan menjadi pusat pelatihan dan pembelajaran para entrepreneur muda yang terdidik dan terampil agar siap menjadi pelaku ekonomi berdasarkan minat mereka di bidang peternakan, pertanian atau pengolahan bahan makanan. Para entrepreneur muda ini akan dididik agar mampu mengelola bisnisnya dengan baik serta sustainability, yang merupakan sebuah kondisi dimana usaha dapat terus bertahan dan berkembang seiring waktu.
