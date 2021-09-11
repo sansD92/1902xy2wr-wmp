@@ -18,6 +18,9 @@ $route['investor-informasipemegangsaham'] = "Investor/informasipemegangsaham";
 $route['investor-kegiatan'] = "Investor/kegiatan";
 $route['investor-informasipendukung'] = "Investor/informasipendukung";
 
+$route['program-kami'] = "informasi/programkami";
+
+
 $route['hubungi-kami-karir'] = "Karir/hubungi_kami";
 $route['ikhtisar-hc'] = "Karir/ikhtisar_hc";
 $route['penerimaan-pegawai'] = "Karir/penerimaan_pegawai";
@@ -61,7 +64,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['petacrawl\.xml'] = "petacrawl";
 
 
-// English Version 
+// English Version
 $route['ind'] = 'Main';
 $route['eng/home'] = 'main/main_eng';
 // $route['eng/product'] = "Main/produk";
