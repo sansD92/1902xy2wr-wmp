@@ -1951,7 +1951,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -1964,7 +1963,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -1983,7 +1981,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2002,7 +1999,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2021,7 +2017,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2042,7 +2037,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2063,7 +2057,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2084,7 +2077,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_kategori_update_oleh'=>$this->session->username,
 											'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
-											'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
 											'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 											'bisnis_kategori_update_hari'=>hari_ini(date('w')),
 											'bisnis_kategori_update_tanggal'=>date('Y-m-d'),
@@ -2390,7 +2382,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_update_oleh'=>$this->session->username,
 											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
-											'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
 											'bisnis_desk'=>$this->input->post('bisnis_desk'),
 											'bisnis_url'=>$this->input->post('bisnis_url'),
 											'bisnis_kategori_id'=>$this->input->post('bisnis_kategori_id'),
@@ -2405,7 +2396,6 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_update_oleh'=>$this->session->username,
 											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
-											'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
 											'bisnis_desk'=>$this->input->post('bisnis_desk'),
 											'bisnis_url'=>$this->input->post('bisnis_url'),
 											'bisnis_kategori_id'=>$this->input->post('bisnis_kategori_id'),
@@ -3425,7 +3415,6 @@ class Aspanel extends CI_Controller {
 						if ($hasil22['file_name']==''){
 										$data = array(
 											'nama_produk'=>$this->input->post('nama_produk'),
-											'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
 											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 											'bidang_produk'=>$this->input->post('bidang_produk'),
 											'website'=>$this->input->post('website'),
@@ -3440,7 +3429,6 @@ class Aspanel extends CI_Controller {
 						}else{
 										$data = array(
 											'nama_produk'=>$this->input->post('nama_produk'),
-											'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
 											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 											'bidang_produk'=>$this->input->post('bidang_produk'),
 											'website'=>$this->input->post('website'),

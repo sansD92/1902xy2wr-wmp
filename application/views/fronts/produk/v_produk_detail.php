@@ -53,19 +53,34 @@
                                     <h3>$row[nama_produk_detail]</h3>
                                     <p class='member-title'>Deskripsi</p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
-                                    <ul class='social_icons'>
-			                            	<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Instagram.gif'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/tokopedia.gif'></a></li>
-																		<li><a href='#'><img src ='".base_url()."assets/frontend/campur/Shopee.gif'></a></li>
-                        	</ul>
+                                    <ul class='social_icons'>"; ?>
+																		<?php
+																			foreach ($produk as $rows){
+																					if(empty($rows['instagram'])){
+																						echo"";
+																					}else{
+					                            			echo"<li><a href='$rows[instagram]'><img src ='".base_url()."assets/frontend/campur/Instagram.gif'></a></li>";
+																					}
+																					if(empty($rows['tokopedia'])){
+																						echo"";
+																					}else{
+					                            			echo"<li><a href='$rows[tokopedia]'><img src ='".base_url()."assets/frontend/campur/tokopedia.gif'></a></li>";
+																					}
+																					if(empty($rows['shopee'])){
+																						echo"";
+																					}else{
+					                            			echo"<li><a href='$rows[shopee]'><img src ='".base_url()."assets/frontend/campur/shopee.gif'></a></li>";
+																					}
+																				}
+																		?>
+													<?php echo "</ul>
                                   </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        ";
+        </div>";
                     }
                   ?>
 </div>

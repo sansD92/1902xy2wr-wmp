@@ -4,7 +4,7 @@
         <div class='row'>
              <?php
                     foreach ($produk as $row){
-                
+
                     echo "
         	<div class='col-lg-8 col-md-7 mb-4 mb-md-0 animation' data-animation='fadeInUp' data-animation-delay='0.2s'>
             	<div class='heading_s3'>
@@ -20,15 +20,39 @@
                     <ul class='list_none portfolio_info_box'>
                         <li><span class='text-uppercase'>Bidang</span>$row[bidang_produk]</li>
                         <li><span class='text-uppercase'>Website</span>$row[website]</li>
-                        <li><span class='text-uppercase'>Temukan Kami</span>
-                        	<ul class='list_none social_icons border_social rounded_social'>
-                            	<li><a href='#'><i class='ion-social-facebook'></i></a></li>
-                            	<li><a href='#'><i class='ion-social-twitter'></i></a></li>
-                            	<li><a href='#'><i class='ion-social-instagram-outline'></i></a></li>
-                                <li><a href='#'><i class='ion-social-youtube'></i></a></li>
+                        <li><span class='text-uppercase'>Temukan Kami</span>"; ?>
+                        	<ul class="social_icons">
+														<?php
+																	if(empty($row['facebook'])){
+																		echo"";
+																	}else{
+																		echo"<li><a href='$row[facebook]'><img src ='".base_url()."assets/frontend/campur/facebook.gif'></a></li>";
+																	}
+																	if(empty($row['instagram'])){
+																		echo"";
+																	}else{
+																		echo"<li><a href='$row[instagram]'><img src ='".base_url()."assets/frontend/campur/Instagram.gif'></a></li>";
+																	}
+																	if(empty($row['tokopedia'])){
+																		echo"";
+																	}else{
+																		echo"<li><a href='$row[tokopedia]'><img src ='".base_url()."assets/frontend/campur/tokopedia.gif'></a></li>";
+																	}
+																	if(empty($row['shopee'])){
+																		echo"";
+																	}else{
+																		echo"<li><a href='$row[shopee]'><img src ='".base_url()."assets/frontend/campur/shopee.gif'></a></li>";
+																	}
+																	if(empty($row['bukalapak'])){
+																		echo"";
+																	}else{
+																		echo"<li><a href='$row[bukalapak]'><img src ='".base_url()."assets/frontend/campur/bukalapak.gif'></a></li>";
+																	}
+
+														?>
                         	</ul>
                         </li>
-                    </ul>
+                  	<?php echo "</ul>
                 </div>
             </div>
         </div>
@@ -36,7 +60,7 @@
                     }
                   ?>
 
-                 
+
     </div>
 </section>
 <!-- END SECTION PORTFOLIO DETAIL -->
