@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6 col-sm-12" >
                 <div class="heading_s1">
-                  <h2>Tentang <?php echo $identitas->nama_website?></h2>
+                  <h2><?php echo $identitas->nama_website?></h2>
                 </div>
                 <p style="text-align: justify;"><?php echo $identitas->meta_deskripsi?></p>
 
