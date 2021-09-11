@@ -51,7 +51,7 @@
                             <div class='col-lg-8'>
                                 <div class='heading'>
                                     <h3>$row[nama_produk_detail]</h3>
-                                    <p class='member-title'>Deskripsi</p>
+                                    <p class='member-title'></p>
                                     <p class='text-dark text-justify'>$row[deskripsi_produk_detail]</p>
                                     <ul class='social_icons'>"; ?>
 																		<?php
