@@ -5,7 +5,7 @@
             	<div class="heading_s1 heading_light text-center text-md-left">
                 	<h2>Highlight</h2>
                 </div>
-                <h3>Bergabunglah Bersama Widodo Makmur Perkasa</h3>
+                <h3>Bergabunglah Bersama PT Widodo Makmur Perkasa, Tbk</h3>
                 <a href="https://www.jobstreet.co.id/en/companies/775340-pt-widodo-makmur-perkasa" target="_blank" class="btn btn-outline-white">Gabung</a>
             </div>
         	<div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 col-11 ">
