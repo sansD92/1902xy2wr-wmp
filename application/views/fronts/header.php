@@ -205,6 +205,20 @@
                                     </div>
                                 </li>
 
+                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">PEDOMAN KERJA</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#">Kode etik PT Widodo Makmur Perkasa, Tbk</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="#" >Kode etik pemasok PT Widodo Makmur Perkasa, Tbk</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan manajemen risiko PT Widodo Makmur Perkasa,<br> Tbk</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan Kreditur dan Kebijakan Seleksi Pemasok atau<br> Vendor PT Widodo Makmur Perkasa, Tbk</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan tentang Seleksi dan peningkatkan kemampuan <br>pemasok atau vendor PT Widodo Makmur Perkasa, Tbk</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan Anti-Korupsi dan Anti-Fraud PT Widodo Makmur<br> Perkasa, Tbk</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="#" >WhistleBlowing PT Widodo Makmur Perkasa, Tbk</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
 
                              <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
                                     <div class="dropdown-menu">
