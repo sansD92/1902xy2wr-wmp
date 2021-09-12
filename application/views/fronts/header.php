@@ -214,7 +214,7 @@
                                               <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan Kreditur dan Kebijakan Seleksi<br> Pemasok atau Vendor PT Widodo Makmur<br> Perkasa, Tbk</a></li>
                                               <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan tentang Seleksi dan peningkatkan<br> kemampuan pemasok atau vendor PT Widodo<br> Makmur Perkasa, Tbk</a></li>
                                                <li><a class="dropdown-item nav-link nav_item" href="#" >Kebijakan Anti-Korupsi dan Anti-Fraud PT<br> Widodo Makmur Perkasa, Tbk</a></li>
-                                               <li><a class="dropdown-item nav-link nav_item" href="#" >WhistleBlowing PT Widodo Makmur Perkasa, Tbk</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="#" >WhistleBlowing PT Widodo Makmur Perkasa,<br> Tbk</a></li>
 
                                         </ul>
                                     </div>
