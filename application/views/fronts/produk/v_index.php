@@ -44,7 +44,7 @@
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produk WMP</li>
+                    <li class="breadcrumb-item active" aria-current="page">Produk</li>
                   </ol>
                 </nav>
             </div>
