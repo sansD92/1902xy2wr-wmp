@@ -14,7 +14,7 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Subtentangkami.png">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/FOTO-SUB-MENUkei.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -24,8 +24,8 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Profil Perusahaan</li>
+                    <li class="breadcrumb-item"><a>ESG</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Yayasan KEI Perusahaan</li>
                   </ol>
                 </nav>
             </div>
@@ -62,6 +62,28 @@
                 <p style="text-align: justify;">
                   Kesatriaan Entrepreneur Indonesia juga memberikan pelayanan konsultasi dan pendampingan bisnis bagi entrepreneur muda yang memulai membangun usaha salah satunya dengan menghubungkan pada lembaga bank atau lembaga keuangan lainnya untuk mendapatkan fasilitas pembiayaan. Juga pihak-pihak terkait lainnya seperti supplier atau lembaga  swadaya lainnya untuk mengadakan kerjasama usaha.
                 </p>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                        <ul class="portfolio_container work_col2 gutter_small image_gallery">
+                            <li class="grid-sizer"></li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/1.Dronejoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/1KEI.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png"><img src="<?php echo base_url()?>assets/frontend/campur/2KEI.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/3.AktivitasJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/3KEI.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/4.png"><img src="<?php echo base_url()?>assets/frontend/campur/4KEI.png" alt="image"></a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
             </div>

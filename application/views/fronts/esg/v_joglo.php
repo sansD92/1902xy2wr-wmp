@@ -25,6 +25,7 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Beranda</a></li>
+                    <li class="breadcrumb-item"><a>ESG</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Joglo Tumiyono</li>
                   </ol>
                 </nav>
@@ -98,7 +99,7 @@
         </div>
             </div>
 
- <
+ 
         </div>
             </div>
         </div>
