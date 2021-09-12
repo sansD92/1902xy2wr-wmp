@@ -205,7 +205,7 @@
                                     </div>
                                 </li>
 
-                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">PEDOMAN KERJA</a>
+                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Pedoman Kerja</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Kode etik PT Widodo Makmur Perkasa, Tbk</a></li>
