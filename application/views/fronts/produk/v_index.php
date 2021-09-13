@@ -38,13 +38,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>PRODUK WMP</h1>
+                    <h1>PRODUK</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produk WMP</li>
+                    <li class="breadcrumb-item active" aria-current="page">Produk</li>
                   </ol>
                 </nav>
             </div>

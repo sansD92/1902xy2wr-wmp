@@ -205,6 +205,20 @@
                                     </div>
                                 </li>
 
+                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Pedoman Kerja</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kodeetikwmp">Kode etik</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kodeetikpemasok" >Kode etik pemasok</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_manajemenresiko" >Kebijakan manajemen risiko</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakankreditur" >Kebijakan Kreditur dan Kebijakan Seleksi<br> Pemasok atau Vendor</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakanseleksi" >Kebijakan tentang Seleksi dan peningkatkan<br> kemampuan pemasok atau vendor</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakanantikorupsi" >Kebijakan Anti-Korupsi dan Anti-Fraud</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_whistleblowing" >Whistleblowing</a></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
 
                              <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
                                     <div class="dropdown-menu">

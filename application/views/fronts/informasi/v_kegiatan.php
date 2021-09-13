@@ -38,7 +38,7 @@
   <div class="container">
       <div class="row">
 
-          <div class="col-lg-9">
+          <div class="col-lg-12">
               <div class="row">
 
           <?php  foreach ($post_kegiatan as $post_new){
@@ -85,18 +85,7 @@
 
                   
 
-                    <div class="widget">
-                      <h5 class="widget_title">Produk</h5>
-                        <ul class="list_none widget_categories border_bottom_dash">
-                            <li><a href="<?php echo base_url()?>produk/details/pasir-tengah"><span class="categories_name">Sapi</span></a></li>
-                            <li><a href="<?php echo base_url()?>produk/details/cianjur-arta-makmur"><span class="categories_name">Daging Sapi</span></a></li>
-                            <li><a href="<?php echo base_url()?>produk/details/widodo-makmur-unggas"><span class="categories_name">Daging Ayam</span></a></li>
-                             <li><a href="<?php echo base_url()?>produk/details/prima-widodo-makmur"><span class="categories_name">Produk Olahan</span></a></li>
-                              <li><a href="<?php echo base_url()?>produk/details/widodo-makmur-sejatra"><span class="categories_name">Komoditas</span></a></li>
-                               <li><a href="<?php echo base_url()?>produk/details/garut-makmur-perkasa"><span class="categories_name">Leather</span></a></li>
-
-                      </ul>
-                    </div>
+                  
                     </div>
                 </div>
             </div>

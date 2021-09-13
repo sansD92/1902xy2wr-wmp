@@ -84,7 +84,7 @@
                                     <button type="button" class="btn btn-outline-white" data-toggle="modal" data-target="#modal-<?php echo $post_new->id_komisaris ?>">Lebih Detail</button>
                             </ul>
                         </div>
-                        <div class="team_title">
+                        <div style="max-height: 80px;"class="team_title">
                           <br>
                             <h5><?php echo $post_new->nama_komisaris ?></h5>
                             <span><?php echo $post_new->jabatan_komisaris ?></span>
