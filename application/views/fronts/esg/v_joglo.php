@@ -75,7 +75,7 @@
                             <li class="portfolio-item">
                                 <a href="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png" alt="image"></a>
                             </li>
-                            <li class="portfolio-item">
+                          <!--   <li class="portfolio-item">
                                 <a href="<?php echo base_url()?>assets/frontend/campur/3.AktivitasJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.AktivitasJoglo.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
@@ -86,7 +86,7 @@
                             </li>
                             <li class="portfolio-item">
                                 <a href="<?php echo base_url()?>assets/frontend/campur/6.FotoJoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/6.FotoJoglo.png" alt="image"></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
