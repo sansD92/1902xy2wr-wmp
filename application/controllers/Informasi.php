@@ -23,6 +23,8 @@ class Informasi extends CI_Controller {
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['posts_programkami'] = $this->db->query("select * from blogs a join blogs_kategori b on a.blogs_kategori_id = b.blogs_kategori_id  where   a.blogs_status = 'publish' and (a.blogs_kategori_id = '4') ORDER BY  blogs_id desc
+      ")->result();
     $this->load->view('fronts/informasi/v_program_kami',$data);
   }
   public function gallery()
