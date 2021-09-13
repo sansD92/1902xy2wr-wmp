@@ -11,7 +11,7 @@
             <div class="col-12">
                 <div class="clearfix small_divider"></div>
             </div>
-        </div>d
+        </div>
         <div class="row " >
             <div class="col-md-12">
                 <div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
