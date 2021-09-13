@@ -130,6 +130,14 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="<?php echo base_url(); ?>aspanel/tatakelola_kategori" class="nav-link" >
+            <i class="nav-icon fab fa-schlix"></i>
+            <p>
+              Tata Kelola
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="<?php echo base_url(); ?>aspanel/logo" class="nav-link" >
             <i class="nav-icon fab fa-schlix"></i>
             <p>
