@@ -20,13 +20,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Joglo Tumiyono</h1>
+                    <h1>Pesantren Widodo Makmur Sulaimaniyah</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Beranda</a></li>
                     <li class="breadcrumb-item"><a>ESG</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Joglo Tumiyono</li>
+                    <li class="breadcrumb-item active" aria-current="page">Pesantren Widodo Makmur Sulaimaniyah</li>
                   </ol>
                 </nav>
             </div>
@@ -51,13 +51,13 @@
 </h5>
 
                 <p style="text-align: justify;">
-                  Sebagai wujud nyata kepedulian sosial Perseroan, WMP menghadirkan Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah yang merupakan sarana pengembangan maupun pembinaan bagi para santri dari seluruh penjuru Tanah Air. Berdiri sejak tahun 2019, dan berlokasi di area Joglo Tumiyono, Klaten, Jawa Tengah, hingga kini Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah telah membina lebih dari 90 santri. Sebagai salah satu media WMP dalam upayanya guna mengembangkan serta membina generasi calon pemimpin bangsa.
+                  Sebagai wujud nyata kepedulian sosial Perseroan, PT Widodo Makmur Perkasa, Tbk menghadirkan Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah yang merupakan sarana pengembangan maupun pembinaan bagi para santri dari seluruh penjuru Tanah Air. Berdiri sejak tahun 2019, dan berlokasi di area Joglo Tumiyono, Klaten, Jawa Tengah, hingga kini Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah telah membina lebih dari 90 santri. Sebagai salah satu media WMP dalam upayanya guna mengembangkan serta membina generasi calon pemimpin bangsa.
                 </p>
                 <p style="text-align: justify;">
                   Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah memiliki visi Mengajarkan ilmu keislaman yang berpahamkan ajaran Ahlussunnah wal Jama’ah dan ilmu pengetahuan umum secara seimbang menuju terbentuknya generasi ulama dengan intelektualitas tinggi yang akan menjadi suri tauladan bagi Bangsa Indonesia. Serta mempersiapkan kader-kader hafidz dan hafidzah masa depan yang siap menyebarkan ajaran Islam Rahmatan lil Alamin ke seluruh penjuru Tanah Air.
                 </p>
                 <p style="text-align: justify;">
-                  Di dalam program Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah, santri dibina baik dari sisi akademik maupun keagamaan. Para santri juga dapat mengikuti pengajaran entrepreneur yang diberikan oleh Yayasan KEI, untuk pengembangan kemampuan berwirausaha. Berbekal jaringan Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah yang terafiliasi dengan Yayasan Tahfidz Sulaimaniyah, yang lahir dari kerjasama masyarakat Indonesia dan Turki. Membuka peluang bagi para santri Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah untuk mendapatkan kesempatan melanjutkan studinya ke Turki.
+                  Di dalam program Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah, santri dibina baik dari sisi akademik maupun keagamaan. Para santri juga dapat mengikuti pengajaran entrepreneur yang diberikan oleh Yayasan Kesatriaan Entrepreneur Indonesia, untuk pengembangan kemampuan berwirausaha. Berbekal jaringan Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah yang terafiliasi dengan Yayasan Tahfidz Sulaimaniyah, yang lahir dari kerjasama masyarakat Indonesia dan Turki. Membuka peluang bagi para santri Pondok Pesantren Tahfidz Widodo Makmur Sulaimaniyah untuk mendapatkan kesempatan melanjutkan studinya ke Turki.
                 </p>
               
                

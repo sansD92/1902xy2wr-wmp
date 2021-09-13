@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Yayasan KEI</h1>
+                    <h1>Kesatriaan Entrepreneur Indonesia</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Beranda</a></li>
                     <li class="breadcrumb-item"><a>ESG</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Yayasan KEI Perusahaan</li>
+                    <li class="breadcrumb-item active" aria-current="page">Kesatriaan Entrepreneur Indonesia</li>
                   </ol>
                 </nav>
             </div>
@@ -41,7 +41,7 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>KESATRIAAN ENTREPRENEUR INDONESIA (KEI)</h2>
+                    <h2>KESATRIAAN ENTREPRENEUR INDONESIA</h2>
                 </div>
               <div class="row">
             <div class="col-md-12 mb-2 mb-md-4 animation" >
