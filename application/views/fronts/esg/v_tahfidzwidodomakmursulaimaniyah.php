@@ -15,7 +15,7 @@
 
 
 <!-- START SECTION BANNER -->
-<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Sub-Joglo2.png">
+<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/FOTO-SUB-MENUPESANTREN.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -64,7 +64,31 @@
 
                 <!-- <p>Gallery</p> -->
                 
-                
+                 <div class="row">
+                    <div class="col-md-12">
+                        <ul class="portfolio_container work_col2 gutter_small image_gallery">
+                            <li class="grid-sizer"></li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/1.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.PESANTREN.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/2.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.PESANTREN.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/3.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.PESANTREN.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/4.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/4.PESANTREN.png" alt="image"></a>
+                            </li>
+                            <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/5.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/5.PESANTREN.png" alt="image"></a>
+                            </li>
+                             <li class="portfolio-item">
+                                <a href="<?php echo base_url()?>assets/frontend/campur/6.PESANTREN.png"><img src="<?php echo base_url()?>assets/frontend/campur/6.PESANTREN.png" alt="image"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
 
             </div>
