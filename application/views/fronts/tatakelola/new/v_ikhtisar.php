@@ -28,6 +28,9 @@
                 <center><div class="heading_s3">
                   
                 </div></center>
+                 <div>
+                    <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/Ikhtisar-Keuangan-rev.png" alt="struktur_organisasi"/>
+                </div>
                 <!-- <iframe src="<?php echo base_url()?>assets\frontend\campur\Financial-Highlights2.htm" height="500px" width="100%"></iframe> -->
 
                 <!-- <div class="row mb-md-5 mb-3">
