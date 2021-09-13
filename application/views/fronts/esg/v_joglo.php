@@ -42,7 +42,7 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>Joglo Tumiyono (Kesatriaan Entrepreneurship Indonesia) </h2>
+                    <h2>Joglo Tumiyono</h2>
                 </div>
               <div class="row">
             <div class="col-md-12 mb-2 mb-md-4 animation" >
