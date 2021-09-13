@@ -47,20 +47,24 @@
             <div class="col-md-12 mb-2 mb-md-4 animation" >
                 <h5>Profil Kesatriaan Entrepreneur Indonesia</h5>
                 <p style="text-align: justify;">
-                  Kesatriaan Entrepreneur Indonesia merupakan sebuah badan yang berada di bawah naungan PT Widodo Makmur Perkasa, Tbk. Berpusat di Joglo Tumiyono, di Desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten, Provinsi Jawa Tengah,  Ksatriaan Entrepreneur Indonesia bertekad untuk menciptakan 1.000.000 entrepreneur muda.
+                  Kesatriaan Entrepreneur Indonesia merupakan sebuah badan yang berada di bawah naungan PT Widodo Makmur Perkasa, Tbk. Berpusat di Joglo Tumiyono, di Desa Ngerangan, Kecamatan Bayat, Kabupaten Klaten, Provinsi Jawa Tengah, Kesatriaan Entrepreneur Indonesia bertekad untuk menciptakan 1.000.000 entrepreneur muda.
                 </p>
-                <h5>Kegiatan di Ksatriaan Entrepreneur Indonesia (KEI) meliputi :</h5>
-                <h6>1.	Pendidikan dan Pelatihan</h6>
+                <h5>Program Kesatriaan Entrepreneur Indonesia :</h5>
+                <h6>1. Sejuta Agropreneur Muda</h6>
                 <p style="text-align: justify;">
-                Joglo Tumiyono menyelenggarakan pendidikan entrepreneur di bidang peternakan (sapi dan unggas) serta pertanian bagi generasi muda yang potensial, berpendidikan, cerdas, berkomitmen terhadap bidang usaha yang digelutinya, memiliki kemauan kuat untuk belajar dan berusaha agar mampu menciptakan usaha-usaha baru yang ditangani secara cerdas. Juga berkomitmen terhadap pendidikan dan pengembangan Sumber Daya Manusia, Joglo Tumiyono juga menyelenggarakan berbagai program pendidikan dan pelatihan untuk menambah keahlian SDM, terutama dari kalangan internal PT Widodo Makmur Perkasa, Tbk Group dan masyarakat sekitar.
+                Program ini bertujuan untuk mencetak agropreneur muda di sektor pertanian, perternakan dan pangan melalui pelatihan yang diadakan secara reguler. Kesatriaan Tani Muda adalah program pelatihan angkatan pertama  yang dimulai pada November 2020 dan diikuti oleh 60 pemuda/i selama 3 bulan. Dilanjutkan oleh Kesatriaan Peternak Muda sebagai angkatan kedua, yang terlaksana pada Maret 2021 dan diikuti oleh 30 pemuda/i dari berbagai kabupaten. Program ini akan dijalankan secara rutin, sebagai tahap rekrutmen calon agropreneur muda. Para alumni dari setiap angkatan akan diseleksi untuk program lanjutan berupa inkubasi bisnis, fasilitasi akses pembiayaan dan kemitraan dengan usaha besar.
                 </p>
-                <h6>2.	Membangun Kemitraan</h6>
+                <h6>2. Inkubasi bisnis</h6>
                 <p style="text-align: justify;">
-                Membangun kemitraan yang saling menguntungkan, untuk meningkatkan kesejahteraan petani, peternak dan UMKM. Ada kurang lebih 4 juta usia muda yang potensial dididik untuk menjadi petani, peternak dan pelaku UMKM yang akan mengolah produknya dengan system pertanian yang telah disempurnakan metodenya agar menghasilkan panen yang maksimal dan mengurangi potensi kegagalan panen atau kerugian. Ke depan pengembangan kemitraan akan berjalan berdampingan dengan pertumbuhan perusahaan. Saat ini kegiatan kemitraan yang sudah berjalan didukung oleh dua anak perusahaan PT Widodo Makmur Perkasa, Tbk yaitu PT Pasir Tengah (Paste) yang melaksankan Kemitraan Sapi dan PT Widodo Makmur Unggas, Tbk (WMU) yang melaksanakan kemitraan ayam.
+                Program pendampingan intensif terhadap entrepreneur muda yang telah merintis usaha, meliputi pelatihan dan pendampingan manajemen bisnis, mentoring dari tenaga ahli, serta fasilitasi jejaring dan kerjasama dengan mitra usaha.
                 </p>
-                <h6>3.	Inkubator Bisnis</h6>
+                <h6>3. Pengembangan Ekonomi Petani dan Peternak</h6>
                 <p style="text-align: justify;">
-                  Kesatriaan Entrepreneur Indonesia juga memberikan pelayanan konsultasi dan pendampingan bisnis bagi entrepreneur muda yang memulai membangun usaha salah satunya dengan menghubungkan pada lembaga bank atau lembaga keuangan lainnya untuk mendapatkan fasilitas pembiayaan. Juga pihak-pihak terkait lainnya seperti supplier atau lembaga  swadaya lainnya untuk mengadakan kerjasama usaha.
+                  Program pengembangan usaha komunitas/kelompok petani dan peternak, melalui pelatihan dan pendampingan, penguatan kelembagaan komunitas/kelompok, serta pengembangan program kemitraan. Program kemitraan dijalankan dengan dukungan PT Widodo Makmur Perkasa, Tbk serta berkolaborasi dengan lembaga pembiayaan dan asuransi, lembaga pemerintah, serta asosiasi dan koperasi petani/peternak.
+                </p>
+                <h6>4.  Pengembangan Ekonomi Pesantren</h6>
+                <p style="text-align: justify;">
+                  Program ini bertujuan untuk penguatan ekonomi lembaga pesantren dan lembaga sosial/ormas keagamaan, sebagai penggerak ekonomi umat. Potensi ekonomi dan SDM/santri di pesantren masih belum mendapatkan perhatian optimal dari banyak pihak. Kami meyakini bahwa pesantren dan lembaga sosial keagamaan mampu menjadi penggerak ekonomi umat di grass root, jika mampu dikolaborasikan dan dihubungkan dengan pelaku ekonomi lainnya. Melalui program ini, lembaga pesantren diperkuat sebagai institusi yang mencetak santripreneur dan penggerak ekonomi umat.
                 </p>
 
                   <div class="row">
