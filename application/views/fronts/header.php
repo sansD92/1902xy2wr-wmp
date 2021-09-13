@@ -251,8 +251,8 @@
                     <div class="dropdown-menu">
                         <ul>
                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/joglo-tumiyono">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Yayasan KEI</a></li>
-                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/tahfidzwidodomakmursulaimaniyah">Pesantren Tahfidz Widodo Makmur Sulaimaniyah
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Kesatriaan Entrepreneur Indonesia</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/tahfidzwidodomakmursulaimaniyah">Pesantren Sulaimaniyah
 </a></li>
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">
