@@ -60,11 +60,11 @@
                 </p>
                 <h6>3. Pengembangan Ekonomi Petani dan Peternak</h6>
                 <p style="text-align: justify;">
-                  Program pengembangan usaha komunitas/kelompok petani dan peternak, melalui pelatihan dan pendampingan, penguatan kelembagaan komunitas/kelompok, serta pengembangan program kemitraan. Program kemitraan dijalankan dengan dukungan PT Widodo Makmur Perkasa, Tbk serta berkolaborasi dengan lembaga pembiayaan dan asuransi, lembaga pemerintah, serta asosiasi dan koperasi petani/peternak.
+                  Program pengembangan usaha komunitas atau kelompok petani dan peternak, melalui pelatihan dan pendampingan, penguatan kelembagaan komunitas atau kelompok, serta pengembangan program kemitraan. Program kemitraan dijalankan dengan dukungan PT Widodo Makmur Perkasa, Tbk serta berkolaborasi dengan lembaga pembiayaan dan asuransi, lembaga pemerintah, serta asosiasi dan koperasi petani atau peternak.
                 </p>
                 <h6>4.  Pengembangan Ekonomi Pesantren</h6>
                 <p style="text-align: justify;">
-                  Program ini bertujuan untuk penguatan ekonomi lembaga pesantren dan lembaga sosial/ormas keagamaan, sebagai penggerak ekonomi umat. Potensi ekonomi dan SDM/santri di pesantren masih belum mendapatkan perhatian optimal dari banyak pihak. Kami meyakini bahwa pesantren dan lembaga sosial keagamaan mampu menjadi penggerak ekonomi umat di grass root, jika mampu dikolaborasikan dan dihubungkan dengan pelaku ekonomi lainnya. Melalui program ini, lembaga pesantren diperkuat sebagai institusi yang mencetak santripreneur dan penggerak ekonomi umat.
+                  Program ini bertujuan untuk penguatan ekonomi lembaga pesantren dan lembaga sosial atau ormas keagamaan, sebagai penggerak ekonomi umat. Potensi ekonomi dan SDM atau santri di pesantren masih belum mendapatkan perhatian optimal dari banyak pihak. Kami meyakini bahwa pesantren dan lembaga sosial keagamaan mampu menjadi penggerak ekonomi umat di grass root, jika mampu dikolaborasikan dan dihubungkan dengan pelaku ekonomi lainnya. Melalui program ini, lembaga pesantren diperkuat sebagai institusi yang mencetak santripreneur dan penggerak ekonomi umat.
                 </p>
 
                   <div class="row">
