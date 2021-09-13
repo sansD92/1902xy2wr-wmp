@@ -2328,6 +2328,16 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	right: 0;
 	top: 0;
 }
+
+.overlay_bg5::before {
+	background-color: rgba(140, 24, 36, 0.8);
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 .blue_overlay_bg::before {
     background-color: rgba(14,147,216,0.8);
     bottom: 0;
