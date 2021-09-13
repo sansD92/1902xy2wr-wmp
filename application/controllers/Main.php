@@ -26,7 +26,7 @@ class Main extends CI_Controller {
       $data['posts_logo']= $this->Crud_m->view_one_limit('logo','logo_status','logo_urutan','ASC',$dari,'20');
       $data['posts_slider'] = $this->Crud_m->view_one_limit('slider','slider_status','slider_id','ASC',$dari,$config['per_page_slider']);
       $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC',$dari,'10');
-      $data['posts_blogs'] = $this->db->query("select * from blogs a join blogs_kategori b on a.blogs_kategori_id = b.blogs_kategori_id  where   a.blogs_status = 'publish' and (a.blogs_kategori_id = '5' or a.blogs_kategori_id = '2' or a.blogs_kategori_id = '3') ORDER BY  blogs_id desc
+      $data['posts_blogs'] = $this->db->query("select * from blogs a join blogs_kategori b on a.blogs_kategori_id = b.blogs_kategori_id  where   a.blogs_status = 'publish' and (a.blogs_kategori_id = '1' or a.blogs_kategori_id = '2' or a.blogs_kategori_id = '3') ORDER BY  blogs_id desc
 			")->result();
 		}else{
 			redirect('main');
