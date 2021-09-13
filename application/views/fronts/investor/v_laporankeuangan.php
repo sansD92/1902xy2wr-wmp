@@ -25,20 +25,20 @@
                     <h2>Laporan Keuangan</h2>
                 </div>
                 <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                <center><div class="heading_s3">
+               <!--  <center><div class="heading_s3">
                     <h4>                        
                       <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/IKHTISAR KEUANGAN.pdf" target="_blank" type="application/pdf">. Laporan Keuangan 2018</a></h4>
-                       <div class="list_style_2">
-                    <ul>
-                        <li>Modern Framework</li>
-                        <li>Full Documentation</li>
-                        <li>Amazing Features</li>
-                        <li>Retina Ready</li>
-                    </ul>
-                </div>
+
                 </div></center>
-
-
+ -->
+  <center><div class="col-md-4 col-sm-4 mb-4 mb-lg-0 list_style_2">
+                    <ul style="color: #BD2132;">
+                        <li><a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/pdf/laporan-keuangan/Laporan Keuangan PT. Widodo Makmur Perkasa 2020.pdf" target="_blank" type="application/pdf">Laporan Keuangan 2020</li>
+                        <li><a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/pdf/laporan-keuangan/Laporan Keuangan PT. Widodo Makmur Perkasa 2019.pdf" target="_blank" type="application/pdf">Laporan Keuangan 2019</li>
+                        <li><a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/pdf/laporan-keuangan/Laporan Keuangan PT. Widodo Makmur Perkasa 2018.pdf" target="_blank" type="application/pdf">Laporan Keuangan 2018</li>
+                        
+                    </ul>
+                </div></center>
 
         </div>
     </div>
