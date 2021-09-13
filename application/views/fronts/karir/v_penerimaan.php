@@ -50,7 +50,7 @@
 
 
            <div class="row justify-content-center animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-            <div class="col-lg-6 col-md-6 text-center p-0">
+         <!--    <div class="col-lg-12 col-md-12 text-center p-0">
                 <div class="icon_box text_white bg-dark small_padding h-100">
                     <div class="box_icon mb-3"> 
                         
@@ -61,16 +61,16 @@
                     <a href="https://www.jobstreet.co.id/id/job-search/jobs-at-pt-widodo-makmur-perkasa/?ojs=14" class="btn btn-outline-white">Selengkapnya</a>
                 </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 text-center p-0">
+            </div> -->
+            <div class="col-lg-12 col-md-12 text-center p-0">
                 <div class="icon_box text_white bg_blue small_padding h-100">
                     <div class="box_icon mb-3"> 
                        
                     </div>
                     <div  cta_section_small bg_blue">
-                    <h2 class="">HCD</h2>
+                    <h2 class="">JOBSTREET</h2>
                    
-                    <a href="#" class="btn btn-outline-white">Selengkapnya</a>
+                    <a href="https://www.jobstreet.co.id/id/job-search/jobs-at-pt-widodo-makmur-perkasa/?ojs=14" class="btn btn-outline-white">Selengkapnya</a>
                 </div>
                 </div>
             </div>
