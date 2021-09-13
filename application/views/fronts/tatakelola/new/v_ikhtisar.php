@@ -26,9 +26,42 @@
                 </div>
                 <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <center><div class="heading_s3">
-                    <h4>                        
-                      <a style="color: #BD2132;"href="<?php echo base_url()?>assets/frontend/sekilas-GCG/IKHTISAR KEUANGAN.pdf" target="_blank" type="application/pdf">Ikhtisar Keuangan</a></h4>
+                  
                 </div></center>
+                <iframe src="<?php echo base_url()?>assets\frontend\campur\Financial-Highlights2.htm" height="500px" width="100%"></iframe>
+
+                <!-- <div class="row mb-md-5 mb-3">
+                	<div class="col-md-12">
+                    	<div class="heading_s3">
+                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">2020</th>
+                              <th scope="col">2019</th>
+                              <th scope="col">2018</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Penjualan / Net Sales</td>
+                              <td>3.031.488</td>
+                              <td>2.809.001</td>
+                              <td>2.909.556</td>
+                            </tr>
+                            <tr>
+                              <td>Beban Pokok Penjualan / Cost of Goods Sold</td>
+                              <td>2.588.197</td>
+                              <td>2.454.690</td>
+                              <td>2.541.933</td>
+                            </tr>
+
+
+                          </tbody>
+                        </table>
+                    </div>
+                </div> -->
 
 
 
