@@ -56,7 +56,7 @@
                 </p>
                 <h6>2.	Membangun Kemitraan</h6>
                 <p style="text-align: justify;">
-                Membangun kemitraan yang saling menguntungkan, untuk meningkatkan kesejahteraan petani, peternak dan UMKM. Ada kurang lebih 4 juta usia muda yang potensial dididik untuk menjadi petani, peternak dan pelaku UMKM yang akan mengolah produknya dengan system pertanian yang telah disempurnakan metodenya agar menghasilkan panen yang maksimal dan mengurangi potensi kegagalan panen atau kerugian. Ke depan pengembangan kemitraan akan berjalan berdampingan dengan pertumbuhan perusahaan. Saat ini kegiatan kemitraan yang sudah berjalan didukung oleh dua anak perusahaan PT Widodo Makmur Perkasa, Tbk yaitu PT Pasir Tengah (PST) yang melaksankan Kemitraan Sapi dan PT Widodo Makmur Unggas, Tbk (WMU) yang melaksanakan kemitraan ayam.
+                Membangun kemitraan yang saling menguntungkan, untuk meningkatkan kesejahteraan petani, peternak dan UMKM. Ada kurang lebih 4 juta usia muda yang potensial dididik untuk menjadi petani, peternak dan pelaku UMKM yang akan mengolah produknya dengan system pertanian yang telah disempurnakan metodenya agar menghasilkan panen yang maksimal dan mengurangi potensi kegagalan panen atau kerugian. Ke depan pengembangan kemitraan akan berjalan berdampingan dengan pertumbuhan perusahaan. Saat ini kegiatan kemitraan yang sudah berjalan didukung oleh dua anak perusahaan PT Widodo Makmur Perkasa, Tbk yaitu PT Pasir Tengah (Paste) yang melaksankan Kemitraan Sapi dan PT Widodo Makmur Unggas, Tbk (WMU) yang melaksanakan kemitraan ayam.
                 </p>
                 <h6>3.	Inkubator Bisnis</h6>
                 <p style="text-align: justify;">
