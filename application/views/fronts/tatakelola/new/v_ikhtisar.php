@@ -28,7 +28,7 @@
                 <center><div class="heading_s3">
                   
                 </div></center>
-                <iframe src="<?php echo base_url()?>assets\frontend\campur\Financial-Highlights2.htm" height="500px" width="100%"></iframe>
+                <!-- <iframe src="<?php echo base_url()?>assets\frontend\campur\Financial-Highlights2.htm" height="500px" width="100%"></iframe> -->
 
                 <!-- <div class="row mb-md-5 mb-3">
                 	<div class="col-md-12">
