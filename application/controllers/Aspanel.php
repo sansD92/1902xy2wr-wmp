@@ -3260,6 +3260,339 @@ class Aspanel extends CI_Controller {
 	}
 	/*	Bagian untuk Product Category - Penutup	*/
 
+	/*	Bagian untuk Tata Kelola - Pembuka	*/
+	public function tatakelola()
+	{
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('tatakelola','tatakelola_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_ordering('tatakelola','tatakelola_id','DESC');
+				}
+				cek_session_akses('tatakelola',$this->session->id_session);
+				$this->load->view('backend/tatakelola/v_daftar', $data);
+	}
+	public function tatakelola_storage_bin()
+	{
+		$data['karyawan_menu_open']   = '';
+		$data['home_stat']   = '';
+		$data['identitas_stat']   = '';
+		$data['profil_stat']   = '';
+		$data['sliders_stat']   = '';
+		$data['products_stat']   = '';
+		$data['cat_products_stat']   = '';
+		$data['slider_stat']   = '';
+		$data['kontribs_stat']   = '';
+		$data['message_stat']   = '';
+		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
+		$data['produk_menu_open']   = 'menu-open';
+		$data['produk_category']   = '';
+		$data['produk']   = 'active';
+		$data['services']   = '';
+
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_status'=>'delete'),'products_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_post_oleh'=>$this->session->username,'products_status'=>'delete'),'products_id','DESC');
+				}
+				cek_session_akses('products',$this->session->id_session);
+				$this->load->view('backend/products/v_daftar_hapus', $data);
+	}
+	public function tatakelola_tambahkan()
+	{
+		cek_session_akses('products',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/produk/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '100%';
+					$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+
+
+					if ($hasil22['file_name']=='' ){
+									$data = array(
+													'nama_produk'=>$this->input->post('nama_produk'),
+													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'website'=>$this->input->post('website'),
+													'facebook'=>$this->input->post('facebook'),
+													'instagram'=>$this->input->post('instagram'),
+													'whatsapp'=>$this->input->post('whatsapp'),
+													'shopee'=>$this->input->post('shopee'),
+													'tokopedia'=>$this->input->post('tokopedia'),
+													'bukalapak'=>$this->input->post('bukalapak'));
+
+												}else {
+												$data = array(
+													'nama_produk'=>$this->input->post('nama_produk'),
+													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
+													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'website'=>$this->input->post('website'),
+													'facebook'=>$this->input->post('facebook'),
+													'instagram'=>$this->input->post('instagram'),
+													'whatsapp'=>$this->input->post('whatsapp'),
+													'shopee'=>$this->input->post('shopee'),
+													'tokopedia'=>$this->input->post('tokopedia'),
+													'bukalapak'=>$this->input->post('bukalapak'),
+													'foto_produk'=>$hasil22['file_name']);
+												}
+								$this->As_m->insert('produk',$data);
+								redirect('aspanel/products');
+				}else{
+					$data['karyawan_menu_open']   = '';
+					$data['home_stat']   = '';
+					$data['identitas_stat']   = '';
+					$data['profil_stat']   = '';
+					$data['sliders_stat']   = '';
+					$data['products_stat']   = '';
+					$data['cat_products_stat']   = '';
+					$data['slider_stat']   = '';
+					$data['kontribs_stat']   = '';
+					$data['message_stat']   = '';
+					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
+
+					$data['produk_menu_open']   = 'menu-open';
+		 			$data['produk_category']   = '';
+		 			$data['produk']   = 'active';
+		 			$data['services']   = '';
+					$this->load->view('backend/products/v_tambahkan', $data);
+				}
+	}
+	public function tatakelola_update()
+	{
+		cek_session_akses('products',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/produk/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '80%';
+			$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'nama_produk'=>$this->input->post('nama_produk'),
+											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'website'=>$this->input->post('website'),
+											'facebook'=>$this->input->post('facebook'),
+											'instagram'=>$this->input->post('instagram'),
+											'whatsapp'=>$this->input->post('whatsapp'),
+											'shopee'=>$this->input->post('shopee'),
+											'tokopedia'=>$this->input->post('tokopedia'),
+											'bukalapak'=>$this->input->post('bukalapak'));
+											$where = array('id_produk' => $this->input->post('id_produk'));
+							 				$this->db->update('produk', $data, $where);
+						}else{
+										$data = array(
+											'nama_produk'=>$this->input->post('nama_produk'),
+											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
+											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'website'=>$this->input->post('website'),
+											'facebook'=>$this->input->post('facebook'),
+											'instagram'=>$this->input->post('instagram'),
+											'whatsapp'=>$this->input->post('whatsapp'),
+											'shopee'=>$this->input->post('shopee'),
+											'tokopedia'=>$this->input->post('tokopedia'),
+											'bukalapak'=>$this->input->post('bukalapak'),
+											'foto_produk'=>$hasil22['file_name']);
+											$where = array('id_produk' => $this->input->post('id_produk'));
+											$_image = $this->db->get_where('produk',$where)->row();
+											$query = $this->db->update('produk',$data,$where);
+											if($query){
+												unlink("assets/frontend/produk/".$_image->foto_produk);
+											}
+						}
+						redirect('aspanel/products');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$data['karyawan_menu_open']   = '';
+			$data['home_stat']   = '';
+			$data['identitas_stat']   = '';
+			$data['profil_stat']   = '';
+			$data['sliders_stat']   = '';
+			$data['products_stat']   = '';
+			$data['cat_products_stat']   = '';
+			$data['slider_stat']   = '';
+			$data['kontribs_stat']   = '';
+			$data['message_stat']   = '';
+			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
+
+			$data['produk_menu_open']   = 'menu-open';
+ 			$data['produk_category']   = '';
+ 			$data['produk']   = 'active';
+ 			$data['services']   = '';
+			$this->load->view('backend/products/v_update', $data);
+		}
+	}
+	public function tatakelola_delete()
+	{
+			cek_session_akses ('products',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('produk',['id_produk' => $id])->row();
+			 $query = $this->db->delete('produk',['id_produk'=>$id]);
+		 	if($query){
+							 unlink("./assets/frontend/produk/".$_id->foto_produk);
+		 }
+		redirect('aspanel/products');
+	}
+
+	/*	Bagian untuk Tata Kelola - Penutup	*/
+
+	/*	Bagian untuk Tata Kelola Kategori- Pembuka	*/
+	public function tatakelola_kategori()
+	{
+				if ($this->session->level=='1'){
+						$data['record'] = $this->Crud_m->view_ordering('tatakelola_kategori','tatakelola_cat_id','DESC');
+				}else{
+						$data['record'] = $this->Crud_m->view_ordering('tatakelola_kategori','tatakelola_cat_id','DESC');
+				}
+				cek_session_akses('tatakelola_kategori',$this->session->id_session);
+				$this->load->view('backend/tatakelola_kategori/v_daftar', $data);
+	}
+	public function tatakelola_kategori_tambahkan()
+	{
+		cek_session_akses('tatakelola_kategori',$this->session->id_session);
+		if (isset($_POST['submit'])){
+
+					$config['upload_path'] = 'assets/frontend/tatakelola/';
+					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+					$this->upload->initialize($config);
+					$this->upload->do_upload('gambar');
+					$hasil22=$this->upload->data();
+					$config['image_library']='gd2';
+					$config['source_image'] = './assets/frontend/tatakelola/'.$hasil22['file_name'];
+					$config['create_thumb']= FALSE;
+					$config['maintain_ratio']= FALSE;
+					$config['quality']= '100%';
+					$config['new_image']= './assets/frontend/tatakelola/'.$hasil22['file_name'];
+					$this->load->library('image_lib', $config);
+					$this->image_lib->resize();
+					if ($hasil22['file_name']=='' ){
+									$data = array(
+													'tatakelola_cat_judul'=>$this->input->post('tatakelola_cat_judul'),
+													'tatakelola_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('tatakelola_cat_judul')),
+													'tatakelola_cat_desk'=>$this->input->post('tatakelola_cat_desk'),
+													'tatakelola_cat_post_hari'=>hari_ini(date('w')),
+													'tatakelola_cat_post_tanggal'=>date('Y-m-d'),
+													'tatakelola_cat_post_jam'=>date('H:i:s'),
+													'tatakelola_cat_post_oleh'=>$this->session->username,
+													'tatakelola_cat_dibaca'=>'0');
+												}else {
+												$data = array(
+													'tatakelola_cat_judul'=>$this->input->post('tatakelola_cat_judul'),
+													'tatakelola_cat_judul_seo'=>$this->mylibrary->seo_title($this->input->post('tatakelola_cat_judul')),
+													'tatakelola_cat_desk'=>$this->input->post('tatakelola_cat_desk'),
+													'tatakelola_cat_post_hari'=>hari_ini(date('w')),
+													'tatakelola_cat_post_tanggal'=>date('Y-m-d'),
+													'tatakelola_cat_post_jam'=>date('H:i:s'),
+													'tatakelola_cat_post_oleh'=>$this->session->username,
+													'tatakelola_cat_dibaca'=>'0',
+													'tatakelola_cat_gambar'=>$hasil22['file_name']);
+												}
+								$this->As_m->insert('tatakelola_kategori',$data);
+								redirect('aspanel/tatakelola_kategori');
+				}else{
+					$this->load->view('backend/tatakelola_kategori/v_tambahkan');
+				}
+	}
+	public function tatakelola_kategori_update()
+	{
+		cek_session_akses('tatakelola_kategori',$this->session->id_session);
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+
+			$config['upload_path'] = 'assets/frontend/tatakelola/';
+			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('gambar');
+			$hasil22=$this->upload->data();
+			$config['image_library']='gd2';
+			$config['source_image'] = './assets/frontend/tatakelola/'.$hasil22['file_name'];
+			$config['create_thumb']= FALSE;
+			$config['maintain_ratio']= FALSE;
+			$config['quality']= '100%';
+			$config['new_image']= './assets/frontend/tatakelola/'.$hasil22['file_name'];
+			$this->load->library('image_lib', $config);
+			$this->image_lib->resize();
+
+						if ($hasil22['file_name']==''){
+										$data = array(
+											'tatakelola_cat_judul'=>$this->input->post('tatakelola_cat_judul'),
+											'tatakelola_cat_desk'=>$this->input->post('tatakelola_cat_desk'),
+											'tatakelola_cat_update_hari'=>hari_ini(date('w')),
+											'tatakelola_cat_update_tanggal'=>date('Y-m-d'),
+											'tatakelola_cat_update_jam'=>date('H:i:s'),
+											'tatakelola_cat_update_oleh'=>$this->session->username);
+											$where = array('tatakelola_cat_id' => $this->input->post('tatakelola_cat_id'));
+											$this->db->update('tatakelola_kategori', $data, $where);
+						}else{
+										$data = array(
+											'tatakelola_cat_judul'=>$this->input->post('tatakelola_cat_judul'),
+											'tatakelola_cat_desk'=>$this->input->post('tatakelola_cat_desk'),
+											'tatakelola_cat_update_hari'=>hari_ini(date('w')),
+											'tatakelola_cat_update_tanggal'=>date('Y-m-d'),
+											'tatakelola_cat_update_jam'=>date('H:i:s'),
+											'tatakelola_cat_update_oleh'=>$this->session->username,
+											'tatakelola_cat_gambar'=>$hasil22['file_name']);
+											$where = array('tatakelola_cat_id' => $this->input->post('tatakelola_cat_id'));
+											$_image = $this->db->get_where('tatakelola_kategori',$where)->row();
+											$query = $this->db->update('tatakelola_kategori',$data,$where);
+											if($query){
+												unlink("assets/frontend/tatakelola/".$_image->tatakelola_cat_gambar);
+											}
+						}
+						redirect('aspanel/tatakelola_kategori');
+		}else{
+			if ($this->session->level=='1'){
+					 $proses = $this->As_m->edit('tatakelola_kategori', array('tatakelola_cat_judul_seo' => $id))->row_array();
+			}else{
+					$proses = $this->As_m->edit('tatakelola_kategori', array('tatakelola_cat_judul_seo' => $id))->row_array();
+			}
+			$data = array('rows' => $proses);
+			$this->load->view('backend/tatakelola_kategori/v_update', $data);
+		}
+	}
+	public function tatakelola_kategori_delete()
+	{
+			cek_session_akses ('tatakelola_kategori',$this->session->id_session);
+			$id = $this->uri->segment(3);
+			$_id = $this->db->get_where('tatakelola_kategori',['tatakelola_cat_id' => $id])->row();
+			 $query = $this->db->delete('tatakelola_kategori',['tatakelola_cat_id'=>$id]);
+			if($query){
+							 unlink("./assets/frontend/tatakelola/".$_id->tatakelola_cat_gambar);
+		 }
+		redirect('aspanel/tatakelola_kategori');
+	}
+
+	/*	Bagian untuk Tata Kelola Kategori- Penutup	*/
+
+
 	/*	Bagian untuk Product - Pembuka	*/
 	public function products()
 	{
