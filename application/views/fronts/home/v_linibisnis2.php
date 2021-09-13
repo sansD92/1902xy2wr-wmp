@@ -27,7 +27,7 @@
                   </center>
 
                 <div class="back">
-                    <img style="height:400px; width:400px" src="<?php echo base_url("assets/frontend/campur/bg_box_linibisnis_home2.jpg") ?>" alt="Icon"/>
+                    <img style="height:400px; width:400px" src="<?php echo base_url("assets/frontend/linibisnis/$post_new->bisnis_kategori_gambar_flip") ?>" alt="Icon"/>
                     <div class="inner">
 
                       				<p></p>
