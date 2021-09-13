@@ -36,6 +36,19 @@ public function joglo()
 $this->load->view('fronts/esg/v_joglo',$data);
 }
 
+public function tahfidzwidodomakmursulaimaniyah()
+{
+
+   $data['status']   = 'active';
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+   $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+$this->load->view('fronts/esg/v_tahfidzwidodomakmursulaimaniyah',$data);
+}
+
   // English Version 
    public function kei_eng()
 {
