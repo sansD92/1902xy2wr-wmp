@@ -11,11 +11,11 @@
             <div class="col-12">
                 <div class="clearfix small_divider"></div>
             </div>
-        </div>
+        </div>d
         <div class="row " >
             <div class="col-md-12">
                 <div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
-                    <?php  foreach ($posts as $post_new){
+                    <?php  foreach ($posts_blogs as $post_new){
                                         $isi = character_limiter($post_new->blogs_desk,230);
                                         $judul = character_limiter($post_new->blogs_judul,100);
                                         ?>
