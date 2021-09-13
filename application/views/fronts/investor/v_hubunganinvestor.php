@@ -68,10 +68,10 @@
                     <li class="shop-item" style="position: absolute; left: 0%; top: 0px;">
                         <div class="product text-center">
                         	<div class="product_img">
-                                <a href="<?php echo base_url()?>investor/laporan_keuangan">
+                                <a href="#">
                                     <img src="<?php echo base_url()?>assets/frontend/campur/laporan-keuangan.jpg" alt="image">
                                 </a>
-                                <a href="<?php echo base_url()?>investor/laporan_keuangan">
+                                <a href="#">
                                     <img src="<?php echo base_url()?>assets/frontend/campur/laporan-keuangan.jpg" alt="image">
                                 </a>
                             </div>
