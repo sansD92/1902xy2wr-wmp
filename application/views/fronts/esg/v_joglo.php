@@ -58,13 +58,13 @@
                   Joglo Tumiyono akan menjadi pusat pelatihan dan pembelajaran para entrepreneur muda yang terdidik dan terampil agar siap menjadi pelaku ekonomi berdasarkan minat mereka di bidang peternakan, pertanian atau pengolahan bahan makanan. Para entrepreneur muda ini akan dididik agar mampu mengelola bisnisnya dengan baik serta sustainability, yang merupakan sebuah kondisi dimana usaha dapat terus bertahan dan berkembang seiring waktu.
                 </p>
                 <p style="text-align: justify;">
-                  Joglo Tumiyono aktif mendukung masyarakat dan menyediakan tempat untuk pengembangan kualitas sumber daya manusia, di antaranya melalui kegiatan.
+                  Joglo Tumiyono aktif mendukung masyarakat dan menyediakan tempat untuk pengembangan kualitas sumber daya manusia, di antaranya melalui kegiatan:
 
                 </p>
-                <h6>1. Pengembangan Ekonomi, Seni dan Budaya</h6>
-                <h6>2. Pesantren Entrepreneur</h6>
+                <p>1. Pengembangan Ekonomi, Seni dan Budaya</p>
+                <p>2. Pesantren Entrepreneur</p>
 
-                <h6>Gallery</h6>
+                <!-- <p>Gallery</p> -->
                 <p style="text-align: justify;">
                   Kumpulan foto-foto berbagai kegiatan yang dilaksanakan di Joglo Tumiyono (Kesatriaan Entrepreneur Indonesia)
                 </p>
