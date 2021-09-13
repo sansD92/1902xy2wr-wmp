@@ -267,4 +267,16 @@ public function hubunganinvestor_eng()
 
   $this->load->view('fronts/investor/v_hubunganinvestor_eng',$data);
 }
+public function laporan_keuangan()
+{
+      $data['status']   = 'active';
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+
+  $this->load->view('fronts/investor/v_laporankeuangan',$data);
+}
 }
