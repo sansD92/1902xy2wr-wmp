@@ -3287,7 +3287,6 @@ class Aspanel extends CI_Controller {
 
 					$config['upload_path'] = 'assets/frontend/tatakelola/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
@@ -3299,7 +3298,6 @@ class Aspanel extends CI_Controller {
 					$config['new_image']= './assets/frontend/tatakelola/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
-
 					if ($hasil22['file_name']=='' ){
 									$data = array(
 													'id_produk'=>$this->input->post('id_produk'),
