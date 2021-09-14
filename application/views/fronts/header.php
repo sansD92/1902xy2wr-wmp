@@ -85,7 +85,7 @@
 
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris-direksi">Dewan Komisaris & Direksi</a></li>
                                <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
-                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Company & Organisasi</a></li>
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Struktur Organisasi</a></li>
                                   <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">Produk</a></li>
 
                                 <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Produk</a>
