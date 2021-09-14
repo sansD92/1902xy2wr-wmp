@@ -3263,110 +3263,60 @@ class Aspanel extends CI_Controller {
 	/*	Bagian untuk Tata Kelola - Pembuka	*/
 	public function tatakelola()
 	{
+		$ids = $this->uri->segment(3);
+
 				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_ordering('tatakelola','tatakelola_id','DESC');
+					$data['post']           = $this->Crud_m->get_by_id_post($ids,'tatakelola_cat_id','tatakelola_kategori','tatakelola_cat_judul_seo');
+					$data['tatakelola_detail']    = $this->M_produk->get_by_tatakelola($ids);
 				}else{
-						$data['record'] = $this->Crud_m->view_ordering('tatakelola','tatakelola_id','DESC');
+						$row = $this->M_produk->get_by_tatakelolacat($ids);
+						if ($row){
+			      /* memanggil function dari masing2 model yang akan digunakan */
+			      $data['post']           = $this->Crud_m->get_by_id_post($ids,'tatakelola_cat_id','tatakelola_kategori','tatakelola_cat_judul_seo');
+			      $data['tatakelola_detail']    = $this->M_produk->get_by_tatakelola($ids);
+			      }
 				}
 				cek_session_akses('tatakelola',$this->session->id_session);
 				$this->load->view('backend/tatakelola/v_daftar', $data);
 	}
-	public function tatakelola_storage_bin()
-	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['slider_stat']   = '';
-		$data['kontribs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-		$data['produk_menu_open']   = 'menu-open';
-		$data['produk_category']   = '';
-		$data['produk']   = 'active';
-		$data['services']   = '';
-
-				if ($this->session->level=='1'){
-						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_status'=>'delete'),'products_id','DESC');
-				}else{
-						$data['record'] = $this->Crud_m->view_where_ordering('products',array('products_post_oleh'=>$this->session->username,'products_status'=>'delete'),'products_id','DESC');
-				}
-				cek_session_akses('products',$this->session->id_session);
-				$this->load->view('backend/products/v_daftar_hapus', $data);
-	}
 	public function tatakelola_tambahkan()
 	{
-		cek_session_akses('products',$this->session->id_session);
+		cek_session_akses('tatakelola',$this->session->id_session);
+		$ids = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'assets/frontend/produk/';
+					$config['upload_path'] = 'assets/frontend/tatakelola/';
 					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
 
 					$this->upload->initialize($config);
 					$this->upload->do_upload('gambar');
 					$hasil22=$this->upload->data();
 					$config['image_library']='gd2';
-					$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
+					$config['source_image'] = './assets/frontend/tatakelola/'.$hasil22['file_name'];
 					$config['create_thumb']= FALSE;
 					$config['maintain_ratio']= FALSE;
-					$config['quality']= '100%';
-					$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
+					$config['quality']= '95%';
+					$config['new_image']= './assets/frontend/tatakelola/'.$hasil22['file_name'];
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
-
 					if ($hasil22['file_name']=='' ){
 									$data = array(
-													'nama_produk'=>$this->input->post('nama_produk'),
-													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
-													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
-													'bidang_produk'=>$this->input->post('bidang_produk'),
-													'website'=>$this->input->post('website'),
-													'facebook'=>$this->input->post('facebook'),
-													'instagram'=>$this->input->post('instagram'),
-													'whatsapp'=>$this->input->post('whatsapp'),
-													'shopee'=>$this->input->post('shopee'),
-													'tokopedia'=>$this->input->post('tokopedia'),
-													'bukalapak'=>$this->input->post('bukalapak'));
-
+													'id_produk'=>$this->input->post('id_produk'),
+													'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
+													'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'));
 												}else {
 												$data = array(
-													'nama_produk'=>$this->input->post('nama_produk'),
-													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
-													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
-													'bidang_produk'=>$this->input->post('bidang_produk'),
-													'website'=>$this->input->post('website'),
-													'facebook'=>$this->input->post('facebook'),
-													'instagram'=>$this->input->post('instagram'),
-													'whatsapp'=>$this->input->post('whatsapp'),
-													'shopee'=>$this->input->post('shopee'),
-													'tokopedia'=>$this->input->post('tokopedia'),
-													'bukalapak'=>$this->input->post('bukalapak'),
-													'foto_produk'=>$hasil22['file_name']);
+													'id_produk'=> $this->input->post('id_produk') ,
+													'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
+													'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'),
+													'foto_produk_detail'=>$hasil22['file_name']);
 												}
-								$this->As_m->insert('produk',$data);
-								redirect('aspanel/products');
+								$this->As_m->insert('tatakelola',$data);
+								redirect('aspanel/tatakelola/');
 				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['slider_stat']   = '';
-					$data['kontribs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-
-					$data['produk_menu_open']   = 'menu-open';
-		 			$data['produk_category']   = '';
-		 			$data['produk']   = 'active';
-		 			$data['services']   = '';
-					$this->load->view('backend/products/v_tambahkan', $data);
+					$data['post'] = $this->Crud_m->get_by_id_produk($ids,'tatakelola_cat_id','tatakelola_kategori');
+					$this->load->view('backend/tatakelola/v_tambahkan', $data);
 				}
 	}
 	public function tatakelola_update()
@@ -3391,44 +3341,29 @@ class Aspanel extends CI_Controller {
 
 						if ($hasil22['file_name']==''){
 										$data = array(
-											'nama_produk'=>$this->input->post('nama_produk'),
-											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
-											'bidang_produk'=>$this->input->post('bidang_produk'),
-											'website'=>$this->input->post('website'),
-											'facebook'=>$this->input->post('facebook'),
-											'instagram'=>$this->input->post('instagram'),
-											'whatsapp'=>$this->input->post('whatsapp'),
-											'shopee'=>$this->input->post('shopee'),
-											'tokopedia'=>$this->input->post('tokopedia'),
-											'bukalapak'=>$this->input->post('bukalapak'));
-											$where = array('id_produk' => $this->input->post('id_produk'));
-							 				$this->db->update('produk', $data, $where);
+											'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
+											'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'));
+											$where = array('id_produk_detail' => $this->input->post('id_produk_detail'));
+							 				$this->db->update('produk_detail', $data, $where);
 						}else{
 										$data = array(
-											'nama_produk'=>$this->input->post('nama_produk'),
-											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
-											'bidang_produk'=>$this->input->post('bidang_produk'),
-											'website'=>$this->input->post('website'),
-											'facebook'=>$this->input->post('facebook'),
-											'instagram'=>$this->input->post('instagram'),
-											'whatsapp'=>$this->input->post('whatsapp'),
-											'shopee'=>$this->input->post('shopee'),
-											'tokopedia'=>$this->input->post('tokopedia'),
-											'bukalapak'=>$this->input->post('bukalapak'),
-											'foto_produk'=>$hasil22['file_name']);
-											$where = array('id_produk' => $this->input->post('id_produk'));
-											$_image = $this->db->get_where('produk',$where)->row();
-											$query = $this->db->update('produk',$data,$where);
+
+											'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
+											'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'),
+											'foto_produk_detail'=>$hasil22['file_name']);
+											$where = array('id_produk_detail' => $this->input->post('id_produk_detail'));
+											$_image = $this->db->get_where('produk_detail',$where)->row();
+											$query = $this->db->update('produk_detail',$data,$where);
 											if($query){
-												unlink("assets/frontend/produk/".$_image->foto_produk);
+												unlink("assets/frontend/produk/".$_image->foto_produk_detail);
 											}
 						}
 						redirect('aspanel/products');
 		}else{
 			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
+					 $proses = $this->As_m->edit('produk_detail', array('id_produk_detail' => $id))->row_array();
 			}else{
-					$proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
+					$proses = $this->As_m->edit('produk_detail', array('id_produk_detail' => $id))->row_array();
 			}
 			$data = array('rows' => $proses);
 			$data['karyawan_menu_open']   = '';
@@ -3447,21 +3382,20 @@ class Aspanel extends CI_Controller {
  			$data['produk_category']   = '';
  			$data['produk']   = 'active';
  			$data['services']   = '';
-			$this->load->view('backend/products/v_update', $data);
+			$this->load->view('backend/products_detail/v_update', $data);
 		}
 	}
 	public function tatakelola_delete()
 	{
-			cek_session_akses ('products',$this->session->id_session);
+			cek_session_akses ('products_detail',$this->session->id_session);
 			$id = $this->uri->segment(3);
-			$_id = $this->db->get_where('produk',['id_produk' => $id])->row();
-			 $query = $this->db->delete('produk',['id_produk'=>$id]);
+			$_id = $this->db->get_where('produk_detail',['id_produk_detail' => $id])->row();
+			 $query = $this->db->delete('produk_detail',['id_produk_detail'=>$id]);
 		 	if($query){
-							 unlink("./assets/frontend/produk/".$_id->foto_produk);
+							 unlink("./assets/frontend/produk/".$_id->foto_produk_detail);
 		 }
 		redirect('aspanel/products');
 	}
-
 	/*	Bagian untuk Tata Kelola - Penutup	*/
 
 	/*	Bagian untuk Tata Kelola Kategori- Pembuka	*/
