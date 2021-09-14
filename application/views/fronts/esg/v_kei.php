@@ -75,13 +75,13 @@
                                 <a href="<?php echo base_url()?>assets/frontend/campur/1.KEI.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.KEI.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/2.KEI.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.KEI.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/1.KEIREVISI.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.KEIREVISI.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/3.KEI.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.KEI.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/2.KEIREVISI.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.KEIREVISI.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/4.KEI.png"><img src="<?php echo base_url()?>assets/frontend/campur/4.KEI.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/3.KEIREVISI.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.KEIREVISI.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
                                 <a href="<?php echo base_url()?>assets/frontend/campur/5.KEI.png"><img src="<?php echo base_url()?>assets/frontend/campur/5.KEI.png" alt="image"></a>
